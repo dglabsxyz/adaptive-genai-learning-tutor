@@ -1,0 +1,38 @@
+{
+  "entity_type": "topic",
+  "entity_name": "no-code AI",
+  "entity_slug": "no-code-ai",
+  "platform": "website",
+  "query_terms": [
+    "no-code AI",
+    "AI automation",
+    "AI coding",
+    "AI product development",
+    "business AI"
+  ],
+  "results": [
+    {
+      "title": "Operationalizing No-Code AI with Zapier",
+      "url": "https://www.coursera.org/learn/operationalizing-no-code-ai-with-zapier-automation-and-plans",
+      "content_type": "course",
+      "summary": "A Coursera course on designing, building, optimizing, and scaling no-code AI workflows with Zapier.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.coursera.org/learn/operationalizing-no-code-ai-with-zapier-automation-and-plans"
+      ]
+    },
+    {
+      "title": "Source for no-code AI",
+      "url": "https://www.coursera.org/learn/operationalizing-no-code-ai-with-zapier-automation-and-plans",
+      "content_type": "other",
+      "summary": "Citation source for no-code AI.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.coursera.org/learn/operationalizing-no-code-ai-with-zapier-automation-and-plans"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

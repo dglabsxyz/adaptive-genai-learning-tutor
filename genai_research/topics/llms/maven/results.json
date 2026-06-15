@@ -1,0 +1,83 @@
+{
+  "entity_type": "topic",
+  "entity_name": "LLMs",
+  "entity_slug": "llms",
+  "platform": "maven",
+  "query_terms": [
+    "LLMs",
+    "prompt engineering",
+    "fine-tuning",
+    "RAG",
+    "AI agents",
+    "context engineering"
+  ],
+  "results": [
+    {
+      "title": "AI Engineering Buildcamp: From RAG to Agents",
+      "url": "https://maven.com/alexey-grigorev/from-rag-to-agents",
+      "content_type": "course",
+      "summary": "Create your own production-ready AI application in six weeks.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/alexey-grigorev/from-rag-to-agents"
+      ]
+    },
+    {
+      "title": "Search in the LLM Era for AI Engineers",
+      "url": "https://maven.com/nirantk/search-for-rag",
+      "content_type": "course",
+      "summary": "A six-weekend instructor-led course and live practice for senior engineers building modern search and RAG systems.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/nirantk/search-for-rag"
+      ]
+    },
+    {
+      "title": "AI Mini-Bootcamp",
+      "url": "https://maven.com/aitraining/minibootcamp",
+      "content_type": "course",
+      "summary": "A six-week pre-conference live and on-demand training program for AI fundamentals.",
+      "extracted_data": {
+        "entity_type": "bootcamp"
+      },
+      "citations": [
+        "https://maven.com/aitraining/minibootcamp"
+      ]
+    },
+    {
+      "title": "Source for LLMs",
+      "url": "https://maven.com/alexey-grigorev/from-rag-to-agents",
+      "content_type": "other",
+      "summary": "Citation source for LLMs.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/alexey-grigorev/from-rag-to-agents"
+      ]
+    },
+    {
+      "title": "Source for LLMs",
+      "url": "https://maven.com/nirantk/search-for-rag",
+      "content_type": "other",
+      "summary": "Citation source for LLMs.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/nirantk/search-for-rag"
+      ]
+    },
+    {
+      "title": "Source for LLMs",
+      "url": "https://maven.com/aitraining/minibootcamp",
+      "content_type": "other",
+      "summary": "Citation source for LLMs.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/aitraining/minibootcamp"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

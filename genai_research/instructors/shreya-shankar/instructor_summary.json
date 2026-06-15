@@ -1,0 +1,72 @@
+{
+  "name": "Shreya Shankar",
+  "slug": "shreya-shankar",
+  "headline": "ML systems researcher focused on AI evaluation",
+  "organization": "Carnegie Mellon University",
+  "bio": "ML systems researcher working on AI-powered data processing and practical AI evaluation.",
+  "expertise_areas": [
+    "AI safety and evaluation",
+    "AI agents",
+    "AI product development",
+    "RAG"
+  ],
+  "topics_taught": [
+    "AI safety and evaluation",
+    "AI agents",
+    "AI product development",
+    "RAG"
+  ],
+  "platforms": [
+    "Maven"
+  ],
+  "website": null,
+  "social_profiles": {
+    "linkedin": null,
+    "youtube": null,
+    "x": null,
+    "github": null,
+    "other": [
+      "https://www.sh-reya.com/"
+    ]
+  },
+  "audience_levels": [
+    "intermediate"
+  ],
+  "teaching_formats": [
+    "Cohort-based course"
+  ],
+  "courses": [
+    {
+      "course_name": "AI Evals For Engineers and PMs",
+      "course_slug": "ai-evals-for-engineers-and-pms",
+      "platform": "Maven",
+      "url": "https://maven.com/parlance-labs/evals",
+      "citations": [
+        "https://maven.com/parlance-labs/evals"
+      ]
+    }
+  ],
+  "credibility_signals": [
+    "PhD in Computer Science from UC Berkeley",
+    "Assistant Professor role at Carnegie Mellon University cited by Maven"
+  ],
+  "citations": [
+    "https://maven.com/parlance-labs/evals"
+  ],
+  "source_records": [
+    {
+      "platform": "Maven",
+      "url": "https://maven.com/parlance-labs/evals",
+      "title": "AI Evals For Engineers and PMs",
+      "summary": "Build a real AI agent, find where it breaks, and improve it with evals you can trust.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/parlance-labs/evals"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

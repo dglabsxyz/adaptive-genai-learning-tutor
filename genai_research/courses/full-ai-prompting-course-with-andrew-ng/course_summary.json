@@ -1,0 +1,55 @@
+{
+  "course_name": "Full AI Prompting Course with Andrew Ng",
+  "course_slug": "full-ai-prompting-course-with-andrew-ng",
+  "instructor_names": [
+    "Andrew Ng"
+  ],
+  "instructor_slugs": [
+    "andrew-ng"
+  ],
+  "platform": "YouTube",
+  "course_url": "https://www.youtube.com/watch?v=8ib4Qnh2HFE",
+  "topic_tags": [
+    "prompt engineering",
+    "LLMs",
+    "generative AI"
+  ],
+  "description": "A YouTube course-style resource from Andrew Ng on becoming an AI power user through prompting.",
+  "syllabus": [],
+  "target_audience": [],
+  "prerequisites": [],
+  "duration": null,
+  "format": "Video course",
+  "price": {
+    "amount": 0,
+    "currency": "USD",
+    "raw": "Free"
+  },
+  "rating": {
+    "value": null,
+    "count": null,
+    "raw": null
+  },
+  "certificate": null,
+  "enrollment_status": null,
+  "last_updated": null,
+  "citations": [
+    "https://www.youtube.com/watch?v=8ib4Qnh2HFE"
+  ],
+  "source_records": [
+    {
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/watch?v=8ib4Qnh2HFE",
+      "title": "Full AI Prompting Course with Andrew Ng",
+      "summary": "A YouTube course-style resource from Andrew Ng on becoming an AI power user through prompting.",
+      "content_type": "video",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://www.youtube.com/watch?v=8ib4Qnh2HFE"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

@@ -1,0 +1,70 @@
+{
+  "name": "Sheamus McGovern",
+  "slug": "sheamus-mcgovern",
+  "headline": null,
+  "organization": "AI+ Training and Agentic AI Summit",
+  "bio": null,
+  "expertise_areas": [
+    "LLMs",
+    "RAG",
+    "AI agents",
+    "AI automation",
+    "AI product development"
+  ],
+  "topics_taught": [
+    "LLMs",
+    "RAG",
+    "AI agents",
+    "AI automation",
+    "AI product development"
+  ],
+  "platforms": [
+    "Maven"
+  ],
+  "website": null,
+  "social_profiles": {
+    "linkedin": null,
+    "youtube": null,
+    "x": null,
+    "github": null,
+    "other": []
+  },
+  "audience_levels": [
+    "beginner",
+    "intermediate"
+  ],
+  "teaching_formats": [
+    "Bootcamp"
+  ],
+  "courses": [
+    {
+      "course_name": "AI Mini-Bootcamp",
+      "course_slug": "ai-mini-bootcamp",
+      "platform": "Maven",
+      "url": "https://maven.com/aitraining/minibootcamp",
+      "citations": [
+        "https://maven.com/aitraining/minibootcamp"
+      ]
+    }
+  ],
+  "credibility_signals": [],
+  "citations": [
+    "https://maven.com/aitraining/minibootcamp"
+  ],
+  "source_records": [
+    {
+      "platform": "Maven",
+      "url": "https://maven.com/aitraining/minibootcamp",
+      "title": "AI Mini-Bootcamp",
+      "summary": "A six-week pre-conference live and on-demand training program for AI fundamentals.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "bootcamp"
+      },
+      "citations": [
+        "https://maven.com/aitraining/minibootcamp"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

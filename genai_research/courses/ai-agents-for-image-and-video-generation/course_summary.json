@@ -1,0 +1,74 @@
+{
+  "course_name": "AI Agents for Image and Video Generation",
+  "course_slug": "ai-agents-for-image-and-video-generation",
+  "instructor_names": [
+    "Katie Nguyen",
+    "Wafae Bakkali"
+  ],
+  "instructor_slugs": [
+    "katie-nguyen",
+    "wafae-bakkali"
+  ],
+  "platform": "DeepLearning.AI",
+  "course_url": "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation",
+  "topic_tags": [
+    "AI agents",
+    "image generation",
+    "video generation",
+    "multimodal AI",
+    "AI safety and evaluation"
+  ],
+  "description": "A DeepLearning.AI course on building media agents that generate, evaluate, and iterate on image and video outputs.",
+  "syllabus": [
+    "Overview of generative media",
+    "Prompt engineering for image generation",
+    "Prompt engineering for video generation",
+    "Evaluation techniques",
+    "Image generation agent",
+    "Video generation agent",
+    "Building media agent with AI"
+  ],
+  "target_audience": [
+    "AI builders",
+    "Developers",
+    "Data scientists"
+  ],
+  "prerequisites": [
+    "Familiarity with Python",
+    "Basic experience working with LLM APIs"
+  ],
+  "duration": "1h24m",
+  "format": "Short course",
+  "price": {
+    "amount": null,
+    "currency": null,
+    "raw": null
+  },
+  "rating": {
+    "value": null,
+    "count": null,
+    "raw": null
+  },
+  "certificate": "Earn an accomplishment with PRO",
+  "enrollment_status": "Open",
+  "last_updated": null,
+  "citations": [
+    "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation"
+  ],
+  "source_records": [
+    {
+      "platform": "DeepLearning.AI",
+      "url": "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation",
+      "title": "AI Agents for Image and Video Generation",
+      "summary": "A DeepLearning.AI course on building media agents that generate, evaluate, and iterate on image and video outputs.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

@@ -1,0 +1,75 @@
+{
+  "name": "Arvind Narayanamurthy",
+  "slug": "arvind-narayanamurthy",
+  "headline": "AI Engineering Lead; founder at The Gen Academy; AI solutions architect",
+  "organization": "The Gen Academy",
+  "bio": "AI engineering lead and founder at The Gen Academy with cited experience at Adobe, Microsoft, and IBM.",
+  "expertise_areas": [
+    "AI agents",
+    "RAG",
+    "fine-tuning",
+    "AI evals",
+    "AI safety and evaluation"
+  ],
+  "topics_taught": [
+    "AI agents",
+    "RAG",
+    "fine-tuning",
+    "AI evals",
+    "AI safety and evaluation"
+  ],
+  "platforms": [
+    "Maven"
+  ],
+  "website": null,
+  "social_profiles": {
+    "linkedin": null,
+    "youtube": null,
+    "x": null,
+    "github": null,
+    "other": []
+  },
+  "audience_levels": [
+    "intermediate",
+    "enterprise"
+  ],
+  "teaching_formats": [
+    "Cohort-based course"
+  ],
+  "courses": [
+    {
+      "course_name": "Mastering Agentic AI: Certification by The Gen Academy",
+      "course_slug": "mastering-agentic-ai-certification-by-the-gen-academy",
+      "platform": "Maven",
+      "url": "https://maven.com/aishwarya-srinivasan/mastering-ai-agents",
+      "citations": [
+        "https://maven.com/aishwarya-srinivasan/mastering-ai-agents"
+      ]
+    }
+  ],
+  "credibility_signals": [
+    "Founder at The Gen Academy",
+    "Ex-Adobe",
+    "Ex-Microsoft",
+    "Ex-IBM"
+  ],
+  "citations": [
+    "https://maven.com/aishwarya-srinivasan/mastering-ai-agents"
+  ],
+  "source_records": [
+    {
+      "platform": "Maven",
+      "url": "https://maven.com/aishwarya-srinivasan/mastering-ai-agents",
+      "title": "Mastering Agentic AI: Certification by The Gen Academy",
+      "summary": "A six-week Maven program from The Gen Academy on building and deploying robust agentic AI systems.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/aishwarya-srinivasan/mastering-ai-agents"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

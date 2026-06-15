@@ -1,0 +1,38 @@
+{
+  "entity_type": "topic",
+  "entity_name": "image generation",
+  "entity_slug": "image-generation",
+  "platform": "maven",
+  "query_terms": [
+    "image generation",
+    "diffusion models",
+    "multimodal AI",
+    "video generation",
+    "prompt engineering"
+  ],
+  "results": [
+    {
+      "title": "Generative AI Creation Masterclass",
+      "url": "https://maven.com/bilawal/generative-ai-masterclass",
+      "content_type": "course",
+      "summary": "A creative GenAI workflow masterclass covering text, image, audio, video, and 3D generation.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/bilawal/generative-ai-masterclass"
+      ]
+    },
+    {
+      "title": "Source for image generation",
+      "url": "https://maven.com/bilawal/generative-ai-masterclass",
+      "content_type": "other",
+      "summary": "Citation source for image generation.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/bilawal/generative-ai-masterclass"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

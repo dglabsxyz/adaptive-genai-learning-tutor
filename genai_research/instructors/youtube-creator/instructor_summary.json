@@ -1,0 +1,66 @@
+{
+  "name": "YouTube creator",
+  "slug": "youtube-creator",
+  "headline": null,
+  "organization": null,
+  "bio": null,
+  "expertise_areas": [
+    "voice AI",
+    "AI agents",
+    "AI automation"
+  ],
+  "topics_taught": [
+    "voice AI",
+    "AI agents",
+    "AI automation"
+  ],
+  "platforms": [
+    "YouTube"
+  ],
+  "website": null,
+  "social_profiles": {
+    "linkedin": null,
+    "youtube": null,
+    "x": null,
+    "github": null,
+    "other": []
+  },
+  "audience_levels": [
+    "beginner",
+    "advanced"
+  ],
+  "teaching_formats": [
+    "Video course"
+  ],
+  "courses": [
+    {
+      "course_name": "AI Voice Agents Full Course 2026: Beginner to Advanced",
+      "course_slug": "ai-voice-agents-full-course-2026-beginner-to-advanced",
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/watch?v=UAxKs9Yuljo",
+      "citations": [
+        "https://www.youtube.com/watch?v=UAxKs9Yuljo"
+      ]
+    }
+  ],
+  "credibility_signals": [],
+  "citations": [
+    "https://www.youtube.com/watch?v=UAxKs9Yuljo"
+  ],
+  "source_records": [
+    {
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/watch?v=UAxKs9Yuljo",
+      "title": "AI Voice Agents Full Course 2026: Beginner to Advanced",
+      "summary": "A YouTube full-course style resource on AI voice agents from beginner to advanced.",
+      "content_type": "video",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://www.youtube.com/watch?v=UAxKs9Yuljo"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

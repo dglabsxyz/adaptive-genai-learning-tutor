@@ -1,0 +1,28 @@
+{
+  "entity_type": "course",
+  "entity_name": "The AI Engineering Course I Wish I Had",
+  "entity_slug": "the-ai-engineering-course-i-wish-i-had",
+  "platform": "substack",
+  "query_terms": [
+    "The AI Engineering Course I Wish I Had",
+    "AI agents",
+    "MCP",
+    "AI engineering",
+    "AI safety and evaluation"
+  ],
+  "results": [
+    {
+      "title": "The AI Engineering Course I Wish I Had",
+      "url": "https://theneuralmaze.substack.com/p/the-ai-engineering-course-i-wish",
+      "content_type": "article",
+      "summary": "A Substack AI engineering learning resource about MCPs, agent monitoring, and real AI systems.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://theneuralmaze.substack.com/p/the-ai-engineering-course-i-wish"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

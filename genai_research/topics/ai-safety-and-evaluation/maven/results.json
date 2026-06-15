@@ -1,0 +1,127 @@
+{
+  "entity_type": "topic",
+  "entity_name": "AI safety and evaluation",
+  "entity_slug": "ai-safety-and-evaluation",
+  "platform": "maven",
+  "query_terms": [
+    "AI safety and evaluation",
+    "AI evals",
+    "responsible AI",
+    "AI agents",
+    "RAG",
+    "fine-tuning"
+  ],
+  "results": [
+    {
+      "title": "Mastering Agentic AI: Certification by The Gen Academy",
+      "url": "https://maven.com/aishwarya-srinivasan/mastering-ai-agents",
+      "content_type": "course",
+      "summary": "A six-week Maven program from The Gen Academy on building and deploying robust agentic AI systems.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/aishwarya-srinivasan/mastering-ai-agents"
+      ]
+    },
+    {
+      "title": "Systematically Improving RAG Applications",
+      "url": "https://maven.com/applied-llms/rag-playbook",
+      "content_type": "course",
+      "summary": "A repeatable process for evaluating and improving RAG applications.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/applied-llms/rag-playbook"
+      ]
+    },
+    {
+      "title": "Search in the LLM Era for AI Engineers",
+      "url": "https://maven.com/nirantk/search-for-rag",
+      "content_type": "course",
+      "summary": "A six-weekend instructor-led course and live practice for senior engineers building modern search and RAG systems.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/nirantk/search-for-rag"
+      ]
+    },
+    {
+      "title": "AI Evals For Engineers and PMs",
+      "url": "https://maven.com/parlance-labs/evals",
+      "content_type": "course",
+      "summary": "Build a real AI agent, find where it breaks, and improve it with evals you can trust.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/parlance-labs/evals"
+      ]
+    },
+    {
+      "title": "Become a Voice AI Agent Expert",
+      "url": "https://maven.com/p/5de0a6/become-a-voice-ai-agent-expert",
+      "content_type": "other",
+      "summary": "A Maven lesson on voice agent building blocks, models, latency, hosting, telephony, and evaluation.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://maven.com/p/5de0a6/become-a-voice-ai-agent-expert"
+      ]
+    },
+    {
+      "title": "Source for AI safety and evaluation",
+      "url": "https://maven.com/parlance-labs/evals",
+      "content_type": "other",
+      "summary": "Citation source for AI safety and evaluation.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/parlance-labs/evals"
+      ]
+    },
+    {
+      "title": "Source for AI safety and evaluation",
+      "url": "https://maven.com/aishwarya-srinivasan/mastering-ai-agents",
+      "content_type": "other",
+      "summary": "Citation source for AI safety and evaluation.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/aishwarya-srinivasan/mastering-ai-agents"
+      ]
+    },
+    {
+      "title": "Source for AI safety and evaluation",
+      "url": "https://maven.com/applied-llms/rag-playbook",
+      "content_type": "other",
+      "summary": "Citation source for AI safety and evaluation.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/applied-llms/rag-playbook"
+      ]
+    },
+    {
+      "title": "Source for AI safety and evaluation",
+      "url": "https://maven.com/nirantk/search-for-rag",
+      "content_type": "other",
+      "summary": "Citation source for AI safety and evaluation.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/nirantk/search-for-rag"
+      ]
+    },
+    {
+      "title": "Source for AI safety and evaluation",
+      "url": "https://maven.com/p/5de0a6/become-a-voice-ai-agent-expert",
+      "content_type": "other",
+      "summary": "Citation source for AI safety and evaluation.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/p/5de0a6/become-a-voice-ai-agent-expert"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

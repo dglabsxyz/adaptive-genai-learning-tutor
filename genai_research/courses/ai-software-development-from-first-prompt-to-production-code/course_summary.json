@@ -1,0 +1,55 @@
+{
+  "course_name": "AI Software Development: From First Prompt to Production Code",
+  "course_slug": "ai-software-development-from-first-prompt-to-production-code",
+  "instructor_names": [
+    "Maven instructors"
+  ],
+  "instructor_slugs": [
+    "maven-instructors"
+  ],
+  "platform": "Maven",
+  "course_url": "https://maven.com/courses/ai/ai-coding",
+  "topic_tags": [
+    "AI coding",
+    "AI agents",
+    "AI product development"
+  ],
+  "description": "A Maven AI coding catalog entry described as a four-week, highly rated course from first prompt to production code.",
+  "syllabus": [],
+  "target_audience": [],
+  "prerequisites": [],
+  "duration": "4 weeks",
+  "format": "Course",
+  "price": {
+    "amount": null,
+    "currency": null,
+    "raw": null
+  },
+  "rating": {
+    "value": 4.9,
+    "count": null,
+    "raw": "4.9"
+  },
+  "certificate": null,
+  "enrollment_status": null,
+  "last_updated": null,
+  "citations": [
+    "https://maven.com/courses/ai/ai-coding"
+  ],
+  "source_records": [
+    {
+      "platform": "Maven",
+      "url": "https://maven.com/courses/ai/ai-coding",
+      "title": "AI Software Development: From First Prompt to Production Code",
+      "summary": "A Maven AI coding catalog entry described as a four-week, highly rated course from first prompt to production code.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/courses/ai/ai-coding"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

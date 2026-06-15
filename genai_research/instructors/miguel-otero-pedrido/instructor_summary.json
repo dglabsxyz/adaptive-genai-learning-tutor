@@ -1,0 +1,67 @@
+{
+  "name": "Miguel Otero Pedrido",
+  "slug": "miguel-otero-pedrido",
+  "headline": null,
+  "organization": null,
+  "bio": null,
+  "expertise_areas": [
+    "AI agents",
+    "MCP",
+    "AI engineering",
+    "AI safety and evaluation"
+  ],
+  "topics_taught": [
+    "AI agents",
+    "MCP",
+    "AI engineering",
+    "AI safety and evaluation"
+  ],
+  "platforms": [
+    "Substack"
+  ],
+  "website": null,
+  "social_profiles": {
+    "linkedin": null,
+    "youtube": null,
+    "x": null,
+    "github": null,
+    "other": []
+  },
+  "audience_levels": [
+    "intermediate"
+  ],
+  "teaching_formats": [
+    "Newsletter post"
+  ],
+  "courses": [
+    {
+      "course_name": "The AI Engineering Course I Wish I Had",
+      "course_slug": "the-ai-engineering-course-i-wish-i-had",
+      "platform": "Substack",
+      "url": "https://theneuralmaze.substack.com/p/the-ai-engineering-course-i-wish",
+      "citations": [
+        "https://theneuralmaze.substack.com/p/the-ai-engineering-course-i-wish"
+      ]
+    }
+  ],
+  "credibility_signals": [],
+  "citations": [
+    "https://theneuralmaze.substack.com/p/the-ai-engineering-course-i-wish"
+  ],
+  "source_records": [
+    {
+      "platform": "Substack",
+      "url": "https://theneuralmaze.substack.com/p/the-ai-engineering-course-i-wish",
+      "title": "The AI Engineering Course I Wish I Had",
+      "summary": "A Substack AI engineering learning resource about MCPs, agent monitoring, and real AI systems.",
+      "content_type": "article",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://theneuralmaze.substack.com/p/the-ai-engineering-course-i-wish"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

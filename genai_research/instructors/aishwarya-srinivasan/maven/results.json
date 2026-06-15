@@ -1,0 +1,29 @@
+{
+  "entity_type": "instructor",
+  "entity_name": "Aishwarya Srinivasan",
+  "entity_slug": "aishwarya-srinivasan",
+  "platform": "maven",
+  "query_terms": [
+    "Aishwarya Srinivasan",
+    "AI agents",
+    "RAG",
+    "fine-tuning",
+    "AI evals",
+    "AI safety and evaluation"
+  ],
+  "results": [
+    {
+      "title": "Mastering Agentic AI: Certification by The Gen Academy",
+      "url": "https://maven.com/aishwarya-srinivasan/mastering-ai-agents",
+      "content_type": "course",
+      "summary": "A six-week Maven program from The Gen Academy on building and deploying robust agentic AI systems.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/aishwarya-srinivasan/mastering-ai-agents"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

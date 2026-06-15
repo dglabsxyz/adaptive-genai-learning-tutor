@@ -1,0 +1,60 @@
+{
+  "entity_type": "topic",
+  "entity_name": "context engineering",
+  "entity_slug": "context-engineering",
+  "platform": "linkedin",
+  "query_terms": [
+    "context engineering",
+    "prompt engineering",
+    "RAG",
+    "AI agents",
+    "LLMs"
+  ],
+  "results": [
+    {
+      "title": "Hands-On AI: RAG using LlamaIndex",
+      "url": "https://www.linkedin.com/learning/hands-on-ai-rag-using-llamaindex",
+      "content_type": "course",
+      "summary": "A LinkedIn Learning course focused on retrieval-augmented generation using LlamaIndex.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.linkedin.com/learning/hands-on-ai-rag-using-llamaindex"
+      ]
+    },
+    {
+      "title": "Context Engineering for Developers",
+      "url": "https://www.linkedin.com/learning/context-engineering-for-developers",
+      "content_type": "course",
+      "summary": "A LinkedIn Learning course for AI practitioners and prompt engineers building better AI agents and RAG pipelines.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.linkedin.com/learning/context-engineering-for-developers"
+      ]
+    },
+    {
+      "title": "Source for context engineering",
+      "url": "https://www.linkedin.com/learning/context-engineering-for-developers",
+      "content_type": "other",
+      "summary": "Citation source for context engineering.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.linkedin.com/learning/context-engineering-for-developers"
+      ]
+    },
+    {
+      "title": "Source for context engineering",
+      "url": "https://www.linkedin.com/learning/hands-on-ai-rag-using-llamaindex",
+      "content_type": "other",
+      "summary": "Citation source for context engineering.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.linkedin.com/learning/hands-on-ai-rag-using-llamaindex"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

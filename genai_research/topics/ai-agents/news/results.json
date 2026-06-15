@@ -1,0 +1,39 @@
+{
+  "entity_type": "topic",
+  "entity_name": "AI agents",
+  "entity_slug": "ai-agents",
+  "platform": "news",
+  "query_terms": [
+    "AI agents",
+    "LLMs",
+    "tool use",
+    "RAG",
+    "multi-agent systems",
+    "AI automation"
+  ],
+  "results": [
+    {
+      "title": "The Large Language Model Course",
+      "url": "https://huggingface.co/blog/mlabonne/llm-course",
+      "content_type": "article",
+      "summary": "A Hugging Face blog/course resource collecting topics and roadmaps for getting into LLMs.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://huggingface.co/blog/mlabonne/llm-course"
+      ]
+    },
+    {
+      "title": "Source for AI agents",
+      "url": "https://huggingface.co/blog/mlabonne/llm-course",
+      "content_type": "other",
+      "summary": "Citation source for AI agents.",
+      "extracted_data": {},
+      "citations": [
+        "https://huggingface.co/blog/mlabonne/llm-course"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

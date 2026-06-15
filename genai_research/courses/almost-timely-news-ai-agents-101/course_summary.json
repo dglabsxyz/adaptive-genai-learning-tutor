@@ -1,0 +1,55 @@
+{
+  "course_name": "Almost Timely News: AI Agents 101",
+  "course_slug": "almost-timely-news-ai-agents-101",
+  "instructor_names": [
+    "Christopher S. Penn"
+  ],
+  "instructor_slugs": [
+    "christopher-s-penn"
+  ],
+  "platform": "Substack",
+  "course_url": "https://almosttimely.substack.com/p/almost-timely-news-ai-agents-101",
+  "topic_tags": [
+    "AI agents",
+    "business AI",
+    "AI automation"
+  ],
+  "description": "A Substack newsletter resource introducing AI agents and business use of generative AI.",
+  "syllabus": [],
+  "target_audience": [],
+  "prerequisites": [],
+  "duration": null,
+  "format": "Newsletter post",
+  "price": {
+    "amount": null,
+    "currency": null,
+    "raw": null
+  },
+  "rating": {
+    "value": null,
+    "count": null,
+    "raw": null
+  },
+  "certificate": null,
+  "enrollment_status": null,
+  "last_updated": null,
+  "citations": [
+    "https://almosttimely.substack.com/p/almost-timely-news-ai-agents-101"
+  ],
+  "source_records": [
+    {
+      "platform": "Substack",
+      "url": "https://almosttimely.substack.com/p/almost-timely-news-ai-agents-101",
+      "title": "Almost Timely News: AI Agents 101",
+      "summary": "A Substack newsletter resource introducing AI agents and business use of generative AI.",
+      "content_type": "article",
+      "extracted_data": {
+        "entity_type": "newsletter"
+      },
+      "citations": [
+        "https://almosttimely.substack.com/p/almost-timely-news-ai-agents-101"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

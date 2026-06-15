@@ -1,0 +1,38 @@
+{
+  "entity_type": "topic",
+  "entity_name": "fine-tuning",
+  "entity_slug": "fine-tuning",
+  "platform": "github",
+  "query_terms": [
+    "fine-tuning",
+    "LLMs",
+    "model customization",
+    "datasets",
+    "AI safety and evaluation"
+  ],
+  "results": [
+    {
+      "title": "OpenAI Cookbook",
+      "url": "https://github.com/openai/openai-cookbook",
+      "content_type": "repository",
+      "summary": "OpenAI's public collection of examples and guides for building with OpenAI models and APIs.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://github.com/openai/openai-cookbook"
+      ]
+    },
+    {
+      "title": "Source for fine-tuning",
+      "url": "https://github.com/openai/openai-cookbook",
+      "content_type": "other",
+      "summary": "Citation source for fine-tuning.",
+      "extracted_data": {},
+      "citations": [
+        "https://github.com/openai/openai-cookbook"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

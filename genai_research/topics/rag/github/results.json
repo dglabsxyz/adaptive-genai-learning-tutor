@@ -1,0 +1,61 @@
+{
+  "entity_type": "topic",
+  "entity_name": "RAG",
+  "entity_slug": "rag",
+  "platform": "github",
+  "query_terms": [
+    "RAG",
+    "LLMs",
+    "vector databases",
+    "embeddings",
+    "AI agents",
+    "AI evaluation"
+  ],
+  "results": [
+    {
+      "title": "Microsoft Generative AI for Beginners",
+      "url": "https://github.com/microsoft/generative-ai-for-beginners",
+      "content_type": "repository",
+      "summary": "A Microsoft open-source curriculum with 21 lessons on building generative AI applications.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://github.com/microsoft/generative-ai-for-beginners"
+      ]
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "url": "https://github.com/openai/openai-cookbook",
+      "content_type": "repository",
+      "summary": "OpenAI's public collection of examples and guides for building with OpenAI models and APIs.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://github.com/openai/openai-cookbook"
+      ]
+    },
+    {
+      "title": "Source for RAG",
+      "url": "https://github.com/microsoft/generative-ai-for-beginners",
+      "content_type": "other",
+      "summary": "Citation source for RAG.",
+      "extracted_data": {},
+      "citations": [
+        "https://github.com/microsoft/generative-ai-for-beginners"
+      ]
+    },
+    {
+      "title": "Source for RAG",
+      "url": "https://github.com/openai/openai-cookbook",
+      "content_type": "other",
+      "summary": "Citation source for RAG.",
+      "extracted_data": {},
+      "citations": [
+        "https://github.com/openai/openai-cookbook"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

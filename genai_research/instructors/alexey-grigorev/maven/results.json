@@ -1,0 +1,32 @@
+{
+  "entity_type": "instructor",
+  "entity_name": "Alexey Grigorev",
+  "entity_slug": "alexey-grigorev",
+  "platform": "maven",
+  "query_terms": [
+    "Alexey Grigorev",
+    "RAG",
+    "AI agents",
+    "LLMs",
+    "AI engineering",
+    "search",
+    "MCP",
+    "AI safety and evaluation",
+    "AI coding"
+  ],
+  "results": [
+    {
+      "title": "AI Engineering Buildcamp: From RAG to Agents",
+      "url": "https://maven.com/alexey-grigorev/from-rag-to-agents",
+      "content_type": "course",
+      "summary": "Create your own production-ready AI application in six weeks.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/alexey-grigorev/from-rag-to-agents"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

@@ -1,0 +1,29 @@
+{
+  "entity_type": "instructor",
+  "entity_name": "Bilawal Sidhu",
+  "entity_slug": "bilawal-sidhu",
+  "platform": "maven",
+  "query_terms": [
+    "Bilawal Sidhu",
+    "image generation",
+    "video generation",
+    "voice AI",
+    "multimodal AI",
+    "generative media"
+  ],
+  "results": [
+    {
+      "title": "Generative AI Creation Masterclass",
+      "url": "https://maven.com/bilawal/generative-ai-masterclass",
+      "content_type": "course",
+      "summary": "A creative GenAI workflow masterclass covering text, image, audio, video, and 3D generation.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/bilawal/generative-ai-masterclass"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

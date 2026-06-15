@@ -1,0 +1,39 @@
+{
+  "entity_type": "topic",
+  "entity_name": "RAG",
+  "entity_slug": "rag",
+  "platform": "youtube",
+  "query_terms": [
+    "RAG",
+    "LLMs",
+    "vector databases",
+    "embeddings",
+    "AI agents",
+    "AI evaluation"
+  ],
+  "results": [
+    {
+      "title": "Generative AI for Beginners Full Series",
+      "url": "https://www.youtube.com/watch?v=k7HaeJs-N-o",
+      "content_type": "video",
+      "summary": "A YouTube full-series resource for Microsoft's Generative AI for Beginners, with sections on responsible AI and prompt engineering.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://www.youtube.com/watch?v=k7HaeJs-N-o"
+      ]
+    },
+    {
+      "title": "Source for RAG",
+      "url": "https://www.youtube.com/watch?v=k7HaeJs-N-o",
+      "content_type": "other",
+      "summary": "Citation source for RAG.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.youtube.com/watch?v=k7HaeJs-N-o"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

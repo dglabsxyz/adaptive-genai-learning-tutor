@@ -1,0 +1,61 @@
+{
+  "entity_type": "topic",
+  "entity_name": "AI safety and evaluation",
+  "entity_slug": "ai-safety-and-evaluation",
+  "platform": "substack",
+  "query_terms": [
+    "AI safety and evaluation",
+    "AI evals",
+    "responsible AI",
+    "AI agents",
+    "RAG",
+    "fine-tuning"
+  ],
+  "results": [
+    {
+      "title": "11 Workshops to Build Production AI Agents",
+      "url": "https://alexeyondata.substack.com/p/11-workshops-to-build-production",
+      "content_type": "article",
+      "summary": "A Substack teaching-resource post collecting GenAI workshops on agents, RAG, MCP, guardrails, and production systems.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://alexeyondata.substack.com/p/11-workshops-to-build-production"
+      ]
+    },
+    {
+      "title": "The AI Engineering Course I Wish I Had",
+      "url": "https://theneuralmaze.substack.com/p/the-ai-engineering-course-i-wish",
+      "content_type": "article",
+      "summary": "A Substack AI engineering learning resource about MCPs, agent monitoring, and real AI systems.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://theneuralmaze.substack.com/p/the-ai-engineering-course-i-wish"
+      ]
+    },
+    {
+      "title": "Source for AI safety and evaluation",
+      "url": "https://alexeyondata.substack.com/p/11-workshops-to-build-production",
+      "content_type": "other",
+      "summary": "Citation source for AI safety and evaluation.",
+      "extracted_data": {},
+      "citations": [
+        "https://alexeyondata.substack.com/p/11-workshops-to-build-production"
+      ]
+    },
+    {
+      "title": "Source for AI safety and evaluation",
+      "url": "https://theneuralmaze.substack.com/p/the-ai-engineering-course-i-wish",
+      "content_type": "other",
+      "summary": "Citation source for AI safety and evaluation.",
+      "extracted_data": {},
+      "citations": [
+        "https://theneuralmaze.substack.com/p/the-ai-engineering-course-i-wish"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

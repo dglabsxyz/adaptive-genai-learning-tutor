@@ -1,0 +1,67 @@
+{
+  "name": "ExamPro",
+  "slug": "exampro",
+  "headline": null,
+  "organization": null,
+  "bio": null,
+  "expertise_areas": [
+    "LLMs",
+    "prompt engineering",
+    "generative AI",
+    "cloud AI"
+  ],
+  "topics_taught": [
+    "LLMs",
+    "prompt engineering",
+    "generative AI",
+    "cloud AI"
+  ],
+  "platforms": [
+    "YouTube"
+  ],
+  "website": null,
+  "social_profiles": {
+    "linkedin": null,
+    "youtube": null,
+    "x": null,
+    "github": null,
+    "other": []
+  },
+  "audience_levels": [
+    "beginner"
+  ],
+  "teaching_formats": [
+    "Video course"
+  ],
+  "courses": [
+    {
+      "course_name": "GenAI Essentials - Full Course for Beginners",
+      "course_slug": "genai-essentials-full-course-for-beginners",
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/watch?v=nJ25yl34Uqw",
+      "citations": [
+        "https://www.youtube.com/watch?v=nJ25yl34Uqw"
+      ]
+    }
+  ],
+  "credibility_signals": [],
+  "citations": [
+    "https://www.youtube.com/watch?v=nJ25yl34Uqw"
+  ],
+  "source_records": [
+    {
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/watch?v=nJ25yl34Uqw",
+      "title": "GenAI Essentials - Full Course for Beginners",
+      "summary": "A beginner full course on essentials of working with generative AI in the cloud.",
+      "content_type": "video",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://www.youtube.com/watch?v=nJ25yl34Uqw"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

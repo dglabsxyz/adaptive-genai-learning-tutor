@@ -1,0 +1,159 @@
+{
+  "entity_type": "topic",
+  "entity_name": "AI agents",
+  "entity_slug": "ai-agents",
+  "platform": "website",
+  "query_terms": [
+    "AI agents",
+    "LLMs",
+    "tool use",
+    "RAG",
+    "multi-agent systems",
+    "AI automation"
+  ],
+  "results": [
+    {
+      "title": "AI Agents Course",
+      "url": "https://huggingface.co/learn/agents-course/unit0/introduction",
+      "content_type": "course",
+      "summary": "A free Hugging Face course from beginner to expert on understanding, using, and building AI agents.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://huggingface.co/learn/agents-course/unit0/introduction"
+      ]
+    },
+    {
+      "title": "AI Agents for Image and Video Generation",
+      "url": "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation",
+      "content_type": "course",
+      "summary": "A DeepLearning.AI course on building media agents that generate, evaluate, and iterate on image and video outputs.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation"
+      ]
+    },
+    {
+      "title": "Prompt Design in Agent Platform",
+      "url": "https://www.skills.google/course_templates/976",
+      "content_type": "course",
+      "summary": "A Google Skills badge on prompt engineering, image analysis, and multimodal generative techniques in Agent Platform.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.skills.google/course_templates/976"
+      ]
+    },
+    {
+      "title": "Applied Generative AI Engineering",
+      "url": "https://www.udacity.com/course/generative-ai--nd608",
+      "content_type": "course",
+      "summary": "A Udacity course on adapting foundation models using prompt engineering, RAG, fine-tuning, model compression, and agentic AI tools.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.udacity.com/course/generative-ai--nd608"
+      ]
+    },
+    {
+      "title": "Introduction to Generative AI and Agents",
+      "url": "https://learn.microsoft.com/en-us/training/modules/fundamentals-generative-ai/",
+      "content_type": "course",
+      "summary": "A Microsoft Learn module on generative AI fundamentals, LLMs, prompts, and AI agents.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://learn.microsoft.com/en-us/training/modules/fundamentals-generative-ai/"
+      ]
+    },
+    {
+      "title": "Get Started with AI Applications and Agents on Azure",
+      "url": "https://learn.microsoft.com/en-us/training/paths/get-started-ai-apps-agents/",
+      "content_type": "course",
+      "summary": "A Microsoft Learn path on building generative AI applications and agents on Azure.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://learn.microsoft.com/en-us/training/paths/get-started-ai-apps-agents/"
+      ]
+    },
+    {
+      "title": "Source for AI agents",
+      "url": "https://huggingface.co/learn/agents-course/unit0/introduction",
+      "content_type": "other",
+      "summary": "Citation source for AI agents.",
+      "extracted_data": {},
+      "citations": [
+        "https://huggingface.co/learn/agents-course/unit0/introduction"
+      ]
+    },
+    {
+      "title": "Source for AI agents",
+      "url": "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation",
+      "content_type": "other",
+      "summary": "Citation source for AI agents.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation"
+      ]
+    },
+    {
+      "title": "Source for AI agents",
+      "url": "https://developers.openai.com/cookbook",
+      "content_type": "other",
+      "summary": "Citation source for AI agents.",
+      "extracted_data": {},
+      "citations": [
+        "https://developers.openai.com/cookbook"
+      ]
+    },
+    {
+      "title": "Source for AI agents",
+      "url": "https://www.skills.google/course_templates/976",
+      "content_type": "other",
+      "summary": "Citation source for AI agents.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.skills.google/course_templates/976"
+      ]
+    },
+    {
+      "title": "Source for AI agents",
+      "url": "https://www.udacity.com/course/generative-ai--nd608",
+      "content_type": "other",
+      "summary": "Citation source for AI agents.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.udacity.com/course/generative-ai--nd608"
+      ]
+    },
+    {
+      "title": "Source for AI agents",
+      "url": "https://learn.microsoft.com/en-us/training/modules/fundamentals-generative-ai/",
+      "content_type": "other",
+      "summary": "Citation source for AI agents.",
+      "extracted_data": {},
+      "citations": [
+        "https://learn.microsoft.com/en-us/training/modules/fundamentals-generative-ai/"
+      ]
+    },
+    {
+      "title": "Source for AI agents",
+      "url": "https://learn.microsoft.com/en-us/training/paths/get-started-ai-apps-agents/",
+      "content_type": "other",
+      "summary": "Citation source for AI agents.",
+      "extracted_data": {},
+      "citations": [
+        "https://learn.microsoft.com/en-us/training/paths/get-started-ai-apps-agents/"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

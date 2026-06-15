@@ -1,0 +1,71 @@
+{
+  "name": "Jeremy Howard",
+  "slug": "jeremy-howard",
+  "headline": "Co-founder of fast.ai",
+  "organization": "fast.ai",
+  "bio": "Educator associated with fast.ai's Practical Deep Learning for Coders.",
+  "expertise_areas": [
+    "LLMs",
+    "image generation",
+    "deep learning",
+    "AI coding"
+  ],
+  "topics_taught": [
+    "LLMs",
+    "image generation",
+    "deep learning",
+    "AI coding"
+  ],
+  "platforms": [
+    "fast.ai"
+  ],
+  "website": null,
+  "social_profiles": {
+    "linkedin": null,
+    "youtube": "https://www.youtube.com/@howardjeremyp",
+    "x": null,
+    "github": null,
+    "other": [
+      "https://www.fast.ai"
+    ]
+  },
+  "audience_levels": [
+    "intermediate"
+  ],
+  "teaching_formats": [
+    "Video course with notebooks"
+  ],
+  "courses": [
+    {
+      "course_name": "Practical Deep Learning for Coders",
+      "course_slug": "practical-deep-learning-for-coders",
+      "platform": "fast.ai",
+      "url": "https://course.fast.ai/",
+      "citations": [
+        "https://course.fast.ai/"
+      ]
+    }
+  ],
+  "credibility_signals": [
+    "fast.ai co-founder"
+  ],
+  "citations": [
+    "https://course.fast.ai/"
+  ],
+  "source_records": [
+    {
+      "platform": "fast.ai",
+      "url": "https://course.fast.ai/",
+      "title": "Practical Deep Learning for Coders",
+      "summary": "A free fast.ai course for coders learning practical deep learning.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://course.fast.ai/"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

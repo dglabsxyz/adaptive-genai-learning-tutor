@@ -1,0 +1,259 @@
+{
+  "entity_type": "topic",
+  "entity_name": "AI agents",
+  "entity_slug": "ai-agents",
+  "platform": "maven",
+  "query_terms": [
+    "AI agents",
+    "LLMs",
+    "tool use",
+    "RAG",
+    "multi-agent systems",
+    "AI automation"
+  ],
+  "results": [
+    {
+      "title": "Mastering Agentic AI: Certification by The Gen Academy",
+      "url": "https://maven.com/aishwarya-srinivasan/mastering-ai-agents",
+      "content_type": "course",
+      "summary": "A six-week Maven program from The Gen Academy on building and deploying robust agentic AI systems.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/aishwarya-srinivasan/mastering-ai-agents"
+      ]
+    },
+    {
+      "title": "AI Engineering Buildcamp: From RAG to Agents",
+      "url": "https://maven.com/alexey-grigorev/from-rag-to-agents",
+      "content_type": "course",
+      "summary": "Create your own production-ready AI application in six weeks.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/alexey-grigorev/from-rag-to-agents"
+      ]
+    },
+    {
+      "title": "AI Evals For Engineers and PMs",
+      "url": "https://maven.com/parlance-labs/evals",
+      "content_type": "course",
+      "summary": "Build a real AI agent, find where it breaks, and improve it with evals you can trust.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/parlance-labs/evals"
+      ]
+    },
+    {
+      "title": "Build Production AI Agents for 10x-100x ROI",
+      "url": "https://maven.com/deep-core-x-academy/production-ai-agents",
+      "content_type": "course",
+      "summary": "A Maven course on leaving with deployable production agent systems and documented architecture.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/deep-core-x-academy/production-ai-agents"
+      ]
+    },
+    {
+      "title": "AI Agents for Sales and GTM",
+      "url": "https://maven.com/ai-agent-campus/ai-agents-for-sales-and-go-to-market",
+      "content_type": "course",
+      "summary": "Build AI employees that scale marketing, streamline sales, and increase profits.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/ai-agent-campus/ai-agents-for-sales-and-go-to-market"
+      ]
+    },
+    {
+      "title": "AI Mini-Bootcamp",
+      "url": "https://maven.com/aitraining/minibootcamp",
+      "content_type": "course",
+      "summary": "A six-week pre-conference live and on-demand training program for AI fundamentals.",
+      "extracted_data": {
+        "entity_type": "bootcamp"
+      },
+      "citations": [
+        "https://maven.com/aitraining/minibootcamp"
+      ]
+    },
+    {
+      "title": "AI Agents for Content Creators",
+      "url": "https://maven.com/lennon/ai-agents-for-content",
+      "content_type": "course",
+      "summary": "A blueprint for using AI agents to source ideas, draft emails, and write posts in a creator's style and point of view.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/lennon/ai-agents-for-content"
+      ]
+    },
+    {
+      "title": "AI Agent Engineering: From ReAct, Agentic RAG to Multi-Agent Orchestration",
+      "url": "https://maven.com/rakeshgohel/ai-agent-engineering-react-rag-multi-agent",
+      "content_type": "course",
+      "summary": "Design, deploy, and scale enterprise-grade AI agents with a hands-on, problem-driven approach.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/rakeshgohel/ai-agent-engineering-react-rag-multi-agent"
+      ]
+    },
+    {
+      "title": "Agentic AI Product Management Certification using Claude Code",
+      "url": "https://maven.com/mahesh-yadav/genaipm",
+      "content_type": "course",
+      "summary": "A certification for leading agentic AI products, building systems, defining metrics, and scaling responsibly.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/mahesh-yadav/genaipm"
+      ]
+    },
+    {
+      "title": "Become a Voice AI Agent Expert",
+      "url": "https://maven.com/p/5de0a6/become-a-voice-ai-agent-expert",
+      "content_type": "other",
+      "summary": "A Maven lesson on voice agent building blocks, models, latency, hosting, telephony, and evaluation.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://maven.com/p/5de0a6/become-a-voice-ai-agent-expert"
+      ]
+    },
+    {
+      "title": "AI Software Development: From First Prompt to Production Code",
+      "url": "https://maven.com/courses/ai/ai-coding",
+      "content_type": "course",
+      "summary": "A Maven AI coding catalog entry described as a four-week, highly rated course from first prompt to production code.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/courses/ai/ai-coding"
+      ]
+    },
+    {
+      "title": "Source for AI agents",
+      "url": "https://maven.com/aishwarya-srinivasan/mastering-ai-agents",
+      "content_type": "other",
+      "summary": "Citation source for AI agents.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/aishwarya-srinivasan/mastering-ai-agents"
+      ]
+    },
+    {
+      "title": "Source for AI agents",
+      "url": "https://maven.com/alexey-grigorev/from-rag-to-agents",
+      "content_type": "other",
+      "summary": "Citation source for AI agents.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/alexey-grigorev/from-rag-to-agents"
+      ]
+    },
+    {
+      "title": "Source for AI agents",
+      "url": "https://maven.com/parlance-labs/evals",
+      "content_type": "other",
+      "summary": "Citation source for AI agents.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/parlance-labs/evals"
+      ]
+    },
+    {
+      "title": "Source for AI agents",
+      "url": "https://maven.com/deep-core-x-academy/production-ai-agents",
+      "content_type": "other",
+      "summary": "Citation source for AI agents.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/deep-core-x-academy/production-ai-agents"
+      ]
+    },
+    {
+      "title": "Source for AI agents",
+      "url": "https://maven.com/ai-agent-campus/ai-agents-for-sales-and-go-to-market",
+      "content_type": "other",
+      "summary": "Citation source for AI agents.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/ai-agent-campus/ai-agents-for-sales-and-go-to-market"
+      ]
+    },
+    {
+      "title": "Source for AI agents",
+      "url": "https://maven.com/aitraining/minibootcamp",
+      "content_type": "other",
+      "summary": "Citation source for AI agents.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/aitraining/minibootcamp"
+      ]
+    },
+    {
+      "title": "Source for AI agents",
+      "url": "https://maven.com/lennon/ai-agents-for-content",
+      "content_type": "other",
+      "summary": "Citation source for AI agents.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/lennon/ai-agents-for-content"
+      ]
+    },
+    {
+      "title": "Source for AI agents",
+      "url": "https://maven.com/rakeshgohel/ai-agent-engineering-react-rag-multi-agent",
+      "content_type": "other",
+      "summary": "Citation source for AI agents.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/rakeshgohel/ai-agent-engineering-react-rag-multi-agent"
+      ]
+    },
+    {
+      "title": "Source for AI agents",
+      "url": "https://maven.com/mahesh-yadav/genaipm",
+      "content_type": "other",
+      "summary": "Citation source for AI agents.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/mahesh-yadav/genaipm"
+      ]
+    },
+    {
+      "title": "Source for AI agents",
+      "url": "https://maven.com/p/5de0a6/become-a-voice-ai-agent-expert",
+      "content_type": "other",
+      "summary": "Citation source for AI agents.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/p/5de0a6/become-a-voice-ai-agent-expert"
+      ]
+    },
+    {
+      "title": "Source for AI agents",
+      "url": "https://maven.com/courses/ai/ai-coding",
+      "content_type": "other",
+      "summary": "Citation source for AI agents.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/courses/ai/ai-coding"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

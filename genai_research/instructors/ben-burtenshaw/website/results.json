@@ -1,0 +1,46 @@
+{
+  "entity_type": "instructor",
+  "entity_name": "Ben Burtenshaw",
+  "entity_slug": "ben-burtenshaw",
+  "platform": "website",
+  "query_terms": [
+    "Ben Burtenshaw",
+    "AI agents",
+    "LLMs",
+    "tool use",
+    "LangGraph",
+    "LlamaIndex",
+    "smolagents",
+    "AI safety and evaluation",
+    "NLP",
+    "Transformers",
+    "fine-tuning"
+  ],
+  "results": [
+    {
+      "title": "AI Agents Course",
+      "url": "https://huggingface.co/learn/agents-course/unit0/introduction",
+      "content_type": "course",
+      "summary": "A free Hugging Face course from beginner to expert on understanding, using, and building AI agents.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://huggingface.co/learn/agents-course/unit0/introduction"
+      ]
+    },
+    {
+      "title": "LLM Course",
+      "url": "https://huggingface.co/learn/llm-course/en/chapter1/1",
+      "content_type": "course",
+      "summary": "A Hugging Face course on large language models and NLP using libraries from the Hugging Face ecosystem.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://huggingface.co/learn/llm-course/en/chapter1/1"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

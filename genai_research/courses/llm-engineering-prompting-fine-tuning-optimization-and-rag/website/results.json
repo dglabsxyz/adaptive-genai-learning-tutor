@@ -1,0 +1,29 @@
+{
+  "entity_type": "course",
+  "entity_name": "LLM Engineering: Prompting, Fine-Tuning, Optimization and RAG",
+  "entity_slug": "llm-engineering-prompting-fine-tuning-optimization-and-rag",
+  "platform": "website",
+  "query_terms": [
+    "LLM Engineering: Prompting, Fine-Tuning, Optimization and RAG",
+    "LLMs",
+    "prompt engineering",
+    "fine-tuning",
+    "RAG",
+    "AI safety and evaluation"
+  ],
+  "results": [
+    {
+      "title": "LLM Engineering: Prompting, Fine-Tuning, Optimization and RAG",
+      "url": "https://www.coursera.org/specializations/llm-engineering-prompting-fine-tuning-optimization-rag",
+      "content_type": "course",
+      "summary": "A Coursera specialization on end-to-end LLM engineering, prompt design, evaluation, fine-tuning, optimization, and RAG.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.coursera.org/specializations/llm-engineering-prompting-fine-tuning-optimization-rag"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

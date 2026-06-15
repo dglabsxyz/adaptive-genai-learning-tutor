@@ -1,0 +1,26 @@
+{
+  "entity_type": "topic",
+  "entity_name": "AI automation",
+  "entity_slug": "ai-automation",
+  "platform": "other",
+  "query_terms": [
+    "AI automation",
+    "AI agents",
+    "no-code AI",
+    "business AI",
+    "voice AI"
+  ],
+  "results": [
+    {
+      "title": "Source for AI automation",
+      "url": "https://startup-sync.com/ai-automation-integration-course/",
+      "content_type": "other",
+      "summary": "Citation source for AI automation.",
+      "extracted_data": {},
+      "citations": [
+        "https://startup-sync.com/ai-automation-integration-course/"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

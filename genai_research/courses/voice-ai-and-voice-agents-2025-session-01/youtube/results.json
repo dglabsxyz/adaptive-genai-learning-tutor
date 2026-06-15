@@ -1,0 +1,28 @@
+{
+  "entity_type": "course",
+  "entity_name": "Voice AI and Voice Agents 2025 - Session 01",
+  "entity_slug": "voice-ai-and-voice-agents-2025-session-01",
+  "platform": "youtube",
+  "query_terms": [
+    "Voice AI and Voice Agents 2025 - Session 01",
+    "voice AI",
+    "AI agents",
+    "speech-to-text",
+    "text-to-speech"
+  ],
+  "results": [
+    {
+      "title": "Voice AI and Voice Agents 2025 - Session 01",
+      "url": "https://www.youtube.com/watch?v=m4QF78X7t9k",
+      "content_type": "video",
+      "summary": "A YouTube session from a community-hosted course about building voice agents.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://www.youtube.com/watch?v=m4QF78X7t9k"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

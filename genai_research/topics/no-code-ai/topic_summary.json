@@ -1,0 +1,131 @@
+{
+  "topic": "no-code AI",
+  "slug": "no-code-ai",
+  "description": "Building AI products and automations with visual builders, workflow platforms, and natural-language development tools.",
+  "related_topics": [
+    "AI automation",
+    "AI coding",
+    "AI product development",
+    "business AI"
+  ],
+  "instructors": [
+    {
+      "name": "Anna Arteeva",
+      "slug": "anna-arteeva",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Maven"
+      ],
+      "citations": [
+        "https://maven.com/anna-arteeva/prototyping-for-designers",
+        "https://maven.com/courses/ai/prototyping"
+      ]
+    },
+    {
+      "name": "No-Code AI",
+      "slug": "no-code-ai",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Maven"
+      ],
+      "citations": [
+        "https://maven.com/no-code-ai/vibe-coding-bootcamp",
+        "https://maven.com/courses/ai/vibe-coding",
+        "https://maven.com/courses/ai/prototyping"
+      ]
+    },
+    {
+      "name": "LinkedIn Learning Team",
+      "slug": "linkedin-learning-team",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "LinkedIn Learning"
+      ],
+      "citations": [
+        "https://www.linkedin.com/learning/hands-on-ai-rag-using-llamaindex",
+        "https://www.linkedin.com/learning/context-engineering-for-developers",
+        "https://www.linkedin.com/learning/creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code",
+        "https://www.linkedin.com/learning/fine-tuning-for-llms-from-beginner-to-advanced",
+        "https://www.linkedin.com/learning/multimodal-ai-essentials-merging-text-image-and-audio-for-next-generation-ai-applications",
+        "https://www.linkedin.com/learning/elevenlabs-ai-voice-cloning-text-to-speech-and-sound-effects"
+      ]
+    },
+    {
+      "name": "Coursera instructors",
+      "slug": "coursera-instructors",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Coursera"
+      ],
+      "citations": [
+        "https://www.coursera.org/learn/generative-ai--prompt-engineering",
+        "https://www.coursera.org/specializations/llm-engineering-prompting-fine-tuning-optimization-rag",
+        "https://www.coursera.org/learn/operationalizing-no-code-ai-with-zapier-automation-and-plans",
+        "https://www.coursera.org/learn/responsible-ai-and-ethics"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "course_name": "AI Prototyping for Designers",
+      "course_slug": "ai-prototyping-for-designers",
+      "instructor_names": [
+        "Anna Arteeva"
+      ],
+      "platform": "Maven",
+      "course_url": "https://maven.com/anna-arteeva/prototyping-for-designers",
+      "citations": [
+        "https://maven.com/anna-arteeva/prototyping-for-designers",
+        "https://maven.com/courses/ai/prototyping"
+      ]
+    },
+    {
+      "course_name": "Vibe Coding Bootcamp",
+      "course_slug": "vibe-coding-bootcamp",
+      "instructor_names": [
+        "No-Code AI"
+      ],
+      "platform": "Maven",
+      "course_url": "https://maven.com/no-code-ai/vibe-coding-bootcamp",
+      "citations": [
+        "https://maven.com/no-code-ai/vibe-coding-bootcamp",
+        "https://maven.com/courses/ai/vibe-coding",
+        "https://maven.com/courses/ai/prototyping"
+      ]
+    },
+    {
+      "course_name": "Creating Agents with Python and the AI Toolkit for Visual Studio Code",
+      "course_slug": "creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code",
+      "instructor_names": [
+        "LinkedIn Learning Team"
+      ],
+      "platform": "LinkedIn Learning",
+      "course_url": "https://www.linkedin.com/learning/creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code",
+      "citations": [
+        "https://www.linkedin.com/learning/creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code"
+      ]
+    },
+    {
+      "course_name": "Operationalizing No-Code AI with Zapier",
+      "course_slug": "operationalizing-no-code-ai-with-zapier",
+      "instructor_names": [
+        "Coursera instructors"
+      ],
+      "platform": "Coursera",
+      "course_url": "https://www.coursera.org/learn/operationalizing-no-code-ai-with-zapier-automation-and-plans",
+      "citations": [
+        "https://www.coursera.org/learn/operationalizing-no-code-ai-with-zapier-automation-and-plans"
+      ]
+    }
+  ],
+  "sources": [
+    "https://maven.com/no-code-ai/vibe-coding-bootcamp",
+    "https://www.coursera.org/learn/operationalizing-no-code-ai-with-zapier-automation-and-plans",
+    "https://zapier.com/blog/no-code-automation/",
+    "https://maven.com/anna-arteeva/prototyping-for-designers",
+    "https://maven.com/courses/ai/prototyping",
+    "https://maven.com/courses/ai/vibe-coding",
+    "https://www.linkedin.com/learning/creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code"
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

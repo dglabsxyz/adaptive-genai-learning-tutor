@@ -1,0 +1,75 @@
+{
+  "course_name": "AI Engineering Buildcamp: From RAG to Agents",
+  "course_slug": "ai-engineering-buildcamp-from-rag-to-agents",
+  "instructor_names": [
+    "Alexey Grigorev"
+  ],
+  "instructor_slugs": [
+    "alexey-grigorev"
+  ],
+  "platform": "Maven",
+  "course_url": "https://maven.com/alexey-grigorev/from-rag-to-agents",
+  "topic_tags": [
+    "RAG",
+    "AI agents",
+    "LLMs",
+    "AI engineering",
+    "search"
+  ],
+  "description": "Create your own production-ready AI application in six weeks.",
+  "syllabus": [
+    "Course overview and logistics",
+    "Environment preparation",
+    "Foundation: LLMs, RAG and search",
+    "Structured output",
+    "Project work",
+    "Homework",
+    "RAG use-cases overview"
+  ],
+  "target_audience": [
+    "Data scientists and ML engineers",
+    "Software engineers",
+    "AI enthusiasts"
+  ],
+  "prerequisites": [
+    "Coding",
+    "Python",
+    "Git",
+    "Docker",
+    "OpenAI key or alternative"
+  ],
+  "duration": "6 weeks",
+  "format": "Cohort-based course",
+  "price": {
+    "amount": 1799.0,
+    "currency": "USD",
+    "raw": "$1,799"
+  },
+  "rating": {
+    "value": 4.5,
+    "count": 21,
+    "raw": "4.5 (21)"
+  },
+  "certificate": "Certificate of completion",
+  "enrollment_status": "Next cohort: Sep 21-Nov 22, 2026",
+  "last_updated": null,
+  "citations": [
+    "https://maven.com/alexey-grigorev/from-rag-to-agents"
+  ],
+  "source_records": [
+    {
+      "platform": "Maven",
+      "url": "https://maven.com/alexey-grigorev/from-rag-to-agents",
+      "title": "AI Engineering Buildcamp: From RAG to Agents",
+      "summary": "Create your own production-ready AI application in six weeks.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/alexey-grigorev/from-rag-to-agents"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

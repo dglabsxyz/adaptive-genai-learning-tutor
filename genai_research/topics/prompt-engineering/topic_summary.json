@@ -1,0 +1,517 @@
+{
+  "topic": "prompt engineering",
+  "slug": "prompt-engineering",
+  "description": "Designing instructions, examples, context, and output constraints to guide generative models toward useful results.",
+  "related_topics": [
+    "LLMs",
+    "context engineering",
+    "AI agents",
+    "RAG",
+    "AI coding"
+  ],
+  "instructors": [
+    {
+      "name": "Maven instructors",
+      "slug": "maven-instructors",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Maven"
+      ],
+      "citations": [
+        "https://maven.com/courses/ai/ai-coding"
+      ]
+    },
+    {
+      "name": "Hugging Face Team",
+      "slug": "hugging-face-team",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Hugging Face"
+      ],
+      "citations": [
+        "https://huggingface.co/learn"
+      ]
+    },
+    {
+      "name": "Microsoft Cloud Advocates",
+      "slug": "microsoft-cloud-advocates",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "GitHub"
+      ],
+      "citations": [
+        "https://github.com/microsoft/generative-ai-for-beginners"
+      ]
+    },
+    {
+      "name": "DAIR.AI",
+      "slug": "dair-ai",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "GitHub"
+      ],
+      "citations": [
+        "https://github.com/dair-ai/Prompt-Engineering-Guide"
+      ]
+    },
+    {
+      "name": "Anthropic Team",
+      "slug": "anthropic-team",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "GitHub"
+      ],
+      "citations": [
+        "https://github.com/anthropics/prompt-eng-interactive-tutorial",
+        "https://www.anthropic.com/learn"
+      ]
+    },
+    {
+      "name": "Ronnie Sheer",
+      "slug": "ronnie-sheer",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "LinkedIn Learning"
+      ],
+      "citations": [
+        "https://www.linkedin.com/learning/introduction-to-prompt-engineering-for-generative-ai-24636124",
+        "https://www.linkedin.com/learning/topics/artificial-intelligence"
+      ]
+    },
+    {
+      "name": "LinkedIn Learning Team",
+      "slug": "linkedin-learning-team",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "LinkedIn Learning"
+      ],
+      "citations": [
+        "https://www.linkedin.com/learning/hands-on-ai-rag-using-llamaindex",
+        "https://www.linkedin.com/learning/context-engineering-for-developers",
+        "https://www.linkedin.com/learning/creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code",
+        "https://www.linkedin.com/learning/fine-tuning-for-llms-from-beginner-to-advanced",
+        "https://www.linkedin.com/learning/multimodal-ai-essentials-merging-text-image-and-audio-for-next-generation-ai-applications",
+        "https://www.linkedin.com/learning/elevenlabs-ai-voice-cloning-text-to-speech-and-sound-effects"
+      ]
+    },
+    {
+      "name": "Andrew Ng",
+      "slug": "andrew-ng",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "DeepLearning.AI",
+        "YouTube"
+      ],
+      "citations": [
+        "https://www.deeplearning.ai/courses/generative-ai-for-everyone",
+        "https://www.youtube.com/watch?v=8ib4Qnh2HFE"
+      ]
+    },
+    {
+      "name": "Microsoft",
+      "slug": "microsoft",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "GitHub",
+        "YouTube",
+        "Microsoft Learn"
+      ],
+      "citations": [
+        "https://github.com/microsoft/ai-agents-for-beginners",
+        "https://www.youtube.com/watch?v=k7HaeJs-N-o",
+        "https://github.com/microsoft/generative-ai-for-beginners",
+        "https://learn.microsoft.com/en-us/training/modules/fundamentals-generative-ai/",
+        "https://learn.microsoft.com/en-us/training/paths/get-started-ai-apps-agents/"
+      ]
+    },
+    {
+      "name": "ExamPro",
+      "slug": "exampro",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "YouTube"
+      ],
+      "citations": [
+        "https://www.youtube.com/watch?v=nJ25yl34Uqw"
+      ]
+    },
+    {
+      "name": "Simplilearn",
+      "slug": "simplilearn",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "YouTube"
+      ],
+      "citations": [
+        "https://www.youtube.com/watch?v=Ru2jEY4pd7k"
+      ]
+    },
+    {
+      "name": "Google Cloud",
+      "slug": "google-cloud",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Google Skills",
+        "Coursera"
+      ],
+      "citations": [
+        "https://www.skills.google/paths/118",
+        "https://www.skills.google/course_templates/976",
+        "https://www.coursera.org/learn/introduction-to-generative-ai",
+        "https://www.skills.google/paths/118/course_templates/536"
+      ]
+    },
+    {
+      "name": "Udacity",
+      "slug": "udacity",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Udacity"
+      ],
+      "citations": [
+        "https://www.udacity.com/course/generative-ai--nd608"
+      ]
+    },
+    {
+      "name": "Coursera instructors",
+      "slug": "coursera-instructors",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Coursera"
+      ],
+      "citations": [
+        "https://www.coursera.org/learn/generative-ai--prompt-engineering",
+        "https://www.coursera.org/specializations/llm-engineering-prompting-fine-tuning-optimization-rag",
+        "https://www.coursera.org/learn/operationalizing-no-code-ai-with-zapier-automation-and-plans",
+        "https://www.coursera.org/learn/responsible-ai-and-ethics"
+      ]
+    },
+    {
+      "name": "Arnold Trinh",
+      "slug": "arnold-trinh",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Coursera"
+      ],
+      "citations": [
+        "https://www.coursera.org/specializations/midjourney-generative-ai-for-creatives"
+      ]
+    },
+    {
+      "name": "Sophia Yang",
+      "slug": "sophia-yang",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Medium"
+      ],
+      "citations": [
+        "https://medium.com/data-science/best-practices-in-prompt-engineering-a18d6bab904b"
+      ]
+    },
+    {
+      "name": "James Phoenix",
+      "slug": "james-phoenix",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "YouTube"
+      ],
+      "citations": [
+        "https://www.youtube.com/watch?v=3a0WHZVb1Gg"
+      ]
+    },
+    {
+      "name": "Mike Taylor",
+      "slug": "mike-taylor",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "YouTube"
+      ],
+      "citations": [
+        "https://www.youtube.com/watch?v=3a0WHZVb1Gg"
+      ]
+    },
+    {
+      "name": "Phil Winder",
+      "slug": "phil-winder",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "YouTube"
+      ],
+      "citations": [
+        "https://www.youtube.com/watch?v=3a0WHZVb1Gg"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "course_name": "AI Software Development: From First Prompt to Production Code",
+      "course_slug": "ai-software-development-from-first-prompt-to-production-code",
+      "instructor_names": [
+        "Maven instructors"
+      ],
+      "platform": "Maven",
+      "course_url": "https://maven.com/courses/ai/ai-coding",
+      "citations": [
+        "https://maven.com/courses/ai/ai-coding"
+      ]
+    },
+    {
+      "course_name": "Diffusion Course",
+      "course_slug": "diffusion-course",
+      "instructor_names": [
+        "Hugging Face Team"
+      ],
+      "platform": "Hugging Face",
+      "course_url": "https://huggingface.co/learn",
+      "citations": [
+        "https://huggingface.co/learn"
+      ]
+    },
+    {
+      "course_name": "Microsoft Generative AI for Beginners",
+      "course_slug": "microsoft-generative-ai-for-beginners",
+      "instructor_names": [
+        "Microsoft Cloud Advocates"
+      ],
+      "platform": "GitHub",
+      "course_url": "https://github.com/microsoft/generative-ai-for-beginners",
+      "citations": [
+        "https://github.com/microsoft/generative-ai-for-beginners"
+      ]
+    },
+    {
+      "course_name": "Prompt Engineering Guide",
+      "course_slug": "prompt-engineering-guide",
+      "instructor_names": [
+        "DAIR.AI"
+      ],
+      "platform": "GitHub",
+      "course_url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
+      "citations": [
+        "https://github.com/dair-ai/Prompt-Engineering-Guide"
+      ]
+    },
+    {
+      "course_name": "Prompt Engineering Interactive Tutorial",
+      "course_slug": "prompt-engineering-interactive-tutorial",
+      "instructor_names": [
+        "Anthropic Team"
+      ],
+      "platform": "GitHub",
+      "course_url": "https://github.com/anthropics/prompt-eng-interactive-tutorial",
+      "citations": [
+        "https://github.com/anthropics/prompt-eng-interactive-tutorial",
+        "https://www.anthropic.com/learn"
+      ]
+    },
+    {
+      "course_name": "Introduction to Prompt Engineering for Generative AI",
+      "course_slug": "introduction-to-prompt-engineering-for-generative-ai",
+      "instructor_names": [
+        "Ronnie Sheer"
+      ],
+      "platform": "LinkedIn Learning",
+      "course_url": "https://www.linkedin.com/learning/introduction-to-prompt-engineering-for-generative-ai-24636124",
+      "citations": [
+        "https://www.linkedin.com/learning/introduction-to-prompt-engineering-for-generative-ai-24636124",
+        "https://www.linkedin.com/learning/topics/artificial-intelligence"
+      ]
+    },
+    {
+      "course_name": "Context Engineering for Developers",
+      "course_slug": "context-engineering-for-developers",
+      "instructor_names": [
+        "LinkedIn Learning Team"
+      ],
+      "platform": "LinkedIn Learning",
+      "course_url": "https://www.linkedin.com/learning/context-engineering-for-developers",
+      "citations": [
+        "https://www.linkedin.com/learning/context-engineering-for-developers"
+      ]
+    },
+    {
+      "course_name": "Full AI Prompting Course with Andrew Ng",
+      "course_slug": "full-ai-prompting-course-with-andrew-ng",
+      "instructor_names": [
+        "Andrew Ng"
+      ],
+      "platform": "YouTube",
+      "course_url": "https://www.youtube.com/watch?v=8ib4Qnh2HFE",
+      "citations": [
+        "https://www.youtube.com/watch?v=8ib4Qnh2HFE"
+      ]
+    },
+    {
+      "course_name": "Generative AI for Beginners Full Series",
+      "course_slug": "generative-ai-for-beginners-full-series",
+      "instructor_names": [
+        "Microsoft"
+      ],
+      "platform": "YouTube",
+      "course_url": "https://www.youtube.com/watch?v=k7HaeJs-N-o",
+      "citations": [
+        "https://www.youtube.com/watch?v=k7HaeJs-N-o",
+        "https://github.com/microsoft/generative-ai-for-beginners"
+      ]
+    },
+    {
+      "course_name": "GenAI Essentials - Full Course for Beginners",
+      "course_slug": "genai-essentials-full-course-for-beginners",
+      "instructor_names": [
+        "ExamPro"
+      ],
+      "platform": "YouTube",
+      "course_url": "https://www.youtube.com/watch?v=nJ25yl34Uqw",
+      "citations": [
+        "https://www.youtube.com/watch?v=nJ25yl34Uqw"
+      ]
+    },
+    {
+      "course_name": "Generative AI and LLMs Full Course 2026",
+      "course_slug": "generative-ai-and-llms-full-course-2026",
+      "instructor_names": [
+        "Simplilearn"
+      ],
+      "platform": "YouTube",
+      "course_url": "https://www.youtube.com/watch?v=Ru2jEY4pd7k",
+      "citations": [
+        "https://www.youtube.com/watch?v=Ru2jEY4pd7k"
+      ]
+    },
+    {
+      "course_name": "Beginner: Introduction to Generative AI",
+      "course_slug": "beginner-introduction-to-generative-ai",
+      "instructor_names": [
+        "Google Cloud"
+      ],
+      "platform": "Google Skills",
+      "course_url": "https://www.skills.google/paths/118",
+      "citations": [
+        "https://www.skills.google/paths/118"
+      ]
+    },
+    {
+      "course_name": "Prompt Design in Agent Platform",
+      "course_slug": "prompt-design-in-agent-platform",
+      "instructor_names": [
+        "Google Cloud"
+      ],
+      "platform": "Google Skills",
+      "course_url": "https://www.skills.google/course_templates/976",
+      "citations": [
+        "https://www.skills.google/course_templates/976"
+      ]
+    },
+    {
+      "course_name": "Applied Generative AI Engineering",
+      "course_slug": "applied-generative-ai-engineering",
+      "instructor_names": [
+        "Udacity"
+      ],
+      "platform": "Udacity",
+      "course_url": "https://www.udacity.com/course/generative-ai--nd608",
+      "citations": [
+        "https://www.udacity.com/course/generative-ai--nd608"
+      ]
+    },
+    {
+      "course_name": "Generative AI and Prompt Engineering",
+      "course_slug": "generative-ai-and-prompt-engineering",
+      "instructor_names": [
+        "Coursera instructors"
+      ],
+      "platform": "Coursera",
+      "course_url": "https://www.coursera.org/learn/generative-ai--prompt-engineering",
+      "citations": [
+        "https://www.coursera.org/learn/generative-ai--prompt-engineering"
+      ]
+    },
+    {
+      "course_name": "LLM Engineering: Prompting, Fine-Tuning, Optimization and RAG",
+      "course_slug": "llm-engineering-prompting-fine-tuning-optimization-and-rag",
+      "instructor_names": [
+        "Coursera instructors"
+      ],
+      "platform": "Coursera",
+      "course_url": "https://www.coursera.org/specializations/llm-engineering-prompting-fine-tuning-optimization-rag",
+      "citations": [
+        "https://www.coursera.org/specializations/llm-engineering-prompting-fine-tuning-optimization-rag"
+      ]
+    },
+    {
+      "course_name": "Introduction to Generative AI and Agents",
+      "course_slug": "introduction-to-generative-ai-and-agents",
+      "instructor_names": [
+        "Microsoft"
+      ],
+      "platform": "Microsoft Learn",
+      "course_url": "https://learn.microsoft.com/en-us/training/modules/fundamentals-generative-ai/",
+      "citations": [
+        "https://learn.microsoft.com/en-us/training/modules/fundamentals-generative-ai/"
+      ]
+    },
+    {
+      "course_name": "Midjourney: Generative AI for Creatives Specialization",
+      "course_slug": "midjourney-generative-ai-for-creatives-specialization",
+      "instructor_names": [
+        "Arnold Trinh"
+      ],
+      "platform": "Coursera",
+      "course_url": "https://www.coursera.org/specializations/midjourney-generative-ai-for-creatives",
+      "citations": [
+        "https://www.coursera.org/specializations/midjourney-generative-ai-for-creatives"
+      ]
+    },
+    {
+      "course_name": "Best Practices in Prompt Engineering",
+      "course_slug": "best-practices-in-prompt-engineering",
+      "instructor_names": [
+        "Sophia Yang"
+      ],
+      "platform": "Medium",
+      "course_url": "https://medium.com/data-science/best-practices-in-prompt-engineering-a18d6bab904b",
+      "citations": [
+        "https://medium.com/data-science/best-practices-in-prompt-engineering-a18d6bab904b"
+      ]
+    },
+    {
+      "course_name": "Prompt Engineering for Generative AI - GOTO 2025 Session",
+      "course_slug": "prompt-engineering-for-generative-ai-goto-2025-session",
+      "instructor_names": [
+        "James Phoenix",
+        "Mike Taylor",
+        "Phil Winder"
+      ],
+      "platform": "YouTube",
+      "course_url": "https://www.youtube.com/watch?v=3a0WHZVb1Gg",
+      "citations": [
+        "https://www.youtube.com/watch?v=3a0WHZVb1Gg"
+      ]
+    }
+  ],
+  "sources": [
+    "https://www.linkedin.com/learning/introduction-to-prompt-engineering-for-generative-ai-24636124",
+    "https://github.com/dair-ai/Prompt-Engineering-Guide",
+    "https://github.com/anthropics/prompt-eng-interactive-tutorial",
+    "https://maven.com/courses/ai/ai-coding",
+    "https://huggingface.co/learn",
+    "https://github.com/microsoft/generative-ai-for-beginners",
+    "https://www.anthropic.com/learn",
+    "https://www.linkedin.com/learning/topics/artificial-intelligence",
+    "https://www.linkedin.com/learning/context-engineering-for-developers",
+    "https://www.youtube.com/watch?v=8ib4Qnh2HFE",
+    "https://www.youtube.com/watch?v=k7HaeJs-N-o",
+    "https://www.youtube.com/watch?v=nJ25yl34Uqw",
+    "https://www.youtube.com/watch?v=Ru2jEY4pd7k",
+    "https://www.skills.google/paths/118",
+    "https://www.skills.google/course_templates/976",
+    "https://www.udacity.com/course/generative-ai--nd608",
+    "https://www.coursera.org/learn/generative-ai--prompt-engineering",
+    "https://www.coursera.org/specializations/llm-engineering-prompting-fine-tuning-optimization-rag",
+    "https://learn.microsoft.com/en-us/training/modules/fundamentals-generative-ai/",
+    "https://www.coursera.org/specializations/midjourney-generative-ai-for-creatives",
+    "https://medium.com/data-science/best-practices-in-prompt-engineering-a18d6bab904b",
+    "https://www.youtube.com/watch?v=3a0WHZVb1Gg"
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

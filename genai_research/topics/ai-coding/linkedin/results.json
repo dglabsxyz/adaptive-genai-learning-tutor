@@ -1,0 +1,70 @@
+{
+  "entity_type": "topic",
+  "entity_name": "AI coding",
+  "entity_slug": "ai-coding",
+  "platform": "linkedin",
+  "query_terms": [
+    "AI coding",
+    "AI agents",
+    "vibe coding",
+    "AI product development",
+    "prompt engineering"
+  ],
+  "results": [
+    {
+      "title": "Introduction to Prompt Engineering for Generative AI",
+      "url": "https://www.linkedin.com/learning/introduction-to-prompt-engineering-for-generative-ai-24636124",
+      "content_type": "course",
+      "summary": "A LinkedIn Learning course on crafting prompts for Copilot, ChatGPT, Gemini, and Claude.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.linkedin.com/learning/introduction-to-prompt-engineering-for-generative-ai-24636124"
+      ]
+    },
+    {
+      "title": "Creating Agents with Python and the AI Toolkit for Visual Studio Code",
+      "url": "https://www.linkedin.com/learning/creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code",
+      "content_type": "course",
+      "summary": "A LinkedIn Learning course on building and evaluating Python-based AI agents with the AI Toolkit for Visual Studio Code.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.linkedin.com/learning/creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code"
+      ]
+    },
+    {
+      "title": "Source for AI coding",
+      "url": "https://www.linkedin.com/learning/introduction-to-prompt-engineering-for-generative-ai-24636124",
+      "content_type": "other",
+      "summary": "Citation source for AI coding.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.linkedin.com/learning/introduction-to-prompt-engineering-for-generative-ai-24636124"
+      ]
+    },
+    {
+      "title": "Source for AI coding",
+      "url": "https://www.linkedin.com/learning/topics/artificial-intelligence",
+      "content_type": "other",
+      "summary": "Citation source for AI coding.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.linkedin.com/learning/topics/artificial-intelligence"
+      ]
+    },
+    {
+      "title": "Source for AI coding",
+      "url": "https://www.linkedin.com/learning/creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code",
+      "content_type": "other",
+      "summary": "Citation source for AI coding.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.linkedin.com/learning/creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

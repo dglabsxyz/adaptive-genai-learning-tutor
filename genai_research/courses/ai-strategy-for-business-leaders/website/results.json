@@ -1,0 +1,27 @@
+{
+  "entity_type": "course",
+  "entity_name": "AI Strategy for Business Leaders",
+  "entity_slug": "ai-strategy-for-business-leaders",
+  "platform": "website",
+  "query_terms": [
+    "AI Strategy for Business Leaders",
+    "business AI",
+    "AI strategy",
+    "AI product development"
+  ],
+  "results": [
+    {
+      "title": "AI Strategy for Business Leaders",
+      "url": "https://professional.dce.harvard.edu/programs/ai-strategy-for-business-leaders/",
+      "content_type": "course",
+      "summary": "A Harvard Division of Continuing Education program on aligning AI with business strategy and leading AI transformation.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://professional.dce.harvard.edu/programs/ai-strategy-for-business-leaders/"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

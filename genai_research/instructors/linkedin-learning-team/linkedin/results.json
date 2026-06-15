@@ -1,0 +1,101 @@
+{
+  "entity_type": "instructor",
+  "entity_name": "LinkedIn Learning Team",
+  "entity_slug": "linkedin-learning-team",
+  "platform": "linkedin",
+  "query_terms": [
+    "LinkedIn Learning Team",
+    "RAG",
+    "LlamaIndex",
+    "LLMs",
+    "context engineering",
+    "AI agents",
+    "prompt engineering",
+    "AI coding",
+    "Python",
+    "AI safety and evaluation",
+    "fine-tuning",
+    "multimodal AI",
+    "image generation",
+    "voice AI",
+    "video generation",
+    "text-to-speech",
+    "voice cloning",
+    "audio AI"
+  ],
+  "results": [
+    {
+      "title": "Hands-On AI: RAG using LlamaIndex",
+      "url": "https://www.linkedin.com/learning/hands-on-ai-rag-using-llamaindex",
+      "content_type": "course",
+      "summary": "A LinkedIn Learning course focused on retrieval-augmented generation using LlamaIndex.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.linkedin.com/learning/hands-on-ai-rag-using-llamaindex"
+      ]
+    },
+    {
+      "title": "Context Engineering for Developers",
+      "url": "https://www.linkedin.com/learning/context-engineering-for-developers",
+      "content_type": "course",
+      "summary": "A LinkedIn Learning course for AI practitioners and prompt engineers building better AI agents and RAG pipelines.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.linkedin.com/learning/context-engineering-for-developers"
+      ]
+    },
+    {
+      "title": "Creating Agents with Python and the AI Toolkit for Visual Studio Code",
+      "url": "https://www.linkedin.com/learning/creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code",
+      "content_type": "course",
+      "summary": "A LinkedIn Learning course on building and evaluating Python-based AI agents with the AI Toolkit for Visual Studio Code.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.linkedin.com/learning/creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code"
+      ]
+    },
+    {
+      "title": "Fine-Tuning for LLMs: from Beginner to Advanced",
+      "url": "https://www.linkedin.com/learning/fine-tuning-for-llms-from-beginner-to-advanced",
+      "content_type": "course",
+      "summary": "A LinkedIn Learning course on fine-tuning LLMs from beginner to advanced level.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.linkedin.com/learning/fine-tuning-for-llms-from-beginner-to-advanced"
+      ]
+    },
+    {
+      "title": "Multimodal AI Essentials: Merging Text, Image, and Audio",
+      "url": "https://www.linkedin.com/learning/multimodal-ai-essentials-merging-text-image-and-audio-for-next-generation-ai-applications",
+      "content_type": "course",
+      "summary": "A LinkedIn Learning course on combining text, audio, video, and images for next-generation AI applications.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.linkedin.com/learning/multimodal-ai-essentials-merging-text-image-and-audio-for-next-generation-ai-applications"
+      ]
+    },
+    {
+      "title": "ElevenLabs: AI Voice Cloning, Text-to-Speech, and Sound Effects",
+      "url": "https://www.linkedin.com/learning/elevenlabs-ai-voice-cloning-text-to-speech-and-sound-effects",
+      "content_type": "course",
+      "summary": "A LinkedIn Learning course exploring voice cloning, synthetic speech, and sound effects with ElevenLabs.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.linkedin.com/learning/elevenlabs-ai-voice-cloning-text-to-speech-and-sound-effects"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

@@ -1,0 +1,28 @@
+{
+  "entity_type": "course",
+  "entity_name": "Get Started with AI Applications and Agents on Azure",
+  "entity_slug": "get-started-with-ai-applications-and-agents-on-azure",
+  "platform": "website",
+  "query_terms": [
+    "Get Started with AI Applications and Agents on Azure",
+    "AI agents",
+    "AI coding",
+    "AI product development",
+    "Azure"
+  ],
+  "results": [
+    {
+      "title": "Get Started with AI Applications and Agents on Azure",
+      "url": "https://learn.microsoft.com/en-us/training/paths/get-started-ai-apps-agents/",
+      "content_type": "course",
+      "summary": "A Microsoft Learn path on building generative AI applications and agents on Azure.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://learn.microsoft.com/en-us/training/paths/get-started-ai-apps-agents/"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

@@ -1,0 +1,29 @@
+{
+  "entity_type": "instructor",
+  "entity_name": "Udacity",
+  "entity_slug": "udacity",
+  "platform": "website",
+  "query_terms": [
+    "Udacity",
+    "prompt engineering",
+    "RAG",
+    "fine-tuning",
+    "AI agents",
+    "AI coding"
+  ],
+  "results": [
+    {
+      "title": "Applied Generative AI Engineering",
+      "url": "https://www.udacity.com/course/generative-ai--nd608",
+      "content_type": "course",
+      "summary": "A Udacity course on adapting foundation models using prompt engineering, RAG, fine-tuning, model compression, and agentic AI tools.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.udacity.com/course/generative-ai--nd608"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

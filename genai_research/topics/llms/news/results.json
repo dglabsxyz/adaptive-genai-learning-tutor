@@ -1,0 +1,39 @@
+{
+  "entity_type": "topic",
+  "entity_name": "LLMs",
+  "entity_slug": "llms",
+  "platform": "news",
+  "query_terms": [
+    "LLMs",
+    "prompt engineering",
+    "fine-tuning",
+    "RAG",
+    "AI agents",
+    "context engineering"
+  ],
+  "results": [
+    {
+      "title": "The Large Language Model Course",
+      "url": "https://huggingface.co/blog/mlabonne/llm-course",
+      "content_type": "article",
+      "summary": "A Hugging Face blog/course resource collecting topics and roadmaps for getting into LLMs.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://huggingface.co/blog/mlabonne/llm-course"
+      ]
+    },
+    {
+      "title": "Source for LLMs",
+      "url": "https://huggingface.co/blog/mlabonne/llm-course",
+      "content_type": "other",
+      "summary": "Citation source for LLMs.",
+      "extracted_data": {},
+      "citations": [
+        "https://huggingface.co/blog/mlabonne/llm-course"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

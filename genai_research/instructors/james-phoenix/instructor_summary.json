@@ -1,0 +1,65 @@
+{
+  "name": "James Phoenix",
+  "slug": "james-phoenix",
+  "headline": null,
+  "organization": null,
+  "bio": null,
+  "expertise_areas": [
+    "prompt engineering",
+    "LLMs",
+    "conference"
+  ],
+  "topics_taught": [
+    "prompt engineering",
+    "LLMs",
+    "conference"
+  ],
+  "platforms": [
+    "YouTube"
+  ],
+  "website": null,
+  "social_profiles": {
+    "linkedin": null,
+    "youtube": null,
+    "x": null,
+    "github": null,
+    "other": []
+  },
+  "audience_levels": [
+    "intermediate"
+  ],
+  "teaching_formats": [
+    "Conference session"
+  ],
+  "courses": [
+    {
+      "course_name": "Prompt Engineering for Generative AI - GOTO 2025 Session",
+      "course_slug": "prompt-engineering-for-generative-ai-goto-2025-session",
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/watch?v=3a0WHZVb1Gg",
+      "citations": [
+        "https://www.youtube.com/watch?v=3a0WHZVb1Gg"
+      ]
+    }
+  ],
+  "credibility_signals": [],
+  "citations": [
+    "https://www.youtube.com/watch?v=3a0WHZVb1Gg"
+  ],
+  "source_records": [
+    {
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/watch?v=3a0WHZVb1Gg",
+      "title": "Prompt Engineering for Generative AI - GOTO 2025 Session",
+      "summary": "A GOTO 2025 YouTube conference/session source involving authors and practitioners of prompt engineering for generative AI.",
+      "content_type": "interview",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://www.youtube.com/watch?v=3a0WHZVb1Gg"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

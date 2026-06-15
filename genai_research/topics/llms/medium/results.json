@@ -1,0 +1,39 @@
+{
+  "entity_type": "topic",
+  "entity_name": "LLMs",
+  "entity_slug": "llms",
+  "platform": "medium",
+  "query_terms": [
+    "LLMs",
+    "prompt engineering",
+    "fine-tuning",
+    "RAG",
+    "AI agents",
+    "context engineering"
+  ],
+  "results": [
+    {
+      "title": "Best Practices in Prompt Engineering",
+      "url": "https://medium.com/data-science/best-practices-in-prompt-engineering-a18d6bab904b",
+      "content_type": "article",
+      "summary": "A Medium teaching article on prompt-engineering principles, iterative development, and prompting capabilities.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://medium.com/data-science/best-practices-in-prompt-engineering-a18d6bab904b"
+      ]
+    },
+    {
+      "title": "Source for LLMs",
+      "url": "https://medium.com/data-science/best-practices-in-prompt-engineering-a18d6bab904b",
+      "content_type": "other",
+      "summary": "Citation source for LLMs.",
+      "extracted_data": {},
+      "citations": [
+        "https://medium.com/data-science/best-practices-in-prompt-engineering-a18d6bab904b"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

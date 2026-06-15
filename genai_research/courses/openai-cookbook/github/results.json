@@ -1,0 +1,29 @@
+{
+  "entity_type": "course",
+  "entity_name": "OpenAI Cookbook",
+  "entity_slug": "openai-cookbook",
+  "platform": "github",
+  "query_terms": [
+    "OpenAI Cookbook",
+    "LLMs",
+    "RAG",
+    "AI agents",
+    "fine-tuning",
+    "AI safety and evaluation"
+  ],
+  "results": [
+    {
+      "title": "OpenAI Cookbook",
+      "url": "https://github.com/openai/openai-cookbook",
+      "content_type": "repository",
+      "summary": "OpenAI's public collection of examples and guides for building with OpenAI models and APIs.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://github.com/openai/openai-cookbook"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

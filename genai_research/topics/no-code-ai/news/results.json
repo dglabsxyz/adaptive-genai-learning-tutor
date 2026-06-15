@@ -1,0 +1,26 @@
+{
+  "entity_type": "topic",
+  "entity_name": "no-code AI",
+  "entity_slug": "no-code-ai",
+  "platform": "news",
+  "query_terms": [
+    "no-code AI",
+    "AI automation",
+    "AI coding",
+    "AI product development",
+    "business AI"
+  ],
+  "results": [
+    {
+      "title": "Source for no-code AI",
+      "url": "https://zapier.com/blog/no-code-automation/",
+      "content_type": "other",
+      "summary": "Citation source for no-code AI.",
+      "extracted_data": {},
+      "citations": [
+        "https://zapier.com/blog/no-code-automation/"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

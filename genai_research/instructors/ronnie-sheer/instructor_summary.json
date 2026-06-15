@@ -1,0 +1,67 @@
+{
+  "name": "Ronnie Sheer",
+  "slug": "ronnie-sheer",
+  "headline": null,
+  "organization": null,
+  "bio": null,
+  "expertise_areas": [
+    "prompt engineering",
+    "LLMs",
+    "generative AI"
+  ],
+  "topics_taught": [
+    "prompt engineering",
+    "LLMs",
+    "generative AI"
+  ],
+  "platforms": [
+    "LinkedIn Learning"
+  ],
+  "website": null,
+  "social_profiles": {
+    "linkedin": null,
+    "youtube": null,
+    "x": null,
+    "github": null,
+    "other": []
+  },
+  "audience_levels": [
+    "intermediate"
+  ],
+  "teaching_formats": [
+    "Video course"
+  ],
+  "courses": [
+    {
+      "course_name": "Introduction to Prompt Engineering for Generative AI",
+      "course_slug": "introduction-to-prompt-engineering-for-generative-ai",
+      "platform": "LinkedIn Learning",
+      "url": "https://www.linkedin.com/learning/introduction-to-prompt-engineering-for-generative-ai-24636124",
+      "citations": [
+        "https://www.linkedin.com/learning/introduction-to-prompt-engineering-for-generative-ai-24636124",
+        "https://www.linkedin.com/learning/topics/artificial-intelligence"
+      ]
+    }
+  ],
+  "credibility_signals": [],
+  "citations": [
+    "https://www.linkedin.com/learning/introduction-to-prompt-engineering-for-generative-ai-24636124",
+    "https://www.linkedin.com/learning/topics/artificial-intelligence"
+  ],
+  "source_records": [
+    {
+      "platform": "LinkedIn Learning",
+      "url": "https://www.linkedin.com/learning/introduction-to-prompt-engineering-for-generative-ai-24636124",
+      "title": "Introduction to Prompt Engineering for Generative AI",
+      "summary": "A LinkedIn Learning course on crafting prompts for Copilot, ChatGPT, Gemini, and Claude.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.linkedin.com/learning/introduction-to-prompt-engineering-for-generative-ai-24636124"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

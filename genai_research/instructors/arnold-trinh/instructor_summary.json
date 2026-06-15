@@ -1,0 +1,65 @@
+{
+  "name": "Arnold Trinh",
+  "slug": "arnold-trinh",
+  "headline": null,
+  "organization": "Coursera",
+  "bio": null,
+  "expertise_areas": [
+    "image generation",
+    "prompt engineering",
+    "creative AI"
+  ],
+  "topics_taught": [
+    "image generation",
+    "prompt engineering",
+    "creative AI"
+  ],
+  "platforms": [
+    "Coursera"
+  ],
+  "website": null,
+  "social_profiles": {
+    "linkedin": null,
+    "youtube": null,
+    "x": null,
+    "github": null,
+    "other": []
+  },
+  "audience_levels": [
+    "intermediate"
+  ],
+  "teaching_formats": [
+    "Specialization"
+  ],
+  "courses": [
+    {
+      "course_name": "Midjourney: Generative AI for Creatives Specialization",
+      "course_slug": "midjourney-generative-ai-for-creatives-specialization",
+      "platform": "Coursera",
+      "url": "https://www.coursera.org/specializations/midjourney-generative-ai-for-creatives",
+      "citations": [
+        "https://www.coursera.org/specializations/midjourney-generative-ai-for-creatives"
+      ]
+    }
+  ],
+  "credibility_signals": [],
+  "citations": [
+    "https://www.coursera.org/specializations/midjourney-generative-ai-for-creatives"
+  ],
+  "source_records": [
+    {
+      "platform": "Coursera",
+      "url": "https://www.coursera.org/specializations/midjourney-generative-ai-for-creatives",
+      "title": "Midjourney: Generative AI for Creatives Specialization",
+      "summary": "A Coursera specialization focused on Midjourney and generative AI for creatives.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.coursera.org/specializations/midjourney-generative-ai-for-creatives"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

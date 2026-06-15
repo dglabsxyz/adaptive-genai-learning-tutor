@@ -1,0 +1,28 @@
+{
+  "entity_type": "instructor",
+  "entity_name": "Rob Lennon",
+  "entity_slug": "rob-lennon",
+  "platform": "maven",
+  "query_terms": [
+    "Rob Lennon",
+    "AI agents",
+    "AI automation",
+    "business AI",
+    "content creation"
+  ],
+  "results": [
+    {
+      "title": "AI Agents for Content Creators",
+      "url": "https://maven.com/lennon/ai-agents-for-content",
+      "content_type": "course",
+      "summary": "A blueprint for using AI agents to source ideas, draft emails, and write posts in a creator's style and point of view.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/lennon/ai-agents-for-content"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

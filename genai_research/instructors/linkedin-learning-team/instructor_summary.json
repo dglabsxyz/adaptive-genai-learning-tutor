@@ -1,0 +1,210 @@
+{
+  "name": "LinkedIn Learning Team",
+  "slug": "linkedin-learning-team",
+  "headline": null,
+  "organization": null,
+  "bio": null,
+  "expertise_areas": [
+    "RAG",
+    "LlamaIndex",
+    "LLMs",
+    "context engineering",
+    "AI agents",
+    "prompt engineering",
+    "AI coding",
+    "Python",
+    "AI safety and evaluation",
+    "fine-tuning",
+    "multimodal AI",
+    "image generation",
+    "voice AI",
+    "video generation",
+    "text-to-speech",
+    "voice cloning",
+    "audio AI"
+  ],
+  "topics_taught": [
+    "RAG",
+    "LlamaIndex",
+    "LLMs",
+    "context engineering",
+    "AI agents",
+    "prompt engineering",
+    "AI coding",
+    "Python",
+    "AI safety and evaluation",
+    "fine-tuning",
+    "multimodal AI",
+    "image generation",
+    "voice AI",
+    "video generation",
+    "text-to-speech",
+    "voice cloning",
+    "audio AI"
+  ],
+  "platforms": [
+    "LinkedIn Learning"
+  ],
+  "website": null,
+  "social_profiles": {
+    "linkedin": null,
+    "youtube": null,
+    "x": null,
+    "github": null,
+    "other": []
+  },
+  "audience_levels": [
+    "beginner",
+    "intermediate",
+    "advanced"
+  ],
+  "teaching_formats": [
+    "Video course"
+  ],
+  "courses": [
+    {
+      "course_name": "Hands-On AI: RAG using LlamaIndex",
+      "course_slug": "hands-on-ai-rag-using-llamaindex",
+      "platform": "LinkedIn Learning",
+      "url": "https://www.linkedin.com/learning/hands-on-ai-rag-using-llamaindex",
+      "citations": [
+        "https://www.linkedin.com/learning/hands-on-ai-rag-using-llamaindex"
+      ]
+    },
+    {
+      "course_name": "Context Engineering for Developers",
+      "course_slug": "context-engineering-for-developers",
+      "platform": "LinkedIn Learning",
+      "url": "https://www.linkedin.com/learning/context-engineering-for-developers",
+      "citations": [
+        "https://www.linkedin.com/learning/context-engineering-for-developers"
+      ]
+    },
+    {
+      "course_name": "Creating Agents with Python and the AI Toolkit for Visual Studio Code",
+      "course_slug": "creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code",
+      "platform": "LinkedIn Learning",
+      "url": "https://www.linkedin.com/learning/creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code",
+      "citations": [
+        "https://www.linkedin.com/learning/creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code"
+      ]
+    },
+    {
+      "course_name": "Fine-Tuning for LLMs: from Beginner to Advanced",
+      "course_slug": "fine-tuning-for-llms-from-beginner-to-advanced",
+      "platform": "LinkedIn Learning",
+      "url": "https://www.linkedin.com/learning/fine-tuning-for-llms-from-beginner-to-advanced",
+      "citations": [
+        "https://www.linkedin.com/learning/fine-tuning-for-llms-from-beginner-to-advanced"
+      ]
+    },
+    {
+      "course_name": "Multimodal AI Essentials: Merging Text, Image, and Audio",
+      "course_slug": "multimodal-ai-essentials-merging-text-image-and-audio",
+      "platform": "LinkedIn Learning",
+      "url": "https://www.linkedin.com/learning/multimodal-ai-essentials-merging-text-image-and-audio-for-next-generation-ai-applications",
+      "citations": [
+        "https://www.linkedin.com/learning/multimodal-ai-essentials-merging-text-image-and-audio-for-next-generation-ai-applications"
+      ]
+    },
+    {
+      "course_name": "ElevenLabs: AI Voice Cloning, Text-to-Speech, and Sound Effects",
+      "course_slug": "elevenlabs-ai-voice-cloning-text-to-speech-and-sound-effects",
+      "platform": "LinkedIn Learning",
+      "url": "https://www.linkedin.com/learning/elevenlabs-ai-voice-cloning-text-to-speech-and-sound-effects",
+      "citations": [
+        "https://www.linkedin.com/learning/elevenlabs-ai-voice-cloning-text-to-speech-and-sound-effects"
+      ]
+    }
+  ],
+  "credibility_signals": [],
+  "citations": [
+    "https://www.linkedin.com/learning/hands-on-ai-rag-using-llamaindex",
+    "https://www.linkedin.com/learning/context-engineering-for-developers",
+    "https://www.linkedin.com/learning/creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code",
+    "https://www.linkedin.com/learning/fine-tuning-for-llms-from-beginner-to-advanced",
+    "https://www.linkedin.com/learning/multimodal-ai-essentials-merging-text-image-and-audio-for-next-generation-ai-applications",
+    "https://www.linkedin.com/learning/elevenlabs-ai-voice-cloning-text-to-speech-and-sound-effects"
+  ],
+  "source_records": [
+    {
+      "platform": "LinkedIn Learning",
+      "url": "https://www.linkedin.com/learning/hands-on-ai-rag-using-llamaindex",
+      "title": "Hands-On AI: RAG using LlamaIndex",
+      "summary": "A LinkedIn Learning course focused on retrieval-augmented generation using LlamaIndex.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.linkedin.com/learning/hands-on-ai-rag-using-llamaindex"
+      ]
+    },
+    {
+      "platform": "LinkedIn Learning",
+      "url": "https://www.linkedin.com/learning/context-engineering-for-developers",
+      "title": "Context Engineering for Developers",
+      "summary": "A LinkedIn Learning course for AI practitioners and prompt engineers building better AI agents and RAG pipelines.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.linkedin.com/learning/context-engineering-for-developers"
+      ]
+    },
+    {
+      "platform": "LinkedIn Learning",
+      "url": "https://www.linkedin.com/learning/creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code",
+      "title": "Creating Agents with Python and the AI Toolkit for Visual Studio Code",
+      "summary": "A LinkedIn Learning course on building and evaluating Python-based AI agents with the AI Toolkit for Visual Studio Code.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.linkedin.com/learning/creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code"
+      ]
+    },
+    {
+      "platform": "LinkedIn Learning",
+      "url": "https://www.linkedin.com/learning/fine-tuning-for-llms-from-beginner-to-advanced",
+      "title": "Fine-Tuning for LLMs: from Beginner to Advanced",
+      "summary": "A LinkedIn Learning course on fine-tuning LLMs from beginner to advanced level.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.linkedin.com/learning/fine-tuning-for-llms-from-beginner-to-advanced"
+      ]
+    },
+    {
+      "platform": "LinkedIn Learning",
+      "url": "https://www.linkedin.com/learning/multimodal-ai-essentials-merging-text-image-and-audio-for-next-generation-ai-applications",
+      "title": "Multimodal AI Essentials: Merging Text, Image, and Audio",
+      "summary": "A LinkedIn Learning course on combining text, audio, video, and images for next-generation AI applications.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.linkedin.com/learning/multimodal-ai-essentials-merging-text-image-and-audio-for-next-generation-ai-applications"
+      ]
+    },
+    {
+      "platform": "LinkedIn Learning",
+      "url": "https://www.linkedin.com/learning/elevenlabs-ai-voice-cloning-text-to-speech-and-sound-effects",
+      "title": "ElevenLabs: AI Voice Cloning, Text-to-Speech, and Sound Effects",
+      "summary": "A LinkedIn Learning course exploring voice cloning, synthetic speech, and sound effects with ElevenLabs.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.linkedin.com/learning/elevenlabs-ai-voice-cloning-text-to-speech-and-sound-effects"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

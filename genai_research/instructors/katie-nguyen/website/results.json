@@ -1,0 +1,29 @@
+{
+  "entity_type": "instructor",
+  "entity_name": "Katie Nguyen",
+  "entity_slug": "katie-nguyen",
+  "platform": "website",
+  "query_terms": [
+    "Katie Nguyen",
+    "AI agents",
+    "image generation",
+    "video generation",
+    "multimodal AI",
+    "AI safety and evaluation"
+  ],
+  "results": [
+    {
+      "title": "AI Agents for Image and Video Generation",
+      "url": "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation",
+      "content_type": "course",
+      "summary": "A DeepLearning.AI course on building media agents that generate, evaluate, and iterate on image and video outputs.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

@@ -1,0 +1,27 @@
+{
+  "entity_type": "instructor",
+  "entity_name": "No-Code AI",
+  "entity_slug": "no-code-ai",
+  "platform": "maven",
+  "query_terms": [
+    "No-Code AI",
+    "AI coding",
+    "no-code AI",
+    "AI product development"
+  ],
+  "results": [
+    {
+      "title": "Vibe Coding Bootcamp",
+      "url": "https://maven.com/no-code-ai/vibe-coding-bootcamp",
+      "content_type": "course",
+      "summary": "A Maven AI/vibe-coding course discovered from the Maven prototyping and vibe-coding category crawls.",
+      "extracted_data": {
+        "entity_type": "bootcamp"
+      },
+      "citations": [
+        "https://maven.com/no-code-ai/vibe-coding-bootcamp"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

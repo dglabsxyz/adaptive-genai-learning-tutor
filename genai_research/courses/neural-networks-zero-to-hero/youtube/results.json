@@ -1,0 +1,28 @@
+{
+  "entity_type": "course",
+  "entity_name": "Neural Networks: Zero to Hero",
+  "entity_slug": "neural-networks-zero-to-hero",
+  "platform": "youtube",
+  "query_terms": [
+    "Neural Networks: Zero to Hero",
+    "LLMs",
+    "deep learning",
+    "neural networks",
+    "AI coding"
+  ],
+  "results": [
+    {
+      "title": "Neural Networks: Zero to Hero",
+      "url": "https://karpathy.ai/zero-to-hero.html",
+      "content_type": "video",
+      "summary": "A public video series on building neural networks from scratch, from backpropagation to modern deep learning.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://karpathy.ai/zero-to-hero.html"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

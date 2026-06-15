@@ -1,0 +1,75 @@
+{
+  "name": "John Hwang",
+  "slug": "john-hwang",
+  "headline": "Founder, Enterprise AI Trends; ex-AWS AI and Alexa PM",
+  "organization": "Enterprise AI Trends",
+  "bio": "Founder of Enterprise AI Trends and former AWS generative AI architect, according to the Maven course page.",
+  "expertise_areas": [
+    "AI agents",
+    "business AI",
+    "AI automation",
+    "sales",
+    "marketing"
+  ],
+  "topics_taught": [
+    "AI agents",
+    "business AI",
+    "AI automation",
+    "sales",
+    "marketing"
+  ],
+  "platforms": [
+    "Maven"
+  ],
+  "website": null,
+  "social_profiles": {
+    "linkedin": "https://www.linkedin.com/in/jhwangj/",
+    "youtube": null,
+    "x": null,
+    "github": null,
+    "other": [
+      "https://nextword.substack.com/"
+    ]
+  },
+  "audience_levels": [
+    "intermediate"
+  ],
+  "teaching_formats": [
+    "Cohort-based course"
+  ],
+  "courses": [
+    {
+      "course_name": "AI Agents for Sales and GTM",
+      "course_slug": "ai-agents-for-sales-and-gtm",
+      "platform": "Maven",
+      "url": "https://maven.com/ai-agent-campus/ai-agents-for-sales-and-go-to-market",
+      "citations": [
+        "https://maven.com/ai-agent-campus/ai-agents-for-sales-and-go-to-market"
+      ]
+    }
+  ],
+  "credibility_signals": [
+    "Ex-AWS AI",
+    "Former Alexa PM",
+    "Stanford CS"
+  ],
+  "citations": [
+    "https://maven.com/ai-agent-campus/ai-agents-for-sales-and-go-to-market"
+  ],
+  "source_records": [
+    {
+      "platform": "Maven",
+      "url": "https://maven.com/ai-agent-campus/ai-agents-for-sales-and-go-to-market",
+      "title": "AI Agents for Sales and GTM",
+      "summary": "Build AI employees that scale marketing, streamline sales, and increase profits.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/ai-agent-campus/ai-agents-for-sales-and-go-to-market"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

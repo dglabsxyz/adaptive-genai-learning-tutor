@@ -1,0 +1,28 @@
+{
+  "entity_type": "instructor",
+  "entity_name": "Anna Arteeva",
+  "entity_slug": "anna-arteeva",
+  "platform": "maven",
+  "query_terms": [
+    "Anna Arteeva",
+    "AI product development",
+    "AI coding",
+    "no-code AI",
+    "multimodal AI"
+  ],
+  "results": [
+    {
+      "title": "AI Prototyping for Designers",
+      "url": "https://maven.com/anna-arteeva/prototyping-for-designers",
+      "content_type": "course",
+      "summary": "A Maven AI prototyping course found in the Maven AI prototyping catalog crawl.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/anna-arteeva/prototyping-for-designers"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

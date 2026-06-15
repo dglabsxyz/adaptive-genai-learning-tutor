@@ -1,0 +1,24 @@
+{
+  "name": "adaptive-genai-learning-tutor-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "npm run test:contract && npm run test:e2e",
+    "test:contract": "node scripts/contract-test.mjs",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^6.0.2",
+    "lucide-react": "^0.561.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "vite": "^8.0.16"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.60.0"
+  }
+}

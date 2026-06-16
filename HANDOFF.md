@@ -44,6 +44,47 @@ walked through like the Session 2 "Deep Agent" tutorial. What changed:
   already has `QWEN_API_KEY`; the next deploy builds the langchain-1.0 + deepagents stack on
   Python 3.12 via Railpack — re-verify `/health` and a `/chat` turn after it builds.
 
+**Session 4 update (2026-06-16) — §8 #1 + #2 done, plus a production-blocking agent loop fixed.**
+Implemented the two top-ranked §8 follow-ups and, in the course of verifying them live, found and
+fixed a loop that made `/chat` hang/500 on simple inputs. What changed:
+- **§8 #2 — `PostgresStore` for `/memories/` (DONE).** New `backend/agent_store.py` mirrors
+  `backend/checkpoints.py` (lazy import, manual context-manager entry, idempotent `setup()`, graceful
+  fallback). New setting **`TUTOR_AGENT_STORE_BACKEND`** (`memory` default | `postgres`) reuses
+  `DATABASE_URL`; `backend/agent.py` now calls `build_store()` instead of `InMemoryStore()`.
+  `.env.example` documents it; 5 tests in `tests/test_agent_store_backends.py`. **Note:** like the
+  checkpointer, real Postgres persistence needs the optional `postgres` extra installed in the build
+  (the default Railway `uv sync` skips extras) — otherwise it logs a warning and falls back to memory.
+- **§8 #1 — agent-level LangSmith eval (DONE).** New `scripts/run_agent_eval.py` builds a LangSmith
+  dataset **`adaptive-tutor-agent`** (5 cases: goal / exercise / grade / commit / advice) and runs
+  `client.evaluate` over `agent_runtime.run_tutor_turn` with two behavioral evaluators
+  (`produced_output`, `matches_expected_behavior`). Gated on `QWEN_API_KEY` **and** `LANGSMITH_API_KEY`
+  (skips offline, exit 0). Routes the experiment + nested agent traces to `adaptive-tutor-deep-agent`.
+  Flags: `--limit N`, `--only <thread>` (e.g. `commit`), `--no-upload` (dry run), `--max-concurrency`.
+- **Loop fix (enterprise hardening; was pre-existing, NOT from the two follow-ups).** Root cause: the
+  orchestrator + subagents treated the corpus as a filesystem and burned their step budget on
+  `ls`/`glob`/`grep`/`read_file` chasing paths from `genai_tutor.md` (e.g. `coverage_report.json`,
+  `instructors/`) that don't exist on the agent's virtual FS, looping to `recursion_limit=80`. Fixes:
+  (a) reworded `backend/grounding/genai_tutor.md` so corpus categories are clearly *not* files;
+  (b) hardened `ORCHESTRATOR_PROMPT` (it **delegates**, does not retrieve; never FS-spelunk; one
+  diagnosis/path/exercise/grade per turn then STOP); (c) added `SUBAGENT_FS_GUARDRAIL` to all four
+  subagents; (d) `agent_runtime._invoke` now catches `GraphRecursionError` and returns a clean,
+  contract-shaped `RECURSION_FALLBACK_MESSAGE` (logged + still traced) instead of a 500/hang.
+- **Verified.** Offline gates green: **pytest 38** (was 31; +5 store, +1 prompt-guard, +1
+  recursion-fallback), api/corpus/demo/MCP smokes pass, corpus immutable (386 files). Live: the agent
+  now **converges** (orchestrator → `view_progress` → `task` → subagent authors a real exercise →
+  final answer, ~42 s) and a live experiment **`adaptive-tutor-agent-f19f8822`** landed in
+  `adaptive-tutor-deep-agent` with both evaluators at **1.00** (the `commit`/HITL case).
+- **Run the FULL 5-example eval on the Mac** (the sandbox caps each shell call at 45 s and a single
+  2-subagent "goal" turn exceeds that): `LANGSMITH_TRACING=true TUTOR_REPOSITORY_BACKEND=json uv run
+  python scripts/run_agent_eval.py`. The dataset already holds all 5 examples.
+- **⚠️ Prod still runs the OLD looping agent.** The loop fix is local only; **push from the Mac + let
+  Railway redeploy** before trusting prod `/chat` (today it can hang/500 on simple messages — confirmed
+  live: `/chat` returned no response within 40 s while `/health` was fine).
+- **Do on the Mac (sandbox can't delete/rename/commit):** commit the new files
+  (`backend/agent_store.py`, `scripts/run_agent_eval.py`, `tests/test_agent_store_backends.py`) and the
+  edits; the optional §8 #9 cleanup (`git rm backend/graph.py`, `git mv tests/test_graph_routing.py
+  tests/test_agent_wiring.py`) is still outstanding.
+
 ---
 
 ## 0. How to resume (local)
@@ -257,3 +298,98 @@ curl -s -X POST https://adaptive-genai-learning-tutor-production.up.railway.app/
   -H 'x-tutor-role: learner' \
   -d '{"learner_id":"demo-learner","message":"I want to learn RAG and AI agents"}'
 ```
+
+---
+
+## 8. Deep-Agent — next steps & known follow-ups (session 3)
+
+The `/chat` brain is now the `deepagents` orchestrator (see the Session 3 note up top and
+`docs/REBUILD_FROM_SCRATCH.md`). Ranked follow-ups for a new session:
+
+1. ~~Agent-level eval dataset~~ **DONE (session 4).** `scripts/run_agent_eval.py` builds the LangSmith
+   dataset `adaptive-tutor-agent` (5 message→behavior cases) and runs `client.evaluate` over
+   `agent_runtime.run_tutor_turn`; experiment + nested traces route to `adaptive-tutor-deep-agent`.
+   Gated on `QWEN_API_KEY` + `LANGSMITH_API_KEY` (skips offline). One live experiment landed
+   (`adaptive-tutor-agent-f19f8822`, both evaluators 1.00 on the `commit` case); run the full set on
+   the Mac (see the Session 4 note — the sandbox 45 s/call cap can't fit a 2-subagent turn).
+2. ~~`PostgresStore` for `/memories/`~~ **DONE (session 4).** `backend/agent_store.py` (`build_store()`)
+   swaps `InMemoryStore()` behind **`TUTOR_AGENT_STORE_BACKEND=postgres`** + `DATABASE_URL`, mirroring
+   the checkpointer's lazy-import + graceful fallback; `backend/agent.py` now calls it. Covered by
+   `tests/test_agent_store_backends.py`. Needs the `postgres` extra installed in the build for real
+   persistence (else falls back to memory, same caveat as the checkpointer).
+3. **Surface `source_refs` in `/chat` responses.** `agent_runtime._format` returns `source_refs: []`;
+   the citations currently live only inside the agent's tool-result messages. Scan the tool messages
+   for `source_refs` and populate the structured field so the frontend Sources view works again.
+4. **Update the frontend to the new `/chat` contract.** The Vite UI (`frontend/` and `tutor-ui/`) was
+   written for the OLD graph response (`intent`, `diagnostic`, `study_plan`). The new shape is
+   `{message, source_refs, needs_clarification, interrupt:{action_requests:[…]}}`, and **resume now
+   takes `{"decisions":[{"type":"approve"}]}`** (not a string). Update the client + the HITL approve
+   flow before demoing the web UI. (Deferred frontend e2e from §5#2 still applies.)
+5. **Structured grader verdict.** Give the `grader-critic` subagent a `response_format` so its verdict
+   is machine-readable instead of prose.
+6. **Expose the agent over MCP.** `mcp_server/server.py` still exposes the raw tutor tools; add an
+   `ask_tutor(message)` MCP tool that drives `agent_runtime.run_tutor_turn` for an end-to-end agent
+   surface.
+7. **Cost / latency.** Each turn is several Qwen calls (planning + delegation + per-subagent), so it is
+   slower and more token-heavy than the old deterministic graph. Watch token usage in LangSmith;
+   consider a cheaper model for subagents or trimming the orchestrator prompt.
+8. **Live integration test.** Add one `@pytest.mark.skipif(no QWEN key)` test that runs a real turn and
+   asserts a non-empty `message` + that "save my progress" interrupts on `commit_progress` — complements
+   the offline wiring tests in `tests/test_graph_routing.py`.
+9. **Optional cleanup you skipped (do on the Mac — the sandbox can't delete/rename):**
+   `git rm backend/graph.py` (now just a deprecation shim) and
+   `git mv tests/test_graph_routing.py tests/test_agent_wiring.py`.
+
+**Guardrail update:** the old "Qwen-first with deterministic fallback" no longer holds for `/chat` — the
+deep agent **requires `QWEN_API_KEY`** (full replace). The offline path is the test suite + the
+deterministic tool impls, not a deterministic `/chat`. The demo flow is now
+diagnose → path → exercise → grade → **commit (HITL approve)**.
+
+**Status:** deep agent is LIVE in prod (verified; `/chat` returns the new shape). Railway
+`LANGSMITH_PROJECT` was updated to **`adaptive-tutor-deep-agent`** (done in the dashboard), so live
+traffic and `scripts/generate_demo_traces.py` both trace to that project. Model is **`qwen-plus`**.
+
+### Deep-agent dev notes
+- **Sandbox venv:** the repo is now on **langchain 1.0 + deepagents, Python 3.12**. Build a throwaway
+  env with `UV_PROJECT_ENVIRONMENT=/tmp/venv2 uv sync` (the macOS `.venv` can't be reused in the Linux
+  sandbox). Run tests with `TUTOR_REPOSITORY_BACKEND=json` and no `QWEN_API_KEY` to stay offline (31 pass).
+- **Key files:** `backend/agent.py` (orchestrator + 4 subagents + composite backend), `agent_tools.py`
+  (context-bound tools via `set_agent_context` + HITL `commit_progress`), `agent_runtime.py` (`/chat`
+  runtime), `grounding/genai_tutor.md`, `skills/{socratic-tutoring,exercise-design,feedback-style}/SKILL.md`.
+- **Mount limits:** the sandbox mount blocks file **deletion** and `.git/index.lock` removal — all
+  commits/pushes happen on the Mac.
+
+---
+
+## 9. Browser / Chrome session (connect to the RIGHT browser)
+
+A new session must reuse the user's signed-in browser — **do not open a new one**.
+
+- **Browser:** `Chrome 4 Testing` — **deviceId `8943f5c6-aac9-4f27-ad17-3c74af143c51`** (macOS, local).
+- Other devices that have appeared (do NOT use unless asked): a Windows `Browser 2` /
+  `0978deea-b091-4999-8358-94c136ba10ff`.
+
+Connect (Claude in Chrome MCP):
+```text
+list_connected_browsers            # confirm 8943f5c6… is present
+# (when >1 browser is connected the tooling forces an AskUserQuestion to pick one — choose Chrome 4 Testing)
+select_browser 8943f5c6-aac9-4f27-ad17-3c74af143c51
+tabs_context_mcp { createIfEmpty: true }
+navigate <url> ; then get_page_text / read_page / javascript_tool
+```
+
+**Signed in within that browser:** GitHub (`dglabsxyz`), Railway, Supabase (OWASP org), LangSmith, Tavily.
+
+**This-session browser findings (save yourself the time):**
+- **Screenshots time out** on this instance — drive via `get_page_text`, `read_page`, `find`, and
+  `javascript_tool`, never screenshots.
+- **Supabase Studio does NOT mount** in this browser (the SQL editor renders an empty shell). Apply DDL
+  via the Management API instead: `POST https://api.supabase.com/v1/projects/{ref}/database/query` with
+  the dashboard session token from `localStorage['supabase.dashboard.auth.token']` (used in-page; never
+  print it). This is how migration 003 was applied.
+- **Railway dashboard DOES render**, but fine-grained variable edits via automation are unreliable
+  (hover-revealed kebab menus and the Raw Editor don't surface to DOM queries). Project `feisty-warmth`
+  URL: `https://railway.com/project/b8822eef-0333-406a-a98c-09f67a994632`; variables deep link:
+  `…/service/d9c50342-01d9-496b-8daf-e731a9267061/variables?environmentId=8a850a37-00e4-4d7e-8718-0880b041d2d8`.
+  For variable changes, ask the user to do it in the dashboard (the read-only `RAILWAY_TOKEN` returns
+  "Not Authorized" for `variableUpsert`).

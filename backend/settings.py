@@ -107,6 +107,9 @@ class AppSettings(BaseModel):
     auth_require_tenant_claim: bool = False
     graph_checkpointer_backend: Literal["memory", "sqlite", "postgres"] = "sqlite"
     database_url: str | None = None
+    # Cross-session /memories/ store for the deep agent. "memory" is process-local
+    # (resets on restart); "postgres" durably persists memories via DATABASE_URL.
+    agent_store_backend: Literal["memory", "postgres"] = "memory"
     rate_limit_enabled: bool = True
     rate_limit_backend: Literal["memory", "sqlite"] = "sqlite"
     rate_limit_window_seconds: int = 60
@@ -207,6 +210,7 @@ def get_settings() -> AppSettings:
             os.getenv("CHECKPOINTER_BACKEND", "sqlite"),
         ),  # type: ignore[arg-type]
         database_url=os.getenv("TUTOR_DATABASE_URL") or os.getenv("DATABASE_URL"),
+        agent_store_backend=os.getenv("TUTOR_AGENT_STORE_BACKEND", "memory"),  # type: ignore[arg-type]
         rate_limit_enabled=_bool_env("TUTOR_RATE_LIMIT_ENABLED", True),
         rate_limit_backend=os.getenv("TUTOR_RATE_LIMIT_BACKEND", "sqlite"),  # type: ignore[arg-type]
         rate_limit_window_seconds=_int_env("TUTOR_RATE_LIMIT_WINDOW_SECONDS", 60),

@@ -20,9 +20,9 @@ from pathlib import Path
 from deepagents import create_deep_agent
 from deepagents.backends import CompositeBackend, FilesystemBackend, StoreBackend
 from langchain_openai import ChatOpenAI
-from langgraph.store.memory import InMemoryStore
 
 from . import agent_tools
+from .agent_store import build_store
 from .checkpoints import build_checkpointer
 from .settings import get_settings
 
@@ -72,6 +72,18 @@ def _backend() -> CompositeBackend:
 
 
 # --- Subagents (each stateless; instructions must be complete) --------------
+# Appended to every subagent prompt: the corpus is reached via search_course_material,
+# NOT the filesystem. Without this, the model spends its step budget exploring the
+# virtual filesystem (ls/glob/grep/read_file) for corpus paths that don't exist and
+# loops to the recursion limit. The file tools are only for skills + shared memories.
+SUBAGENT_FS_GUARDRAIL = (
+    " IMPORTANT: course material is available ONLY by calling the `search_course_material` tool — call "
+    "it directly; the corpus is NOT on the filesystem. Never use `ls`, `glob`, `grep`, or `read_file` to "
+    "look for topics, courses, instructors, or corpus files (those paths do not exist and will error). "
+    "The filesystem holds only your skills under `/skills/` and shared notes under `/memories/`. Do your "
+    "job by calling your tools, then return your result — do not explore the filesystem."
+)
+
 DIAGNOSTIC = {
     "name": "diagnostic",
     "description": "Assesses the learner's current mastery for a goal. Use first for a new goal.",
@@ -79,6 +91,7 @@ DIAGNOSTIC = {
         "Load the 'socratic-tutoring' skill. Call view_progress to see current mastery, then "
         "assess_skills(goal) using source-backed probes (search_course_material as needed). "
         "Return a short diagnosis: per-skill status for the goal and the 1-2 weakest prerequisites."
+        + SUBAGENT_FS_GUARDRAIL
     ),
     "tools": agent_tools.SUBAGENT_TOOLSETS["diagnostic"],
     "skills": SKILLS_SOURCES,
@@ -90,6 +103,7 @@ PATH_PLANNER = {
     "system_prompt": (
         "Load the 'socratic-tutoring' skill. Call recommend_path(goal) and ground each module with "
         "search_course_material. Return the ordered path with one-line rationale per module and citations."
+        + SUBAGENT_FS_GUARDRAIL
     ),
     "tools": agent_tools.SUBAGENT_TOOLSETS["path_planner"],
     "skills": SKILLS_SOURCES,
@@ -102,6 +116,7 @@ EXERCISE_AUTHOR = {
         "Load the 'exercise-design' skill and follow it strictly. Use search_course_material to ground "
         "the exercise, then call next_exercise(skill=...). Return the exercise prompt, its expected points, "
         "and the source references. Do not reveal the answer key."
+        + SUBAGENT_FS_GUARDRAIL
     ),
     "tools": agent_tools.SUBAGENT_TOOLSETS["exercise_author"],
     "skills": SKILLS_SOURCES,
@@ -114,6 +129,7 @@ GRADER_CRITIC = {
         "Load the 'feedback-style' skill. Call grade_answer(answer, exercise_id) — the score and verdict "
         "are computed by code; never overrule them. Then explain covered vs missed rubric points, cite a "
         "source to close any gap, and name exactly one next step."
+        + SUBAGENT_FS_GUARDRAIL
     ),
     "tools": agent_tools.SUBAGENT_TOOLSETS["grader_critic"],
     "skills": SKILLS_SOURCES,
@@ -127,13 +143,26 @@ statistics, or citations beyond it or what a tool returns.
 
 {GROUNDING}
 
-How you work each turn — first call write_todos to plan, then delegate to specialists with `task`
-based on the conversation state:
+How you work each turn — begin by calling write_todos to plan, then delegate to specialists with
+`task` based on the conversation state. Never begin a turn by exploring the filesystem.
 - New or restated goal → delegate to 'diagnostic', then 'path-planner'.
 - Learner is ready to practice (or asks for an exercise) → delegate to 'exercise-author' for ONE exercise.
 - Learner submits an answer → delegate to 'grader-critic' to grade and give feedback.
 - At a natural stopping point, or when the learner asks to save/finish → call commit_progress with a
   one-line summary. This is gated by human approval; wait for it.
+
+Tools and filesystem — read carefully:
+- Course content lives behind the `search_course_material` tool, which your SUBAGENTS hold — it is NOT
+  on your working filesystem, and you do not retrieve or cite it yourself. To use any topic, course, or
+  instructor, DELEGATE to a specialist (it will search and cite). NEVER use `ls`, `glob`, `grep`,
+  `read_file`, or `write_file` to look for course material — those corpus paths do not exist on your
+  filesystem and the calls will error; an empty or "path_not_found" result means "delegate", not "try
+  another path".
+- Your working filesystem holds only `/skills/` (skills you may load) and `/memories/` (durable
+  learner notes for future sessions). That is the only thing the file tools are for.
+- One step per turn: after you have delegated and received the specialist's result (or directly
+  answered a simple question), STOP and write your reply. Do not re-run the same delegation or keep
+  calling tools in a loop — at most one diagnosis, one path, one exercise, or one grade per turn.
 
 Subagents share the filesystem and todos but not message history, so give each complete instructions.
 You may save a durable learner note to /memories/ (e.g. preferred pace, recurring gaps) for future sessions.
@@ -149,7 +178,7 @@ def build_tutor_agent():
         tools=[agent_tools.view_progress, agent_tools.commit_progress],
         subagents=[DIAGNOSTIC, PATH_PLANNER, EXERCISE_AUTHOR, GRADER_CRITIC],
         backend=_backend(),
-        store=InMemoryStore(),
+        store=build_store(),
         skills=SKILLS_SOURCES,
         interrupt_on={"commit_progress": True},
         checkpointer=build_checkpointer(),

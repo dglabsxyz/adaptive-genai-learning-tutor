@@ -11,8 +11,9 @@ Rename suggestion on your machine: `git mv tests/test_graph_routing.py tests/tes
 from uuid import uuid4
 
 import pytest
+from langgraph.errors import GraphRecursionError
 
-from backend import agent, agent_tools
+from backend import agent, agent_runtime, agent_tools
 from backend.settings import get_settings
 
 
@@ -25,6 +26,35 @@ def test_orchestrator_grounded_and_subagents_defined():
     for spec in specs:
         assert spec["tools"], f"{spec['name']} has no tools"
         assert spec["skills"] == ["/skills/"]
+
+
+def test_orchestrator_prompt_guards_against_filesystem_corpus_spelunking():
+    # Regression guard for the loop fix: the orchestrator must be told the corpus is
+    # reached only via search_course_material/subagents, never via filesystem tools.
+    prompt = agent.ORCHESTRATOR_PROMPT
+    assert "search_course_material" in prompt
+    assert "read_file" in prompt and "glob" in prompt and "grep" in prompt
+    # and the same guardrail is reinforced in the grounding asset
+    grounding = (agent.PKG_DIR / "grounding" / "genai_tutor.md").read_text(encoding="utf-8")
+    assert "not files" in grounding.lower() or "not be on" in grounding.lower() or "do not exist" in grounding.lower()
+
+
+def test_recursion_limit_degrades_gracefully(monkeypatch):
+    # When the agent exhausts its step budget, run_tutor_turn returns a clean,
+    # contract-shaped reply (not a raised GraphRecursionError / 500) and restores context.
+    class _Looping:
+        def invoke(self, *args, **kwargs):
+            raise GraphRecursionError("Recursion limit of 80 reached without hitting a stop condition.")
+
+    monkeypatch.setattr(agent_runtime, "build_tutor_agent", lambda: _Looping())
+
+    result = agent_runtime.run_tutor_turn("loop-learner", "do something huge", tenant_id="local")
+
+    assert result["message"] == agent_runtime.RECURSION_FALLBACK_MESSAGE
+    assert result["learner_id"] == "loop-learner"
+    assert result["source_refs"] == []
+    # per-request context was reset even though the turn errored internally
+    assert agent_tools._agent_ctx.get().get("learner_id") is None
 
 
 def test_context_bound_tools_require_and_use_context():

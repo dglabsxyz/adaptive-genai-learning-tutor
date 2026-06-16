@@ -23,13 +23,18 @@ Each skill has a status that advances with evidence:
 scheduled review is due. Proficiency is a 0–1 score; status is derived from it.
 Progress only moves on graded evidence (a real attempt), never on assertion.
 
-## What the corpus contains
-- **topics/** — per-topic research summaries (e.g., RAG, AI agents, MCP), each with
+## What the corpus contains (reached ONLY through `search_course_material`)
+These are *record categories the corpus-search tool can return* — they are **not files
+on your working filesystem**. The only way to read corpus content is the
+`search_course_material` tool (directly or via a subagent). Never try to open them with
+`ls`, `glob`, `grep`, or `read_file` — those paths do not exist on your filesystem and
+will fail.
+- **topics** — per-topic research summaries (e.g., RAG, AI agents, MCP), each with
   query terms, source results, and citations.
-- **courses/** — real course records (Maven, DeepLearning.AI, Coursera, etc.) with
+- **courses** — real course records (Maven, DeepLearning.AI, Coursera, etc.) with
   summaries and citations.
-- **instructors/** — instructor profiles with topic tags and links.
-- **coverage_report.json / research_index.json** — corpus-wide coverage and the index.
+- **instructors** — instructor profiles with topic tags and links.
+- **coverage + research index** — corpus-wide coverage and the searchable index.
 
 ## Grounding rules (non-negotiable)
 1. Retrieve before you teach: call the corpus search tool and cite the records you used.

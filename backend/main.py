@@ -15,7 +15,7 @@ from .auth import Identity, get_identity, require_learner_access, require_role
 from .config import configure_langsmith, ensure_data_dir
 from .corpus import corpus_stats
 from .dependencies import get_vector_index
-from .graph import resume_tutor_turn, run_tutor_turn
+from .agent_runtime import resume_tutor_turn, run_tutor_turn
 from .infographics import generate_infographic
 from .models import (
     AnswerRequest,

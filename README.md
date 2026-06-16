@@ -2,6 +2,12 @@
 
 Local-first MVP of a source-backed GenAI tutor over `genai_research`.
 
+> **Architecture:** the tutor's `/chat` brain is a **Deep Agent** built on the
+> [`deepagents`](https://github.com/langchain-ai/deepagents) framework — an orchestrator that
+> plans and delegates to specialist subagents, with on-demand skills, cross-session memory, and
+> a human-in-the-loop gate, traced to LangSmith. It requires `QWEN_API_KEY`. To rebuild it from
+> scratch, follow **[`docs/REBUILD_FROM_SCRATCH.md`](docs/REBUILD_FROM_SCRATCH.md)**.
+
 ## What Runs Locally
 
 - FastAPI backend with tutor endpoints.
@@ -9,8 +15,9 @@ Local-first MVP of a source-backed GenAI tutor over `genai_research`.
 - Local sparse embeddings plus JSON vector search under `data/vector_index.json`.
 - Typed settings, request IDs, structured logs, local auth/RBAC headers, optional JWT/OIDC auth, rate limits, and append-only audit events.
 - JSON repository interfaces by default, with an optional Supabase REST repository path.
-- LangChain tools for search, diagnostics, exercises, grading, progress, and recommendations.
-- LangGraph router with SQLite-backed checkpoints, explicit resume API, and interrupt guards.
+- **Deep-agent brain (`deepagents`):** orchestrator that plans (`write_todos`) and delegates via `task` to four subagents — diagnostic, path-planner, exercise-author, grader-critic — each with isolated context, focused tools, and on-demand skills.
+- Deterministic, source-backed tools for search, diagnostics, exercises, grading, progress, and recommendations (the LLM drafts; code grades).
+- A `Store` for cross-session `/memories/`, a human-in-the-loop `commit_progress` gate, and SQLite/Postgres checkpoints with an explicit resume API.
 - LangSmith tracing support through environment variables.
 - Vite React tutor workspace with Learner, Educator, Admin, and Sources modes.
 - FastMCP server exposing learner tools plus enterprise intent tools over the same state.
@@ -29,7 +36,8 @@ Copy environment defaults if useful:
 cp .env.example .env
 ```
 
-No secrets are required for the local MVP.
+The deep-agent `/chat` requires `QWEN_API_KEY` (DashScope). The rest of the local MVP — corpus
+search, diagnostics, grading, progress, and the REST endpoints — runs without secrets.
 
 ## Environment Variables
 

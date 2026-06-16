@@ -16,6 +16,34 @@ checkpointer added, and the Railway builder switched to **Railpack**. Remaining:
 the LangSmith demo video (#1) and the Mac-only frontend e2e (#2). **Action
 required: `git push` from the Mac to ship the Railpack switch** (see §4/§5).
 
+**Session 3 update (2026-06-16) — Deep-Agent refactor (full replace).** The hand-built
+LangGraph brain was replaced with the course's **`deepagents`** framework so the project can be
+walked through like the Session 2 "Deep Agent" tutorial. What changed:
+- **New agent layer:** `backend/agent.py` (orchestrator + 4 subagents: `diagnostic`,
+  `path-planner`, `exercise-author`, `grader-critic`), `backend/agent_tools.py` (context-bound
+  tools + HITL `commit_progress`), `backend/agent_runtime.py` (the `/chat` runtime, same response
+  contract as before). `backend/grounding/genai_tutor.md` + `backend/skills/{socratic-tutoring,
+  exercise-design,feedback-style}/SKILL.md` (progressive disclosure).
+- **Full replace:** `/chat` now runs the deep agent and **requires `QWEN_API_KEY`** (no
+  deterministic fallback for orchestration). `backend/graph.py` is now a thin deprecation shim
+  re-exporting `agent_runtime`.
+- **Model fix:** the old default `qwen3.7-plus` is not a real DashScope model; standardized on
+  **`qwen-plus`** (verified tool-calling). Settings default updated.
+- **Deps bumped:** `langchain>=1.0`, `langchain-core>=1.0`, `langchain-openai`, `deepagents>=0.6.10`,
+  `langgraph>=1.0`; **Python floor raised to 3.12** (deepagents needs it). `uv.lock` re-locked.
+- **LangSmith:** traces now route to a NEW project **`adaptive-tutor-deep-agent`** (`.env` updated);
+  `scripts/generate_demo_traces.py` rewritten to drive the deep agent for the dashboard demo.
+- **Tests reworked + green (31 passed offline):** graph-routing/reset/resume graph tests replaced
+  with offline deep-agent wiring tests; the rest kept.
+- **From-scratch walkthrough:** `docs/REBUILD_FROM_SCRATCH.md` (the GitHub-as-tutorial deliverable).
+- **Verified live:** deepagents + Qwen + subagent delegation run end-to-end and a nested trace tree
+  lands in `adaptive-tutor-deep-agent` (orchestrator → task → subagent).
+- **Do on the Mac (sandbox can't delete/rename files):** optional cleanup
+  `git rm backend/graph.py` (it's now just a shim) and
+  `git mv tests/test_graph_routing.py tests/test_agent_wiring.py`; then commit + push. Railway
+  already has `QWEN_API_KEY`; the next deploy builds the langchain-1.0 + deepagents stack on
+  Python 3.12 via Railpack — re-verify `/health` and a `/chat` turn after it builds.
+
 ---
 
 ## 0. How to resume (local)

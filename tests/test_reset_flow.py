@@ -1,11 +1,16 @@
-"""Tests for the real, audited destructive reset flow."""
+"""Tests for the real, audited destructive reset (backend + API).
+
+The deep-agent tutor exposes consequential writes behind its own human-in-the-loop
+gate (``commit_progress``); the graph-level reset interrupt is gone. The reset
+*function* and the guarded ``/progress/{id}/reset`` endpoint remain and are tested
+here directly (no LLM required).
+"""
 
 from uuid import uuid4
 
 from fastapi.testclient import TestClient
 
 from backend.audit import read_audit_events
-from backend.graph import resume_tutor_turn, run_tutor_turn
 from backend.main import app
 from backend.stores import reset_learner_progress
 from backend.tools import tutor_submit_answer_impl, tutor_get_next_exercise_impl, tutor_view_progress_impl
@@ -44,37 +49,6 @@ def test_reset_function_clears_progress_and_audits():
     assert after["active_exercise_id"] is None
     events = read_audit_events(tenant_id=tenant_id, learner_id=learner_id, event_type="progress_reset", limit=5)
     assert events and events[-1]["metadata"]["scope"] == "all"
-
-
-def test_graph_reset_requires_confirmation_then_resets():
-    learner_id = f"reset-graph-{uuid4()}"
-    tenant_id = "tenant-reset"
-    thread = f"thread-{uuid4()}"
-    _build_some_progress(learner_id, tenant_id)
-
-    first = run_tutor_turn(learner_id, "please reset progress", thread_id=thread, tenant_id=tenant_id)
-    assert first.get("needs_clarification") is True
-    assert first["interrupt"]["reason"] == "confirm_destructive_action"
-
-    resumed = resume_tutor_turn(learner_id, "yes", thread_id=thread, tenant_id=tenant_id)
-    assert "reset" in resumed["message"].lower()
-
-    after = tutor_view_progress_impl(learner_id=learner_id, tenant_id=tenant_id)
-    assert all(entry["attempts"] == 0 for entry in after["progress"].values())
-
-
-def test_graph_reset_can_be_declined():
-    learner_id = f"reset-decline-{uuid4()}"
-    tenant_id = "tenant-reset"
-    thread = f"thread-{uuid4()}"
-    _build_some_progress(learner_id, tenant_id)
-
-    run_tutor_turn(learner_id, "wipe progress", thread_id=thread, tenant_id=tenant_id)
-    resumed = resume_tutor_turn(learner_id, "no, cancel", thread_id=thread, tenant_id=tenant_id)
-
-    assert "cancel" in resumed["message"].lower() or "unchanged" in resumed["message"].lower()
-    after = tutor_view_progress_impl(learner_id=learner_id, tenant_id=tenant_id)
-    assert any(entry["attempts"] > 0 for entry in after["progress"].values())  # progress preserved
 
 
 def test_reset_endpoint_requires_confirm_and_enforces_boundary():

@@ -123,7 +123,7 @@ class AppSettings(BaseModel):
     # Qwen / DashScope (OpenAI-compatible) configuration.
     qwen_api_key: str | None = None
     qwen_base_url: str = "https://dashscope-intl.aliyuncs.com/compatible-mode/v1"
-    qwen_llm_model: str = "qwen3.7-plus"
+    qwen_llm_model: str = "qwen-plus"
     qwen_embedding_model: str = "text-embedding-v4"
     qwen_vl_model: str = "qwen3-vl-plus"
     qwen_image_model: str = "qwen-image-2.0"
@@ -225,7 +225,7 @@ def get_settings() -> AppSettings:
             "QWEN_BASE_URL",
             os.getenv("DASHSCOPE_BASE_URL", "https://dashscope-intl.aliyuncs.com/compatible-mode/v1"),
         ),
-        qwen_llm_model=os.getenv("QWEN_LLM_MODEL", "qwen3.7-plus"),
+        qwen_llm_model=os.getenv("QWEN_LLM_MODEL", "qwen-plus"),
         qwen_embedding_model=os.getenv("QWEN_EMBEDDING_MODEL", "text-embedding-v4"),
         qwen_vl_model=os.getenv("QWEN_VL_MODEL", "qwen3-vl-plus"),
         qwen_image_model=os.getenv("QWEN_IMAGE_MODEL", "qwen-image-2.0"),

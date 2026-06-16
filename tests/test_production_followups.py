@@ -4,15 +4,12 @@ from uuid import uuid4
 import jwt
 import pytest
 from fastapi.testclient import TestClient
-from langgraph.types import Command
 
 import backend.rate_limit as rate_limit
 from backend.corpus import CorpusDocument
-from backend.graph import _format_graph_result, _thread_config, build_tutor_graph, run_tutor_turn
 from backend.main import app
 from backend.pgvector_store import PGVectorIndex
 from backend.settings import get_settings
-from backend.tools import tutor_get_next_exercise_impl
 
 client = TestClient(app)
 
@@ -79,32 +76,6 @@ def test_rate_limit_blocks_per_tenant_user_action(monkeypatch):
     assert first.status_code == 200
     assert second.status_code == 429
     assert "Retry-After" in second.headers
-
-
-def test_graph_resume_uses_durable_checkpoint_with_fresh_graph():
-    learner_id = f"resume-{uuid4()}"
-    thread_id = learner_id
-    tutor_get_next_exercise_impl(learner_id, skill="RAG")
-
-    interrupted = run_tutor_turn(learner_id, "answer: maybe", thread_id=thread_id)
-    assert interrupted["needs_clarification"] is True
-    assert interrupted["interrupt"]["reason"] == "ambiguous_answer"
-
-    fresh_graph = build_tutor_graph()
-    tenant, base_thread_id, config = _thread_config(learner_id, thread_id, "local")
-    result = fresh_graph.invoke(
-        Command(
-            resume={
-                "answer": "Retrieve records with vector search, ground with citations, preserve unknowns, and evaluate faithfulness."
-            }
-        ),
-        config=config,
-    )
-    resumed = _format_graph_result(result, learner_id=learner_id, tenant_id=tenant, thread_id=base_thread_id)
-
-    assert resumed["intent"] == "submit_answer"
-    assert resumed["grading"]["score"] >= 0.75
-    assert resumed["grading"]["mastery_update"]["evidence"]
 
 
 class FakeSupabaseClient:

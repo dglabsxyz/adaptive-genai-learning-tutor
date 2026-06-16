@@ -105,7 +105,8 @@ class AppSettings(BaseModel):
     auth_tenant_claim: str = "tenant_id"
     auth_role_claim: str = "role"
     auth_require_tenant_claim: bool = False
-    graph_checkpointer_backend: Literal["memory", "sqlite"] = "sqlite"
+    graph_checkpointer_backend: Literal["memory", "sqlite", "postgres"] = "sqlite"
+    database_url: str | None = None
     rate_limit_enabled: bool = True
     rate_limit_backend: Literal["memory", "sqlite"] = "sqlite"
     rate_limit_window_seconds: int = 60
@@ -205,6 +206,7 @@ def get_settings() -> AppSettings:
             "TUTOR_GRAPH_CHECKPOINTER_BACKEND",
             os.getenv("CHECKPOINTER_BACKEND", "sqlite"),
         ),  # type: ignore[arg-type]
+        database_url=os.getenv("TUTOR_DATABASE_URL") or os.getenv("DATABASE_URL"),
         rate_limit_enabled=_bool_env("TUTOR_RATE_LIMIT_ENABLED", True),
         rate_limit_backend=os.getenv("TUTOR_RATE_LIMIT_BACKEND", "sqlite"),  # type: ignore[arg-type]
         rate_limit_window_seconds=_int_env("TUTOR_RATE_LIMIT_WINDOW_SECONDS", 60),

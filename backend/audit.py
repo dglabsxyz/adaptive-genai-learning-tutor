@@ -8,6 +8,7 @@ import threading
 import uuid
 from typing import Any
 
+from .enterprise_sink import mirror_audit_event
 from .settings import get_settings
 from .models import utc_now
 
@@ -92,6 +93,8 @@ def write_audit_event(
     with _lock:
         with settings.audit_log_path.open("a", encoding="utf-8") as handle:
             handle.write(json.dumps(event, sort_keys=True) + "\n")
+    # Best-effort mirror to the Supabase audit_events table (no-op under json/local).
+    mirror_audit_event(event)
     return event
 
 

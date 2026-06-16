@@ -10,6 +10,7 @@ from langsmith import traceable
 
 from .audit import write_audit_event
 from .dependencies import get_vector_index
+from .enterprise_sink import record_answer, record_study_plan
 from .models import EXERCISE_TYPES, Exercise, SearchHit, SourceRef
 from .stores import exercise_store, learner_store
 from .topic_utils import resolve_skills, skill_path_for_goal
@@ -199,7 +200,13 @@ def tutor_recommend_path_impl(learner_id: str, goal: str, tenant_id: str | None 
             }
         )
     profile.study_plan = modules
-    learner_store.save(profile, tenant_id=tenant_id)
+    saved = learner_store.save(profile, tenant_id=tenant_id)
+    record_study_plan(
+        tenant_id=saved.tenant_id,
+        learner_id=saved.learner_id,
+        goal=goal,
+        modules=modules,
+    )
     learner_store.append_history(
         learner_id,
         {"type": "study_plan", "goal": goal, "module_count": len(modules)},
@@ -603,6 +610,16 @@ def tutor_submit_answer_impl(
             "score": round(score, 2),
         },
         tenant_id=tenant_id,
+    )
+    record_answer(
+        tenant_id=exercise.tenant_id,
+        learner_id=learner_id,
+        exercise_id=exercise_id,
+        answer=answer,
+        score=round(score, 4),
+        verdict=verdict,
+        covered_points=covered,
+        missed_points=missed,
     )
     progress = profile.progress[exercise.skill]
     mastery_update = {

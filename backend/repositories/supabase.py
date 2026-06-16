@@ -44,6 +44,17 @@ class SupabaseREST:
         )
         response.raise_for_status()
 
+    def insert(self, table: str, rows: list[dict[str, Any]]) -> None:
+        """Insert new rows. ``return=minimal`` so no SELECT grant is required."""
+        headers = {**self.headers, "prefer": "return=minimal"}
+        response = httpx.post(
+            f"{self.base_url}/{table}",
+            headers=headers,
+            json=rows,
+            timeout=20,
+        )
+        response.raise_for_status()
+
     def rpc(self, function_name: str, payload: dict[str, Any]) -> list[dict[str, Any]]:
         response = httpx.post(
             f"{self.base_url}/rpc/{function_name}",
@@ -99,6 +110,7 @@ class SupabaseLearnerRepository(LearnerStore):
                 correct_streak=item.get("correct_streak") or 0,
                 last_reviewed=item.get("last_reviewed"),
                 next_review=item.get("next_review"),
+                source_refs=[SourceRef.model_validate(ref) for ref in item.get("source_refs") or []],
                 evidence=item.get("evidence") or [],
                 status_reason=item.get("status_reason"),
                 next_review_reason=item.get("next_review_reason"),
@@ -148,6 +160,7 @@ class SupabaseLearnerRepository(LearnerStore):
                     "correct_streak": progress.correct_streak,
                     "last_reviewed": progress.last_reviewed,
                     "next_review": progress.next_review,
+                    "source_refs": [ref.model_dump() for ref in progress.source_refs],
                     "evidence": progress.evidence,
                     "status_reason": progress.status_reason,
                     "next_review_reason": progress.next_review_reason,

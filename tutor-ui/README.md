@@ -1,165 +1,83 @@
-# Adaptive GenAI Learning Tutor — Frontend Examples
+# Adaptive GenAI Learning Tutor — Web App (`tutor-ui`)
 
-A visually rich, dark-themed React frontend for the **Adaptive GenAI Learning Tutor** project. Built with **Vite + React + Tailwind CSS** and designed to be fully compatible with a modern Vite React stack.
+The production frontend for the Adaptive GenAI Learning Tutor. **Vite + React 18 +
+React Router + TanStack Query + Tailwind.** It is fully wired to the FastAPI backend —
+no mock data.
 
----
+## What it does
 
-## 🎨 Design System
+| Page | Backend it uses |
+|------|-----------------|
+| **Dashboard** | `GET /progress/{learner}`, `GET /health` |
+| **Tutor Chat** (flagship) | `POST /chat` + `POST /chat/resume` — the deep agent, with the human-in-the-loop **approve/decline** gate and source citations |
+| **Diagnostic** | `POST /diagnostic` |
+| **Study Plan** | `POST /study-plan` |
+| **Practice (Exercise)** | `POST /exercise`, `POST /answer` (rubric grade, mastery update) |
+| **My Progress** | `GET /progress/{learner}` (+ chart), `GET …/export`, `POST …/reset` |
+| **Course Catalog / Resources** | `GET /sources/search`, `GET /health` corpus stats |
+| **Professor** (educator/admin) | `GET /cohort/progress`, `GET /cohort/interventions`, `GET /admin/*` |
 
-- **Dark theme** with deep purple / cyan accents (`#8b5cf6` → `#06b6d4`)
-- **Glassmorphism** cards with `backdrop-filter` blur and semi-transparent borders
-- **Gradient text & borders** for emphasis and visual hierarchy
-- **Smooth animations** — fade-in, slide-in, scale-in, staggered children, pulse glows
-- **Skill mastery color coding** — red (exposure) → amber (developing) → emerald (proficient) → cyan (mastered) → purple (review)
-- **Source reference chips** — every recommendation and exercise shows corpus grounding
+Identity (learner id + role) is sent on every request via `x-tutor-user-id` /
+`x-tutor-tenant-id` / `x-tutor-role` headers and is editable from the top bar (the
+**role switcher** gates the Professor + admin views).
 
----
-
-## 📁 Project Structure
-
-```
-frontend-examples/
-├── index.html
-├── package.json
-├── vite.config.js
-├── tailwind.config.js
-├── postcss.config.js
-└── src/
-    ├── main.jsx              # React entry point
-    ├── App.jsx               # App shell with sidebar + routing
-    ├── styles/
-    │   └── index.css         # Global styles, CSS variables, animations
-    ├── components/
-    │   ├── Sidebar.jsx         # Navigation sidebar
-    │   ├── ProgressRing.jsx    # Circular progress indicator
-    │   ├── SkillMasteryBar.jsx # Horizontal skill bar with state
-    │   ├── SkillStateBadge.jsx # Compact status badge
-    │   └── SourceRef.jsx       # Corpus citation chips
-    └── pages/
-        ├── Dashboard.jsx       # Learner overview & stats
-        ├── Diagnostic.jsx      # Multi-turn adaptive interview UI
-        ├── StudyPlan.jsx       # Visual learning roadmap
-        ├── Exercise.jsx        # Practice with grading feedback
-        ├── Progress.jsx        # Analytics & skill radar
-        └── CorpusBrowser.jsx   # Course catalog search
-```
-
----
-
-## 🚀 Quick Start
-
-### 1. Copy into a new Vite project
+## Run locally
 
 ```bash
-# Create a new Vite React project
-cd /Users/dgomez/Week\ 3\ Project
-npm create vite@latest tutor-ui -- --template react
-
-# Copy the frontend files
-cp -r /Users/dgomez/Documents/kimi/workspace/frontend-examples/* tutor-ui/
 cd tutor-ui
-```
-
-### 2. Install dependencies
-
-```bash
 npm install
+cp .env.example .env      # defaults to a local backend at http://localhost:8000
+npm run dev               # http://127.0.0.1:5173
 ```
 
-### 3. Run the dev server
+Start the backend in another terminal (`uv run uvicorn backend.main:app --reload --port 8000`).
+A local backend serves permissive CORS, so the dev server works out of the box.
+
+To point the dev UI at the **deployed** backend, set `VITE_API_URL` in `.env` to the
+Railway backend URL — but note you must then add `http://localhost:5173` to the backend's
+`TUTOR_CORS_ORIGINS` (prod CORS is closed by default).
+
+## Configuration (`.env`, all `VITE_*`)
+
+| Var | Purpose |
+|-----|---------|
+| `VITE_API_URL` | Backend base URL (build-time; Vite inlines it). |
+| `VITE_TUTOR_TENANT_ID` | `x-tutor-tenant-id`. Must be the seeded UUID for the Supabase-backed backend. |
+| `VITE_TUTOR_LEARNER_ID` / `VITE_TUTOR_ROLE` | Default demo learner + role. |
+| `VITE_REQUEST_TIMEOUT_MS` | Client timeout (default 90s; agent chat turns are slow). |
+
+## Build / serve
 
 ```bash
-npm run dev
+npm run build     # -> dist/
+npm start         # serves dist/ on :PORT (default 8080) with SPA fallback (server.mjs)
 ```
 
-The app opens at `http://localhost:5173`.
+## Deploy (Railway, second service)
 
----
+The backend and this SPA are **two services in the same Railway project**.
 
-## 📦 Dependencies
+1. New service → deploy from the same GitHub repo → set **Root Directory = `tutor-ui`**.
+   `railway.json` here builds with `npm install && npm run build` and starts `node server.mjs`.
+2. Set service variables: `VITE_API_URL = <backend URL>` (and `VITE_TUTOR_TENANT_ID` = seeded UUID).
+   `VITE_*` are read at **build** time.
+3. Generate a domain for this service.
+4. On the **backend** service, set `TUTOR_CORS_ORIGINS = <this SPA's https origin>` and redeploy,
+   otherwise the browser blocks the cross-origin API calls.
 
-| Package | Purpose |
-|---|---|
-| `react` / `react-dom` | UI framework |
-| `recharts` | Radar chart & line chart for progress analytics |
-| `tailwindcss` | Utility-first CSS |
-| `vite` | Build tool & dev server |
+## Architecture
 
----
-
-## 🖥️ Screens Included
-
-### 1. Dashboard (`/dashboard`)
-- Overall progress ring, stats cards, skill mastery grid
-- Recent activity feed, recommended next actions
-- Source reference footer showing corpus grounding
-
-### 2. Diagnostic (`/diagnostic`)
-- Chat-style multi-turn interview UI
-- Animated typing indicator for the tutor
-- Multiple-choice options with selection states
-- **Interrupt flow** — clarifying question mid-diagnostic
-- Final proficiency profile result card
-- Progress bar at top showing question count
-
-### 3. Study Plan (`/study-plan`)
-- Visual roadmap with collapsible modules
-- Skill dependency graph (text-based flow)
-- Prerequisites, course recommendations, progress bars per module
-- Goal adjustment buttons (Exam Cram / Deep Mastery / Custom)
-- Spaced repetition indicators
-
-### 4. Exercise (`/exercise`)
-- **Architecture scenario** exercise format (open-ended)
-- Hints accordion (expandable tips without spoiling)
-- Solution accordion (reference answer + explanation)
-- Textarea for learner answer with character count
-- **Grading feedback panel** — score, feedback, misconception tags, detailed explanation
-- Source reference chips for corpus grounding
-- Next action buttons (Retry, Next Exercise)
-
-### 5. Progress (`/progress`)
-- **Radar chart** — skill proficiency across all 8 GenAI topics
-- **Line chart** — weekly exercise count & average score
-- Spaced repetition schedule (what's due and when)
-- Recent mastery transitions (exposure → developing → proficient)
-- Progress rings for overall stats
-
-### 6. Corpus Browser (`/corpus`)
-- Search bar with instant filtering
-- Topic filter pills (LLMs, RAG, Agents, MCP, etc.)
-- Course/topic result cards with descriptions, platform, instructor
-- Corpus metadata snapshot (67 courses, 17 topics, 72 instructors, 81 sources)
-- Source citation links
-
----
-
-## 🔌 Integration with Backend
-
-These components are **presentation-ready** with mock data. To wire them to your actual backend:
-
-1. **Replace mock data** in each page with API calls to your orchestrator / MCP server.
-2. **Add React Router** (`react-router-dom`) and replace the `activePage` state with real routes.
-3. **Connect WebSocket or SSE** for real-time diagnostic chat updates.
-4. **Swap `recharts`** data props with live analytics from the learner store.
-
-### Key data contracts (from the PRD):
-
-- `LearnerProfile` — skills array with `status`, `proficiency`, `confidence`
-- `Exercise` — `question`, `format`, `hints`, `rubric`, `solution`, `source_refs`
-- `GradingResult` — `score`, `feedback`, `explanation`, `misconception_tags`, `next_action`
-- `StudyPlan` — ordered modules with `prerequisites`, `courses`, `milestones`
-
----
-
-## 🛠️ Customization
-
-- Edit `src/styles/index.css` to change the color palette, animation speeds, or glassmorphism intensity.
-- Modify `tailwind.config.js` to extend the theme with custom colors or breakpoints.
-- Add `react-router-dom` in `App.jsx` for real URL-based navigation.
-
----
-
-## 📄 License
-
-Part of the Week 3 Project — Adaptive GenAI Learning Tutor.
+```
+src/
+  config.js              env + defaults
+  api/
+    client.js            fetch wrapper: identity headers, timeout, ApiError
+    endpoints.js         one function per backend route
+    useApi.js            binds the current identity to every endpoint
+    mappers.js           backend payloads -> component shapes
+  context/
+    SessionContext.jsx   learner id / tenant / role (persisted)
+    ThemeContext, ToastContext
+  components/            Sidebar, TopBar (identity switcher + health), PageStates, …
+  pages/                 one file per route (all wired to the API)
+```

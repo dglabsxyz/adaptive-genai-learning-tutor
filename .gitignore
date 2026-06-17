@@ -6,6 +6,8 @@ __pycache__/
 node_modules/
 frontend/node_modules/
 frontend/dist/
+tutor-ui/dist/
+tutor-ui/*.timestamp-*.mjs
 data/*.tmp
 
 repo/

@@ -5,9 +5,9 @@ check the orchestrator/subagent wiring, that the context-bound tools refuse to
 act without a learner context (and resolve correctly with one), that the model
 factory requires a Qwen key, and that the grounding + skills assets exist.
 
-Rename suggestion on your machine: `git mv tests/test_graph_routing.py tests/test_agent_wiring.py`.
 """
 
+import json
 from uuid import uuid4
 
 import pytest
@@ -37,6 +37,23 @@ def test_orchestrator_prompt_guards_against_filesystem_corpus_spelunking():
     # and the same guardrail is reinforced in the grounding asset
     grounding = (agent.PKG_DIR / "grounding" / "genai_tutor.md").read_text(encoding="utf-8")
     assert "not files" in grounding.lower() or "not be on" in grounding.lower() or "do not exist" in grounding.lower()
+
+
+def test_collect_source_refs_dedupes_and_ignores_non_json():
+    from types import SimpleNamespace
+
+    refs = [
+        {"source_id": "topic:rag", "record_type": "topic", "title": "RAG", "path": "p1", "citations": ["u1"]},
+        {"source_id": "course:x", "record_type": "course", "title": "X", "path": "p2", "citations": []},
+    ]
+    messages = [
+        SimpleNamespace(type="ai", content="thinking", tool_calls=[{"name": "search_course_material"}]),
+        SimpleNamespace(type="tool", content=json.dumps({"results": [], "source_refs": refs})),
+        SimpleNamespace(type="tool", content=json.dumps({"source_refs": [refs[0]]})),  # duplicate -> deduped
+        SimpleNamespace(type="tool", content="not-json, should be ignored"),
+    ]
+    out = agent_runtime._collect_source_refs({"messages": messages})
+    assert [r["source_id"] for r in out] == ["topic:rag", "course:x"]
 
 
 def test_recursion_limit_degrades_gracefully(monkeypatch):

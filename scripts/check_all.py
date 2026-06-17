@@ -7,7 +7,8 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-FRONTEND = ROOT / "frontend"
+# tutor-ui is the canonical frontend (the legacy frontend/ folder was retired).
+FRONTEND = ROOT / "tutor-ui"
 
 COMMANDS = [
     ["uv", "run", "pytest"],
@@ -28,7 +29,7 @@ COMMANDS = [
         "1",
     ],
     ["uv", "run", "python", "mcp_server/server.py", "--smoke"],
-    ["npm", "test"],
+    # Frontend gate: production build must compile (run `npm install` in tutor-ui first).
     ["npm", "run", "build"],
     ["npm", "audit", "--audit-level=high"],
 ]

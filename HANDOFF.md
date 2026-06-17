@@ -82,8 +82,52 @@ fixed a loop that made `/chat` hang/500 on simple inputs. What changed:
   live: `/chat` returned no response within 40 s while `/health` was fine).
 - **Do on the Mac (sandbox can't delete/rename/commit):** commit the new files
   (`backend/agent_store.py`, `scripts/run_agent_eval.py`, `tests/test_agent_store_backends.py`) and the
-  edits; the optional §8 #9 cleanup (`git rm backend/graph.py`, `git mv tests/test_graph_routing.py
-  tests/test_agent_wiring.py`) is still outstanding.
+  edits. (The §8 #9 cleanup — `git rm backend/graph.py`, `git mv tests/test_graph_routing.py
+  tests/test_agent_wiring.py` — was done on the Mac and is reflected in the repo.)
+
+**Session 5 update (2026-06-16) — Full web app: `tutor-ui` wired end-to-end + 2nd Railway service.**
+The Kimi-built `tutor-ui` was a 100%-mock showcase (0 API calls). It is now a fully wired,
+enterprise-structured frontend, and `frontend/` is retired. What changed:
+- **Frontend stack:** added **react-router-dom** (real routes/deep-links) + **@tanstack/react-query**
+  (caching/loading/error) to `tutor-ui`. New `src/api/` layer: `client.js` (fetch wrapper —
+  `x-tutor-*` identity headers, timeout, normalizes the `{error:{code,message}}` envelope into a typed
+  `ApiError`), `endpoints.js` (one fn per route), `useApi.js` (binds identity), `mappers.js`
+  (payload→component shapes). `src/context/SessionContext.jsx` holds learner id / tenant / role
+  (persisted); the **top bar** has the identity + **role switcher** (learner/educator/admin) and a live
+  `/health` badge.
+- **All 8 pages wired to the real backend** (hybrid model — fast REST for structured pages, the deep
+  agent for chat): Dashboard + Progress (`/progress`, chart, export, guarded reset), **Tutor Chat**
+  (flagship: `POST /chat` + `POST /chat/resume` with the **HITL approve/decline** card and
+  `source_refs`), Diagnostic (`/diagnostic`), Study Plan (`/study-plan`), Practice (`/exercise` +
+  `/answer` with rubric grade + mastery update), Course Catalog + Resources (`/sources/search`),
+  Professor + Admin (`/cohort/*`, `/admin/*`, role-gated). Loading/error/empty states + toasts throughout.
+- **Backend:** `agent_runtime._collect_source_refs` now populates `source_refs` on `/chat` responses
+  (best-effort scan of tool messages, deduped; §8 #3). Covered by a unit test. **Offline gates: 39 pass.**
+- **Build verified:** `npm install` + `npm run build` compile cleanly (908 modules; `dist/` = index.html
+  + ~33 kB css + ~647 kB js). The mount blocks vite from emptying an existing `dist/`, so build in a
+  fresh outDir in-sandbox; on the Mac `npm run build` works normally.
+- **Retired `frontend/`:** `scripts/check_all.py` now points the frontend gate at `tutor-ui`
+  (`npm run build` + `npm audit`). **On the Mac: `git rm -r frontend/`.**
+- **Deploy = 2nd Railway service (same project):** `tutor-ui/server.mjs` (Express, serves `dist/` with
+  SPA fallback) + `tutor-ui/railway.json` (RAILPACK; build `npm install && npm run build`; start
+  `node server.mjs`). Runbook in `tutor-ui/README.md`.
+
+### Frontend deploy runbook (do on the Mac / Railway dashboard)
+1. `cd tutor-ui && npm install` (picks up react-router + react-query + express). Optional cleanup:
+   `git rm -r frontend/`; `rm tutor-ui/public/*.png` (leftover mockup screenshots bloat the build).
+2. Commit the new `tutor-ui/**` + backend edits; `git push`.
+3. Railway → **New service** from the same repo → **Root Directory = `tutor-ui`**. It uses
+   `tutor-ui/railway.json`.
+4. Frontend service **Variables:** `VITE_API_URL = https://adaptive-genai-learning-tutor-production.up.railway.app`
+   and `VITE_TUTOR_TENANT_ID = 0507cc0e-4a9f-4468-ab32-b56bd87fc97d` (VITE_* are read at **build** time).
+   Deploy → generate a domain.
+5. **CRITICAL — CORS:** on the **backend** service set `TUTOR_CORS_ORIGINS = <the SPA's https origin>`
+   and redeploy. Prod CORS defaults to **closed** (`settings.py`: non-prod → `["*"]`, prod → `[]`), so
+   without this the browser blocks every API call. (Local dev against the local backend needs nothing —
+   local CORS is `*`.)
+6. Verify: open the SPA domain; the top-bar health badge should read "Connected · 158 docs · supabase".
+   Note the deep agent must be the loop-fixed build (push the Session 4 fix first) or Tutor Chat will be
+   slow/erroring.
 
 ---
 

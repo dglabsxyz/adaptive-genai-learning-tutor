@@ -9,6 +9,7 @@ orchestrator instead of the hand-built graph.
 
 from __future__ import annotations
 
+import json
 import logging
 from typing import Any
 
@@ -68,6 +69,58 @@ def _final_message(result: dict[str, Any]) -> str:
     return _text(getattr(messages[-1], "content", "")) if messages else "No tutor response was produced."
 
 
+def _collect_source_refs(result: dict[str, Any], *, limit: int = 8) -> list[dict[str, Any]]:
+    """Best-effort: pull structured source_refs out of the turn's tool messages.
+
+    The tutor tools (search_course_material, next_exercise, grade_answer, …) return
+    a ``source_refs`` list in the SourceRef shape. This scans the run's tool messages,
+    parses their JSON content, and collects + dedupes those refs so the ``/chat``
+    response can populate the structured ``source_refs`` field (the frontend Sources
+    view). Refs that only live inside a subagent's private transcript won't surface
+    here; the agent still cites them inline in its message text, and the deterministic
+    REST endpoints (/exercise, /answer, /study-plan, /sources/search) carry the full set.
+    """
+    seen: set[str] = set()
+    refs: list[dict[str, Any]] = []
+
+    def _ingest(payload: Any) -> None:
+        if not isinstance(payload, dict):
+            return
+        candidates = payload.get("source_refs")
+        if not isinstance(candidates, list):
+            return
+        for ref in candidates:
+            if not isinstance(ref, dict):
+                continue
+            key = ref.get("source_id") or ref.get("path") or ref.get("title")
+            if not key or key in seen:
+                continue
+            seen.add(str(key))
+            refs.append(ref)
+
+    for message in result.get("messages", []) or []:
+        if getattr(message, "type", None) != "tool":
+            continue
+        content = getattr(message, "content", None)
+        if isinstance(content, str):
+            try:
+                _ingest(json.loads(content))
+            except (ValueError, TypeError):
+                continue
+        elif isinstance(content, dict):
+            _ingest(content)
+        elif isinstance(content, list):
+            for block in content:
+                if isinstance(block, dict):
+                    _ingest(block)
+                elif isinstance(block, str):
+                    try:
+                        _ingest(json.loads(block))
+                    except (ValueError, TypeError):
+                        pass
+    return refs[:limit]
+
+
 def _pending_requests(result: dict[str, Any]) -> list[Any]:
     """Unwrap deepagents HITL interrupts into a flat list of action requests."""
     requests: list[Any] = []
@@ -97,7 +150,7 @@ def _format(result: dict[str, Any], *, learner_id: str, tenant_id: str, thread_i
         "tenant_id": tenant_id,
         "thread_id": thread_id,
         "message": _final_message(result),
-        "source_refs": [],
+        "source_refs": _collect_source_refs(result),
     }
 
 

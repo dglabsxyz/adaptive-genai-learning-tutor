@@ -1,0 +1,153 @@
+{
+  "name": "Coursera instructors",
+  "slug": "coursera-instructors",
+  "headline": null,
+  "organization": "Coursera",
+  "bio": null,
+  "expertise_areas": [
+    "prompt engineering",
+    "LLMs",
+    "generative AI",
+    "fine-tuning",
+    "RAG",
+    "AI safety and evaluation",
+    "no-code AI",
+    "AI automation",
+    "Zapier",
+    "workflow automation",
+    "responsible AI",
+    "AI ethics"
+  ],
+  "topics_taught": [
+    "prompt engineering",
+    "LLMs",
+    "generative AI",
+    "fine-tuning",
+    "RAG",
+    "AI safety and evaluation",
+    "no-code AI",
+    "AI automation",
+    "Zapier",
+    "workflow automation",
+    "responsible AI",
+    "AI ethics"
+  ],
+  "platforms": [
+    "Coursera"
+  ],
+  "website": null,
+  "social_profiles": {
+    "linkedin": null,
+    "youtube": null,
+    "x": null,
+    "github": null,
+    "other": []
+  },
+  "audience_levels": [
+    "intermediate"
+  ],
+  "teaching_formats": [
+    "Course",
+    "Specialization"
+  ],
+  "courses": [
+    {
+      "course_name": "Generative AI and Prompt Engineering",
+      "course_slug": "generative-ai-and-prompt-engineering",
+      "platform": "Coursera",
+      "url": "https://www.coursera.org/learn/generative-ai--prompt-engineering",
+      "citations": [
+        "https://www.coursera.org/learn/generative-ai--prompt-engineering"
+      ]
+    },
+    {
+      "course_name": "LLM Engineering: Prompting, Fine-Tuning, Optimization and RAG",
+      "course_slug": "llm-engineering-prompting-fine-tuning-optimization-and-rag",
+      "platform": "Coursera",
+      "url": "https://www.coursera.org/specializations/llm-engineering-prompting-fine-tuning-optimization-rag",
+      "citations": [
+        "https://www.coursera.org/specializations/llm-engineering-prompting-fine-tuning-optimization-rag"
+      ]
+    },
+    {
+      "course_name": "Operationalizing No-Code AI with Zapier",
+      "course_slug": "operationalizing-no-code-ai-with-zapier",
+      "platform": "Coursera",
+      "url": "https://www.coursera.org/learn/operationalizing-no-code-ai-with-zapier-automation-and-plans",
+      "citations": [
+        "https://www.coursera.org/learn/operationalizing-no-code-ai-with-zapier-automation-and-plans"
+      ]
+    },
+    {
+      "course_name": "Trustworthy AI: Managing Bias, Ethics, and Accountability",
+      "course_slug": "trustworthy-ai-managing-bias-ethics-and-accountability",
+      "platform": "Coursera",
+      "url": "https://www.coursera.org/learn/responsible-ai-and-ethics",
+      "citations": [
+        "https://www.coursera.org/learn/responsible-ai-and-ethics"
+      ]
+    }
+  ],
+  "credibility_signals": [],
+  "citations": [
+    "https://www.coursera.org/learn/generative-ai--prompt-engineering",
+    "https://www.coursera.org/specializations/llm-engineering-prompting-fine-tuning-optimization-rag",
+    "https://www.coursera.org/learn/operationalizing-no-code-ai-with-zapier-automation-and-plans",
+    "https://www.coursera.org/learn/responsible-ai-and-ethics"
+  ],
+  "source_records": [
+    {
+      "platform": "Coursera",
+      "url": "https://www.coursera.org/learn/generative-ai--prompt-engineering",
+      "title": "Generative AI and Prompt Engineering",
+      "summary": "A Coursera course providing foundational knowledge of generative AI concepts, foundation models, and prompt engineering techniques.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.coursera.org/learn/generative-ai--prompt-engineering"
+      ]
+    },
+    {
+      "platform": "Coursera",
+      "url": "https://www.coursera.org/specializations/llm-engineering-prompting-fine-tuning-optimization-rag",
+      "title": "LLM Engineering: Prompting, Fine-Tuning, Optimization and RAG",
+      "summary": "A Coursera specialization on end-to-end LLM engineering, prompt design, evaluation, fine-tuning, optimization, and RAG.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.coursera.org/specializations/llm-engineering-prompting-fine-tuning-optimization-rag"
+      ]
+    },
+    {
+      "platform": "Coursera",
+      "url": "https://www.coursera.org/learn/operationalizing-no-code-ai-with-zapier-automation-and-plans",
+      "title": "Operationalizing No-Code AI with Zapier",
+      "summary": "A Coursera course on designing, building, optimizing, and scaling no-code AI workflows with Zapier.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.coursera.org/learn/operationalizing-no-code-ai-with-zapier-automation-and-plans"
+      ]
+    },
+    {
+      "platform": "Coursera",
+      "url": "https://www.coursera.org/learn/responsible-ai-and-ethics",
+      "title": "Trustworthy AI: Managing Bias, Ethics, and Accountability",
+      "summary": "A Coursera course on ethical, social, and technical aspects of AI and machine learning.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.coursera.org/learn/responsible-ai-and-ethics"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

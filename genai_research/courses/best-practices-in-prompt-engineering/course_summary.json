@@ -1,0 +1,54 @@
+{
+  "course_name": "Best Practices in Prompt Engineering",
+  "course_slug": "best-practices-in-prompt-engineering",
+  "instructor_names": [
+    "Sophia Yang"
+  ],
+  "instructor_slugs": [
+    "sophia-yang"
+  ],
+  "platform": "Medium",
+  "course_url": "https://medium.com/data-science/best-practices-in-prompt-engineering-a18d6bab904b",
+  "topic_tags": [
+    "prompt engineering",
+    "LLMs"
+  ],
+  "description": "A Medium teaching article on prompt-engineering principles, iterative development, and prompting capabilities.",
+  "syllabus": [],
+  "target_audience": [],
+  "prerequisites": [],
+  "duration": null,
+  "format": "Article",
+  "price": {
+    "amount": null,
+    "currency": null,
+    "raw": null
+  },
+  "rating": {
+    "value": null,
+    "count": null,
+    "raw": null
+  },
+  "certificate": null,
+  "enrollment_status": null,
+  "last_updated": null,
+  "citations": [
+    "https://medium.com/data-science/best-practices-in-prompt-engineering-a18d6bab904b"
+  ],
+  "source_records": [
+    {
+      "platform": "Medium",
+      "url": "https://medium.com/data-science/best-practices-in-prompt-engineering-a18d6bab904b",
+      "title": "Best Practices in Prompt Engineering",
+      "summary": "A Medium teaching article on prompt-engineering principles, iterative development, and prompting capabilities.",
+      "content_type": "article",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://medium.com/data-science/best-practices-in-prompt-engineering-a18d6bab904b"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

@@ -1,0 +1,31 @@
+{
+  "entity_type": "instructor",
+  "entity_name": "Sergio Paniego",
+  "entity_slug": "sergio-paniego",
+  "platform": "website",
+  "query_terms": [
+    "Sergio Paniego",
+    "AI agents",
+    "LLMs",
+    "tool use",
+    "LangGraph",
+    "LlamaIndex",
+    "smolagents",
+    "AI safety and evaluation"
+  ],
+  "results": [
+    {
+      "title": "AI Agents Course",
+      "url": "https://huggingface.co/learn/agents-course/unit0/introduction",
+      "content_type": "course",
+      "summary": "A free Hugging Face course from beginner to expert on understanding, using, and building AI agents.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://huggingface.co/learn/agents-course/unit0/introduction"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

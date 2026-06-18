@@ -1,0 +1,60 @@
+{
+  "entity_type": "topic",
+  "entity_name": "voice AI",
+  "entity_slug": "voice-ai",
+  "platform": "maven",
+  "query_terms": [
+    "voice AI",
+    "AI agents",
+    "multimodal AI",
+    "conversation design",
+    "audio AI"
+  ],
+  "results": [
+    {
+      "title": "Generative AI Creation Masterclass",
+      "url": "https://maven.com/bilawal/generative-ai-masterclass",
+      "content_type": "course",
+      "summary": "A creative GenAI workflow masterclass covering text, image, audio, video, and 3D generation.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/bilawal/generative-ai-masterclass"
+      ]
+    },
+    {
+      "title": "Become a Voice AI Agent Expert",
+      "url": "https://maven.com/p/5de0a6/become-a-voice-ai-agent-expert",
+      "content_type": "other",
+      "summary": "A Maven lesson on voice agent building blocks, models, latency, hosting, telephony, and evaluation.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://maven.com/p/5de0a6/become-a-voice-ai-agent-expert"
+      ]
+    },
+    {
+      "title": "Source for voice AI",
+      "url": "https://maven.com/p/5de0a6/become-a-voice-ai-agent-expert",
+      "content_type": "other",
+      "summary": "Citation source for voice AI.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/p/5de0a6/become-a-voice-ai-agent-expert"
+      ]
+    },
+    {
+      "title": "Source for voice AI",
+      "url": "https://maven.com/bilawal/generative-ai-masterclass",
+      "content_type": "other",
+      "summary": "Citation source for voice AI.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/bilawal/generative-ai-masterclass"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

@@ -1,0 +1,73 @@
+{
+  "name": "Andrej Karpathy",
+  "slug": "andrej-karpathy",
+  "headline": "AI educator and creator of Neural Networks: Zero to Hero",
+  "organization": "Independent",
+  "bio": "AI educator with public teaching resources including Neural Networks: Zero to Hero.",
+  "expertise_areas": [
+    "LLMs",
+    "deep learning",
+    "neural networks",
+    "AI coding"
+  ],
+  "topics_taught": [
+    "LLMs",
+    "deep learning",
+    "neural networks",
+    "AI coding"
+  ],
+  "platforms": [
+    "YouTube"
+  ],
+  "website": null,
+  "social_profiles": {
+    "linkedin": null,
+    "youtube": "https://www.youtube.com/andrejkarpathy",
+    "x": null,
+    "github": "https://github.com/karpathy",
+    "other": [
+      "https://karpathy.ai"
+    ]
+  },
+  "audience_levels": [
+    "intermediate"
+  ],
+  "teaching_formats": [
+    "Video series"
+  ],
+  "courses": [
+    {
+      "course_name": "Neural Networks: Zero to Hero",
+      "course_slug": "neural-networks-zero-to-hero",
+      "platform": "YouTube",
+      "url": "https://karpathy.ai/zero-to-hero.html",
+      "citations": [
+        "https://karpathy.ai/zero-to-hero.html",
+        "https://www.youtube.com/andrejkarpathy"
+      ]
+    }
+  ],
+  "credibility_signals": [
+    "Creator of Neural Networks: Zero to Hero"
+  ],
+  "citations": [
+    "https://karpathy.ai/zero-to-hero.html",
+    "https://www.youtube.com/andrejkarpathy"
+  ],
+  "source_records": [
+    {
+      "platform": "YouTube",
+      "url": "https://karpathy.ai/zero-to-hero.html",
+      "title": "Neural Networks: Zero to Hero",
+      "summary": "A public video series on building neural networks from scratch, from backpropagation to modern deep learning.",
+      "content_type": "video",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://karpathy.ai/zero-to-hero.html"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

@@ -1,0 +1,156 @@
+{
+  "name": "Microsoft",
+  "slug": "microsoft",
+  "headline": null,
+  "organization": "Microsoft",
+  "bio": null,
+  "expertise_areas": [
+    "AI agents",
+    "tool use",
+    "multi-agent systems",
+    "AI safety and evaluation",
+    "LLMs",
+    "prompt engineering",
+    "RAG",
+    "Azure",
+    "AI coding",
+    "AI product development"
+  ],
+  "topics_taught": [
+    "AI agents",
+    "tool use",
+    "multi-agent systems",
+    "AI safety and evaluation",
+    "LLMs",
+    "prompt engineering",
+    "RAG",
+    "Azure",
+    "AI coding",
+    "AI product development"
+  ],
+  "platforms": [
+    "GitHub",
+    "YouTube",
+    "Microsoft Learn"
+  ],
+  "website": null,
+  "social_profiles": {
+    "linkedin": null,
+    "youtube": null,
+    "x": null,
+    "github": null,
+    "other": []
+  },
+  "audience_levels": [
+    "beginner",
+    "intermediate"
+  ],
+  "teaching_formats": [
+    "Open-source curriculum",
+    "Video series",
+    "Learning module",
+    "Learning path"
+  ],
+  "courses": [
+    {
+      "course_name": "Microsoft AI Agents for Beginners",
+      "course_slug": "microsoft-ai-agents-for-beginners",
+      "platform": "GitHub",
+      "url": "https://github.com/microsoft/ai-agents-for-beginners",
+      "citations": [
+        "https://github.com/microsoft/ai-agents-for-beginners"
+      ]
+    },
+    {
+      "course_name": "Generative AI for Beginners Full Series",
+      "course_slug": "generative-ai-for-beginners-full-series",
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/watch?v=k7HaeJs-N-o",
+      "citations": [
+        "https://www.youtube.com/watch?v=k7HaeJs-N-o",
+        "https://github.com/microsoft/generative-ai-for-beginners"
+      ]
+    },
+    {
+      "course_name": "Introduction to Generative AI and Agents",
+      "course_slug": "introduction-to-generative-ai-and-agents",
+      "platform": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/training/modules/fundamentals-generative-ai/",
+      "citations": [
+        "https://learn.microsoft.com/en-us/training/modules/fundamentals-generative-ai/"
+      ]
+    },
+    {
+      "course_name": "Get Started with AI Applications and Agents on Azure",
+      "course_slug": "get-started-with-ai-applications-and-agents-on-azure",
+      "platform": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/training/paths/get-started-ai-apps-agents/",
+      "citations": [
+        "https://learn.microsoft.com/en-us/training/paths/get-started-ai-apps-agents/"
+      ]
+    }
+  ],
+  "credibility_signals": [],
+  "citations": [
+    "https://github.com/microsoft/ai-agents-for-beginners",
+    "https://www.youtube.com/watch?v=k7HaeJs-N-o",
+    "https://github.com/microsoft/generative-ai-for-beginners",
+    "https://learn.microsoft.com/en-us/training/modules/fundamentals-generative-ai/",
+    "https://learn.microsoft.com/en-us/training/paths/get-started-ai-apps-agents/"
+  ],
+  "source_records": [
+    {
+      "platform": "GitHub",
+      "url": "https://github.com/microsoft/ai-agents-for-beginners",
+      "title": "Microsoft AI Agents for Beginners",
+      "summary": "A Microsoft open-source course with lessons covering the fundamentals of building AI agents.",
+      "content_type": "repository",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://github.com/microsoft/ai-agents-for-beginners"
+      ]
+    },
+    {
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/watch?v=k7HaeJs-N-o",
+      "title": "Generative AI for Beginners Full Series",
+      "summary": "A YouTube full-series resource for Microsoft's Generative AI for Beginners, with sections on responsible AI and prompt engineering.",
+      "content_type": "video",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://www.youtube.com/watch?v=k7HaeJs-N-o"
+      ]
+    },
+    {
+      "platform": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/training/modules/fundamentals-generative-ai/",
+      "title": "Introduction to Generative AI and Agents",
+      "summary": "A Microsoft Learn module on generative AI fundamentals, LLMs, prompts, and AI agents.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://learn.microsoft.com/en-us/training/modules/fundamentals-generative-ai/"
+      ]
+    },
+    {
+      "platform": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/training/paths/get-started-ai-apps-agents/",
+      "title": "Get Started with AI Applications and Agents on Azure",
+      "summary": "A Microsoft Learn path on building generative AI applications and agents on Azure.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://learn.microsoft.com/en-us/training/paths/get-started-ai-apps-agents/"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

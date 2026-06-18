@@ -1,0 +1,115 @@
+{
+  "entity_type": "topic",
+  "entity_name": "multimodal AI",
+  "entity_slug": "multimodal-ai",
+  "platform": "maven",
+  "query_terms": [
+    "multimodal AI",
+    "image generation",
+    "video generation",
+    "voice AI",
+    "RAG",
+    "prompt engineering"
+  ],
+  "results": [
+    {
+      "title": "Systematically Improving RAG Applications",
+      "url": "https://maven.com/applied-llms/rag-playbook",
+      "content_type": "course",
+      "summary": "A repeatable process for evaluating and improving RAG applications.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/applied-llms/rag-playbook"
+      ]
+    },
+    {
+      "title": "Search in the LLM Era for AI Engineers",
+      "url": "https://maven.com/nirantk/search-for-rag",
+      "content_type": "course",
+      "summary": "A six-weekend instructor-led course and live practice for senior engineers building modern search and RAG systems.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/nirantk/search-for-rag"
+      ]
+    },
+    {
+      "title": "Generative AI Creation Masterclass",
+      "url": "https://maven.com/bilawal/generative-ai-masterclass",
+      "content_type": "course",
+      "summary": "A creative GenAI workflow masterclass covering text, image, audio, video, and 3D generation.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/bilawal/generative-ai-masterclass"
+      ]
+    },
+    {
+      "title": "AI Prototyping for Designers",
+      "url": "https://maven.com/anna-arteeva/prototyping-for-designers",
+      "content_type": "course",
+      "summary": "A Maven AI prototyping course found in the Maven AI prototyping catalog crawl.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/anna-arteeva/prototyping-for-designers"
+      ]
+    },
+    {
+      "title": "Source for multimodal AI",
+      "url": "https://maven.com/applied-llms/rag-playbook",
+      "content_type": "other",
+      "summary": "Citation source for multimodal AI.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/applied-llms/rag-playbook"
+      ]
+    },
+    {
+      "title": "Source for multimodal AI",
+      "url": "https://maven.com/nirantk/search-for-rag",
+      "content_type": "other",
+      "summary": "Citation source for multimodal AI.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/nirantk/search-for-rag"
+      ]
+    },
+    {
+      "title": "Source for multimodal AI",
+      "url": "https://maven.com/bilawal/generative-ai-masterclass",
+      "content_type": "other",
+      "summary": "Citation source for multimodal AI.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/bilawal/generative-ai-masterclass"
+      ]
+    },
+    {
+      "title": "Source for multimodal AI",
+      "url": "https://maven.com/anna-arteeva/prototyping-for-designers",
+      "content_type": "other",
+      "summary": "Citation source for multimodal AI.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/anna-arteeva/prototyping-for-designers"
+      ]
+    },
+    {
+      "title": "Source for multimodal AI",
+      "url": "https://maven.com/courses/ai/prototyping",
+      "content_type": "other",
+      "summary": "Citation source for multimodal AI.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/courses/ai/prototyping"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

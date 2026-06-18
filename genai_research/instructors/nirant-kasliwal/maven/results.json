@@ -1,0 +1,29 @@
+{
+  "entity_type": "instructor",
+  "entity_name": "Nirant Kasliwal",
+  "entity_slug": "nirant-kasliwal",
+  "platform": "maven",
+  "query_terms": [
+    "Nirant Kasliwal",
+    "RAG",
+    "search",
+    "vector databases",
+    "AI evaluation",
+    "multimodal AI"
+  ],
+  "results": [
+    {
+      "title": "Search in the LLM Era for AI Engineers",
+      "url": "https://maven.com/nirantk/search-for-rag",
+      "content_type": "course",
+      "summary": "A six-weekend instructor-led course and live practice for senior engineers building modern search and RAG systems.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/nirantk/search-for-rag"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

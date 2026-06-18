@@ -1,0 +1,39 @@
+{
+  "entity_type": "topic",
+  "entity_name": "prompt engineering",
+  "entity_slug": "prompt-engineering",
+  "platform": "medium",
+  "query_terms": [
+    "prompt engineering",
+    "LLMs",
+    "context engineering",
+    "AI agents",
+    "RAG",
+    "AI coding"
+  ],
+  "results": [
+    {
+      "title": "Best Practices in Prompt Engineering",
+      "url": "https://medium.com/data-science/best-practices-in-prompt-engineering-a18d6bab904b",
+      "content_type": "article",
+      "summary": "A Medium teaching article on prompt-engineering principles, iterative development, and prompting capabilities.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://medium.com/data-science/best-practices-in-prompt-engineering-a18d6bab904b"
+      ]
+    },
+    {
+      "title": "Source for prompt engineering",
+      "url": "https://medium.com/data-science/best-practices-in-prompt-engineering-a18d6bab904b",
+      "content_type": "other",
+      "summary": "Citation source for prompt engineering.",
+      "extracted_data": {},
+      "citations": [
+        "https://medium.com/data-science/best-practices-in-prompt-engineering-a18d6bab904b"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

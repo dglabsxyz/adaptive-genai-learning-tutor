@@ -1,0 +1,28 @@
+{
+  "entity_type": "instructor",
+  "entity_name": "Hamel Husain",
+  "entity_slug": "hamel-husain",
+  "platform": "maven",
+  "query_terms": [
+    "Hamel Husain",
+    "AI safety and evaluation",
+    "AI agents",
+    "AI product development",
+    "RAG"
+  ],
+  "results": [
+    {
+      "title": "AI Evals For Engineers and PMs",
+      "url": "https://maven.com/parlance-labs/evals",
+      "content_type": "course",
+      "summary": "Build a real AI agent, find where it breaks, and improve it with evals you can trust.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/parlance-labs/evals"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

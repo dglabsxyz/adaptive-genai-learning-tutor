@@ -1,0 +1,28 @@
+{
+  "entity_type": "course",
+  "entity_name": "ElevenLabs: AI Voice Cloning, Text-to-Speech, and Sound Effects",
+  "entity_slug": "elevenlabs-ai-voice-cloning-text-to-speech-and-sound-effects",
+  "platform": "linkedin",
+  "query_terms": [
+    "ElevenLabs: AI Voice Cloning, Text-to-Speech, and Sound Effects",
+    "voice AI",
+    "text-to-speech",
+    "voice cloning",
+    "audio AI"
+  ],
+  "results": [
+    {
+      "title": "ElevenLabs: AI Voice Cloning, Text-to-Speech, and Sound Effects",
+      "url": "https://www.linkedin.com/learning/elevenlabs-ai-voice-cloning-text-to-speech-and-sound-effects",
+      "content_type": "course",
+      "summary": "A LinkedIn Learning course exploring voice cloning, synthetic speech, and sound effects with ElevenLabs.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.linkedin.com/learning/elevenlabs-ai-voice-cloning-text-to-speech-and-sound-effects"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

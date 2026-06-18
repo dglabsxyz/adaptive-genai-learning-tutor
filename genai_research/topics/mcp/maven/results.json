@@ -1,0 +1,26 @@
+{
+  "entity_type": "topic",
+  "entity_name": "MCP",
+  "entity_slug": "mcp",
+  "platform": "maven",
+  "query_terms": [
+    "MCP",
+    "AI agents",
+    "AI coding",
+    "context engineering",
+    "tool use"
+  ],
+  "results": [
+    {
+      "title": "Source for MCP",
+      "url": "https://maven.com/courses/ai/mcp",
+      "content_type": "other",
+      "summary": "Citation source for MCP.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/courses/ai/mcp"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

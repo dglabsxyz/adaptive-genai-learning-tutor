@@ -1,0 +1,75 @@
+{
+  "course_name": "Generative AI with Large Language Models",
+  "course_slug": "generative-ai-with-large-language-models",
+  "instructor_names": [
+    "Antje Barth",
+    "Chris Fregly",
+    "Shelbee Eigenbrode",
+    "Mike Chambers"
+  ],
+  "instructor_slugs": [
+    "antje-barth",
+    "chris-fregly",
+    "shelbee-eigenbrode",
+    "mike-chambers"
+  ],
+  "platform": "DeepLearning.AI",
+  "course_url": "https://www.deeplearning.ai/courses/generative-ai-with-llms",
+  "topic_tags": [
+    "LLMs",
+    "fine-tuning",
+    "AI safety and evaluation",
+    "generative AI"
+  ],
+  "description": "A DeepLearning.AI course on the generative AI lifecycle, transformer architecture, training, tuning, inference, and LLM-powered applications.",
+  "syllabus": [
+    "Generative AI use cases, project lifecycle, and model pre-training",
+    "Fine-tuning and evaluating large language models",
+    "Reinforcement learning and LLM-powered applications"
+  ],
+  "target_audience": [
+    "Data scientists",
+    "Machine learning engineers",
+    "Prompt engineers",
+    "Research engineers"
+  ],
+  "prerequisites": [
+    "Python coding experience",
+    "Machine learning basics"
+  ],
+  "duration": "10h18m",
+  "format": "Online course",
+  "price": {
+    "amount": 49.0,
+    "currency": "USD",
+    "raw": "$49/month"
+  },
+  "rating": {
+    "value": null,
+    "count": null,
+    "raw": null
+  },
+  "certificate": "Earn a certificate with PRO",
+  "enrollment_status": "Open",
+  "last_updated": null,
+  "citations": [
+    "https://www.deeplearning.ai/courses/generative-ai-with-llms",
+    "https://www.coursera.org/learn/generative-ai-with-llms"
+  ],
+  "source_records": [
+    {
+      "platform": "DeepLearning.AI",
+      "url": "https://www.deeplearning.ai/courses/generative-ai-with-llms",
+      "title": "Generative AI with Large Language Models",
+      "summary": "A DeepLearning.AI course on the generative AI lifecycle, transformer architecture, training, tuning, inference, and LLM-powered applications.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.deeplearning.ai/courses/generative-ai-with-llms"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

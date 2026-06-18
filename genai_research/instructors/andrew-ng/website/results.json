@@ -1,0 +1,29 @@
+{
+  "entity_type": "instructor",
+  "entity_name": "Andrew Ng",
+  "entity_slug": "andrew-ng",
+  "platform": "website",
+  "query_terms": [
+    "Andrew Ng",
+    "LLMs",
+    "business AI",
+    "generative AI",
+    "AI product development",
+    "prompt engineering"
+  ],
+  "results": [
+    {
+      "title": "Generative AI for Everyone",
+      "url": "https://www.deeplearning.ai/courses/generative-ai-for-everyone",
+      "content_type": "course",
+      "summary": "A DeepLearning.AI course by Andrew Ng about how generative AI works, what it can do, and how to use it in work and business.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.deeplearning.ai/courses/generative-ai-for-everyone"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

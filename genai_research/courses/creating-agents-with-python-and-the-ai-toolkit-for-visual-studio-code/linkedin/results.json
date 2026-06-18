@@ -1,0 +1,28 @@
+{
+  "entity_type": "course",
+  "entity_name": "Creating Agents with Python and the AI Toolkit for Visual Studio Code",
+  "entity_slug": "creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code",
+  "platform": "linkedin",
+  "query_terms": [
+    "Creating Agents with Python and the AI Toolkit for Visual Studio Code",
+    "AI agents",
+    "AI coding",
+    "Python",
+    "AI safety and evaluation"
+  ],
+  "results": [
+    {
+      "title": "Creating Agents with Python and the AI Toolkit for Visual Studio Code",
+      "url": "https://www.linkedin.com/learning/creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code",
+      "content_type": "course",
+      "summary": "A LinkedIn Learning course on building and evaluating Python-based AI agents with the AI Toolkit for Visual Studio Code.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.linkedin.com/learning/creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

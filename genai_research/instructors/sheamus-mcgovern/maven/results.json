@@ -1,0 +1,29 @@
+{
+  "entity_type": "instructor",
+  "entity_name": "Sheamus McGovern",
+  "entity_slug": "sheamus-mcgovern",
+  "platform": "maven",
+  "query_terms": [
+    "Sheamus McGovern",
+    "LLMs",
+    "RAG",
+    "AI agents",
+    "AI automation",
+    "AI product development"
+  ],
+  "results": [
+    {
+      "title": "AI Mini-Bootcamp",
+      "url": "https://maven.com/aitraining/minibootcamp",
+      "content_type": "course",
+      "summary": "A six-week pre-conference live and on-demand training program for AI fundamentals.",
+      "extracted_data": {
+        "entity_type": "bootcamp"
+      },
+      "citations": [
+        "https://maven.com/aitraining/minibootcamp"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

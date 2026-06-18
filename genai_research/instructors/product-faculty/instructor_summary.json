@@ -1,0 +1,66 @@
+{
+  "name": "Product Faculty",
+  "slug": "product-faculty",
+  "headline": null,
+  "organization": null,
+  "bio": null,
+  "expertise_areas": [
+    "AI product development",
+    "business AI"
+  ],
+  "topics_taught": [
+    "AI product development",
+    "business AI"
+  ],
+  "platforms": [
+    "Maven"
+  ],
+  "website": null,
+  "social_profiles": {
+    "linkedin": null,
+    "youtube": null,
+    "x": null,
+    "github": null,
+    "other": []
+  },
+  "audience_levels": [
+    "intermediate",
+    "enterprise"
+  ],
+  "teaching_formats": [
+    "Certification course"
+  ],
+  "courses": [
+    {
+      "course_name": "AI Product Management Certification",
+      "course_slug": "ai-product-management-certification",
+      "platform": "Maven",
+      "url": "https://maven.com/product-faculty/ai-product-management-certification",
+      "citations": [
+        "https://maven.com/product-faculty/ai-product-management-certification",
+        "https://maven.com/courses/ai"
+      ]
+    }
+  ],
+  "credibility_signals": [],
+  "citations": [
+    "https://maven.com/product-faculty/ai-product-management-certification",
+    "https://maven.com/courses/ai"
+  ],
+  "source_records": [
+    {
+      "platform": "Maven",
+      "url": "https://maven.com/product-faculty/ai-product-management-certification",
+      "title": "AI Product Management Certification",
+      "summary": "A Maven AI product management certification discovered in the Maven AI catalog crawl.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/product-faculty/ai-product-management-certification"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

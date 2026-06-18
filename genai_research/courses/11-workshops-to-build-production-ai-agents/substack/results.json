@@ -1,0 +1,29 @@
+{
+  "entity_type": "course",
+  "entity_name": "11 Workshops to Build Production AI Agents",
+  "entity_slug": "11-workshops-to-build-production-ai-agents",
+  "platform": "substack",
+  "query_terms": [
+    "11 Workshops to Build Production AI Agents",
+    "AI agents",
+    "RAG",
+    "MCP",
+    "AI safety and evaluation",
+    "AI coding"
+  ],
+  "results": [
+    {
+      "title": "11 Workshops to Build Production AI Agents",
+      "url": "https://alexeyondata.substack.com/p/11-workshops-to-build-production",
+      "content_type": "article",
+      "summary": "A Substack teaching-resource post collecting GenAI workshops on agents, RAG, MCP, guardrails, and production systems.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://alexeyondata.substack.com/p/11-workshops-to-build-production"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

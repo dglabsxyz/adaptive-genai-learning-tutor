@@ -1,0 +1,82 @@
+{
+  "entity_type": "topic",
+  "entity_name": "AI product development",
+  "entity_slug": "ai-product-development",
+  "platform": "github",
+  "query_terms": [
+    "AI product development",
+    "AI product management",
+    "AI coding",
+    "AI agents",
+    "business AI"
+  ],
+  "results": [
+    {
+      "title": "Microsoft Generative AI for Beginners",
+      "url": "https://github.com/microsoft/generative-ai-for-beginners",
+      "content_type": "repository",
+      "summary": "A Microsoft open-source curriculum with 21 lessons on building generative AI applications.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://github.com/microsoft/generative-ai-for-beginners"
+      ]
+    },
+    {
+      "title": "Microsoft AI Agents for Beginners",
+      "url": "https://github.com/microsoft/ai-agents-for-beginners",
+      "content_type": "repository",
+      "summary": "A Microsoft open-source course with lessons covering the fundamentals of building AI agents.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://github.com/microsoft/ai-agents-for-beginners"
+      ]
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "url": "https://github.com/openai/openai-cookbook",
+      "content_type": "repository",
+      "summary": "OpenAI's public collection of examples and guides for building with OpenAI models and APIs.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://github.com/openai/openai-cookbook"
+      ]
+    },
+    {
+      "title": "Source for AI product development",
+      "url": "https://github.com/microsoft/generative-ai-for-beginners",
+      "content_type": "other",
+      "summary": "Citation source for AI product development.",
+      "extracted_data": {},
+      "citations": [
+        "https://github.com/microsoft/generative-ai-for-beginners"
+      ]
+    },
+    {
+      "title": "Source for AI product development",
+      "url": "https://github.com/microsoft/ai-agents-for-beginners",
+      "content_type": "other",
+      "summary": "Citation source for AI product development.",
+      "extracted_data": {},
+      "citations": [
+        "https://github.com/microsoft/ai-agents-for-beginners"
+      ]
+    },
+    {
+      "title": "Source for AI product development",
+      "url": "https://github.com/openai/openai-cookbook",
+      "content_type": "other",
+      "summary": "Citation source for AI product development.",
+      "extracted_data": {},
+      "citations": [
+        "https://github.com/openai/openai-cookbook"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

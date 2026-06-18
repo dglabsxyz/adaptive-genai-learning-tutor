@@ -1,0 +1,65 @@
+{
+  "course_name": "Generative AI Creation Masterclass",
+  "course_slug": "generative-ai-creation-masterclass",
+  "instructor_names": [
+    "Bilawal Sidhu"
+  ],
+  "instructor_slugs": [
+    "bilawal-sidhu"
+  ],
+  "platform": "Maven",
+  "course_url": "https://maven.com/bilawal/generative-ai-masterclass",
+  "topic_tags": [
+    "image generation",
+    "video generation",
+    "voice AI",
+    "multimodal AI",
+    "generative media"
+  ],
+  "description": "A creative GenAI workflow masterclass covering text, image, audio, video, and 3D generation.",
+  "syllabus": [
+    "Navigating the generative AI landscape",
+    "Creative fusion: multimodal AI creation workflows",
+    "Capstone project and guest speaker John Nack"
+  ],
+  "target_audience": [
+    "Creative professionals",
+    "Managers or executives",
+    "Curious hobbyists"
+  ],
+  "prerequisites": [],
+  "duration": "10 days",
+  "format": "Masterclass",
+  "price": {
+    "amount": null,
+    "currency": null,
+    "raw": null
+  },
+  "rating": {
+    "value": 4.7,
+    "count": null,
+    "raw": "4.7"
+  },
+  "certificate": null,
+  "enrollment_status": null,
+  "last_updated": null,
+  "citations": [
+    "https://maven.com/bilawal/generative-ai-masterclass"
+  ],
+  "source_records": [
+    {
+      "platform": "Maven",
+      "url": "https://maven.com/bilawal/generative-ai-masterclass",
+      "title": "Generative AI Creation Masterclass",
+      "summary": "A creative GenAI workflow masterclass covering text, image, audio, video, and 3D generation.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/bilawal/generative-ai-masterclass"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

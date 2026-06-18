@@ -1,0 +1,282 @@
+{
+  "topic": "business AI",
+  "slug": "business-ai",
+  "description": "Executive, operator, marketing, sales, and transformation uses of AI, including ROI and organizational adoption.",
+  "related_topics": [
+    "AI automation",
+    "AI product development",
+    "enterprise AI",
+    "AI agents"
+  ],
+  "instructors": [
+    {
+      "name": "Dr Ankur Narang",
+      "slug": "dr-ankur-narang",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Maven"
+      ],
+      "citations": [
+        "https://maven.com/deep-core-x-academy/production-ai-agents"
+      ]
+    },
+    {
+      "name": "Kush Khurana",
+      "slug": "kush-khurana",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Maven"
+      ],
+      "citations": [
+        "https://maven.com/deep-core-x-academy/production-ai-agents"
+      ]
+    },
+    {
+      "name": "Dr Aveek Brahmachari",
+      "slug": "dr-aveek-brahmachari",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Maven"
+      ],
+      "citations": [
+        "https://maven.com/deep-core-x-academy/production-ai-agents"
+      ]
+    },
+    {
+      "name": "John Hwang",
+      "slug": "john-hwang",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Maven"
+      ],
+      "citations": [
+        "https://maven.com/ai-agent-campus/ai-agents-for-sales-and-go-to-market"
+      ]
+    },
+    {
+      "name": "Rob Lennon",
+      "slug": "rob-lennon",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Maven"
+      ],
+      "citations": [
+        "https://maven.com/lennon/ai-agents-for-content"
+      ]
+    },
+    {
+      "name": "Product Faculty",
+      "slug": "product-faculty",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Maven"
+      ],
+      "citations": [
+        "https://maven.com/product-faculty/ai-product-management-certification",
+        "https://maven.com/courses/ai"
+      ]
+    },
+    {
+      "name": "Andrew Ng",
+      "slug": "andrew-ng",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "DeepLearning.AI",
+        "YouTube"
+      ],
+      "citations": [
+        "https://www.deeplearning.ai/courses/generative-ai-for-everyone",
+        "https://www.youtube.com/watch?v=8ib4Qnh2HFE"
+      ]
+    },
+    {
+      "name": "Google Cloud",
+      "slug": "google-cloud",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Google Skills",
+        "Coursera"
+      ],
+      "citations": [
+        "https://www.skills.google/paths/118",
+        "https://www.skills.google/course_templates/976",
+        "https://www.coursera.org/learn/introduction-to-generative-ai",
+        "https://www.skills.google/paths/118/course_templates/536"
+      ]
+    },
+    {
+      "name": "Harvard DCE",
+      "slug": "harvard-dce",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Harvard DCE"
+      ],
+      "citations": [
+        "https://professional.dce.harvard.edu/programs/ai-strategy-for-business-leaders/"
+      ]
+    },
+    {
+      "name": "MIT Sloan",
+      "slug": "mit-sloan",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "MIT Sloan Executive Education"
+      ],
+      "citations": [
+        "https://executive.mit.edu/course/artificial-intelligence/a056g00000URaa3AAD.html"
+      ]
+    },
+    {
+      "name": "Christopher S. Penn",
+      "slug": "christopher-s-penn",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Substack"
+      ],
+      "citations": [
+        "https://almosttimely.substack.com/p/almost-timely-news-ai-agents-101"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "course_name": "Build Production AI Agents for 10x-100x ROI",
+      "course_slug": "build-production-ai-agents-for-10x-100x-roi",
+      "instructor_names": [
+        "Dr Ankur Narang",
+        "Kush Khurana",
+        "Dr Aveek Brahmachari"
+      ],
+      "platform": "Maven",
+      "course_url": "https://maven.com/deep-core-x-academy/production-ai-agents",
+      "citations": [
+        "https://maven.com/deep-core-x-academy/production-ai-agents"
+      ]
+    },
+    {
+      "course_name": "AI Agents for Sales and GTM",
+      "course_slug": "ai-agents-for-sales-and-gtm",
+      "instructor_names": [
+        "John Hwang"
+      ],
+      "platform": "Maven",
+      "course_url": "https://maven.com/ai-agent-campus/ai-agents-for-sales-and-go-to-market",
+      "citations": [
+        "https://maven.com/ai-agent-campus/ai-agents-for-sales-and-go-to-market"
+      ]
+    },
+    {
+      "course_name": "AI Agents for Content Creators",
+      "course_slug": "ai-agents-for-content-creators",
+      "instructor_names": [
+        "Rob Lennon"
+      ],
+      "platform": "Maven",
+      "course_url": "https://maven.com/lennon/ai-agents-for-content",
+      "citations": [
+        "https://maven.com/lennon/ai-agents-for-content"
+      ]
+    },
+    {
+      "course_name": "AI Product Management Certification",
+      "course_slug": "ai-product-management-certification",
+      "instructor_names": [
+        "Product Faculty"
+      ],
+      "platform": "Maven",
+      "course_url": "https://maven.com/product-faculty/ai-product-management-certification",
+      "citations": [
+        "https://maven.com/product-faculty/ai-product-management-certification",
+        "https://maven.com/courses/ai"
+      ]
+    },
+    {
+      "course_name": "Generative AI for Everyone",
+      "course_slug": "generative-ai-for-everyone",
+      "instructor_names": [
+        "Andrew Ng"
+      ],
+      "platform": "DeepLearning.AI",
+      "course_url": "https://www.deeplearning.ai/courses/generative-ai-for-everyone",
+      "citations": [
+        "https://www.deeplearning.ai/courses/generative-ai-for-everyone"
+      ]
+    },
+    {
+      "course_name": "Beginner: Introduction to Generative AI",
+      "course_slug": "beginner-introduction-to-generative-ai",
+      "instructor_names": [
+        "Google Cloud"
+      ],
+      "platform": "Google Skills",
+      "course_url": "https://www.skills.google/paths/118",
+      "citations": [
+        "https://www.skills.google/paths/118"
+      ]
+    },
+    {
+      "course_name": "Introduction to Generative AI",
+      "course_slug": "introduction-to-generative-ai",
+      "instructor_names": [
+        "Google Cloud"
+      ],
+      "platform": "Coursera",
+      "course_url": "https://www.coursera.org/learn/introduction-to-generative-ai",
+      "citations": [
+        "https://www.coursera.org/learn/introduction-to-generative-ai",
+        "https://www.skills.google/paths/118/course_templates/536"
+      ]
+    },
+    {
+      "course_name": "AI Strategy for Business Leaders",
+      "course_slug": "ai-strategy-for-business-leaders",
+      "instructor_names": [
+        "Harvard DCE"
+      ],
+      "platform": "Harvard DCE",
+      "course_url": "https://professional.dce.harvard.edu/programs/ai-strategy-for-business-leaders/",
+      "citations": [
+        "https://professional.dce.harvard.edu/programs/ai-strategy-for-business-leaders/"
+      ]
+    },
+    {
+      "course_name": "Artificial Intelligence: Implications for Business Strategy",
+      "course_slug": "artificial-intelligence-implications-for-business-strategy",
+      "instructor_names": [
+        "MIT Sloan"
+      ],
+      "platform": "MIT Sloan Executive Education",
+      "course_url": "https://executive.mit.edu/course/artificial-intelligence/a056g00000URaa3AAD.html",
+      "citations": [
+        "https://executive.mit.edu/course/artificial-intelligence/a056g00000URaa3AAD.html"
+      ]
+    },
+    {
+      "course_name": "Almost Timely News: AI Agents 101",
+      "course_slug": "almost-timely-news-ai-agents-101",
+      "instructor_names": [
+        "Christopher S. Penn"
+      ],
+      "platform": "Substack",
+      "course_url": "https://almosttimely.substack.com/p/almost-timely-news-ai-agents-101",
+      "citations": [
+        "https://almosttimely.substack.com/p/almost-timely-news-ai-agents-101"
+      ]
+    }
+  ],
+  "sources": [
+    "https://maven.com/ai-agent-campus/ai-agents-for-sales-and-go-to-market",
+    "https://professional.dce.harvard.edu/programs/ai-strategy-for-business-leaders/",
+    "https://executive.mit.edu/course/artificial-intelligence/a056g00000URaa3AAD.html",
+    "https://maven.com/deep-core-x-academy/production-ai-agents",
+    "https://maven.com/lennon/ai-agents-for-content",
+    "https://maven.com/product-faculty/ai-product-management-certification",
+    "https://maven.com/courses/ai",
+    "https://www.deeplearning.ai/courses/generative-ai-for-everyone",
+    "https://www.skills.google/paths/118",
+    "https://www.coursera.org/learn/introduction-to-generative-ai",
+    "https://www.skills.google/paths/118/course_templates/536",
+    "https://almosttimely.substack.com/p/almost-timely-news-ai-agents-101"
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

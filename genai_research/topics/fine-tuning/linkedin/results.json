@@ -1,0 +1,38 @@
+{
+  "entity_type": "topic",
+  "entity_name": "fine-tuning",
+  "entity_slug": "fine-tuning",
+  "platform": "linkedin",
+  "query_terms": [
+    "fine-tuning",
+    "LLMs",
+    "model customization",
+    "datasets",
+    "AI safety and evaluation"
+  ],
+  "results": [
+    {
+      "title": "Fine-Tuning for LLMs: from Beginner to Advanced",
+      "url": "https://www.linkedin.com/learning/fine-tuning-for-llms-from-beginner-to-advanced",
+      "content_type": "course",
+      "summary": "A LinkedIn Learning course on fine-tuning LLMs from beginner to advanced level.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.linkedin.com/learning/fine-tuning-for-llms-from-beginner-to-advanced"
+      ]
+    },
+    {
+      "title": "Source for fine-tuning",
+      "url": "https://www.linkedin.com/learning/fine-tuning-for-llms-from-beginner-to-advanced",
+      "content_type": "other",
+      "summary": "Citation source for fine-tuning.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.linkedin.com/learning/fine-tuning-for-llms-from-beginner-to-advanced"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

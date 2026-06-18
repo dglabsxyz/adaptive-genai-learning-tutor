@@ -1,0 +1,2694 @@
+{
+  "generated_at": "2026-06-14T20:03:06Z",
+  "base_directory": "/Users/dgomez/Week 3 Project/genai_research",
+  "counts": {
+    "topics": 17,
+    "instructors": 72,
+    "courses_and_teaching_resources": 67,
+    "source_urls": 81,
+    "platforms": 8
+  },
+  "topics": [
+    {
+      "topic": "LLMs",
+      "slug": "llms",
+      "path": "topics/llms/topic_summary.json",
+      "source_count": 37
+    },
+    {
+      "topic": "prompt engineering",
+      "slug": "prompt-engineering",
+      "path": "topics/prompt-engineering/topic_summary.json",
+      "source_count": 22
+    },
+    {
+      "topic": "RAG",
+      "slug": "rag",
+      "path": "topics/rag/topic_summary.json",
+      "source_count": 22
+    },
+    {
+      "topic": "AI agents",
+      "slug": "ai-agents",
+      "path": "topics/ai-agents/topic_summary.json",
+      "source_count": 32
+    },
+    {
+      "topic": "fine-tuning",
+      "slug": "fine-tuning",
+      "path": "topics/fine-tuning/topic_summary.json",
+      "source_count": 10
+    },
+    {
+      "topic": "multimodal AI",
+      "slug": "multimodal-ai",
+      "path": "topics/multimodal-ai/topic_summary.json",
+      "source_count": 14
+    },
+    {
+      "topic": "image generation",
+      "slug": "image-generation",
+      "path": "topics/image-generation/topic_summary.json",
+      "source_count": 6
+    },
+    {
+      "topic": "video generation",
+      "slug": "video-generation",
+      "path": "topics/video-generation/topic_summary.json",
+      "source_count": 4
+    },
+    {
+      "topic": "voice AI",
+      "slug": "voice-ai",
+      "path": "topics/voice-ai/topic_summary.json",
+      "source_count": 6
+    },
+    {
+      "topic": "AI coding",
+      "slug": "ai-coding",
+      "path": "topics/ai-coding/topic_summary.json",
+      "source_count": 17
+    },
+    {
+      "topic": "AI product development",
+      "slug": "ai-product-development",
+      "path": "topics/ai-product-development/topic_summary.json",
+      "source_count": 35
+    },
+    {
+      "topic": "AI automation",
+      "slug": "ai-automation",
+      "path": "topics/ai-automation/topic_summary.json",
+      "source_count": 10
+    },
+    {
+      "topic": "business AI",
+      "slug": "business-ai",
+      "path": "topics/business-ai/topic_summary.json",
+      "source_count": 12
+    },
+    {
+      "topic": "no-code AI",
+      "slug": "no-code-ai",
+      "path": "topics/no-code-ai/topic_summary.json",
+      "source_count": 7
+    },
+    {
+      "topic": "AI safety and evaluation",
+      "slug": "ai-safety-and-evaluation",
+      "path": "topics/ai-safety-and-evaluation/topic_summary.json",
+      "source_count": 25
+    },
+    {
+      "topic": "context engineering",
+      "slug": "context-engineering",
+      "path": "topics/context-engineering/topic_summary.json",
+      "source_count": 8
+    },
+    {
+      "topic": "MCP",
+      "slug": "mcp",
+      "path": "topics/mcp/topic_summary.json",
+      "source_count": 3
+    }
+  ],
+  "instructors": [
+    {
+      "name": "Abubakar Abid",
+      "slug": "abubakar-abid",
+      "path": "instructors/abubakar-abid/instructor_summary.json",
+      "platforms": [
+        "Hugging Face"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://huggingface.co/learn/llm-course/en/chapter1/1"
+      ]
+    },
+    {
+      "name": "Aishwarya Srinivasan",
+      "slug": "aishwarya-srinivasan",
+      "path": "instructors/aishwarya-srinivasan/instructor_summary.json",
+      "platforms": [
+        "Maven"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://maven.com/aishwarya-srinivasan/mastering-ai-agents"
+      ]
+    },
+    {
+      "name": "Alexey Grigorev",
+      "slug": "alexey-grigorev",
+      "path": "instructors/alexey-grigorev/instructor_summary.json",
+      "platforms": [
+        "Maven",
+        "Substack"
+      ],
+      "course_count": 2,
+      "citations": [
+        "https://maven.com/alexey-grigorev/from-rag-to-agents",
+        "https://alexeyondata.substack.com/p/11-workshops-to-build-production"
+      ]
+    },
+    {
+      "name": "Andrej Karpathy",
+      "slug": "andrej-karpathy",
+      "path": "instructors/andrej-karpathy/instructor_summary.json",
+      "platforms": [
+        "YouTube"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://karpathy.ai/zero-to-hero.html",
+        "https://www.youtube.com/andrejkarpathy"
+      ]
+    },
+    {
+      "name": "Andrew Ng",
+      "slug": "andrew-ng",
+      "path": "instructors/andrew-ng/instructor_summary.json",
+      "platforms": [
+        "DeepLearning.AI",
+        "YouTube"
+      ],
+      "course_count": 2,
+      "citations": [
+        "https://www.deeplearning.ai/courses/generative-ai-for-everyone",
+        "https://www.youtube.com/watch?v=8ib4Qnh2HFE"
+      ]
+    },
+    {
+      "name": "Anna Arteeva",
+      "slug": "anna-arteeva",
+      "path": "instructors/anna-arteeva/instructor_summary.json",
+      "platforms": [
+        "Maven"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://maven.com/anna-arteeva/prototyping-for-designers",
+        "https://maven.com/courses/ai/prototyping"
+      ]
+    },
+    {
+      "name": "Anthropic Team",
+      "slug": "anthropic-team",
+      "path": "instructors/anthropic-team/instructor_summary.json",
+      "platforms": [
+        "GitHub"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://github.com/anthropics/prompt-eng-interactive-tutorial",
+        "https://www.anthropic.com/learn"
+      ]
+    },
+    {
+      "name": "Antje Barth",
+      "slug": "antje-barth",
+      "path": "instructors/antje-barth/instructor_summary.json",
+      "platforms": [
+        "DeepLearning.AI"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://www.deeplearning.ai/courses/generative-ai-with-llms",
+        "https://www.coursera.org/learn/generative-ai-with-llms"
+      ]
+    },
+    {
+      "name": "Arnold Trinh",
+      "slug": "arnold-trinh",
+      "path": "instructors/arnold-trinh/instructor_summary.json",
+      "platforms": [
+        "Coursera"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://www.coursera.org/specializations/midjourney-generative-ai-for-creatives"
+      ]
+    },
+    {
+      "name": "Arvind Narayanamurthy",
+      "slug": "arvind-narayanamurthy",
+      "path": "instructors/arvind-narayanamurthy/instructor_summary.json",
+      "platforms": [
+        "Maven"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://maven.com/aishwarya-srinivasan/mastering-ai-agents"
+      ]
+    },
+    {
+      "name": "Ben Burtenshaw",
+      "slug": "ben-burtenshaw",
+      "path": "instructors/ben-burtenshaw/instructor_summary.json",
+      "platforms": [
+        "Hugging Face"
+      ],
+      "course_count": 2,
+      "citations": [
+        "https://huggingface.co/learn/agents-course/unit0/introduction",
+        "https://huggingface.co/learn/llm-course/en/chapter1/1"
+      ]
+    },
+    {
+      "name": "Bilawal Sidhu",
+      "slug": "bilawal-sidhu",
+      "path": "instructors/bilawal-sidhu/instructor_summary.json",
+      "platforms": [
+        "Maven"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://maven.com/bilawal/generative-ai-masterclass"
+      ]
+    },
+    {
+      "name": "Chris Fregly",
+      "slug": "chris-fregly",
+      "path": "instructors/chris-fregly/instructor_summary.json",
+      "platforms": [
+        "DeepLearning.AI"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://www.deeplearning.ai/courses/generative-ai-with-llms",
+        "https://www.coursera.org/learn/generative-ai-with-llms"
+      ]
+    },
+    {
+      "name": "Christopher S. Penn",
+      "slug": "christopher-s-penn",
+      "path": "instructors/christopher-s-penn/instructor_summary.json",
+      "platforms": [
+        "Substack"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://almosttimely.substack.com/p/almost-timely-news-ai-agents-101"
+      ]
+    },
+    {
+      "name": "Coursera instructors",
+      "slug": "coursera-instructors",
+      "path": "instructors/coursera-instructors/instructor_summary.json",
+      "platforms": [
+        "Coursera"
+      ],
+      "course_count": 4,
+      "citations": [
+        "https://www.coursera.org/learn/generative-ai--prompt-engineering",
+        "https://www.coursera.org/specializations/llm-engineering-prompting-fine-tuning-optimization-rag",
+        "https://www.coursera.org/learn/operationalizing-no-code-ai-with-zapier-automation-and-plans",
+        "https://www.coursera.org/learn/responsible-ai-and-ethics"
+      ]
+    },
+    {
+      "name": "DAIR.AI",
+      "slug": "dair-ai",
+      "path": "instructors/dair-ai/instructor_summary.json",
+      "platforms": [
+        "GitHub"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://github.com/dair-ai/Prompt-Engineering-Guide"
+      ]
+    },
+    {
+      "name": "DataCamp Team",
+      "slug": "datacamp-team",
+      "path": "instructors/datacamp-team/instructor_summary.json",
+      "platforms": [
+        "DataCamp"
+      ],
+      "course_count": 2,
+      "citations": [
+        "https://www.datacamp.com/courses/vector-databases-for-embeddings-with-pinecone",
+        "https://www.datacamp.com/courses/ai-ethics"
+      ]
+    },
+    {
+      "name": "Dawood Khan",
+      "slug": "dawood-khan",
+      "path": "instructors/dawood-khan/instructor_summary.json",
+      "platforms": [
+        "Hugging Face"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://huggingface.co/learn/llm-course/en/chapter1/1"
+      ]
+    },
+    {
+      "name": "Dhruv Anand",
+      "slug": "dhruv-anand",
+      "path": "instructors/dhruv-anand/instructor_summary.json",
+      "platforms": [
+        "Maven"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://maven.com/nirantk/search-for-rag"
+      ]
+    },
+    {
+      "name": "Dr Ankur Narang",
+      "slug": "dr-ankur-narang",
+      "path": "instructors/dr-ankur-narang/instructor_summary.json",
+      "platforms": [
+        "Maven"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://maven.com/deep-core-x-academy/production-ai-agents"
+      ]
+    },
+    {
+      "name": "Dr Aveek Brahmachari",
+      "slug": "dr-aveek-brahmachari",
+      "path": "instructors/dr-aveek-brahmachari/instructor_summary.json",
+      "platforms": [
+        "Maven"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://maven.com/deep-core-x-academy/production-ai-agents"
+      ]
+    },
+    {
+      "name": "Edureka",
+      "slug": "edureka",
+      "path": "instructors/edureka/instructor_summary.json",
+      "platforms": [
+        "YouTube"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://www.youtube.com/watch?v=-rUKr8JDits"
+      ]
+    },
+    {
+      "name": "ExamPro",
+      "slug": "exampro",
+      "path": "instructors/exampro/instructor_summary.json",
+      "platforms": [
+        "YouTube"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://www.youtube.com/watch?v=nJ25yl34Uqw"
+      ]
+    },
+    {
+      "name": "Google Cloud",
+      "slug": "google-cloud",
+      "path": "instructors/google-cloud/instructor_summary.json",
+      "platforms": [
+        "Google Skills",
+        "Coursera"
+      ],
+      "course_count": 3,
+      "citations": [
+        "https://www.skills.google/paths/118",
+        "https://www.skills.google/course_templates/976",
+        "https://www.coursera.org/learn/introduction-to-generative-ai",
+        "https://www.skills.google/paths/118/course_templates/536"
+      ]
+    },
+    {
+      "name": "Hamel Husain",
+      "slug": "hamel-husain",
+      "path": "instructors/hamel-husain/instructor_summary.json",
+      "platforms": [
+        "Maven"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://maven.com/parlance-labs/evals"
+      ]
+    },
+    {
+      "name": "Harvard DCE",
+      "slug": "harvard-dce",
+      "path": "instructors/harvard-dce/instructor_summary.json",
+      "platforms": [
+        "Harvard DCE"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://professional.dce.harvard.edu/programs/ai-strategy-for-business-leaders/"
+      ]
+    },
+    {
+      "name": "Hugging Face Team",
+      "slug": "hugging-face-team",
+      "path": "instructors/hugging-face-team/instructor_summary.json",
+      "platforms": [
+        "Hugging Face"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://huggingface.co/learn"
+      ]
+    },
+    {
+      "name": "James Phoenix",
+      "slug": "james-phoenix",
+      "path": "instructors/james-phoenix/instructor_summary.json",
+      "platforms": [
+        "YouTube"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://www.youtube.com/watch?v=3a0WHZVb1Gg"
+      ]
+    },
+    {
+      "name": "Jason Liu",
+      "slug": "jason-liu",
+      "path": "instructors/jason-liu/instructor_summary.json",
+      "platforms": [
+        "Maven"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://maven.com/applied-llms/rag-playbook"
+      ]
+    },
+    {
+      "name": "Jeremy Howard",
+      "slug": "jeremy-howard",
+      "path": "instructors/jeremy-howard/instructor_summary.json",
+      "platforms": [
+        "fast.ai"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://course.fast.ai/"
+      ]
+    },
+    {
+      "name": "Jithin James",
+      "slug": "jithin-james",
+      "path": "instructors/jithin-james/instructor_summary.json",
+      "platforms": [
+        "Maven"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://maven.com/nirantk/search-for-rag"
+      ]
+    },
+    {
+      "name": "John Hwang",
+      "slug": "john-hwang",
+      "path": "instructors/john-hwang/instructor_summary.json",
+      "platforms": [
+        "Maven"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://maven.com/ai-agent-campus/ai-agents-for-sales-and-go-to-market"
+      ]
+    },
+    {
+      "name": "Katie Nguyen",
+      "slug": "katie-nguyen",
+      "path": "instructors/katie-nguyen/instructor_summary.json",
+      "platforms": [
+        "DeepLearning.AI"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation"
+      ]
+    },
+    {
+      "name": "Kush Khurana",
+      "slug": "kush-khurana",
+      "path": "instructors/kush-khurana/instructor_summary.json",
+      "platforms": [
+        "Maven"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://maven.com/deep-core-x-academy/production-ai-agents"
+      ]
+    },
+    {
+      "name": "Kwindla Hultman Kramer",
+      "slug": "kwindla-hultman-kramer",
+      "path": "instructors/kwindla-hultman-kramer/instructor_summary.json",
+      "platforms": [
+        "Maven"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://maven.com/p/5de0a6/become-a-voice-ai-agent-expert"
+      ]
+    },
+    {
+      "name": "Leandro von Werra",
+      "slug": "leandro-von-werra",
+      "path": "instructors/leandro-von-werra/instructor_summary.json",
+      "platforms": [
+        "Hugging Face"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://huggingface.co/learn/llm-course/en/chapter1/1"
+      ]
+    },
+    {
+      "name": "Lewis Tunstall",
+      "slug": "lewis-tunstall",
+      "path": "instructors/lewis-tunstall/instructor_summary.json",
+      "platforms": [
+        "Hugging Face"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://huggingface.co/learn/llm-course/en/chapter1/1"
+      ]
+    },
+    {
+      "name": "LinkedIn Learning Team",
+      "slug": "linkedin-learning-team",
+      "path": "instructors/linkedin-learning-team/instructor_summary.json",
+      "platforms": [
+        "LinkedIn Learning"
+      ],
+      "course_count": 6,
+      "citations": [
+        "https://www.linkedin.com/learning/hands-on-ai-rag-using-llamaindex",
+        "https://www.linkedin.com/learning/context-engineering-for-developers",
+        "https://www.linkedin.com/learning/creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code",
+        "https://www.linkedin.com/learning/fine-tuning-for-llms-from-beginner-to-advanced",
+        "https://www.linkedin.com/learning/multimodal-ai-essentials-merging-text-image-and-audio-for-next-generation-ai-applications",
+        "https://www.linkedin.com/learning/elevenlabs-ai-voice-cloning-text-to-speech-and-sound-effects"
+      ]
+    },
+    {
+      "name": "Lucile Saulnier",
+      "slug": "lucile-saulnier",
+      "path": "instructors/lucile-saulnier/instructor_summary.json",
+      "platforms": [
+        "Hugging Face"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://huggingface.co/learn/llm-course/en/chapter1/1"
+      ]
+    },
+    {
+      "name": "Lysandre Debut",
+      "slug": "lysandre-debut",
+      "path": "instructors/lysandre-debut/instructor_summary.json",
+      "platforms": [
+        "Hugging Face"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://huggingface.co/learn/llm-course/en/chapter1/1"
+      ]
+    },
+    {
+      "name": "MIT Sloan",
+      "slug": "mit-sloan",
+      "path": "instructors/mit-sloan/instructor_summary.json",
+      "platforms": [
+        "MIT Sloan Executive Education"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://executive.mit.edu/course/artificial-intelligence/a056g00000URaa3AAD.html"
+      ]
+    },
+    {
+      "name": "Mahesh Yadav",
+      "slug": "mahesh-yadav",
+      "path": "instructors/mahesh-yadav/instructor_summary.json",
+      "platforms": [
+        "Maven"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://maven.com/mahesh-yadav/genaipm"
+      ]
+    },
+    {
+      "name": "Matthew Carrigan",
+      "slug": "matthew-carrigan",
+      "path": "instructors/matthew-carrigan/instructor_summary.json",
+      "platforms": [
+        "Hugging Face"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://huggingface.co/learn/llm-course/en/chapter1/1"
+      ]
+    },
+    {
+      "name": "Maven instructors",
+      "slug": "maven-instructors",
+      "path": "instructors/maven-instructors/instructor_summary.json",
+      "platforms": [
+        "Maven"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://maven.com/courses/ai/ai-coding"
+      ]
+    },
+    {
+      "name": "Maxime Labonne",
+      "slug": "maxime-labonne",
+      "path": "instructors/maxime-labonne/instructor_summary.json",
+      "platforms": [
+        "Hugging Face"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://huggingface.co/blog/mlabonne/llm-course"
+      ]
+    },
+    {
+      "name": "Merve Noyan",
+      "slug": "merve-noyan",
+      "path": "instructors/merve-noyan/instructor_summary.json",
+      "platforms": [
+        "Hugging Face"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://huggingface.co/learn/llm-course/en/chapter1/1"
+      ]
+    },
+    {
+      "name": "Microsoft",
+      "slug": "microsoft",
+      "path": "instructors/microsoft/instructor_summary.json",
+      "platforms": [
+        "GitHub",
+        "YouTube",
+        "Microsoft Learn"
+      ],
+      "course_count": 4,
+      "citations": [
+        "https://github.com/microsoft/ai-agents-for-beginners",
+        "https://www.youtube.com/watch?v=k7HaeJs-N-o",
+        "https://github.com/microsoft/generative-ai-for-beginners",
+        "https://learn.microsoft.com/en-us/training/modules/fundamentals-generative-ai/",
+        "https://learn.microsoft.com/en-us/training/paths/get-started-ai-apps-agents/"
+      ]
+    },
+    {
+      "name": "Microsoft Cloud Advocates",
+      "slug": "microsoft-cloud-advocates",
+      "path": "instructors/microsoft-cloud-advocates/instructor_summary.json",
+      "platforms": [
+        "GitHub"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://github.com/microsoft/generative-ai-for-beginners"
+      ]
+    },
+    {
+      "name": "Miguel Otero Pedrido",
+      "slug": "miguel-otero-pedrido",
+      "path": "instructors/miguel-otero-pedrido/instructor_summary.json",
+      "platforms": [
+        "Substack"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://theneuralmaze.substack.com/p/the-ai-engineering-course-i-wish"
+      ]
+    },
+    {
+      "name": "Mike Chambers",
+      "slug": "mike-chambers",
+      "path": "instructors/mike-chambers/instructor_summary.json",
+      "platforms": [
+        "DeepLearning.AI"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://www.deeplearning.ai/courses/generative-ai-with-llms",
+        "https://www.coursera.org/learn/generative-ai-with-llms"
+      ]
+    },
+    {
+      "name": "Mike Taylor",
+      "slug": "mike-taylor",
+      "path": "instructors/mike-taylor/instructor_summary.json",
+      "platforms": [
+        "YouTube"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://www.youtube.com/watch?v=3a0WHZVb1Gg"
+      ]
+    },
+    {
+      "name": "Nirant Kasliwal",
+      "slug": "nirant-kasliwal",
+      "path": "instructors/nirant-kasliwal/instructor_summary.json",
+      "platforms": [
+        "Maven"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://maven.com/nirantk/search-for-rag"
+      ]
+    },
+    {
+      "name": "No-Code AI",
+      "slug": "no-code-ai",
+      "path": "instructors/no-code-ai/instructor_summary.json",
+      "platforms": [
+        "Maven"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://maven.com/no-code-ai/vibe-coding-bootcamp",
+        "https://maven.com/courses/ai/vibe-coding",
+        "https://maven.com/courses/ai/prototyping"
+      ]
+    },
+    {
+      "name": "OpenAI",
+      "slug": "openai",
+      "path": "instructors/openai/instructor_summary.json",
+      "platforms": [
+        "GitHub"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://github.com/openai/openai-cookbook",
+        "https://developers.openai.com/cookbook"
+      ]
+    },
+    {
+      "name": "Phil Winder",
+      "slug": "phil-winder",
+      "path": "instructors/phil-winder/instructor_summary.json",
+      "platforms": [
+        "YouTube"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://www.youtube.com/watch?v=3a0WHZVb1Gg"
+      ]
+    },
+    {
+      "name": "Product Faculty",
+      "slug": "product-faculty",
+      "path": "instructors/product-faculty/instructor_summary.json",
+      "platforms": [
+        "Maven"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://maven.com/product-faculty/ai-product-management-certification",
+        "https://maven.com/courses/ai"
+      ]
+    },
+    {
+      "name": "Rakesh Gohel",
+      "slug": "rakesh-gohel",
+      "path": "instructors/rakesh-gohel/instructor_summary.json",
+      "platforms": [
+        "Maven"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://maven.com/rakeshgohel/ai-agent-engineering-react-rag-multi-agent"
+      ]
+    },
+    {
+      "name": "Rob Lennon",
+      "slug": "rob-lennon",
+      "path": "instructors/rob-lennon/instructor_summary.json",
+      "platforms": [
+        "Maven"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://maven.com/lennon/ai-agents-for-content"
+      ]
+    },
+    {
+      "name": "Ronnie Sheer",
+      "slug": "ronnie-sheer",
+      "path": "instructors/ronnie-sheer/instructor_summary.json",
+      "platforms": [
+        "LinkedIn Learning"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://www.linkedin.com/learning/introduction-to-prompt-engineering-for-generative-ai-24636124",
+        "https://www.linkedin.com/learning/topics/artificial-intelligence"
+      ]
+    },
+    {
+      "name": "Runway Academy",
+      "slug": "runway-academy",
+      "path": "instructors/runway-academy/instructor_summary.json",
+      "platforms": [
+        "Runway Academy"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://academy.runwayml.com/"
+      ]
+    },
+    {
+      "name": "Sergio Paniego",
+      "slug": "sergio-paniego",
+      "path": "instructors/sergio-paniego/instructor_summary.json",
+      "platforms": [
+        "Hugging Face"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://huggingface.co/learn/agents-course/unit0/introduction"
+      ]
+    },
+    {
+      "name": "Sheamus McGovern",
+      "slug": "sheamus-mcgovern",
+      "path": "instructors/sheamus-mcgovern/instructor_summary.json",
+      "platforms": [
+        "Maven"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://maven.com/aitraining/minibootcamp"
+      ]
+    },
+    {
+      "name": "Shelbee Eigenbrode",
+      "slug": "shelbee-eigenbrode",
+      "path": "instructors/shelbee-eigenbrode/instructor_summary.json",
+      "platforms": [
+        "DeepLearning.AI"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://www.deeplearning.ai/courses/generative-ai-with-llms",
+        "https://www.coursera.org/learn/generative-ai-with-llms"
+      ]
+    },
+    {
+      "name": "Shreya Shankar",
+      "slug": "shreya-shankar",
+      "path": "instructors/shreya-shankar/instructor_summary.json",
+      "platforms": [
+        "Maven"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://maven.com/parlance-labs/evals"
+      ]
+    },
+    {
+      "name": "Simplilearn",
+      "slug": "simplilearn",
+      "path": "instructors/simplilearn/instructor_summary.json",
+      "platforms": [
+        "YouTube"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://www.youtube.com/watch?v=Ru2jEY4pd7k"
+      ]
+    },
+    {
+      "name": "Sophia Yang",
+      "slug": "sophia-yang",
+      "path": "instructors/sophia-yang/instructor_summary.json",
+      "platforms": [
+        "Medium"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://medium.com/data-science/best-practices-in-prompt-engineering-a18d6bab904b"
+      ]
+    },
+    {
+      "name": "Sylvain Gugger",
+      "slug": "sylvain-gugger",
+      "path": "instructors/sylvain-gugger/instructor_summary.json",
+      "platforms": [
+        "Hugging Face"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://huggingface.co/learn/llm-course/en/chapter1/1"
+      ]
+    },
+    {
+      "name": "Udacity",
+      "slug": "udacity",
+      "path": "instructors/udacity/instructor_summary.json",
+      "platforms": [
+        "Udacity"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://www.udacity.com/course/generative-ai--nd608"
+      ]
+    },
+    {
+      "name": "Voice AI community instructors",
+      "slug": "voice-ai-community-instructors",
+      "path": "instructors/voice-ai-community-instructors/instructor_summary.json",
+      "platforms": [
+        "YouTube"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://www.youtube.com/watch?v=m4QF78X7t9k"
+      ]
+    },
+    {
+      "name": "Wafae Bakkali",
+      "slug": "wafae-bakkali",
+      "path": "instructors/wafae-bakkali/instructor_summary.json",
+      "platforms": [
+        "DeepLearning.AI"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation"
+      ]
+    },
+    {
+      "name": "YouTube creator",
+      "slug": "youtube-creator",
+      "path": "instructors/youtube-creator/instructor_summary.json",
+      "platforms": [
+        "YouTube"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://www.youtube.com/watch?v=UAxKs9Yuljo"
+      ]
+    },
+    {
+      "name": "Zain Hasan",
+      "slug": "zain-hasan",
+      "path": "instructors/zain-hasan/instructor_summary.json",
+      "platforms": [
+        "DeepLearning.AI"
+      ],
+      "course_count": 1,
+      "citations": [
+        "https://www.deeplearning.ai/courses/retrieval-augmented-generation",
+        "https://www.coursera.org/learn/retrieval-augmented-generation-rag"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "course_name": "Mastering Agentic AI: Certification by The Gen Academy",
+      "course_slug": "mastering-agentic-ai-certification-by-the-gen-academy",
+      "entity_type": "course",
+      "path": "courses/mastering-agentic-ai-certification-by-the-gen-academy/course_summary.json",
+      "platform": "Maven",
+      "url": "https://maven.com/aishwarya-srinivasan/mastering-ai-agents",
+      "instructor_names": [
+        "Aishwarya Srinivasan",
+        "Arvind Narayanamurthy"
+      ],
+      "topic_tags": [
+        "AI agents",
+        "RAG",
+        "fine-tuning",
+        "AI evals",
+        "AI safety and evaluation"
+      ],
+      "citations": [
+        "https://maven.com/aishwarya-srinivasan/mastering-ai-agents"
+      ]
+    },
+    {
+      "course_name": "AI Engineering Buildcamp: From RAG to Agents",
+      "course_slug": "ai-engineering-buildcamp-from-rag-to-agents",
+      "entity_type": "course",
+      "path": "courses/ai-engineering-buildcamp-from-rag-to-agents/course_summary.json",
+      "platform": "Maven",
+      "url": "https://maven.com/alexey-grigorev/from-rag-to-agents",
+      "instructor_names": [
+        "Alexey Grigorev"
+      ],
+      "topic_tags": [
+        "RAG",
+        "AI agents",
+        "LLMs",
+        "AI engineering",
+        "search"
+      ],
+      "citations": [
+        "https://maven.com/alexey-grigorev/from-rag-to-agents"
+      ]
+    },
+    {
+      "course_name": "Systematically Improving RAG Applications",
+      "course_slug": "systematically-improving-rag-applications",
+      "entity_type": "course",
+      "path": "courses/systematically-improving-rag-applications/course_summary.json",
+      "platform": "Maven",
+      "url": "https://maven.com/applied-llms/rag-playbook",
+      "instructor_names": [
+        "Jason Liu"
+      ],
+      "topic_tags": [
+        "RAG",
+        "AI evaluation",
+        "retrieval",
+        "multimodal AI"
+      ],
+      "citations": [
+        "https://maven.com/applied-llms/rag-playbook"
+      ]
+    },
+    {
+      "course_name": "Search in the LLM Era for AI Engineers",
+      "course_slug": "search-in-the-llm-era-for-ai-engineers",
+      "entity_type": "course",
+      "path": "courses/search-in-the-llm-era-for-ai-engineers/course_summary.json",
+      "platform": "Maven",
+      "url": "https://maven.com/nirantk/search-for-rag",
+      "instructor_names": [
+        "Nirant Kasliwal",
+        "Jithin James",
+        "Dhruv Anand"
+      ],
+      "topic_tags": [
+        "RAG",
+        "search",
+        "vector databases",
+        "AI evaluation",
+        "multimodal AI"
+      ],
+      "citations": [
+        "https://maven.com/nirantk/search-for-rag"
+      ]
+    },
+    {
+      "course_name": "AI Evals For Engineers and PMs",
+      "course_slug": "ai-evals-for-engineers-and-pms",
+      "entity_type": "course",
+      "path": "courses/ai-evals-for-engineers-and-pms/course_summary.json",
+      "platform": "Maven",
+      "url": "https://maven.com/parlance-labs/evals",
+      "instructor_names": [
+        "Hamel Husain",
+        "Shreya Shankar"
+      ],
+      "topic_tags": [
+        "AI safety and evaluation",
+        "AI agents",
+        "AI product development",
+        "RAG"
+      ],
+      "citations": [
+        "https://maven.com/parlance-labs/evals"
+      ]
+    },
+    {
+      "course_name": "Build Production AI Agents for 10x-100x ROI",
+      "course_slug": "build-production-ai-agents-for-10x-100x-roi",
+      "entity_type": "course",
+      "path": "courses/build-production-ai-agents-for-10x-100x-roi/course_summary.json",
+      "platform": "Maven",
+      "url": "https://maven.com/deep-core-x-academy/production-ai-agents",
+      "instructor_names": [
+        "Dr Ankur Narang",
+        "Kush Khurana",
+        "Dr Aveek Brahmachari"
+      ],
+      "topic_tags": [
+        "AI agents",
+        "RAG",
+        "business AI",
+        "production AI"
+      ],
+      "citations": [
+        "https://maven.com/deep-core-x-academy/production-ai-agents"
+      ]
+    },
+    {
+      "course_name": "AI Agents for Sales and GTM",
+      "course_slug": "ai-agents-for-sales-and-gtm",
+      "entity_type": "course",
+      "path": "courses/ai-agents-for-sales-and-gtm/course_summary.json",
+      "platform": "Maven",
+      "url": "https://maven.com/ai-agent-campus/ai-agents-for-sales-and-go-to-market",
+      "instructor_names": [
+        "John Hwang"
+      ],
+      "topic_tags": [
+        "AI agents",
+        "business AI",
+        "AI automation",
+        "sales",
+        "marketing"
+      ],
+      "citations": [
+        "https://maven.com/ai-agent-campus/ai-agents-for-sales-and-go-to-market"
+      ]
+    },
+    {
+      "course_name": "AI Mini-Bootcamp",
+      "course_slug": "ai-mini-bootcamp",
+      "entity_type": "bootcamp",
+      "path": "courses/ai-mini-bootcamp/course_summary.json",
+      "platform": "Maven",
+      "url": "https://maven.com/aitraining/minibootcamp",
+      "instructor_names": [
+        "Sheamus McGovern"
+      ],
+      "topic_tags": [
+        "LLMs",
+        "RAG",
+        "AI agents",
+        "AI automation",
+        "AI product development"
+      ],
+      "citations": [
+        "https://maven.com/aitraining/minibootcamp"
+      ]
+    },
+    {
+      "course_name": "AI Agents for Content Creators",
+      "course_slug": "ai-agents-for-content-creators",
+      "entity_type": "course",
+      "path": "courses/ai-agents-for-content-creators/course_summary.json",
+      "platform": "Maven",
+      "url": "https://maven.com/lennon/ai-agents-for-content",
+      "instructor_names": [
+        "Rob Lennon"
+      ],
+      "topic_tags": [
+        "AI agents",
+        "AI automation",
+        "business AI",
+        "content creation"
+      ],
+      "citations": [
+        "https://maven.com/lennon/ai-agents-for-content"
+      ]
+    },
+    {
+      "course_name": "AI Agent Engineering: From ReAct, Agentic RAG to Multi-Agent Orchestration",
+      "course_slug": "ai-agent-engineering-from-react-agentic-rag-to-multi-agent-orchestration",
+      "entity_type": "course",
+      "path": "courses/ai-agent-engineering-from-react-agentic-rag-to-multi-agent-orchestration/course_summary.json",
+      "platform": "Maven",
+      "url": "https://maven.com/rakeshgohel/ai-agent-engineering-react-rag-multi-agent",
+      "instructor_names": [
+        "Rakesh Gohel"
+      ],
+      "topic_tags": [
+        "AI agents",
+        "RAG",
+        "multi-agent systems",
+        "enterprise AI"
+      ],
+      "citations": [
+        "https://maven.com/rakeshgohel/ai-agent-engineering-react-rag-multi-agent"
+      ]
+    },
+    {
+      "course_name": "Agentic AI Product Management Certification using Claude Code",
+      "course_slug": "agentic-ai-product-management-certification-using-claude-code",
+      "entity_type": "course",
+      "path": "courses/agentic-ai-product-management-certification-using-claude-code/course_summary.json",
+      "platform": "Maven",
+      "url": "https://maven.com/mahesh-yadav/genaipm",
+      "instructor_names": [
+        "Mahesh Yadav"
+      ],
+      "topic_tags": [
+        "AI product development",
+        "AI agents",
+        "RAG",
+        "AI coding",
+        "Claude Code"
+      ],
+      "citations": [
+        "https://maven.com/mahesh-yadav/genaipm"
+      ]
+    },
+    {
+      "course_name": "Generative AI Creation Masterclass",
+      "course_slug": "generative-ai-creation-masterclass",
+      "entity_type": "course",
+      "path": "courses/generative-ai-creation-masterclass/course_summary.json",
+      "platform": "Maven",
+      "url": "https://maven.com/bilawal/generative-ai-masterclass",
+      "instructor_names": [
+        "Bilawal Sidhu"
+      ],
+      "topic_tags": [
+        "image generation",
+        "video generation",
+        "voice AI",
+        "multimodal AI",
+        "generative media"
+      ],
+      "citations": [
+        "https://maven.com/bilawal/generative-ai-masterclass"
+      ]
+    },
+    {
+      "course_name": "Become a Voice AI Agent Expert",
+      "course_slug": "become-a-voice-ai-agent-expert",
+      "entity_type": "teaching resource",
+      "path": "courses/become-a-voice-ai-agent-expert/course_summary.json",
+      "platform": "Maven",
+      "url": "https://maven.com/p/5de0a6/become-a-voice-ai-agent-expert",
+      "instructor_names": [
+        "Kwindla Hultman Kramer"
+      ],
+      "topic_tags": [
+        "voice AI",
+        "AI agents",
+        "AI automation",
+        "speech-to-text",
+        "text-to-speech"
+      ],
+      "citations": [
+        "https://maven.com/p/5de0a6/become-a-voice-ai-agent-expert"
+      ]
+    },
+    {
+      "course_name": "AI Prototyping for Designers",
+      "course_slug": "ai-prototyping-for-designers",
+      "entity_type": "course",
+      "path": "courses/ai-prototyping-for-designers/course_summary.json",
+      "platform": "Maven",
+      "url": "https://maven.com/anna-arteeva/prototyping-for-designers",
+      "instructor_names": [
+        "Anna Arteeva"
+      ],
+      "topic_tags": [
+        "AI product development",
+        "AI coding",
+        "no-code AI",
+        "multimodal AI"
+      ],
+      "citations": [
+        "https://maven.com/anna-arteeva/prototyping-for-designers",
+        "https://maven.com/courses/ai/prototyping"
+      ]
+    },
+    {
+      "course_name": "Vibe Coding Bootcamp",
+      "course_slug": "vibe-coding-bootcamp",
+      "entity_type": "bootcamp",
+      "path": "courses/vibe-coding-bootcamp/course_summary.json",
+      "platform": "Maven",
+      "url": "https://maven.com/no-code-ai/vibe-coding-bootcamp",
+      "instructor_names": [
+        "No-Code AI"
+      ],
+      "topic_tags": [
+        "AI coding",
+        "no-code AI",
+        "AI product development"
+      ],
+      "citations": [
+        "https://maven.com/no-code-ai/vibe-coding-bootcamp",
+        "https://maven.com/courses/ai/vibe-coding",
+        "https://maven.com/courses/ai/prototyping"
+      ]
+    },
+    {
+      "course_name": "AI Product Management Certification",
+      "course_slug": "ai-product-management-certification",
+      "entity_type": "course",
+      "path": "courses/ai-product-management-certification/course_summary.json",
+      "platform": "Maven",
+      "url": "https://maven.com/product-faculty/ai-product-management-certification",
+      "instructor_names": [
+        "Product Faculty"
+      ],
+      "topic_tags": [
+        "AI product development",
+        "business AI"
+      ],
+      "citations": [
+        "https://maven.com/product-faculty/ai-product-management-certification",
+        "https://maven.com/courses/ai"
+      ]
+    },
+    {
+      "course_name": "AI Software Development: From First Prompt to Production Code",
+      "course_slug": "ai-software-development-from-first-prompt-to-production-code",
+      "entity_type": "course",
+      "path": "courses/ai-software-development-from-first-prompt-to-production-code/course_summary.json",
+      "platform": "Maven",
+      "url": "https://maven.com/courses/ai/ai-coding",
+      "instructor_names": [
+        "Maven instructors"
+      ],
+      "topic_tags": [
+        "AI coding",
+        "AI agents",
+        "AI product development"
+      ],
+      "citations": [
+        "https://maven.com/courses/ai/ai-coding"
+      ]
+    },
+    {
+      "course_name": "AI Agents Course",
+      "course_slug": "ai-agents-course",
+      "entity_type": "course",
+      "path": "courses/ai-agents-course/course_summary.json",
+      "platform": "Hugging Face",
+      "url": "https://huggingface.co/learn/agents-course/unit0/introduction",
+      "instructor_names": [
+        "Ben Burtenshaw",
+        "Sergio Paniego"
+      ],
+      "topic_tags": [
+        "AI agents",
+        "LLMs",
+        "tool use",
+        "LangGraph",
+        "LlamaIndex",
+        "smolagents",
+        "AI safety and evaluation"
+      ],
+      "citations": [
+        "https://huggingface.co/learn/agents-course/unit0/introduction"
+      ]
+    },
+    {
+      "course_name": "LLM Course",
+      "course_slug": "llm-course",
+      "entity_type": "course",
+      "path": "courses/llm-course/course_summary.json",
+      "platform": "Hugging Face",
+      "url": "https://huggingface.co/learn/llm-course/en/chapter1/1",
+      "instructor_names": [
+        "Abubakar Abid",
+        "Ben Burtenshaw",
+        "Matthew Carrigan",
+        "Lysandre Debut",
+        "Sylvain Gugger",
+        "Dawood Khan",
+        "Merve Noyan",
+        "Lucile Saulnier",
+        "Lewis Tunstall",
+        "Leandro von Werra"
+      ],
+      "topic_tags": [
+        "LLMs",
+        "NLP",
+        "Transformers",
+        "fine-tuning"
+      ],
+      "citations": [
+        "https://huggingface.co/learn/llm-course/en/chapter1/1"
+      ]
+    },
+    {
+      "course_name": "Diffusion Course",
+      "course_slug": "diffusion-course",
+      "entity_type": "course",
+      "path": "courses/diffusion-course/course_summary.json",
+      "platform": "Hugging Face",
+      "url": "https://huggingface.co/learn",
+      "instructor_names": [
+        "Hugging Face Team"
+      ],
+      "topic_tags": [
+        "image generation",
+        "diffusion models",
+        "multimodal AI",
+        "context engineering",
+        "LLMs",
+        "AI coding",
+        "prompt engineering"
+      ],
+      "citations": [
+        "https://huggingface.co/learn"
+      ]
+    },
+    {
+      "course_name": "Generative AI with Large Language Models",
+      "course_slug": "generative-ai-with-large-language-models",
+      "entity_type": "course",
+      "path": "courses/generative-ai-with-large-language-models/course_summary.json",
+      "platform": "DeepLearning.AI",
+      "url": "https://www.deeplearning.ai/courses/generative-ai-with-llms",
+      "instructor_names": [
+        "Antje Barth",
+        "Chris Fregly",
+        "Shelbee Eigenbrode",
+        "Mike Chambers"
+      ],
+      "topic_tags": [
+        "LLMs",
+        "fine-tuning",
+        "AI safety and evaluation",
+        "generative AI"
+      ],
+      "citations": [
+        "https://www.deeplearning.ai/courses/generative-ai-with-llms",
+        "https://www.coursera.org/learn/generative-ai-with-llms"
+      ]
+    },
+    {
+      "course_name": "Retrieval Augmented Generation (RAG)",
+      "course_slug": "retrieval-augmented-generation-rag",
+      "entity_type": "course",
+      "path": "courses/retrieval-augmented-generation-rag/course_summary.json",
+      "platform": "DeepLearning.AI",
+      "url": "https://www.deeplearning.ai/courses/retrieval-augmented-generation",
+      "instructor_names": [
+        "Zain Hasan"
+      ],
+      "topic_tags": [
+        "RAG",
+        "LLMs",
+        "vector databases",
+        "AI safety and evaluation"
+      ],
+      "citations": [
+        "https://www.deeplearning.ai/courses/retrieval-augmented-generation",
+        "https://www.coursera.org/learn/retrieval-augmented-generation-rag"
+      ]
+    },
+    {
+      "course_name": "AI Agents for Image and Video Generation",
+      "course_slug": "ai-agents-for-image-and-video-generation",
+      "entity_type": "course",
+      "path": "courses/ai-agents-for-image-and-video-generation/course_summary.json",
+      "platform": "DeepLearning.AI",
+      "url": "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation",
+      "instructor_names": [
+        "Katie Nguyen",
+        "Wafae Bakkali"
+      ],
+      "topic_tags": [
+        "AI agents",
+        "image generation",
+        "video generation",
+        "multimodal AI",
+        "AI safety and evaluation"
+      ],
+      "citations": [
+        "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation"
+      ]
+    },
+    {
+      "course_name": "Generative AI for Everyone",
+      "course_slug": "generative-ai-for-everyone",
+      "entity_type": "course",
+      "path": "courses/generative-ai-for-everyone/course_summary.json",
+      "platform": "DeepLearning.AI",
+      "url": "https://www.deeplearning.ai/courses/generative-ai-for-everyone",
+      "instructor_names": [
+        "Andrew Ng"
+      ],
+      "topic_tags": [
+        "LLMs",
+        "business AI",
+        "generative AI",
+        "AI product development"
+      ],
+      "citations": [
+        "https://www.deeplearning.ai/courses/generative-ai-for-everyone"
+      ]
+    },
+    {
+      "course_name": "Microsoft Generative AI for Beginners",
+      "course_slug": "microsoft-generative-ai-for-beginners",
+      "entity_type": "teaching resource",
+      "path": "courses/microsoft-generative-ai-for-beginners/course_summary.json",
+      "platform": "GitHub",
+      "url": "https://github.com/microsoft/generative-ai-for-beginners",
+      "instructor_names": [
+        "Microsoft Cloud Advocates"
+      ],
+      "topic_tags": [
+        "LLMs",
+        "prompt engineering",
+        "RAG",
+        "AI safety and evaluation",
+        "AI agents"
+      ],
+      "citations": [
+        "https://github.com/microsoft/generative-ai-for-beginners"
+      ]
+    },
+    {
+      "course_name": "Microsoft AI Agents for Beginners",
+      "course_slug": "microsoft-ai-agents-for-beginners",
+      "entity_type": "teaching resource",
+      "path": "courses/microsoft-ai-agents-for-beginners/course_summary.json",
+      "platform": "GitHub",
+      "url": "https://github.com/microsoft/ai-agents-for-beginners",
+      "instructor_names": [
+        "Microsoft"
+      ],
+      "topic_tags": [
+        "AI agents",
+        "tool use",
+        "multi-agent systems",
+        "AI safety and evaluation"
+      ],
+      "citations": [
+        "https://github.com/microsoft/ai-agents-for-beginners"
+      ]
+    },
+    {
+      "course_name": "Prompt Engineering Guide",
+      "course_slug": "prompt-engineering-guide",
+      "entity_type": "teaching resource",
+      "path": "courses/prompt-engineering-guide/course_summary.json",
+      "platform": "GitHub",
+      "url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
+      "instructor_names": [
+        "DAIR.AI"
+      ],
+      "topic_tags": [
+        "prompt engineering",
+        "context engineering",
+        "AI agents"
+      ],
+      "citations": [
+        "https://github.com/dair-ai/Prompt-Engineering-Guide"
+      ]
+    },
+    {
+      "course_name": "The Large Language Model Course",
+      "course_slug": "the-large-language-model-course",
+      "entity_type": "teaching resource",
+      "path": "courses/the-large-language-model-course/course_summary.json",
+      "platform": "Hugging Face",
+      "url": "https://huggingface.co/blog/mlabonne/llm-course",
+      "instructor_names": [
+        "Maxime Labonne"
+      ],
+      "topic_tags": [
+        "LLMs",
+        "fine-tuning",
+        "RAG",
+        "AI agents"
+      ],
+      "citations": [
+        "https://huggingface.co/blog/mlabonne/llm-course"
+      ]
+    },
+    {
+      "course_name": "Prompt Engineering Interactive Tutorial",
+      "course_slug": "prompt-engineering-interactive-tutorial",
+      "entity_type": "teaching resource",
+      "path": "courses/prompt-engineering-interactive-tutorial/course_summary.json",
+      "platform": "GitHub",
+      "url": "https://github.com/anthropics/prompt-eng-interactive-tutorial",
+      "instructor_names": [
+        "Anthropic Team"
+      ],
+      "topic_tags": [
+        "prompt engineering",
+        "Claude",
+        "LLMs"
+      ],
+      "citations": [
+        "https://github.com/anthropics/prompt-eng-interactive-tutorial",
+        "https://www.anthropic.com/learn"
+      ]
+    },
+    {
+      "course_name": "OpenAI Cookbook",
+      "course_slug": "openai-cookbook",
+      "entity_type": "teaching resource",
+      "path": "courses/openai-cookbook/course_summary.json",
+      "platform": "GitHub",
+      "url": "https://github.com/openai/openai-cookbook",
+      "instructor_names": [
+        "OpenAI"
+      ],
+      "topic_tags": [
+        "LLMs",
+        "RAG",
+        "AI agents",
+        "fine-tuning",
+        "AI safety and evaluation"
+      ],
+      "citations": [
+        "https://github.com/openai/openai-cookbook",
+        "https://developers.openai.com/cookbook"
+      ]
+    },
+    {
+      "course_name": "Introduction to Prompt Engineering for Generative AI",
+      "course_slug": "introduction-to-prompt-engineering-for-generative-ai",
+      "entity_type": "course",
+      "path": "courses/introduction-to-prompt-engineering-for-generative-ai/course_summary.json",
+      "platform": "LinkedIn Learning",
+      "url": "https://www.linkedin.com/learning/introduction-to-prompt-engineering-for-generative-ai-24636124",
+      "instructor_names": [
+        "Ronnie Sheer"
+      ],
+      "topic_tags": [
+        "prompt engineering",
+        "LLMs",
+        "generative AI"
+      ],
+      "citations": [
+        "https://www.linkedin.com/learning/introduction-to-prompt-engineering-for-generative-ai-24636124",
+        "https://www.linkedin.com/learning/topics/artificial-intelligence"
+      ]
+    },
+    {
+      "course_name": "Hands-On AI: RAG using LlamaIndex",
+      "course_slug": "hands-on-ai-rag-using-llamaindex",
+      "entity_type": "course",
+      "path": "courses/hands-on-ai-rag-using-llamaindex/course_summary.json",
+      "platform": "LinkedIn Learning",
+      "url": "https://www.linkedin.com/learning/hands-on-ai-rag-using-llamaindex",
+      "instructor_names": [
+        "LinkedIn Learning Team"
+      ],
+      "topic_tags": [
+        "RAG",
+        "LlamaIndex",
+        "LLMs"
+      ],
+      "citations": [
+        "https://www.linkedin.com/learning/hands-on-ai-rag-using-llamaindex"
+      ]
+    },
+    {
+      "course_name": "Context Engineering for Developers",
+      "course_slug": "context-engineering-for-developers",
+      "entity_type": "course",
+      "path": "courses/context-engineering-for-developers/course_summary.json",
+      "platform": "LinkedIn Learning",
+      "url": "https://www.linkedin.com/learning/context-engineering-for-developers",
+      "instructor_names": [
+        "LinkedIn Learning Team"
+      ],
+      "topic_tags": [
+        "context engineering",
+        "RAG",
+        "AI agents",
+        "prompt engineering"
+      ],
+      "citations": [
+        "https://www.linkedin.com/learning/context-engineering-for-developers"
+      ]
+    },
+    {
+      "course_name": "Creating Agents with Python and the AI Toolkit for Visual Studio Code",
+      "course_slug": "creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code",
+      "entity_type": "course",
+      "path": "courses/creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code/course_summary.json",
+      "platform": "LinkedIn Learning",
+      "url": "https://www.linkedin.com/learning/creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code",
+      "instructor_names": [
+        "LinkedIn Learning Team"
+      ],
+      "topic_tags": [
+        "AI agents",
+        "AI coding",
+        "Python",
+        "AI safety and evaluation"
+      ],
+      "citations": [
+        "https://www.linkedin.com/learning/creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code"
+      ]
+    },
+    {
+      "course_name": "Fine-Tuning for LLMs: from Beginner to Advanced",
+      "course_slug": "fine-tuning-for-llms-from-beginner-to-advanced",
+      "entity_type": "course",
+      "path": "courses/fine-tuning-for-llms-from-beginner-to-advanced/course_summary.json",
+      "platform": "LinkedIn Learning",
+      "url": "https://www.linkedin.com/learning/fine-tuning-for-llms-from-beginner-to-advanced",
+      "instructor_names": [
+        "LinkedIn Learning Team"
+      ],
+      "topic_tags": [
+        "fine-tuning",
+        "LLMs"
+      ],
+      "citations": [
+        "https://www.linkedin.com/learning/fine-tuning-for-llms-from-beginner-to-advanced"
+      ]
+    },
+    {
+      "course_name": "Multimodal AI Essentials: Merging Text, Image, and Audio",
+      "course_slug": "multimodal-ai-essentials-merging-text-image-and-audio",
+      "entity_type": "course",
+      "path": "courses/multimodal-ai-essentials-merging-text-image-and-audio/course_summary.json",
+      "platform": "LinkedIn Learning",
+      "url": "https://www.linkedin.com/learning/multimodal-ai-essentials-merging-text-image-and-audio-for-next-generation-ai-applications",
+      "instructor_names": [
+        "LinkedIn Learning Team"
+      ],
+      "topic_tags": [
+        "multimodal AI",
+        "image generation",
+        "voice AI",
+        "video generation"
+      ],
+      "citations": [
+        "https://www.linkedin.com/learning/multimodal-ai-essentials-merging-text-image-and-audio-for-next-generation-ai-applications"
+      ]
+    },
+    {
+      "course_name": "ElevenLabs: AI Voice Cloning, Text-to-Speech, and Sound Effects",
+      "course_slug": "elevenlabs-ai-voice-cloning-text-to-speech-and-sound-effects",
+      "entity_type": "course",
+      "path": "courses/elevenlabs-ai-voice-cloning-text-to-speech-and-sound-effects/course_summary.json",
+      "platform": "LinkedIn Learning",
+      "url": "https://www.linkedin.com/learning/elevenlabs-ai-voice-cloning-text-to-speech-and-sound-effects",
+      "instructor_names": [
+        "LinkedIn Learning Team"
+      ],
+      "topic_tags": [
+        "voice AI",
+        "text-to-speech",
+        "voice cloning",
+        "audio AI"
+      ],
+      "citations": [
+        "https://www.linkedin.com/learning/elevenlabs-ai-voice-cloning-text-to-speech-and-sound-effects"
+      ]
+    },
+    {
+      "course_name": "Full AI Prompting Course with Andrew Ng",
+      "course_slug": "full-ai-prompting-course-with-andrew-ng",
+      "entity_type": "teaching resource",
+      "path": "courses/full-ai-prompting-course-with-andrew-ng/course_summary.json",
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/watch?v=8ib4Qnh2HFE",
+      "instructor_names": [
+        "Andrew Ng"
+      ],
+      "topic_tags": [
+        "prompt engineering",
+        "LLMs",
+        "generative AI"
+      ],
+      "citations": [
+        "https://www.youtube.com/watch?v=8ib4Qnh2HFE"
+      ]
+    },
+    {
+      "course_name": "Generative AI for Beginners Full Series",
+      "course_slug": "generative-ai-for-beginners-full-series",
+      "entity_type": "teaching resource",
+      "path": "courses/generative-ai-for-beginners-full-series/course_summary.json",
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/watch?v=k7HaeJs-N-o",
+      "instructor_names": [
+        "Microsoft"
+      ],
+      "topic_tags": [
+        "LLMs",
+        "prompt engineering",
+        "RAG",
+        "AI safety and evaluation"
+      ],
+      "citations": [
+        "https://www.youtube.com/watch?v=k7HaeJs-N-o",
+        "https://github.com/microsoft/generative-ai-for-beginners"
+      ]
+    },
+    {
+      "course_name": "AI Agents Tutorial For Beginners",
+      "course_slug": "ai-agents-tutorial-for-beginners",
+      "entity_type": "teaching resource",
+      "path": "courses/ai-agents-tutorial-for-beginners/course_summary.json",
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/watch?v=-rUKr8JDits",
+      "instructor_names": [
+        "Edureka"
+      ],
+      "topic_tags": [
+        "AI agents",
+        "agentic AI",
+        "LLMs"
+      ],
+      "citations": [
+        "https://www.youtube.com/watch?v=-rUKr8JDits"
+      ]
+    },
+    {
+      "course_name": "GenAI Essentials - Full Course for Beginners",
+      "course_slug": "genai-essentials-full-course-for-beginners",
+      "entity_type": "teaching resource",
+      "path": "courses/genai-essentials-full-course-for-beginners/course_summary.json",
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/watch?v=nJ25yl34Uqw",
+      "instructor_names": [
+        "ExamPro"
+      ],
+      "topic_tags": [
+        "LLMs",
+        "prompt engineering",
+        "generative AI",
+        "cloud AI"
+      ],
+      "citations": [
+        "https://www.youtube.com/watch?v=nJ25yl34Uqw"
+      ]
+    },
+    {
+      "course_name": "Generative AI and LLMs Full Course 2026",
+      "course_slug": "generative-ai-and-llms-full-course-2026",
+      "entity_type": "teaching resource",
+      "path": "courses/generative-ai-and-llms-full-course-2026/course_summary.json",
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/watch?v=Ru2jEY4pd7k",
+      "instructor_names": [
+        "Simplilearn"
+      ],
+      "topic_tags": [
+        "LLMs",
+        "AI agents",
+        "prompt engineering",
+        "generative AI"
+      ],
+      "citations": [
+        "https://www.youtube.com/watch?v=Ru2jEY4pd7k"
+      ]
+    },
+    {
+      "course_name": "Voice AI and Voice Agents 2025 - Session 01",
+      "course_slug": "voice-ai-and-voice-agents-2025-session-01",
+      "entity_type": "teaching resource",
+      "path": "courses/voice-ai-and-voice-agents-2025-session-01/course_summary.json",
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/watch?v=m4QF78X7t9k",
+      "instructor_names": [
+        "Voice AI community instructors"
+      ],
+      "topic_tags": [
+        "voice AI",
+        "AI agents",
+        "speech-to-text",
+        "text-to-speech"
+      ],
+      "citations": [
+        "https://www.youtube.com/watch?v=m4QF78X7t9k"
+      ]
+    },
+    {
+      "course_name": "AI Voice Agents Full Course 2026: Beginner to Advanced",
+      "course_slug": "ai-voice-agents-full-course-2026-beginner-to-advanced",
+      "entity_type": "teaching resource",
+      "path": "courses/ai-voice-agents-full-course-2026-beginner-to-advanced/course_summary.json",
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/watch?v=UAxKs9Yuljo",
+      "instructor_names": [
+        "YouTube creator"
+      ],
+      "topic_tags": [
+        "voice AI",
+        "AI agents",
+        "AI automation"
+      ],
+      "citations": [
+        "https://www.youtube.com/watch?v=UAxKs9Yuljo"
+      ]
+    },
+    {
+      "course_name": "Neural Networks: Zero to Hero",
+      "course_slug": "neural-networks-zero-to-hero",
+      "entity_type": "teaching resource",
+      "path": "courses/neural-networks-zero-to-hero/course_summary.json",
+      "platform": "YouTube",
+      "url": "https://karpathy.ai/zero-to-hero.html",
+      "instructor_names": [
+        "Andrej Karpathy"
+      ],
+      "topic_tags": [
+        "LLMs",
+        "deep learning",
+        "neural networks",
+        "AI coding"
+      ],
+      "citations": [
+        "https://karpathy.ai/zero-to-hero.html",
+        "https://www.youtube.com/andrejkarpathy"
+      ]
+    },
+    {
+      "course_name": "Practical Deep Learning for Coders",
+      "course_slug": "practical-deep-learning-for-coders",
+      "entity_type": "course",
+      "path": "courses/practical-deep-learning-for-coders/course_summary.json",
+      "platform": "fast.ai",
+      "url": "https://course.fast.ai/",
+      "instructor_names": [
+        "Jeremy Howard"
+      ],
+      "topic_tags": [
+        "LLMs",
+        "image generation",
+        "deep learning",
+        "AI coding"
+      ],
+      "citations": [
+        "https://course.fast.ai/"
+      ]
+    },
+    {
+      "course_name": "Beginner: Introduction to Generative AI",
+      "course_slug": "beginner-introduction-to-generative-ai",
+      "entity_type": "teaching resource",
+      "path": "courses/beginner-introduction-to-generative-ai/course_summary.json",
+      "platform": "Google Skills",
+      "url": "https://www.skills.google/paths/118",
+      "instructor_names": [
+        "Google Cloud"
+      ],
+      "topic_tags": [
+        "LLMs",
+        "prompt engineering",
+        "AI safety and evaluation",
+        "business AI"
+      ],
+      "citations": [
+        "https://www.skills.google/paths/118"
+      ]
+    },
+    {
+      "course_name": "Prompt Design in Agent Platform",
+      "course_slug": "prompt-design-in-agent-platform",
+      "entity_type": "course",
+      "path": "courses/prompt-design-in-agent-platform/course_summary.json",
+      "platform": "Google Skills",
+      "url": "https://www.skills.google/course_templates/976",
+      "instructor_names": [
+        "Google Cloud"
+      ],
+      "topic_tags": [
+        "prompt engineering",
+        "multimodal AI",
+        "image analysis",
+        "AI agents"
+      ],
+      "citations": [
+        "https://www.skills.google/course_templates/976"
+      ]
+    },
+    {
+      "course_name": "Introduction to Generative AI",
+      "course_slug": "introduction-to-generative-ai",
+      "entity_type": "course",
+      "path": "courses/introduction-to-generative-ai/course_summary.json",
+      "platform": "Coursera",
+      "url": "https://www.coursera.org/learn/introduction-to-generative-ai",
+      "instructor_names": [
+        "Google Cloud"
+      ],
+      "topic_tags": [
+        "LLMs",
+        "generative AI",
+        "business AI"
+      ],
+      "citations": [
+        "https://www.coursera.org/learn/introduction-to-generative-ai",
+        "https://www.skills.google/paths/118/course_templates/536"
+      ]
+    },
+    {
+      "course_name": "Applied Generative AI Engineering",
+      "course_slug": "applied-generative-ai-engineering",
+      "entity_type": "course",
+      "path": "courses/applied-generative-ai-engineering/course_summary.json",
+      "platform": "Udacity",
+      "url": "https://www.udacity.com/course/generative-ai--nd608",
+      "instructor_names": [
+        "Udacity"
+      ],
+      "topic_tags": [
+        "prompt engineering",
+        "RAG",
+        "fine-tuning",
+        "AI agents",
+        "AI coding"
+      ],
+      "citations": [
+        "https://www.udacity.com/course/generative-ai--nd608"
+      ]
+    },
+    {
+      "course_name": "Generative AI and Prompt Engineering",
+      "course_slug": "generative-ai-and-prompt-engineering",
+      "entity_type": "course",
+      "path": "courses/generative-ai-and-prompt-engineering/course_summary.json",
+      "platform": "Coursera",
+      "url": "https://www.coursera.org/learn/generative-ai--prompt-engineering",
+      "instructor_names": [
+        "Coursera instructors"
+      ],
+      "topic_tags": [
+        "prompt engineering",
+        "LLMs",
+        "generative AI"
+      ],
+      "citations": [
+        "https://www.coursera.org/learn/generative-ai--prompt-engineering"
+      ]
+    },
+    {
+      "course_name": "LLM Engineering: Prompting, Fine-Tuning, Optimization and RAG",
+      "course_slug": "llm-engineering-prompting-fine-tuning-optimization-and-rag",
+      "entity_type": "course",
+      "path": "courses/llm-engineering-prompting-fine-tuning-optimization-and-rag/course_summary.json",
+      "platform": "Coursera",
+      "url": "https://www.coursera.org/specializations/llm-engineering-prompting-fine-tuning-optimization-rag",
+      "instructor_names": [
+        "Coursera instructors"
+      ],
+      "topic_tags": [
+        "LLMs",
+        "prompt engineering",
+        "fine-tuning",
+        "RAG",
+        "AI safety and evaluation"
+      ],
+      "citations": [
+        "https://www.coursera.org/specializations/llm-engineering-prompting-fine-tuning-optimization-rag"
+      ]
+    },
+    {
+      "course_name": "Introduction to Generative AI and Agents",
+      "course_slug": "introduction-to-generative-ai-and-agents",
+      "entity_type": "course",
+      "path": "courses/introduction-to-generative-ai-and-agents/course_summary.json",
+      "platform": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/training/modules/fundamentals-generative-ai/",
+      "instructor_names": [
+        "Microsoft"
+      ],
+      "topic_tags": [
+        "LLMs",
+        "AI agents",
+        "prompt engineering",
+        "Azure"
+      ],
+      "citations": [
+        "https://learn.microsoft.com/en-us/training/modules/fundamentals-generative-ai/"
+      ]
+    },
+    {
+      "course_name": "Get Started with AI Applications and Agents on Azure",
+      "course_slug": "get-started-with-ai-applications-and-agents-on-azure",
+      "entity_type": "course",
+      "path": "courses/get-started-with-ai-applications-and-agents-on-azure/course_summary.json",
+      "platform": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/training/paths/get-started-ai-apps-agents/",
+      "instructor_names": [
+        "Microsoft"
+      ],
+      "topic_tags": [
+        "AI agents",
+        "AI coding",
+        "AI product development",
+        "Azure"
+      ],
+      "citations": [
+        "https://learn.microsoft.com/en-us/training/paths/get-started-ai-apps-agents/"
+      ]
+    },
+    {
+      "course_name": "AI Strategy for Business Leaders",
+      "course_slug": "ai-strategy-for-business-leaders",
+      "entity_type": "course",
+      "path": "courses/ai-strategy-for-business-leaders/course_summary.json",
+      "platform": "Harvard DCE",
+      "url": "https://professional.dce.harvard.edu/programs/ai-strategy-for-business-leaders/",
+      "instructor_names": [
+        "Harvard DCE"
+      ],
+      "topic_tags": [
+        "business AI",
+        "AI strategy",
+        "AI product development"
+      ],
+      "citations": [
+        "https://professional.dce.harvard.edu/programs/ai-strategy-for-business-leaders/"
+      ]
+    },
+    {
+      "course_name": "Artificial Intelligence: Implications for Business Strategy",
+      "course_slug": "artificial-intelligence-implications-for-business-strategy",
+      "entity_type": "course",
+      "path": "courses/artificial-intelligence-implications-for-business-strategy/course_summary.json",
+      "platform": "MIT Sloan Executive Education",
+      "url": "https://executive.mit.edu/course/artificial-intelligence/a056g00000URaa3AAD.html",
+      "instructor_names": [
+        "MIT Sloan"
+      ],
+      "topic_tags": [
+        "business AI",
+        "AI strategy",
+        "machine learning"
+      ],
+      "citations": [
+        "https://executive.mit.edu/course/artificial-intelligence/a056g00000URaa3AAD.html"
+      ]
+    },
+    {
+      "course_name": "Operationalizing No-Code AI with Zapier",
+      "course_slug": "operationalizing-no-code-ai-with-zapier",
+      "entity_type": "course",
+      "path": "courses/operationalizing-no-code-ai-with-zapier/course_summary.json",
+      "platform": "Coursera",
+      "url": "https://www.coursera.org/learn/operationalizing-no-code-ai-with-zapier-automation-and-plans",
+      "instructor_names": [
+        "Coursera instructors"
+      ],
+      "topic_tags": [
+        "no-code AI",
+        "AI automation",
+        "Zapier",
+        "workflow automation"
+      ],
+      "citations": [
+        "https://www.coursera.org/learn/operationalizing-no-code-ai-with-zapier-automation-and-plans"
+      ]
+    },
+    {
+      "course_name": "Runway AI Video Creation",
+      "course_slug": "runway-ai-video-creation",
+      "entity_type": "teaching resource",
+      "path": "courses/runway-ai-video-creation/course_summary.json",
+      "platform": "Runway Academy",
+      "url": "https://academy.runwayml.com/",
+      "instructor_names": [
+        "Runway Academy"
+      ],
+      "topic_tags": [
+        "video generation",
+        "multimodal AI",
+        "generative media"
+      ],
+      "citations": [
+        "https://academy.runwayml.com/"
+      ]
+    },
+    {
+      "course_name": "Midjourney: Generative AI for Creatives Specialization",
+      "course_slug": "midjourney-generative-ai-for-creatives-specialization",
+      "entity_type": "course",
+      "path": "courses/midjourney-generative-ai-for-creatives-specialization/course_summary.json",
+      "platform": "Coursera",
+      "url": "https://www.coursera.org/specializations/midjourney-generative-ai-for-creatives",
+      "instructor_names": [
+        "Arnold Trinh"
+      ],
+      "topic_tags": [
+        "image generation",
+        "prompt engineering",
+        "creative AI"
+      ],
+      "citations": [
+        "https://www.coursera.org/specializations/midjourney-generative-ai-for-creatives"
+      ]
+    },
+    {
+      "course_name": "Vector Databases for Embeddings with Pinecone",
+      "course_slug": "vector-databases-for-embeddings-with-pinecone",
+      "entity_type": "course",
+      "path": "courses/vector-databases-for-embeddings-with-pinecone/course_summary.json",
+      "platform": "DataCamp",
+      "url": "https://www.datacamp.com/courses/vector-databases-for-embeddings-with-pinecone",
+      "instructor_names": [
+        "DataCamp Team"
+      ],
+      "topic_tags": [
+        "RAG",
+        "vector databases",
+        "embeddings"
+      ],
+      "citations": [
+        "https://www.datacamp.com/courses/vector-databases-for-embeddings-with-pinecone"
+      ]
+    },
+    {
+      "course_name": "Trustworthy AI: Managing Bias, Ethics, and Accountability",
+      "course_slug": "trustworthy-ai-managing-bias-ethics-and-accountability",
+      "entity_type": "course",
+      "path": "courses/trustworthy-ai-managing-bias-ethics-and-accountability/course_summary.json",
+      "platform": "Coursera",
+      "url": "https://www.coursera.org/learn/responsible-ai-and-ethics",
+      "instructor_names": [
+        "Coursera instructors"
+      ],
+      "topic_tags": [
+        "AI safety and evaluation",
+        "responsible AI",
+        "AI ethics"
+      ],
+      "citations": [
+        "https://www.coursera.org/learn/responsible-ai-and-ethics"
+      ]
+    },
+    {
+      "course_name": "AI Ethics",
+      "course_slug": "ai-ethics",
+      "entity_type": "course",
+      "path": "courses/ai-ethics/course_summary.json",
+      "platform": "DataCamp",
+      "url": "https://www.datacamp.com/courses/ai-ethics",
+      "instructor_names": [
+        "DataCamp Team"
+      ],
+      "topic_tags": [
+        "AI safety and evaluation",
+        "AI ethics",
+        "responsible AI"
+      ],
+      "citations": [
+        "https://www.datacamp.com/courses/ai-ethics"
+      ]
+    },
+    {
+      "course_name": "11 Workshops to Build Production AI Agents",
+      "course_slug": "11-workshops-to-build-production-ai-agents",
+      "entity_type": "teaching resource",
+      "path": "courses/11-workshops-to-build-production-ai-agents/course_summary.json",
+      "platform": "Substack",
+      "url": "https://alexeyondata.substack.com/p/11-workshops-to-build-production",
+      "instructor_names": [
+        "Alexey Grigorev"
+      ],
+      "topic_tags": [
+        "AI agents",
+        "RAG",
+        "MCP",
+        "AI safety and evaluation",
+        "AI coding"
+      ],
+      "citations": [
+        "https://alexeyondata.substack.com/p/11-workshops-to-build-production"
+      ]
+    },
+    {
+      "course_name": "The AI Engineering Course I Wish I Had",
+      "course_slug": "the-ai-engineering-course-i-wish-i-had",
+      "entity_type": "teaching resource",
+      "path": "courses/the-ai-engineering-course-i-wish-i-had/course_summary.json",
+      "platform": "Substack",
+      "url": "https://theneuralmaze.substack.com/p/the-ai-engineering-course-i-wish",
+      "instructor_names": [
+        "Miguel Otero Pedrido"
+      ],
+      "topic_tags": [
+        "AI agents",
+        "MCP",
+        "AI engineering",
+        "AI safety and evaluation"
+      ],
+      "citations": [
+        "https://theneuralmaze.substack.com/p/the-ai-engineering-course-i-wish"
+      ]
+    },
+    {
+      "course_name": "Best Practices in Prompt Engineering",
+      "course_slug": "best-practices-in-prompt-engineering",
+      "entity_type": "teaching resource",
+      "path": "courses/best-practices-in-prompt-engineering/course_summary.json",
+      "platform": "Medium",
+      "url": "https://medium.com/data-science/best-practices-in-prompt-engineering-a18d6bab904b",
+      "instructor_names": [
+        "Sophia Yang"
+      ],
+      "topic_tags": [
+        "prompt engineering",
+        "LLMs"
+      ],
+      "citations": [
+        "https://medium.com/data-science/best-practices-in-prompt-engineering-a18d6bab904b"
+      ]
+    },
+    {
+      "course_name": "Prompt Engineering for Generative AI - GOTO 2025 Session",
+      "course_slug": "prompt-engineering-for-generative-ai-goto-2025-session",
+      "entity_type": "teaching resource",
+      "path": "courses/prompt-engineering-for-generative-ai-goto-2025-session/course_summary.json",
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/watch?v=3a0WHZVb1Gg",
+      "instructor_names": [
+        "James Phoenix",
+        "Mike Taylor",
+        "Phil Winder"
+      ],
+      "topic_tags": [
+        "prompt engineering",
+        "LLMs",
+        "conference"
+      ],
+      "citations": [
+        "https://www.youtube.com/watch?v=3a0WHZVb1Gg"
+      ]
+    },
+    {
+      "course_name": "Almost Timely News: AI Agents 101",
+      "course_slug": "almost-timely-news-ai-agents-101",
+      "entity_type": "newsletter",
+      "path": "courses/almost-timely-news-ai-agents-101/course_summary.json",
+      "platform": "Substack",
+      "url": "https://almosttimely.substack.com/p/almost-timely-news-ai-agents-101",
+      "instructor_names": [
+        "Christopher S. Penn"
+      ],
+      "topic_tags": [
+        "AI agents",
+        "business AI",
+        "AI automation"
+      ],
+      "citations": [
+        "https://almosttimely.substack.com/p/almost-timely-news-ai-agents-101"
+      ]
+    }
+  ],
+  "organizations": [
+    {
+      "name": "AI+ Training and Agentic AI Summit",
+      "associated_record_count": 1
+    },
+    {
+      "name": "Agentic AI Institute",
+      "associated_record_count": 1
+    },
+    {
+      "name": "Anthropic",
+      "associated_record_count": 1
+    },
+    {
+      "name": "Applied LLMs",
+      "associated_record_count": 1
+    },
+    {
+      "name": "Coursera",
+      "associated_record_count": 5
+    },
+    {
+      "name": "DAIR.AI",
+      "associated_record_count": 1
+    },
+    {
+      "name": "DataCamp",
+      "associated_record_count": 2
+    },
+    {
+      "name": "DataTalks.Club",
+      "associated_record_count": 1
+    },
+    {
+      "name": "DeepCoreX Academy",
+      "associated_record_count": 1
+    },
+    {
+      "name": "DeepLearning.AI",
+      "associated_record_count": 3
+    },
+    {
+      "name": "Google",
+      "associated_record_count": 1
+    },
+    {
+      "name": "Google Cloud",
+      "associated_record_count": 2
+    },
+    {
+      "name": "Google Skills",
+      "associated_record_count": 1
+    },
+    {
+      "name": "Harvard DCE",
+      "associated_record_count": 1
+    },
+    {
+      "name": "Hugging Face",
+      "associated_record_count": 3
+    },
+    {
+      "name": "JUTEQ Inc.",
+      "associated_record_count": 1
+    },
+    {
+      "name": "MIT Sloan Executive Education",
+      "associated_record_count": 1
+    },
+    {
+      "name": "Microsoft",
+      "associated_record_count": 4
+    },
+    {
+      "name": "OpenAI",
+      "associated_record_count": 1
+    },
+    {
+      "name": "Parlance Labs",
+      "associated_record_count": 1
+    },
+    {
+      "name": "Runway",
+      "associated_record_count": 1
+    },
+    {
+      "name": "The Gen Academy",
+      "associated_record_count": 1
+    },
+    {
+      "name": "Udacity",
+      "associated_record_count": 1
+    },
+    {
+      "name": "fast.ai",
+      "associated_record_count": 1
+    }
+  ],
+  "source_urls": [
+    "https://academy.runwayml.com/",
+    "https://alexeyondata.substack.com/p/11-workshops-to-build-production",
+    "https://almosttimely.substack.com/p/almost-timely-news-ai-agents-101",
+    "https://course.fast.ai/",
+    "https://developers.openai.com/cookbook",
+    "https://executive.mit.edu/course/artificial-intelligence/a056g00000URaa3AAD.html",
+    "https://github.com/anthropics/prompt-eng-interactive-tutorial",
+    "https://github.com/dair-ai/Prompt-Engineering-Guide",
+    "https://github.com/microsoft/ai-agents-for-beginners",
+    "https://github.com/microsoft/generative-ai-for-beginners",
+    "https://github.com/openai/openai-cookbook",
+    "https://huggingface.co/blog/mlabonne/llm-course",
+    "https://huggingface.co/learn",
+    "https://huggingface.co/learn/agents-course/unit0/introduction",
+    "https://huggingface.co/learn/llm-course/en/chapter1/1",
+    "https://karpathy.ai/zero-to-hero.html",
+    "https://learn.microsoft.com/en-us/training/modules/fundamentals-generative-ai/",
+    "https://learn.microsoft.com/en-us/training/paths/get-started-ai-apps-agents/",
+    "https://maven.com/ai-agent-campus/ai-agents-for-sales-and-go-to-market",
+    "https://maven.com/aishwarya-srinivasan/mastering-ai-agents",
+    "https://maven.com/aitraining/minibootcamp",
+    "https://maven.com/alexey-grigorev/from-rag-to-agents",
+    "https://maven.com/anna-arteeva/prototyping-for-designers",
+    "https://maven.com/applied-llms/rag-playbook",
+    "https://maven.com/bilawal/generative-ai-masterclass",
+    "https://maven.com/courses/ai",
+    "https://maven.com/courses/ai/ai-coding",
+    "https://maven.com/courses/ai/mcp",
+    "https://maven.com/courses/ai/prototyping",
+    "https://maven.com/courses/ai/vibe-coding",
+    "https://maven.com/deep-core-x-academy/production-ai-agents",
+    "https://maven.com/lennon/ai-agents-for-content",
+    "https://maven.com/mahesh-yadav/genaipm",
+    "https://maven.com/nirantk/search-for-rag",
+    "https://maven.com/no-code-ai/vibe-coding-bootcamp",
+    "https://maven.com/p/5de0a6/become-a-voice-ai-agent-expert",
+    "https://maven.com/parlance-labs/evals",
+    "https://maven.com/product-faculty/ai-product-management-certification",
+    "https://maven.com/rakeshgohel/ai-agent-engineering-react-rag-multi-agent",
+    "https://medium.com/data-science/best-practices-in-prompt-engineering-a18d6bab904b",
+    "https://professional.dce.harvard.edu/programs/ai-strategy-for-business-leaders/",
+    "https://startup-sync.com/ai-automation-integration-course/",
+    "https://theneuralmaze.substack.com/p/the-ai-engineering-course-i-wish",
+    "https://www.anthropic.com/learn",
+    "https://www.coursera.org/learn/generative-ai--prompt-engineering",
+    "https://www.coursera.org/learn/generative-ai-with-llms",
+    "https://www.coursera.org/learn/introduction-to-generative-ai",
+    "https://www.coursera.org/learn/operationalizing-no-code-ai-with-zapier-automation-and-plans",
+    "https://www.coursera.org/learn/responsible-ai-and-ethics",
+    "https://www.coursera.org/learn/retrieval-augmented-generation-rag",
+    "https://www.coursera.org/specializations/llm-engineering-prompting-fine-tuning-optimization-rag",
+    "https://www.coursera.org/specializations/midjourney-generative-ai-for-creatives",
+    "https://www.datacamp.com/courses/ai-ethics",
+    "https://www.datacamp.com/courses/vector-databases-for-embeddings-with-pinecone",
+    "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation",
+    "https://www.deeplearning.ai/courses/generative-ai-for-everyone",
+    "https://www.deeplearning.ai/courses/generative-ai-with-llms",
+    "https://www.deeplearning.ai/courses/retrieval-augmented-generation",
+    "https://www.linkedin.com/learning/context-engineering-for-developers",
+    "https://www.linkedin.com/learning/creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code",
+    "https://www.linkedin.com/learning/elevenlabs-ai-voice-cloning-text-to-speech-and-sound-effects",
+    "https://www.linkedin.com/learning/fine-tuning-for-llms-from-beginner-to-advanced",
+    "https://www.linkedin.com/learning/hands-on-ai-rag-using-llamaindex",
+    "https://www.linkedin.com/learning/introduction-to-prompt-engineering-for-generative-ai-24636124",
+    "https://www.linkedin.com/learning/multimodal-ai-essentials-merging-text-image-and-audio-for-next-generation-ai-applications",
+    "https://www.linkedin.com/learning/topics/artificial-intelligence",
+    "https://www.skills.google/course_templates/976",
+    "https://www.skills.google/paths/118",
+    "https://www.skills.google/paths/118/course_templates/536",
+    "https://www.skills.google/paths/118/course_templates/554",
+    "https://www.udacity.com/course/generative-ai--nd608",
+    "https://www.youtube.com/andrejkarpathy",
+    "https://www.youtube.com/watch?v=-rUKr8JDits",
+    "https://www.youtube.com/watch?v=3a0WHZVb1Gg",
+    "https://www.youtube.com/watch?v=8ib4Qnh2HFE",
+    "https://www.youtube.com/watch?v=Ru2jEY4pd7k",
+    "https://www.youtube.com/watch?v=UAxKs9Yuljo",
+    "https://www.youtube.com/watch?v=k7HaeJs-N-o",
+    "https://www.youtube.com/watch?v=m4QF78X7t9k",
+    "https://www.youtube.com/watch?v=nJ25yl34Uqw",
+    "https://zapier.com/blog/no-code-automation/"
+  ],
+  "platform_counts": {
+    "github": 5,
+    "linkedin": 7,
+    "maven": 17,
+    "medium": 1,
+    "news": 1,
+    "substack": 3,
+    "website": 24,
+    "youtube": 9
+  },
+  "firecrawl": {
+    "capabilities_discovered": [
+      "firecrawl_search",
+      "firecrawl_search_feedback",
+      "firecrawl_scrape",
+      "firecrawl_extract",
+      "firecrawl_map",
+      "firecrawl_crawl",
+      "firecrawl_check_crawl_status",
+      "firecrawl_agent",
+      "firecrawl_agent_status",
+      "firecrawl_interact",
+      "firecrawl_interact_stop",
+      "firecrawl_monitor_create",
+      "firecrawl_monitor_list",
+      "firecrawl_monitor_get",
+      "firecrawl_monitor_update",
+      "firecrawl_monitor_delete",
+      "firecrawl_monitor_run",
+      "firecrawl_monitor_checks",
+      "firecrawl_monitor_check"
+    ],
+    "searches_performed": [
+      {
+        "query": "Gen AI Academy generative AI courses instructors prompt engineering RAG AI agents Maven YouTube LinkedIn",
+        "search_id": "019ec7b1-dcde-7779-b782-031f33aae71c",
+        "rating": "good"
+      },
+      {
+        "query": "site:maven.com generative AI course RAG AI agents prompt engineering instructor",
+        "search_id": "019ec7b2-101d-702d-ad2b-812f9ff4fee2",
+        "rating": "good"
+      },
+      {
+        "query": "site:maven.com RAG Maven course AI instructor",
+        "search_id": "019ec7b2-3924-7458-8687-246777918ca1",
+        "rating": "good"
+      },
+      {
+        "query": "site:youtube.com generative AI full course prompt engineering RAG AI agents instructor",
+        "search_id": "019ec7b4-77f3-719f-ae1f-6afd204bdc51",
+        "rating": "good"
+      },
+      {
+        "query": "site:github.com generative-ai-for-beginners llm course rag agents prompt engineering github course",
+        "search_id": "019ec7b4-a9e3-7616-89bc-b72dd08bf297",
+        "rating": "good"
+      },
+      {
+        "query": "DeepLearning.AI generative AI short courses prompt engineering RAG agents fine tuning evaluation instructors",
+        "search_id": "019ec7b4-dd6e-70b3-8e9a-f3b7c75bacdf",
+        "rating": "good"
+      },
+      {
+        "query": "site:linkedin.com/learning generative AI prompt engineering RAG AI agents instructor course LinkedIn Learning",
+        "search_id": "019ec7b5-11e5-7594-afc1-609f7a41bd76",
+        "rating": "good"
+      },
+      {
+        "query": "official generative AI courses prompt engineering RAG AI agents fine tuning evaluation Coursera Google Cloud AWS Hugging Face Udacity",
+        "search_id": "019ec7b5-63f2-76ff-b2d2-f8f0666a6c0f",
+        "rating": "good"
+      },
+      {
+        "query": "Hugging Face Learn LLM course agents RAG fine tuning evaluation prompt engineering official",
+        "search_id": "019ec7b5-a746-7506-8d6e-ddb0c992a1c7",
+        "rating": "good"
+      },
+      {
+        "query": "site:huggingface.co/learn agents course AI agents hugging face official",
+        "search_id": "019ec7b5-d96a-7646-9f16-6cb44b043ac2",
+        "rating": "good"
+      },
+      {
+        "query": "Google Cloud Skills Boost generative AI learning path prompt design image generation course official",
+        "search_id": "019ec7b8-253e-741e-be77-94005eec2d54",
+        "rating": "good"
+      },
+      {
+        "query": "image generation video generation voice AI multimodal AI courses instructors generative AI Maven YouTube LinkedIn DeepLearning.AI",
+        "search_id": "019ec7b8-bbff-778c-b981-280c9dd2f3cb",
+        "rating": "good"
+      },
+      {
+        "query": "voice AI course generative AI audio agents speech synthesis instructors official YouTube Maven LinkedIn",
+        "search_id": "019ec7b8-f552-712a-844e-45b530af66eb",
+        "rating": "good"
+      },
+      {
+        "query": "generative AI RAG agents prompt engineering newsletter Substack Medium podcast conference workshop instructor course",
+        "search_id": "019ec7ba-4b41-75ea-b792-76e77627e155",
+        "rating": "good"
+      }
+    ],
+    "agent_job_id": "019ec7b1-a39d-7509-8f1a-dcfa2c5fc577",
+    "crawl_job_id": "019ec7b3-9261-7118-b070-8f6c2d878dbe",
+    "interaction_probe": {
+      "scrape_id": "019ec7b6-15a5-76e3-a995-1bcd5ea318ce",
+      "url": "https://huggingface.co/learn/agents-course/unit0/introduction",
+      "result": "Read page title and top-level heading, then stopped the interaction session."
+    },
+    "mapped_urls": [
+      "https://maven.com/courses/ai/rag-search",
+      "https://maven.com/courses/ai/evals",
+      "https://maven.com/courses/ai/for-operators",
+      "https://maven.com/courses/ai/for-marketers",
+      "https://maven.com/courses/ai/vibe-coding",
+      "https://maven.com/courses/ai/prototyping",
+      "https://maven.com/courses/ai/claude-code",
+      "https://maven.com/courses/ai/agentic-ai",
+      "https://maven.com/courses/ai/ai-coding",
+      "https://maven.com/courses/ai/ai-workflows",
+      "https://maven.com/courses/ai/ai-transformation"
+    ]
+  }
+}

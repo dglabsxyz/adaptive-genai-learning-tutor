@@ -1,0 +1,69 @@
+{
+  "name": "Rakesh Gohel",
+  "slug": "rakesh-gohel",
+  "headline": null,
+  "organization": "JUTEQ Inc.",
+  "bio": null,
+  "expertise_areas": [
+    "AI agents",
+    "RAG",
+    "multi-agent systems",
+    "enterprise AI"
+  ],
+  "topics_taught": [
+    "AI agents",
+    "RAG",
+    "multi-agent systems",
+    "enterprise AI"
+  ],
+  "platforms": [
+    "Maven"
+  ],
+  "website": null,
+  "social_profiles": {
+    "linkedin": null,
+    "youtube": null,
+    "x": null,
+    "github": null,
+    "other": []
+  },
+  "audience_levels": [
+    "intermediate",
+    "advanced",
+    "enterprise"
+  ],
+  "teaching_formats": [
+    "Cohort-based course"
+  ],
+  "courses": [
+    {
+      "course_name": "AI Agent Engineering: From ReAct, Agentic RAG to Multi-Agent Orchestration",
+      "course_slug": "ai-agent-engineering-from-react-agentic-rag-to-multi-agent-orchestration",
+      "platform": "Maven",
+      "url": "https://maven.com/rakeshgohel/ai-agent-engineering-react-rag-multi-agent",
+      "citations": [
+        "https://maven.com/rakeshgohel/ai-agent-engineering-react-rag-multi-agent"
+      ]
+    }
+  ],
+  "credibility_signals": [],
+  "citations": [
+    "https://maven.com/rakeshgohel/ai-agent-engineering-react-rag-multi-agent"
+  ],
+  "source_records": [
+    {
+      "platform": "Maven",
+      "url": "https://maven.com/rakeshgohel/ai-agent-engineering-react-rag-multi-agent",
+      "title": "AI Agent Engineering: From ReAct, Agentic RAG to Multi-Agent Orchestration",
+      "summary": "Design, deploy, and scale enterprise-grade AI agents with a hands-on, problem-driven approach.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/rakeshgohel/ai-agent-engineering-react-rag-multi-agent"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

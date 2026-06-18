@@ -1,0 +1,27 @@
+{
+  "entity_type": "course",
+  "entity_name": "Introduction to Generative AI",
+  "entity_slug": "introduction-to-generative-ai",
+  "platform": "website",
+  "query_terms": [
+    "Introduction to Generative AI",
+    "LLMs",
+    "generative AI",
+    "business AI"
+  ],
+  "results": [
+    {
+      "title": "Introduction to Generative AI",
+      "url": "https://www.coursera.org/learn/introduction-to-generative-ai",
+      "content_type": "course",
+      "summary": "A Google Cloud Coursera microlearning course explaining what generative AI is, how it is used, and how it differs from traditional ML.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.coursera.org/learn/introduction-to-generative-ai"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

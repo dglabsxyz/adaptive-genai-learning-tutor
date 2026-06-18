@@ -1,0 +1,80 @@
+{
+  "entity_type": "topic",
+  "entity_name": "no-code AI",
+  "entity_slug": "no-code-ai",
+  "platform": "maven",
+  "query_terms": [
+    "no-code AI",
+    "AI automation",
+    "AI coding",
+    "AI product development",
+    "business AI"
+  ],
+  "results": [
+    {
+      "title": "AI Prototyping for Designers",
+      "url": "https://maven.com/anna-arteeva/prototyping-for-designers",
+      "content_type": "course",
+      "summary": "A Maven AI prototyping course found in the Maven AI prototyping catalog crawl.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/anna-arteeva/prototyping-for-designers"
+      ]
+    },
+    {
+      "title": "Vibe Coding Bootcamp",
+      "url": "https://maven.com/no-code-ai/vibe-coding-bootcamp",
+      "content_type": "course",
+      "summary": "A Maven AI/vibe-coding course discovered from the Maven prototyping and vibe-coding category crawls.",
+      "extracted_data": {
+        "entity_type": "bootcamp"
+      },
+      "citations": [
+        "https://maven.com/no-code-ai/vibe-coding-bootcamp"
+      ]
+    },
+    {
+      "title": "Source for no-code AI",
+      "url": "https://maven.com/no-code-ai/vibe-coding-bootcamp",
+      "content_type": "other",
+      "summary": "Citation source for no-code AI.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/no-code-ai/vibe-coding-bootcamp"
+      ]
+    },
+    {
+      "title": "Source for no-code AI",
+      "url": "https://maven.com/anna-arteeva/prototyping-for-designers",
+      "content_type": "other",
+      "summary": "Citation source for no-code AI.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/anna-arteeva/prototyping-for-designers"
+      ]
+    },
+    {
+      "title": "Source for no-code AI",
+      "url": "https://maven.com/courses/ai/prototyping",
+      "content_type": "other",
+      "summary": "Citation source for no-code AI.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/courses/ai/prototyping"
+      ]
+    },
+    {
+      "title": "Source for no-code AI",
+      "url": "https://maven.com/courses/ai/vibe-coding",
+      "content_type": "other",
+      "summary": "Citation source for no-code AI.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/courses/ai/vibe-coding"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

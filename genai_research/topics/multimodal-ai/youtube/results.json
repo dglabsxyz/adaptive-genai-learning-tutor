@@ -1,0 +1,39 @@
+{
+  "entity_type": "topic",
+  "entity_name": "multimodal AI",
+  "entity_slug": "multimodal-ai",
+  "platform": "youtube",
+  "query_terms": [
+    "multimodal AI",
+    "image generation",
+    "video generation",
+    "voice AI",
+    "RAG",
+    "prompt engineering"
+  ],
+  "results": [
+    {
+      "title": "Neural Networks: Zero to Hero",
+      "url": "https://karpathy.ai/zero-to-hero.html",
+      "content_type": "video",
+      "summary": "A public video series on building neural networks from scratch, from backpropagation to modern deep learning.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://karpathy.ai/zero-to-hero.html"
+      ]
+    },
+    {
+      "title": "Source for multimodal AI",
+      "url": "https://www.youtube.com/andrejkarpathy",
+      "content_type": "other",
+      "summary": "Citation source for multimodal AI.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.youtube.com/andrejkarpathy"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

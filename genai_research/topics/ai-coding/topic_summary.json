@@ -1,0 +1,360 @@
+{
+  "topic": "AI coding",
+  "slug": "ai-coding",
+  "description": "AI-assisted software development with coding agents, Copilot, Cursor, Claude Code, Codex-style workflows, and AI prototyping.",
+  "related_topics": [
+    "AI agents",
+    "vibe coding",
+    "AI product development",
+    "prompt engineering"
+  ],
+  "instructors": [
+    {
+      "name": "Mahesh Yadav",
+      "slug": "mahesh-yadav",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Maven"
+      ],
+      "citations": [
+        "https://maven.com/mahesh-yadav/genaipm"
+      ]
+    },
+    {
+      "name": "Anna Arteeva",
+      "slug": "anna-arteeva",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Maven"
+      ],
+      "citations": [
+        "https://maven.com/anna-arteeva/prototyping-for-designers",
+        "https://maven.com/courses/ai/prototyping"
+      ]
+    },
+    {
+      "name": "No-Code AI",
+      "slug": "no-code-ai",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Maven"
+      ],
+      "citations": [
+        "https://maven.com/no-code-ai/vibe-coding-bootcamp",
+        "https://maven.com/courses/ai/vibe-coding",
+        "https://maven.com/courses/ai/prototyping"
+      ]
+    },
+    {
+      "name": "Maven instructors",
+      "slug": "maven-instructors",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Maven"
+      ],
+      "citations": [
+        "https://maven.com/courses/ai/ai-coding"
+      ]
+    },
+    {
+      "name": "Hugging Face Team",
+      "slug": "hugging-face-team",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Hugging Face"
+      ],
+      "citations": [
+        "https://huggingface.co/learn"
+      ]
+    },
+    {
+      "name": "Ronnie Sheer",
+      "slug": "ronnie-sheer",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "LinkedIn Learning"
+      ],
+      "citations": [
+        "https://www.linkedin.com/learning/introduction-to-prompt-engineering-for-generative-ai-24636124",
+        "https://www.linkedin.com/learning/topics/artificial-intelligence"
+      ]
+    },
+    {
+      "name": "LinkedIn Learning Team",
+      "slug": "linkedin-learning-team",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "LinkedIn Learning"
+      ],
+      "citations": [
+        "https://www.linkedin.com/learning/hands-on-ai-rag-using-llamaindex",
+        "https://www.linkedin.com/learning/context-engineering-for-developers",
+        "https://www.linkedin.com/learning/creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code",
+        "https://www.linkedin.com/learning/fine-tuning-for-llms-from-beginner-to-advanced",
+        "https://www.linkedin.com/learning/multimodal-ai-essentials-merging-text-image-and-audio-for-next-generation-ai-applications",
+        "https://www.linkedin.com/learning/elevenlabs-ai-voice-cloning-text-to-speech-and-sound-effects"
+      ]
+    },
+    {
+      "name": "Andrej Karpathy",
+      "slug": "andrej-karpathy",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "YouTube"
+      ],
+      "citations": [
+        "https://karpathy.ai/zero-to-hero.html",
+        "https://www.youtube.com/andrejkarpathy"
+      ]
+    },
+    {
+      "name": "Jeremy Howard",
+      "slug": "jeremy-howard",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "fast.ai"
+      ],
+      "citations": [
+        "https://course.fast.ai/"
+      ]
+    },
+    {
+      "name": "Udacity",
+      "slug": "udacity",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Udacity"
+      ],
+      "citations": [
+        "https://www.udacity.com/course/generative-ai--nd608"
+      ]
+    },
+    {
+      "name": "Microsoft",
+      "slug": "microsoft",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "GitHub",
+        "YouTube",
+        "Microsoft Learn"
+      ],
+      "citations": [
+        "https://github.com/microsoft/ai-agents-for-beginners",
+        "https://www.youtube.com/watch?v=k7HaeJs-N-o",
+        "https://github.com/microsoft/generative-ai-for-beginners",
+        "https://learn.microsoft.com/en-us/training/modules/fundamentals-generative-ai/",
+        "https://learn.microsoft.com/en-us/training/paths/get-started-ai-apps-agents/"
+      ]
+    },
+    {
+      "name": "Coursera instructors",
+      "slug": "coursera-instructors",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Coursera"
+      ],
+      "citations": [
+        "https://www.coursera.org/learn/generative-ai--prompt-engineering",
+        "https://www.coursera.org/specializations/llm-engineering-prompting-fine-tuning-optimization-rag",
+        "https://www.coursera.org/learn/operationalizing-no-code-ai-with-zapier-automation-and-plans",
+        "https://www.coursera.org/learn/responsible-ai-and-ethics"
+      ]
+    },
+    {
+      "name": "Alexey Grigorev",
+      "slug": "alexey-grigorev",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Maven",
+        "Substack"
+      ],
+      "citations": [
+        "https://maven.com/alexey-grigorev/from-rag-to-agents",
+        "https://alexeyondata.substack.com/p/11-workshops-to-build-production"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "course_name": "Agentic AI Product Management Certification using Claude Code",
+      "course_slug": "agentic-ai-product-management-certification-using-claude-code",
+      "instructor_names": [
+        "Mahesh Yadav"
+      ],
+      "platform": "Maven",
+      "course_url": "https://maven.com/mahesh-yadav/genaipm",
+      "citations": [
+        "https://maven.com/mahesh-yadav/genaipm"
+      ]
+    },
+    {
+      "course_name": "AI Prototyping for Designers",
+      "course_slug": "ai-prototyping-for-designers",
+      "instructor_names": [
+        "Anna Arteeva"
+      ],
+      "platform": "Maven",
+      "course_url": "https://maven.com/anna-arteeva/prototyping-for-designers",
+      "citations": [
+        "https://maven.com/anna-arteeva/prototyping-for-designers",
+        "https://maven.com/courses/ai/prototyping"
+      ]
+    },
+    {
+      "course_name": "Vibe Coding Bootcamp",
+      "course_slug": "vibe-coding-bootcamp",
+      "instructor_names": [
+        "No-Code AI"
+      ],
+      "platform": "Maven",
+      "course_url": "https://maven.com/no-code-ai/vibe-coding-bootcamp",
+      "citations": [
+        "https://maven.com/no-code-ai/vibe-coding-bootcamp",
+        "https://maven.com/courses/ai/vibe-coding",
+        "https://maven.com/courses/ai/prototyping"
+      ]
+    },
+    {
+      "course_name": "AI Software Development: From First Prompt to Production Code",
+      "course_slug": "ai-software-development-from-first-prompt-to-production-code",
+      "instructor_names": [
+        "Maven instructors"
+      ],
+      "platform": "Maven",
+      "course_url": "https://maven.com/courses/ai/ai-coding",
+      "citations": [
+        "https://maven.com/courses/ai/ai-coding"
+      ]
+    },
+    {
+      "course_name": "Diffusion Course",
+      "course_slug": "diffusion-course",
+      "instructor_names": [
+        "Hugging Face Team"
+      ],
+      "platform": "Hugging Face",
+      "course_url": "https://huggingface.co/learn",
+      "citations": [
+        "https://huggingface.co/learn"
+      ]
+    },
+    {
+      "course_name": "Introduction to Prompt Engineering for Generative AI",
+      "course_slug": "introduction-to-prompt-engineering-for-generative-ai",
+      "instructor_names": [
+        "Ronnie Sheer"
+      ],
+      "platform": "LinkedIn Learning",
+      "course_url": "https://www.linkedin.com/learning/introduction-to-prompt-engineering-for-generative-ai-24636124",
+      "citations": [
+        "https://www.linkedin.com/learning/introduction-to-prompt-engineering-for-generative-ai-24636124",
+        "https://www.linkedin.com/learning/topics/artificial-intelligence"
+      ]
+    },
+    {
+      "course_name": "Creating Agents with Python and the AI Toolkit for Visual Studio Code",
+      "course_slug": "creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code",
+      "instructor_names": [
+        "LinkedIn Learning Team"
+      ],
+      "platform": "LinkedIn Learning",
+      "course_url": "https://www.linkedin.com/learning/creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code",
+      "citations": [
+        "https://www.linkedin.com/learning/creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code"
+      ]
+    },
+    {
+      "course_name": "Neural Networks: Zero to Hero",
+      "course_slug": "neural-networks-zero-to-hero",
+      "instructor_names": [
+        "Andrej Karpathy"
+      ],
+      "platform": "YouTube",
+      "course_url": "https://karpathy.ai/zero-to-hero.html",
+      "citations": [
+        "https://karpathy.ai/zero-to-hero.html",
+        "https://www.youtube.com/andrejkarpathy"
+      ]
+    },
+    {
+      "course_name": "Practical Deep Learning for Coders",
+      "course_slug": "practical-deep-learning-for-coders",
+      "instructor_names": [
+        "Jeremy Howard"
+      ],
+      "platform": "fast.ai",
+      "course_url": "https://course.fast.ai/",
+      "citations": [
+        "https://course.fast.ai/"
+      ]
+    },
+    {
+      "course_name": "Applied Generative AI Engineering",
+      "course_slug": "applied-generative-ai-engineering",
+      "instructor_names": [
+        "Udacity"
+      ],
+      "platform": "Udacity",
+      "course_url": "https://www.udacity.com/course/generative-ai--nd608",
+      "citations": [
+        "https://www.udacity.com/course/generative-ai--nd608"
+      ]
+    },
+    {
+      "course_name": "Get Started with AI Applications and Agents on Azure",
+      "course_slug": "get-started-with-ai-applications-and-agents-on-azure",
+      "instructor_names": [
+        "Microsoft"
+      ],
+      "platform": "Microsoft Learn",
+      "course_url": "https://learn.microsoft.com/en-us/training/paths/get-started-ai-apps-agents/",
+      "citations": [
+        "https://learn.microsoft.com/en-us/training/paths/get-started-ai-apps-agents/"
+      ]
+    },
+    {
+      "course_name": "Operationalizing No-Code AI with Zapier",
+      "course_slug": "operationalizing-no-code-ai-with-zapier",
+      "instructor_names": [
+        "Coursera instructors"
+      ],
+      "platform": "Coursera",
+      "course_url": "https://www.coursera.org/learn/operationalizing-no-code-ai-with-zapier-automation-and-plans",
+      "citations": [
+        "https://www.coursera.org/learn/operationalizing-no-code-ai-with-zapier-automation-and-plans"
+      ]
+    },
+    {
+      "course_name": "11 Workshops to Build Production AI Agents",
+      "course_slug": "11-workshops-to-build-production-ai-agents",
+      "instructor_names": [
+        "Alexey Grigorev"
+      ],
+      "platform": "Substack",
+      "course_url": "https://alexeyondata.substack.com/p/11-workshops-to-build-production",
+      "citations": [
+        "https://alexeyondata.substack.com/p/11-workshops-to-build-production"
+      ]
+    }
+  ],
+  "sources": [
+    "https://maven.com/courses/ai/ai-coding",
+    "https://maven.com/courses/ai/vibe-coding",
+    "https://learn.microsoft.com/en-us/training/paths/get-started-ai-apps-agents/",
+    "https://maven.com/mahesh-yadav/genaipm",
+    "https://maven.com/anna-arteeva/prototyping-for-designers",
+    "https://maven.com/courses/ai/prototyping",
+    "https://maven.com/no-code-ai/vibe-coding-bootcamp",
+    "https://huggingface.co/learn",
+    "https://www.linkedin.com/learning/introduction-to-prompt-engineering-for-generative-ai-24636124",
+    "https://www.linkedin.com/learning/topics/artificial-intelligence",
+    "https://www.linkedin.com/learning/creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code",
+    "https://karpathy.ai/zero-to-hero.html",
+    "https://www.youtube.com/andrejkarpathy",
+    "https://course.fast.ai/",
+    "https://www.udacity.com/course/generative-ai--nd608",
+    "https://www.coursera.org/learn/operationalizing-no-code-ai-with-zapier-automation-and-plans",
+    "https://alexeyondata.substack.com/p/11-workshops-to-build-production"
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

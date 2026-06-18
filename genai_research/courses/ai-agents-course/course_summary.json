@@ -1,0 +1,77 @@
+{
+  "course_name": "AI Agents Course",
+  "course_slug": "ai-agents-course",
+  "instructor_names": [
+    "Ben Burtenshaw",
+    "Sergio Paniego"
+  ],
+  "instructor_slugs": [
+    "ben-burtenshaw",
+    "sergio-paniego"
+  ],
+  "platform": "Hugging Face",
+  "course_url": "https://huggingface.co/learn/agents-course/unit0/introduction",
+  "topic_tags": [
+    "AI agents",
+    "LLMs",
+    "tool use",
+    "LangGraph",
+    "LlamaIndex",
+    "smolagents",
+    "AI safety and evaluation"
+  ],
+  "description": "A free Hugging Face course from beginner to expert on understanding, using, and building AI agents.",
+  "syllabus": [
+    "Onboarding",
+    "Agent fundamentals",
+    "Frameworks",
+    "Use cases",
+    "Final assignment",
+    "Fine-tuning an LLM for function calling",
+    "Agent observability and evaluation",
+    "Agents in games"
+  ],
+  "target_audience": [
+    "Beginners",
+    "AI enthusiasts",
+    "Students interested in AI agents"
+  ],
+  "prerequisites": [
+    "Basic Python",
+    "Basic knowledge of LLMs"
+  ],
+  "duration": "Approximately 3-4 hours of work per week",
+  "format": "Online course",
+  "price": {
+    "amount": 0,
+    "currency": "USD",
+    "raw": "Free"
+  },
+  "rating": {
+    "value": null,
+    "count": null,
+    "raw": null
+  },
+  "certificate": "Certificate of completion available",
+  "enrollment_status": null,
+  "last_updated": null,
+  "citations": [
+    "https://huggingface.co/learn/agents-course/unit0/introduction"
+  ],
+  "source_records": [
+    {
+      "platform": "Hugging Face",
+      "url": "https://huggingface.co/learn/agents-course/unit0/introduction",
+      "title": "AI Agents Course",
+      "summary": "A free Hugging Face course from beginner to expert on understanding, using, and building AI agents.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://huggingface.co/learn/agents-course/unit0/introduction"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

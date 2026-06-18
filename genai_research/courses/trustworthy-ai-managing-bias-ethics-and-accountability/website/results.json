@@ -1,0 +1,27 @@
+{
+  "entity_type": "course",
+  "entity_name": "Trustworthy AI: Managing Bias, Ethics, and Accountability",
+  "entity_slug": "trustworthy-ai-managing-bias-ethics-and-accountability",
+  "platform": "website",
+  "query_terms": [
+    "Trustworthy AI: Managing Bias, Ethics, and Accountability",
+    "AI safety and evaluation",
+    "responsible AI",
+    "AI ethics"
+  ],
+  "results": [
+    {
+      "title": "Trustworthy AI: Managing Bias, Ethics, and Accountability",
+      "url": "https://www.coursera.org/learn/responsible-ai-and-ethics",
+      "content_type": "course",
+      "summary": "A Coursera course on ethical, social, and technical aspects of AI and machine learning.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.coursera.org/learn/responsible-ai-and-ethics"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

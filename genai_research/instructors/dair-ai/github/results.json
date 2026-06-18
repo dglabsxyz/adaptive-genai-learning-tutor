@@ -1,0 +1,27 @@
+{
+  "entity_type": "instructor",
+  "entity_name": "DAIR.AI",
+  "entity_slug": "dair-ai",
+  "platform": "github",
+  "query_terms": [
+    "DAIR.AI",
+    "prompt engineering",
+    "context engineering",
+    "AI agents"
+  ],
+  "results": [
+    {
+      "title": "Prompt Engineering Guide",
+      "url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
+      "content_type": "repository",
+      "summary": "A public prompt engineering guide and course-style resource for prompting, context engineering, and AI agents.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://github.com/dair-ai/Prompt-Engineering-Guide"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

@@ -1,0 +1,28 @@
+{
+  "entity_type": "instructor",
+  "entity_name": "Jason Liu",
+  "entity_slug": "jason-liu",
+  "platform": "maven",
+  "query_terms": [
+    "Jason Liu",
+    "RAG",
+    "AI evaluation",
+    "retrieval",
+    "multimodal AI"
+  ],
+  "results": [
+    {
+      "title": "Systematically Improving RAG Applications",
+      "url": "https://maven.com/applied-llms/rag-playbook",
+      "content_type": "course",
+      "summary": "A repeatable process for evaluating and improving RAG applications.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/applied-llms/rag-playbook"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

@@ -1,0 +1,347 @@
+{
+  "topic": "multimodal AI",
+  "slug": "multimodal-ai",
+  "description": "Models and applications that combine text, image, video, audio, and other modalities.",
+  "related_topics": [
+    "image generation",
+    "video generation",
+    "voice AI",
+    "RAG",
+    "prompt engineering"
+  ],
+  "instructors": [
+    {
+      "name": "Jason Liu",
+      "slug": "jason-liu",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Maven"
+      ],
+      "citations": [
+        "https://maven.com/applied-llms/rag-playbook"
+      ]
+    },
+    {
+      "name": "Nirant Kasliwal",
+      "slug": "nirant-kasliwal",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Maven"
+      ],
+      "citations": [
+        "https://maven.com/nirantk/search-for-rag"
+      ]
+    },
+    {
+      "name": "Jithin James",
+      "slug": "jithin-james",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Maven"
+      ],
+      "citations": [
+        "https://maven.com/nirantk/search-for-rag"
+      ]
+    },
+    {
+      "name": "Dhruv Anand",
+      "slug": "dhruv-anand",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Maven"
+      ],
+      "citations": [
+        "https://maven.com/nirantk/search-for-rag"
+      ]
+    },
+    {
+      "name": "Bilawal Sidhu",
+      "slug": "bilawal-sidhu",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Maven"
+      ],
+      "citations": [
+        "https://maven.com/bilawal/generative-ai-masterclass"
+      ]
+    },
+    {
+      "name": "Anna Arteeva",
+      "slug": "anna-arteeva",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Maven"
+      ],
+      "citations": [
+        "https://maven.com/anna-arteeva/prototyping-for-designers",
+        "https://maven.com/courses/ai/prototyping"
+      ]
+    },
+    {
+      "name": "Hugging Face Team",
+      "slug": "hugging-face-team",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Hugging Face"
+      ],
+      "citations": [
+        "https://huggingface.co/learn"
+      ]
+    },
+    {
+      "name": "Katie Nguyen",
+      "slug": "katie-nguyen",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "DeepLearning.AI"
+      ],
+      "citations": [
+        "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation"
+      ]
+    },
+    {
+      "name": "Wafae Bakkali",
+      "slug": "wafae-bakkali",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "DeepLearning.AI"
+      ],
+      "citations": [
+        "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation"
+      ]
+    },
+    {
+      "name": "LinkedIn Learning Team",
+      "slug": "linkedin-learning-team",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "LinkedIn Learning"
+      ],
+      "citations": [
+        "https://www.linkedin.com/learning/hands-on-ai-rag-using-llamaindex",
+        "https://www.linkedin.com/learning/context-engineering-for-developers",
+        "https://www.linkedin.com/learning/creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code",
+        "https://www.linkedin.com/learning/fine-tuning-for-llms-from-beginner-to-advanced",
+        "https://www.linkedin.com/learning/multimodal-ai-essentials-merging-text-image-and-audio-for-next-generation-ai-applications",
+        "https://www.linkedin.com/learning/elevenlabs-ai-voice-cloning-text-to-speech-and-sound-effects"
+      ]
+    },
+    {
+      "name": "Andrej Karpathy",
+      "slug": "andrej-karpathy",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "YouTube"
+      ],
+      "citations": [
+        "https://karpathy.ai/zero-to-hero.html",
+        "https://www.youtube.com/andrejkarpathy"
+      ]
+    },
+    {
+      "name": "Google Cloud",
+      "slug": "google-cloud",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Google Skills",
+        "Coursera"
+      ],
+      "citations": [
+        "https://www.skills.google/paths/118",
+        "https://www.skills.google/course_templates/976",
+        "https://www.coursera.org/learn/introduction-to-generative-ai",
+        "https://www.skills.google/paths/118/course_templates/536"
+      ]
+    },
+    {
+      "name": "Harvard DCE",
+      "slug": "harvard-dce",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Harvard DCE"
+      ],
+      "citations": [
+        "https://professional.dce.harvard.edu/programs/ai-strategy-for-business-leaders/"
+      ]
+    },
+    {
+      "name": "Runway Academy",
+      "slug": "runway-academy",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Runway Academy"
+      ],
+      "citations": [
+        "https://academy.runwayml.com/"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "course_name": "Systematically Improving RAG Applications",
+      "course_slug": "systematically-improving-rag-applications",
+      "instructor_names": [
+        "Jason Liu"
+      ],
+      "platform": "Maven",
+      "course_url": "https://maven.com/applied-llms/rag-playbook",
+      "citations": [
+        "https://maven.com/applied-llms/rag-playbook"
+      ]
+    },
+    {
+      "course_name": "Search in the LLM Era for AI Engineers",
+      "course_slug": "search-in-the-llm-era-for-ai-engineers",
+      "instructor_names": [
+        "Nirant Kasliwal",
+        "Jithin James",
+        "Dhruv Anand"
+      ],
+      "platform": "Maven",
+      "course_url": "https://maven.com/nirantk/search-for-rag",
+      "citations": [
+        "https://maven.com/nirantk/search-for-rag"
+      ]
+    },
+    {
+      "course_name": "Generative AI Creation Masterclass",
+      "course_slug": "generative-ai-creation-masterclass",
+      "instructor_names": [
+        "Bilawal Sidhu"
+      ],
+      "platform": "Maven",
+      "course_url": "https://maven.com/bilawal/generative-ai-masterclass",
+      "citations": [
+        "https://maven.com/bilawal/generative-ai-masterclass"
+      ]
+    },
+    {
+      "course_name": "AI Prototyping for Designers",
+      "course_slug": "ai-prototyping-for-designers",
+      "instructor_names": [
+        "Anna Arteeva"
+      ],
+      "platform": "Maven",
+      "course_url": "https://maven.com/anna-arteeva/prototyping-for-designers",
+      "citations": [
+        "https://maven.com/anna-arteeva/prototyping-for-designers",
+        "https://maven.com/courses/ai/prototyping"
+      ]
+    },
+    {
+      "course_name": "Diffusion Course",
+      "course_slug": "diffusion-course",
+      "instructor_names": [
+        "Hugging Face Team"
+      ],
+      "platform": "Hugging Face",
+      "course_url": "https://huggingface.co/learn",
+      "citations": [
+        "https://huggingface.co/learn"
+      ]
+    },
+    {
+      "course_name": "AI Agents for Image and Video Generation",
+      "course_slug": "ai-agents-for-image-and-video-generation",
+      "instructor_names": [
+        "Katie Nguyen",
+        "Wafae Bakkali"
+      ],
+      "platform": "DeepLearning.AI",
+      "course_url": "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation",
+      "citations": [
+        "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation"
+      ]
+    },
+    {
+      "course_name": "Multimodal AI Essentials: Merging Text, Image, and Audio",
+      "course_slug": "multimodal-ai-essentials-merging-text-image-and-audio",
+      "instructor_names": [
+        "LinkedIn Learning Team"
+      ],
+      "platform": "LinkedIn Learning",
+      "course_url": "https://www.linkedin.com/learning/multimodal-ai-essentials-merging-text-image-and-audio-for-next-generation-ai-applications",
+      "citations": [
+        "https://www.linkedin.com/learning/multimodal-ai-essentials-merging-text-image-and-audio-for-next-generation-ai-applications"
+      ]
+    },
+    {
+      "course_name": "ElevenLabs: AI Voice Cloning, Text-to-Speech, and Sound Effects",
+      "course_slug": "elevenlabs-ai-voice-cloning-text-to-speech-and-sound-effects",
+      "instructor_names": [
+        "LinkedIn Learning Team"
+      ],
+      "platform": "LinkedIn Learning",
+      "course_url": "https://www.linkedin.com/learning/elevenlabs-ai-voice-cloning-text-to-speech-and-sound-effects",
+      "citations": [
+        "https://www.linkedin.com/learning/elevenlabs-ai-voice-cloning-text-to-speech-and-sound-effects"
+      ]
+    },
+    {
+      "course_name": "Neural Networks: Zero to Hero",
+      "course_slug": "neural-networks-zero-to-hero",
+      "instructor_names": [
+        "Andrej Karpathy"
+      ],
+      "platform": "YouTube",
+      "course_url": "https://karpathy.ai/zero-to-hero.html",
+      "citations": [
+        "https://karpathy.ai/zero-to-hero.html",
+        "https://www.youtube.com/andrejkarpathy"
+      ]
+    },
+    {
+      "course_name": "Prompt Design in Agent Platform",
+      "course_slug": "prompt-design-in-agent-platform",
+      "instructor_names": [
+        "Google Cloud"
+      ],
+      "platform": "Google Skills",
+      "course_url": "https://www.skills.google/course_templates/976",
+      "citations": [
+        "https://www.skills.google/course_templates/976"
+      ]
+    },
+    {
+      "course_name": "AI Strategy for Business Leaders",
+      "course_slug": "ai-strategy-for-business-leaders",
+      "instructor_names": [
+        "Harvard DCE"
+      ],
+      "platform": "Harvard DCE",
+      "course_url": "https://professional.dce.harvard.edu/programs/ai-strategy-for-business-leaders/",
+      "citations": [
+        "https://professional.dce.harvard.edu/programs/ai-strategy-for-business-leaders/"
+      ]
+    },
+    {
+      "course_name": "Runway AI Video Creation",
+      "course_slug": "runway-ai-video-creation",
+      "instructor_names": [
+        "Runway Academy"
+      ],
+      "platform": "Runway Academy",
+      "course_url": "https://academy.runwayml.com/",
+      "citations": [
+        "https://academy.runwayml.com/"
+      ]
+    }
+  ],
+  "sources": [
+    "https://www.linkedin.com/learning/multimodal-ai-essentials-merging-text-image-and-audio-for-next-generation-ai-applications",
+    "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation",
+    "https://www.skills.google/course_templates/976",
+    "https://maven.com/applied-llms/rag-playbook",
+    "https://maven.com/nirantk/search-for-rag",
+    "https://maven.com/bilawal/generative-ai-masterclass",
+    "https://maven.com/anna-arteeva/prototyping-for-designers",
+    "https://maven.com/courses/ai/prototyping",
+    "https://huggingface.co/learn",
+    "https://www.linkedin.com/learning/elevenlabs-ai-voice-cloning-text-to-speech-and-sound-effects",
+    "https://karpathy.ai/zero-to-hero.html",
+    "https://www.youtube.com/andrejkarpathy",
+    "https://professional.dce.harvard.edu/programs/ai-strategy-for-business-leaders/",
+    "https://academy.runwayml.com/"
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

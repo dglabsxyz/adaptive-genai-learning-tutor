@@ -1,0 +1,28 @@
+{
+  "entity_type": "instructor",
+  "entity_name": "Rakesh Gohel",
+  "entity_slug": "rakesh-gohel",
+  "platform": "maven",
+  "query_terms": [
+    "Rakesh Gohel",
+    "AI agents",
+    "RAG",
+    "multi-agent systems",
+    "enterprise AI"
+  ],
+  "results": [
+    {
+      "title": "AI Agent Engineering: From ReAct, Agentic RAG to Multi-Agent Orchestration",
+      "url": "https://maven.com/rakeshgohel/ai-agent-engineering-react-rag-multi-agent",
+      "content_type": "course",
+      "summary": "Design, deploy, and scale enterprise-grade AI agents with a hands-on, problem-driven approach.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/rakeshgohel/ai-agent-engineering-react-rag-multi-agent"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

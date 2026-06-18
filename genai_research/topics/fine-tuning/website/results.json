@@ -1,0 +1,124 @@
+{
+  "entity_type": "topic",
+  "entity_name": "fine-tuning",
+  "entity_slug": "fine-tuning",
+  "platform": "website",
+  "query_terms": [
+    "fine-tuning",
+    "LLMs",
+    "model customization",
+    "datasets",
+    "AI safety and evaluation"
+  ],
+  "results": [
+    {
+      "title": "LLM Course",
+      "url": "https://huggingface.co/learn/llm-course/en/chapter1/1",
+      "content_type": "course",
+      "summary": "A Hugging Face course on large language models and NLP using libraries from the Hugging Face ecosystem.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://huggingface.co/learn/llm-course/en/chapter1/1"
+      ]
+    },
+    {
+      "title": "Generative AI with Large Language Models",
+      "url": "https://www.deeplearning.ai/courses/generative-ai-with-llms",
+      "content_type": "course",
+      "summary": "A DeepLearning.AI course on the generative AI lifecycle, transformer architecture, training, tuning, inference, and LLM-powered applications.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.deeplearning.ai/courses/generative-ai-with-llms"
+      ]
+    },
+    {
+      "title": "Applied Generative AI Engineering",
+      "url": "https://www.udacity.com/course/generative-ai--nd608",
+      "content_type": "course",
+      "summary": "A Udacity course on adapting foundation models using prompt engineering, RAG, fine-tuning, model compression, and agentic AI tools.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.udacity.com/course/generative-ai--nd608"
+      ]
+    },
+    {
+      "title": "LLM Engineering: Prompting, Fine-Tuning, Optimization and RAG",
+      "url": "https://www.coursera.org/specializations/llm-engineering-prompting-fine-tuning-optimization-rag",
+      "content_type": "course",
+      "summary": "A Coursera specialization on end-to-end LLM engineering, prompt design, evaluation, fine-tuning, optimization, and RAG.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.coursera.org/specializations/llm-engineering-prompting-fine-tuning-optimization-rag"
+      ]
+    },
+    {
+      "title": "Source for fine-tuning",
+      "url": "https://www.deeplearning.ai/courses/generative-ai-with-llms",
+      "content_type": "other",
+      "summary": "Citation source for fine-tuning.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.deeplearning.ai/courses/generative-ai-with-llms"
+      ]
+    },
+    {
+      "title": "Source for fine-tuning",
+      "url": "https://huggingface.co/learn/llm-course/en/chapter1/1",
+      "content_type": "other",
+      "summary": "Citation source for fine-tuning.",
+      "extracted_data": {},
+      "citations": [
+        "https://huggingface.co/learn/llm-course/en/chapter1/1"
+      ]
+    },
+    {
+      "title": "Source for fine-tuning",
+      "url": "https://www.coursera.org/learn/generative-ai-with-llms",
+      "content_type": "other",
+      "summary": "Citation source for fine-tuning.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.coursera.org/learn/generative-ai-with-llms"
+      ]
+    },
+    {
+      "title": "Source for fine-tuning",
+      "url": "https://developers.openai.com/cookbook",
+      "content_type": "other",
+      "summary": "Citation source for fine-tuning.",
+      "extracted_data": {},
+      "citations": [
+        "https://developers.openai.com/cookbook"
+      ]
+    },
+    {
+      "title": "Source for fine-tuning",
+      "url": "https://www.udacity.com/course/generative-ai--nd608",
+      "content_type": "other",
+      "summary": "Citation source for fine-tuning.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.udacity.com/course/generative-ai--nd608"
+      ]
+    },
+    {
+      "title": "Source for fine-tuning",
+      "url": "https://www.coursera.org/specializations/llm-engineering-prompting-fine-tuning-optimization-rag",
+      "content_type": "other",
+      "summary": "Citation source for fine-tuning.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.coursera.org/specializations/llm-engineering-prompting-fine-tuning-optimization-rag"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

@@ -1,0 +1,55 @@
+{
+  "course_name": "Hands-On AI: RAG using LlamaIndex",
+  "course_slug": "hands-on-ai-rag-using-llamaindex",
+  "instructor_names": [
+    "LinkedIn Learning Team"
+  ],
+  "instructor_slugs": [
+    "linkedin-learning-team"
+  ],
+  "platform": "LinkedIn Learning",
+  "course_url": "https://www.linkedin.com/learning/hands-on-ai-rag-using-llamaindex",
+  "topic_tags": [
+    "RAG",
+    "LlamaIndex",
+    "LLMs"
+  ],
+  "description": "A LinkedIn Learning course focused on retrieval-augmented generation using LlamaIndex.",
+  "syllabus": [],
+  "target_audience": [],
+  "prerequisites": [],
+  "duration": null,
+  "format": "Video course",
+  "price": {
+    "amount": null,
+    "currency": null,
+    "raw": "LinkedIn Premium"
+  },
+  "rating": {
+    "value": null,
+    "count": null,
+    "raw": null
+  },
+  "certificate": null,
+  "enrollment_status": null,
+  "last_updated": null,
+  "citations": [
+    "https://www.linkedin.com/learning/hands-on-ai-rag-using-llamaindex"
+  ],
+  "source_records": [
+    {
+      "platform": "LinkedIn Learning",
+      "url": "https://www.linkedin.com/learning/hands-on-ai-rag-using-llamaindex",
+      "title": "Hands-On AI: RAG using LlamaIndex",
+      "summary": "A LinkedIn Learning course focused on retrieval-augmented generation using LlamaIndex.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.linkedin.com/learning/hands-on-ai-rag-using-llamaindex"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

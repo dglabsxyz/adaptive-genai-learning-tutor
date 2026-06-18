@@ -1,0 +1,72 @@
+{
+  "course_name": "Diffusion Course",
+  "course_slug": "diffusion-course",
+  "instructor_names": [
+    "Hugging Face Team"
+  ],
+  "instructor_slugs": [
+    "hugging-face-team"
+  ],
+  "platform": "Hugging Face",
+  "course_url": "https://huggingface.co/learn",
+  "topic_tags": [
+    "image generation",
+    "diffusion models",
+    "multimodal AI",
+    "context engineering",
+    "LLMs",
+    "AI coding",
+    "prompt engineering"
+  ],
+  "description": "A Hugging Face learning catalog course on diffusion models and image-generation workflows.",
+  "syllabus": [],
+  "target_audience": [],
+  "prerequisites": [],
+  "duration": null,
+  "format": "Online course",
+  "price": {
+    "amount": 0,
+    "currency": "USD",
+    "raw": "Free"
+  },
+  "rating": {
+    "value": null,
+    "count": null,
+    "raw": null
+  },
+  "certificate": null,
+  "enrollment_status": null,
+  "last_updated": null,
+  "citations": [
+    "https://huggingface.co/learn"
+  ],
+  "source_records": [
+    {
+      "platform": "Hugging Face",
+      "url": "https://huggingface.co/learn",
+      "title": "Diffusion Course",
+      "summary": "A Hugging Face learning catalog course on diffusion models and image-generation workflows.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://huggingface.co/learn"
+      ]
+    },
+    {
+      "platform": "Hugging Face",
+      "url": "https://huggingface.co/learn",
+      "title": "Context Course",
+      "summary": "A Hugging Face learning catalog course on context engineering for code and AI workflows.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://huggingface.co/learn"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

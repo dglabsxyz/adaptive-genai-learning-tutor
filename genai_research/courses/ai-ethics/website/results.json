@@ -1,0 +1,27 @@
+{
+  "entity_type": "course",
+  "entity_name": "AI Ethics",
+  "entity_slug": "ai-ethics",
+  "platform": "website",
+  "query_terms": [
+    "AI Ethics",
+    "AI safety and evaluation",
+    "AI ethics",
+    "responsible AI"
+  ],
+  "results": [
+    {
+      "title": "AI Ethics",
+      "url": "https://www.datacamp.com/courses/ai-ethics",
+      "content_type": "course",
+      "summary": "A DataCamp course covering ethical considerations in artificial intelligence.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.datacamp.com/courses/ai-ethics"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

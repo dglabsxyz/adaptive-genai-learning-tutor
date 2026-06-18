@@ -1,0 +1,61 @@
+{
+  "course_name": "Practical Deep Learning for Coders",
+  "course_slug": "practical-deep-learning-for-coders",
+  "instructor_names": [
+    "Jeremy Howard"
+  ],
+  "instructor_slugs": [
+    "jeremy-howard"
+  ],
+  "platform": "fast.ai",
+  "course_url": "https://course.fast.ai/",
+  "topic_tags": [
+    "LLMs",
+    "image generation",
+    "deep learning",
+    "AI coding"
+  ],
+  "description": "A free fast.ai course for coders learning practical deep learning.",
+  "syllabus": [
+    "Nine lessons",
+    "Practical model building",
+    "Deep learning foundations",
+    "Stable diffusion foundations"
+  ],
+  "target_audience": [],
+  "prerequisites": [],
+  "duration": "9 lessons, about 90 minutes each",
+  "format": "Video course with notebooks",
+  "price": {
+    "amount": 0,
+    "currency": "USD",
+    "raw": "Free"
+  },
+  "rating": {
+    "value": null,
+    "count": null,
+    "raw": null
+  },
+  "certificate": null,
+  "enrollment_status": null,
+  "last_updated": null,
+  "citations": [
+    "https://course.fast.ai/"
+  ],
+  "source_records": [
+    {
+      "platform": "fast.ai",
+      "url": "https://course.fast.ai/",
+      "title": "Practical Deep Learning for Coders",
+      "summary": "A free fast.ai course for coders learning practical deep learning.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://course.fast.ai/"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

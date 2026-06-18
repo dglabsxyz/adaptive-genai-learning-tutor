@@ -1,0 +1,92 @@
+{
+  "course_name": "LLM Course",
+  "course_slug": "llm-course",
+  "instructor_names": [
+    "Abubakar Abid",
+    "Ben Burtenshaw",
+    "Matthew Carrigan",
+    "Lysandre Debut",
+    "Sylvain Gugger",
+    "Dawood Khan",
+    "Merve Noyan",
+    "Lucile Saulnier",
+    "Lewis Tunstall",
+    "Leandro von Werra"
+  ],
+  "instructor_slugs": [
+    "abubakar-abid",
+    "ben-burtenshaw",
+    "matthew-carrigan",
+    "lysandre-debut",
+    "sylvain-gugger",
+    "dawood-khan",
+    "merve-noyan",
+    "lucile-saulnier",
+    "lewis-tunstall",
+    "leandro-von-werra"
+  ],
+  "platform": "Hugging Face",
+  "course_url": "https://huggingface.co/learn/llm-course/en/chapter1/1",
+  "topic_tags": [
+    "LLMs",
+    "NLP",
+    "Transformers",
+    "fine-tuning"
+  ],
+  "description": "A Hugging Face course on large language models and NLP using libraries from the Hugging Face ecosystem.",
+  "syllabus": [
+    "Introduction to Transformers",
+    "Basics of datasets",
+    "Basics of tokenizers",
+    "Classic NLP tasks",
+    "LLM techniques",
+    "Building and sharing demos",
+    "Advanced LLM topics",
+    "Fine-tuning",
+    "Curating high-quality datasets",
+    "Building reasoning models"
+  ],
+  "target_audience": [
+    "Developers",
+    "Data scientists",
+    "Machine learning engineers"
+  ],
+  "prerequisites": [
+    "Good knowledge of Python",
+    "Some familiarity with deep learning"
+  ],
+  "duration": "6-8 hours per week for approximately 12 weeks",
+  "format": "Online course",
+  "price": {
+    "amount": 0,
+    "currency": "USD",
+    "raw": "Free"
+  },
+  "rating": {
+    "value": null,
+    "count": null,
+    "raw": null
+  },
+  "certificate": "Currently no certification available",
+  "enrollment_status": null,
+  "last_updated": null,
+  "citations": [
+    "https://huggingface.co/learn/llm-course/en/chapter1/1"
+  ],
+  "source_records": [
+    {
+      "platform": "Hugging Face",
+      "url": "https://huggingface.co/learn/llm-course/en/chapter1/1",
+      "title": "LLM Course",
+      "summary": "A Hugging Face course on large language models and NLP using libraries from the Hugging Face ecosystem.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://huggingface.co/learn/llm-course/en/chapter1/1"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

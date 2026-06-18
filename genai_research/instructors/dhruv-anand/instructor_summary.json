@@ -1,0 +1,73 @@
+{
+  "name": "Dhruv Anand",
+  "slug": "dhruv-anand",
+  "headline": "Founder and CEO of AI Northstar Tech",
+  "organization": "AI Northstar Tech",
+  "bio": "Founder focused on LLMs, vector embeddings, databases, search, recommendations, and custom RAG applications.",
+  "expertise_areas": [
+    "RAG",
+    "search",
+    "vector databases",
+    "AI evaluation",
+    "multimodal AI"
+  ],
+  "topics_taught": [
+    "RAG",
+    "search",
+    "vector databases",
+    "AI evaluation",
+    "multimodal AI"
+  ],
+  "platforms": [
+    "Maven"
+  ],
+  "website": null,
+  "social_profiles": {
+    "linkedin": null,
+    "youtube": null,
+    "x": null,
+    "github": null,
+    "other": []
+  },
+  "audience_levels": [
+    "intermediate",
+    "advanced",
+    "enterprise"
+  ],
+  "teaching_formats": [
+    "Instructor-led course"
+  ],
+  "courses": [
+    {
+      "course_name": "Search in the LLM Era for AI Engineers",
+      "course_slug": "search-in-the-llm-era-for-ai-engineers",
+      "platform": "Maven",
+      "url": "https://maven.com/nirantk/search-for-rag",
+      "citations": [
+        "https://maven.com/nirantk/search-for-rag"
+      ]
+    }
+  ],
+  "credibility_signals": [
+    "Founder and CEO of AI Northstar Tech"
+  ],
+  "citations": [
+    "https://maven.com/nirantk/search-for-rag"
+  ],
+  "source_records": [
+    {
+      "platform": "Maven",
+      "url": "https://maven.com/nirantk/search-for-rag",
+      "title": "Search in the LLM Era for AI Engineers",
+      "summary": "A six-weekend instructor-led course and live practice for senior engineers building modern search and RAG systems.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/nirantk/search-for-rag"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

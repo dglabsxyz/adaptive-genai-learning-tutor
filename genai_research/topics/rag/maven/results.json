@@ -1,0 +1,215 @@
+{
+  "entity_type": "topic",
+  "entity_name": "RAG",
+  "entity_slug": "rag",
+  "platform": "maven",
+  "query_terms": [
+    "RAG",
+    "LLMs",
+    "vector databases",
+    "embeddings",
+    "AI agents",
+    "AI evaluation"
+  ],
+  "results": [
+    {
+      "title": "Mastering Agentic AI: Certification by The Gen Academy",
+      "url": "https://maven.com/aishwarya-srinivasan/mastering-ai-agents",
+      "content_type": "course",
+      "summary": "A six-week Maven program from The Gen Academy on building and deploying robust agentic AI systems.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/aishwarya-srinivasan/mastering-ai-agents"
+      ]
+    },
+    {
+      "title": "AI Engineering Buildcamp: From RAG to Agents",
+      "url": "https://maven.com/alexey-grigorev/from-rag-to-agents",
+      "content_type": "course",
+      "summary": "Create your own production-ready AI application in six weeks.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/alexey-grigorev/from-rag-to-agents"
+      ]
+    },
+    {
+      "title": "Systematically Improving RAG Applications",
+      "url": "https://maven.com/applied-llms/rag-playbook",
+      "content_type": "course",
+      "summary": "A repeatable process for evaluating and improving RAG applications.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/applied-llms/rag-playbook"
+      ]
+    },
+    {
+      "title": "Search in the LLM Era for AI Engineers",
+      "url": "https://maven.com/nirantk/search-for-rag",
+      "content_type": "course",
+      "summary": "A six-weekend instructor-led course and live practice for senior engineers building modern search and RAG systems.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/nirantk/search-for-rag"
+      ]
+    },
+    {
+      "title": "AI Evals For Engineers and PMs",
+      "url": "https://maven.com/parlance-labs/evals",
+      "content_type": "course",
+      "summary": "Build a real AI agent, find where it breaks, and improve it with evals you can trust.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/parlance-labs/evals"
+      ]
+    },
+    {
+      "title": "Build Production AI Agents for 10x-100x ROI",
+      "url": "https://maven.com/deep-core-x-academy/production-ai-agents",
+      "content_type": "course",
+      "summary": "A Maven course on leaving with deployable production agent systems and documented architecture.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/deep-core-x-academy/production-ai-agents"
+      ]
+    },
+    {
+      "title": "AI Mini-Bootcamp",
+      "url": "https://maven.com/aitraining/minibootcamp",
+      "content_type": "course",
+      "summary": "A six-week pre-conference live and on-demand training program for AI fundamentals.",
+      "extracted_data": {
+        "entity_type": "bootcamp"
+      },
+      "citations": [
+        "https://maven.com/aitraining/minibootcamp"
+      ]
+    },
+    {
+      "title": "AI Agent Engineering: From ReAct, Agentic RAG to Multi-Agent Orchestration",
+      "url": "https://maven.com/rakeshgohel/ai-agent-engineering-react-rag-multi-agent",
+      "content_type": "course",
+      "summary": "Design, deploy, and scale enterprise-grade AI agents with a hands-on, problem-driven approach.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/rakeshgohel/ai-agent-engineering-react-rag-multi-agent"
+      ]
+    },
+    {
+      "title": "Agentic AI Product Management Certification using Claude Code",
+      "url": "https://maven.com/mahesh-yadav/genaipm",
+      "content_type": "course",
+      "summary": "A certification for leading agentic AI products, building systems, defining metrics, and scaling responsibly.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/mahesh-yadav/genaipm"
+      ]
+    },
+    {
+      "title": "Source for RAG",
+      "url": "https://maven.com/applied-llms/rag-playbook",
+      "content_type": "other",
+      "summary": "Citation source for RAG.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/applied-llms/rag-playbook"
+      ]
+    },
+    {
+      "title": "Source for RAG",
+      "url": "https://maven.com/alexey-grigorev/from-rag-to-agents",
+      "content_type": "other",
+      "summary": "Citation source for RAG.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/alexey-grigorev/from-rag-to-agents"
+      ]
+    },
+    {
+      "title": "Source for RAG",
+      "url": "https://maven.com/aishwarya-srinivasan/mastering-ai-agents",
+      "content_type": "other",
+      "summary": "Citation source for RAG.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/aishwarya-srinivasan/mastering-ai-agents"
+      ]
+    },
+    {
+      "title": "Source for RAG",
+      "url": "https://maven.com/nirantk/search-for-rag",
+      "content_type": "other",
+      "summary": "Citation source for RAG.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/nirantk/search-for-rag"
+      ]
+    },
+    {
+      "title": "Source for RAG",
+      "url": "https://maven.com/parlance-labs/evals",
+      "content_type": "other",
+      "summary": "Citation source for RAG.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/parlance-labs/evals"
+      ]
+    },
+    {
+      "title": "Source for RAG",
+      "url": "https://maven.com/deep-core-x-academy/production-ai-agents",
+      "content_type": "other",
+      "summary": "Citation source for RAG.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/deep-core-x-academy/production-ai-agents"
+      ]
+    },
+    {
+      "title": "Source for RAG",
+      "url": "https://maven.com/aitraining/minibootcamp",
+      "content_type": "other",
+      "summary": "Citation source for RAG.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/aitraining/minibootcamp"
+      ]
+    },
+    {
+      "title": "Source for RAG",
+      "url": "https://maven.com/rakeshgohel/ai-agent-engineering-react-rag-multi-agent",
+      "content_type": "other",
+      "summary": "Citation source for RAG.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/rakeshgohel/ai-agent-engineering-react-rag-multi-agent"
+      ]
+    },
+    {
+      "title": "Source for RAG",
+      "url": "https://maven.com/mahesh-yadav/genaipm",
+      "content_type": "other",
+      "summary": "Citation source for RAG.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/mahesh-yadav/genaipm"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

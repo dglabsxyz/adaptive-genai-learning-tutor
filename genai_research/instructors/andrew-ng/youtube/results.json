@@ -1,0 +1,29 @@
+{
+  "entity_type": "instructor",
+  "entity_name": "Andrew Ng",
+  "entity_slug": "andrew-ng",
+  "platform": "youtube",
+  "query_terms": [
+    "Andrew Ng",
+    "LLMs",
+    "business AI",
+    "generative AI",
+    "AI product development",
+    "prompt engineering"
+  ],
+  "results": [
+    {
+      "title": "Full AI Prompting Course with Andrew Ng",
+      "url": "https://www.youtube.com/watch?v=8ib4Qnh2HFE",
+      "content_type": "video",
+      "summary": "A YouTube course-style resource from Andrew Ng on becoming an AI power user through prompting.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://www.youtube.com/watch?v=8ib4Qnh2HFE"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

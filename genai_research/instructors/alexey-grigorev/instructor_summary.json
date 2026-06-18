@@ -1,0 +1,104 @@
+{
+  "name": "Alexey Grigorev",
+  "slug": "alexey-grigorev",
+  "headline": "Founder of DataTalks.Club; creator of Zoomcamp series",
+  "organization": "DataTalks.Club",
+  "bio": "Founder of DataTalks.Club and educator cited by Maven as teaching AI and data to 100k+ students.",
+  "expertise_areas": [
+    "RAG",
+    "AI agents",
+    "LLMs",
+    "AI engineering",
+    "search",
+    "MCP",
+    "AI safety and evaluation",
+    "AI coding"
+  ],
+  "topics_taught": [
+    "RAG",
+    "AI agents",
+    "LLMs",
+    "AI engineering",
+    "search",
+    "MCP",
+    "AI safety and evaluation",
+    "AI coding"
+  ],
+  "platforms": [
+    "Maven",
+    "Substack"
+  ],
+  "website": null,
+  "social_profiles": {
+    "linkedin": null,
+    "youtube": null,
+    "x": null,
+    "github": null,
+    "other": []
+  },
+  "audience_levels": [
+    "intermediate",
+    "advanced"
+  ],
+  "teaching_formats": [
+    "Cohort-based course",
+    "Newsletter post / workshop collection"
+  ],
+  "courses": [
+    {
+      "course_name": "AI Engineering Buildcamp: From RAG to Agents",
+      "course_slug": "ai-engineering-buildcamp-from-rag-to-agents",
+      "platform": "Maven",
+      "url": "https://maven.com/alexey-grigorev/from-rag-to-agents",
+      "citations": [
+        "https://maven.com/alexey-grigorev/from-rag-to-agents"
+      ]
+    },
+    {
+      "course_name": "11 Workshops to Build Production AI Agents",
+      "course_slug": "11-workshops-to-build-production-ai-agents",
+      "platform": "Substack",
+      "url": "https://alexeyondata.substack.com/p/11-workshops-to-build-production",
+      "citations": [
+        "https://alexeyondata.substack.com/p/11-workshops-to-build-production"
+      ]
+    }
+  ],
+  "credibility_signals": [
+    "Teaching AI and data to 100k+ students",
+    "DataTalks.Club founder"
+  ],
+  "citations": [
+    "https://maven.com/alexey-grigorev/from-rag-to-agents",
+    "https://alexeyondata.substack.com/p/11-workshops-to-build-production"
+  ],
+  "source_records": [
+    {
+      "platform": "Maven",
+      "url": "https://maven.com/alexey-grigorev/from-rag-to-agents",
+      "title": "AI Engineering Buildcamp: From RAG to Agents",
+      "summary": "Create your own production-ready AI application in six weeks.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/alexey-grigorev/from-rag-to-agents"
+      ]
+    },
+    {
+      "platform": "Substack",
+      "url": "https://alexeyondata.substack.com/p/11-workshops-to-build-production",
+      "title": "11 Workshops to Build Production AI Agents",
+      "summary": "A Substack teaching-resource post collecting GenAI workshops on agents, RAG, MCP, guardrails, and production systems.",
+      "content_type": "article",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://alexeyondata.substack.com/p/11-workshops-to-build-production"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

@@ -1,0 +1,70 @@
+{
+  "course_name": "AI Agent Engineering: From ReAct, Agentic RAG to Multi-Agent Orchestration",
+  "course_slug": "ai-agent-engineering-from-react-agentic-rag-to-multi-agent-orchestration",
+  "instructor_names": [
+    "Rakesh Gohel"
+  ],
+  "instructor_slugs": [
+    "rakesh-gohel"
+  ],
+  "platform": "Maven",
+  "course_url": "https://maven.com/rakeshgohel/ai-agent-engineering-react-rag-multi-agent",
+  "topic_tags": [
+    "AI agents",
+    "RAG",
+    "multi-agent systems",
+    "enterprise AI"
+  ],
+  "description": "Design, deploy, and scale enterprise-grade AI agents with a hands-on, problem-driven approach.",
+  "syllabus": [
+    "Foundations: concepts of a true agentic system in enterprise",
+    "Agentic RAG systems and multi-agent workflows"
+  ],
+  "target_audience": [
+    "Technical architects",
+    "Data scientists",
+    "Product managers",
+    "AI solution strategists",
+    "Tech leads",
+    "Backend developers"
+  ],
+  "prerequisites": [
+    "Python proficiency",
+    "Basic concepts of language models",
+    "Software engineering principles"
+  ],
+  "duration": null,
+  "format": "Cohort-based course",
+  "price": {
+    "amount": null,
+    "currency": null,
+    "raw": null
+  },
+  "rating": {
+    "value": 4.8,
+    "count": 24,
+    "raw": "4.8 (24)"
+  },
+  "certificate": "Certificate of completion",
+  "enrollment_status": null,
+  "last_updated": null,
+  "citations": [
+    "https://maven.com/rakeshgohel/ai-agent-engineering-react-rag-multi-agent"
+  ],
+  "source_records": [
+    {
+      "platform": "Maven",
+      "url": "https://maven.com/rakeshgohel/ai-agent-engineering-react-rag-multi-agent",
+      "title": "AI Agent Engineering: From ReAct, Agentic RAG to Multi-Agent Orchestration",
+      "summary": "Design, deploy, and scale enterprise-grade AI agents with a hands-on, problem-driven approach.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/rakeshgohel/ai-agent-engineering-react-rag-multi-agent"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

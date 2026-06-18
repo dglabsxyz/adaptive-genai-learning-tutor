@@ -1,0 +1,65 @@
+{
+  "course_name": "Beginner: Introduction to Generative AI",
+  "course_slug": "beginner-introduction-to-generative-ai",
+  "instructor_names": [
+    "Google Cloud"
+  ],
+  "instructor_slugs": [
+    "google-cloud"
+  ],
+  "platform": "Google Skills",
+  "course_url": "https://www.skills.google/paths/118",
+  "topic_tags": [
+    "LLMs",
+    "prompt engineering",
+    "AI safety and evaluation",
+    "business AI"
+  ],
+  "description": "A Google Skills learning path covering generative AI concepts, LLM fundamentals, and responsible AI principles.",
+  "syllabus": [
+    "Introduction to Generative AI",
+    "Introduction to Large Language Models",
+    "Introduction to Responsible AI",
+    "Prompt Design in Agent Platform",
+    "Responsible AI: Applying AI Principles with Google Cloud"
+  ],
+  "target_audience": [
+    "Beginners",
+    "Google Cloud partners"
+  ],
+  "prerequisites": [],
+  "duration": null,
+  "format": "Learning path",
+  "price": {
+    "amount": null,
+    "currency": null,
+    "raw": null
+  },
+  "rating": {
+    "value": null,
+    "count": null,
+    "raw": null
+  },
+  "certificate": null,
+  "enrollment_status": null,
+  "last_updated": null,
+  "citations": [
+    "https://www.skills.google/paths/118"
+  ],
+  "source_records": [
+    {
+      "platform": "Google Skills",
+      "url": "https://www.skills.google/paths/118",
+      "title": "Beginner: Introduction to Generative AI",
+      "summary": "A Google Skills learning path covering generative AI concepts, LLM fundamentals, and responsible AI principles.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://www.skills.google/paths/118"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

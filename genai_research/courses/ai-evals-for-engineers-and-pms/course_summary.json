@@ -1,0 +1,73 @@
+{
+  "course_name": "AI Evals For Engineers and PMs",
+  "course_slug": "ai-evals-for-engineers-and-pms",
+  "instructor_names": [
+    "Hamel Husain",
+    "Shreya Shankar"
+  ],
+  "instructor_slugs": [
+    "hamel-husain",
+    "shreya-shankar"
+  ],
+  "platform": "Maven",
+  "course_url": "https://maven.com/parlance-labs/evals",
+  "topic_tags": [
+    "AI safety and evaluation",
+    "AI agents",
+    "AI product development",
+    "RAG"
+  ],
+  "description": "Build a real AI agent, find where it breaks, and improve it with evals you can trust.",
+  "syllabus": [
+    "Building agents: foundations",
+    "Designing for evaluability",
+    "Error analysis and finding failures",
+    "Building trusted evaluators",
+    "Catch regressions with CI/CD",
+    "Red-team for safety",
+    "Improve accuracy and cut cost with evidence"
+  ],
+  "target_audience": [
+    "Engineers",
+    "Product managers",
+    "AI developers"
+  ],
+  "prerequisites": [
+    "Familiarity with AI applications",
+    "Basic understanding of how LLMs work"
+  ],
+  "duration": "4 weeks",
+  "format": "Cohort-based course",
+  "price": {
+    "amount": 4200.0,
+    "currency": "USD",
+    "raw": "$4,200"
+  },
+  "rating": {
+    "value": 4.7,
+    "count": null,
+    "raw": "4.7"
+  },
+  "certificate": "Certificate of completion",
+  "enrollment_status": "Open",
+  "last_updated": null,
+  "citations": [
+    "https://maven.com/parlance-labs/evals"
+  ],
+  "source_records": [
+    {
+      "platform": "Maven",
+      "url": "https://maven.com/parlance-labs/evals",
+      "title": "AI Evals For Engineers and PMs",
+      "summary": "Build a real AI agent, find where it breaks, and improve it with evals you can trust.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/parlance-labs/evals"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

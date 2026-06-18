@@ -1,0 +1,61 @@
+{
+  "entity_type": "topic",
+  "entity_name": "AI safety and evaluation",
+  "entity_slug": "ai-safety-and-evaluation",
+  "platform": "linkedin",
+  "query_terms": [
+    "AI safety and evaluation",
+    "AI evals",
+    "responsible AI",
+    "AI agents",
+    "RAG",
+    "fine-tuning"
+  ],
+  "results": [
+    {
+      "title": "Hands-On AI: RAG using LlamaIndex",
+      "url": "https://www.linkedin.com/learning/hands-on-ai-rag-using-llamaindex",
+      "content_type": "course",
+      "summary": "A LinkedIn Learning course focused on retrieval-augmented generation using LlamaIndex.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.linkedin.com/learning/hands-on-ai-rag-using-llamaindex"
+      ]
+    },
+    {
+      "title": "Creating Agents with Python and the AI Toolkit for Visual Studio Code",
+      "url": "https://www.linkedin.com/learning/creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code",
+      "content_type": "course",
+      "summary": "A LinkedIn Learning course on building and evaluating Python-based AI agents with the AI Toolkit for Visual Studio Code.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.linkedin.com/learning/creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code"
+      ]
+    },
+    {
+      "title": "Source for AI safety and evaluation",
+      "url": "https://www.linkedin.com/learning/hands-on-ai-rag-using-llamaindex",
+      "content_type": "other",
+      "summary": "Citation source for AI safety and evaluation.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.linkedin.com/learning/hands-on-ai-rag-using-llamaindex"
+      ]
+    },
+    {
+      "title": "Source for AI safety and evaluation",
+      "url": "https://www.linkedin.com/learning/creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code",
+      "content_type": "other",
+      "summary": "Citation source for AI safety and evaluation.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.linkedin.com/learning/creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

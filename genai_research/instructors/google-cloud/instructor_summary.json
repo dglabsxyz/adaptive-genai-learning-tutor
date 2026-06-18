@@ -1,0 +1,127 @@
+{
+  "name": "Google Cloud",
+  "slug": "google-cloud",
+  "headline": null,
+  "organization": null,
+  "bio": null,
+  "expertise_areas": [
+    "LLMs",
+    "prompt engineering",
+    "AI safety and evaluation",
+    "business AI",
+    "multimodal AI",
+    "image analysis",
+    "AI agents",
+    "generative AI"
+  ],
+  "topics_taught": [
+    "LLMs",
+    "prompt engineering",
+    "AI safety and evaluation",
+    "business AI",
+    "multimodal AI",
+    "image analysis",
+    "AI agents",
+    "generative AI"
+  ],
+  "platforms": [
+    "Google Skills",
+    "Coursera"
+  ],
+  "website": null,
+  "social_profiles": {
+    "linkedin": null,
+    "youtube": null,
+    "x": null,
+    "github": null,
+    "other": []
+  },
+  "audience_levels": [
+    "beginner",
+    "intermediate"
+  ],
+  "teaching_formats": [
+    "Learning path",
+    "Skill badge",
+    "Course"
+  ],
+  "courses": [
+    {
+      "course_name": "Beginner: Introduction to Generative AI",
+      "course_slug": "beginner-introduction-to-generative-ai",
+      "platform": "Google Skills",
+      "url": "https://www.skills.google/paths/118",
+      "citations": [
+        "https://www.skills.google/paths/118"
+      ]
+    },
+    {
+      "course_name": "Prompt Design in Agent Platform",
+      "course_slug": "prompt-design-in-agent-platform",
+      "platform": "Google Skills",
+      "url": "https://www.skills.google/course_templates/976",
+      "citations": [
+        "https://www.skills.google/course_templates/976"
+      ]
+    },
+    {
+      "course_name": "Introduction to Generative AI",
+      "course_slug": "introduction-to-generative-ai",
+      "platform": "Coursera",
+      "url": "https://www.coursera.org/learn/introduction-to-generative-ai",
+      "citations": [
+        "https://www.coursera.org/learn/introduction-to-generative-ai",
+        "https://www.skills.google/paths/118/course_templates/536"
+      ]
+    }
+  ],
+  "credibility_signals": [],
+  "citations": [
+    "https://www.skills.google/paths/118",
+    "https://www.skills.google/course_templates/976",
+    "https://www.coursera.org/learn/introduction-to-generative-ai",
+    "https://www.skills.google/paths/118/course_templates/536"
+  ],
+  "source_records": [
+    {
+      "platform": "Google Skills",
+      "url": "https://www.skills.google/paths/118",
+      "title": "Beginner: Introduction to Generative AI",
+      "summary": "A Google Skills learning path covering generative AI concepts, LLM fundamentals, and responsible AI principles.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://www.skills.google/paths/118"
+      ]
+    },
+    {
+      "platform": "Google Skills",
+      "url": "https://www.skills.google/course_templates/976",
+      "title": "Prompt Design in Agent Platform",
+      "summary": "A Google Skills badge on prompt engineering, image analysis, and multimodal generative techniques in Agent Platform.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.skills.google/course_templates/976"
+      ]
+    },
+    {
+      "platform": "Coursera",
+      "url": "https://www.coursera.org/learn/introduction-to-generative-ai",
+      "title": "Introduction to Generative AI",
+      "summary": "A Google Cloud Coursera microlearning course explaining what generative AI is, how it is used, and how it differs from traditional ML.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.coursera.org/learn/introduction-to-generative-ai"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

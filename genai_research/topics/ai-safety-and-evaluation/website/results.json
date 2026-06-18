@@ -1,0 +1,233 @@
+{
+  "entity_type": "topic",
+  "entity_name": "AI safety and evaluation",
+  "entity_slug": "ai-safety-and-evaluation",
+  "platform": "website",
+  "query_terms": [
+    "AI safety and evaluation",
+    "AI evals",
+    "responsible AI",
+    "AI agents",
+    "RAG",
+    "fine-tuning"
+  ],
+  "results": [
+    {
+      "title": "AI Agents Course",
+      "url": "https://huggingface.co/learn/agents-course/unit0/introduction",
+      "content_type": "course",
+      "summary": "A free Hugging Face course from beginner to expert on understanding, using, and building AI agents.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://huggingface.co/learn/agents-course/unit0/introduction"
+      ]
+    },
+    {
+      "title": "Generative AI with Large Language Models",
+      "url": "https://www.deeplearning.ai/courses/generative-ai-with-llms",
+      "content_type": "course",
+      "summary": "A DeepLearning.AI course on the generative AI lifecycle, transformer architecture, training, tuning, inference, and LLM-powered applications.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.deeplearning.ai/courses/generative-ai-with-llms"
+      ]
+    },
+    {
+      "title": "Retrieval Augmented Generation (RAG)",
+      "url": "https://www.deeplearning.ai/courses/retrieval-augmented-generation",
+      "content_type": "course",
+      "summary": "A DeepLearning.AI course on designing, building, deploying, and evaluating production-ready RAG applications.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.deeplearning.ai/courses/retrieval-augmented-generation"
+      ]
+    },
+    {
+      "title": "AI Agents for Image and Video Generation",
+      "url": "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation",
+      "content_type": "course",
+      "summary": "A DeepLearning.AI course on building media agents that generate, evaluate, and iterate on image and video outputs.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation"
+      ]
+    },
+    {
+      "title": "Beginner: Introduction to Generative AI",
+      "url": "https://www.skills.google/paths/118",
+      "content_type": "course",
+      "summary": "A Google Skills learning path covering generative AI concepts, LLM fundamentals, and responsible AI principles.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://www.skills.google/paths/118"
+      ]
+    },
+    {
+      "title": "LLM Engineering: Prompting, Fine-Tuning, Optimization and RAG",
+      "url": "https://www.coursera.org/specializations/llm-engineering-prompting-fine-tuning-optimization-rag",
+      "content_type": "course",
+      "summary": "A Coursera specialization on end-to-end LLM engineering, prompt design, evaluation, fine-tuning, optimization, and RAG.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.coursera.org/specializations/llm-engineering-prompting-fine-tuning-optimization-rag"
+      ]
+    },
+    {
+      "title": "Trustworthy AI: Managing Bias, Ethics, and Accountability",
+      "url": "https://www.coursera.org/learn/responsible-ai-and-ethics",
+      "content_type": "course",
+      "summary": "A Coursera course on ethical, social, and technical aspects of AI and machine learning.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.coursera.org/learn/responsible-ai-and-ethics"
+      ]
+    },
+    {
+      "title": "AI Ethics",
+      "url": "https://www.datacamp.com/courses/ai-ethics",
+      "content_type": "course",
+      "summary": "A DataCamp course covering ethical considerations in artificial intelligence.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.datacamp.com/courses/ai-ethics"
+      ]
+    },
+    {
+      "title": "Source for AI safety and evaluation",
+      "url": "https://www.skills.google/paths/118/course_templates/554",
+      "content_type": "other",
+      "summary": "Citation source for AI safety and evaluation.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.skills.google/paths/118/course_templates/554"
+      ]
+    },
+    {
+      "title": "Source for AI safety and evaluation",
+      "url": "https://www.coursera.org/learn/responsible-ai-and-ethics",
+      "content_type": "other",
+      "summary": "Citation source for AI safety and evaluation.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.coursera.org/learn/responsible-ai-and-ethics"
+      ]
+    },
+    {
+      "title": "Source for AI safety and evaluation",
+      "url": "https://huggingface.co/learn/agents-course/unit0/introduction",
+      "content_type": "other",
+      "summary": "Citation source for AI safety and evaluation.",
+      "extracted_data": {},
+      "citations": [
+        "https://huggingface.co/learn/agents-course/unit0/introduction"
+      ]
+    },
+    {
+      "title": "Source for AI safety and evaluation",
+      "url": "https://www.deeplearning.ai/courses/generative-ai-with-llms",
+      "content_type": "other",
+      "summary": "Citation source for AI safety and evaluation.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.deeplearning.ai/courses/generative-ai-with-llms"
+      ]
+    },
+    {
+      "title": "Source for AI safety and evaluation",
+      "url": "https://www.coursera.org/learn/generative-ai-with-llms",
+      "content_type": "other",
+      "summary": "Citation source for AI safety and evaluation.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.coursera.org/learn/generative-ai-with-llms"
+      ]
+    },
+    {
+      "title": "Source for AI safety and evaluation",
+      "url": "https://www.deeplearning.ai/courses/retrieval-augmented-generation",
+      "content_type": "other",
+      "summary": "Citation source for AI safety and evaluation.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.deeplearning.ai/courses/retrieval-augmented-generation"
+      ]
+    },
+    {
+      "title": "Source for AI safety and evaluation",
+      "url": "https://www.coursera.org/learn/retrieval-augmented-generation-rag",
+      "content_type": "other",
+      "summary": "Citation source for AI safety and evaluation.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.coursera.org/learn/retrieval-augmented-generation-rag"
+      ]
+    },
+    {
+      "title": "Source for AI safety and evaluation",
+      "url": "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation",
+      "content_type": "other",
+      "summary": "Citation source for AI safety and evaluation.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation"
+      ]
+    },
+    {
+      "title": "Source for AI safety and evaluation",
+      "url": "https://developers.openai.com/cookbook",
+      "content_type": "other",
+      "summary": "Citation source for AI safety and evaluation.",
+      "extracted_data": {},
+      "citations": [
+        "https://developers.openai.com/cookbook"
+      ]
+    },
+    {
+      "title": "Source for AI safety and evaluation",
+      "url": "https://www.skills.google/paths/118",
+      "content_type": "other",
+      "summary": "Citation source for AI safety and evaluation.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.skills.google/paths/118"
+      ]
+    },
+    {
+      "title": "Source for AI safety and evaluation",
+      "url": "https://www.coursera.org/specializations/llm-engineering-prompting-fine-tuning-optimization-rag",
+      "content_type": "other",
+      "summary": "Citation source for AI safety and evaluation.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.coursera.org/specializations/llm-engineering-prompting-fine-tuning-optimization-rag"
+      ]
+    },
+    {
+      "title": "Source for AI safety and evaluation",
+      "url": "https://www.datacamp.com/courses/ai-ethics",
+      "content_type": "other",
+      "summary": "Citation source for AI safety and evaluation.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.datacamp.com/courses/ai-ethics"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

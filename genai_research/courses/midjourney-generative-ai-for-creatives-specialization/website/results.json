@@ -1,0 +1,27 @@
+{
+  "entity_type": "course",
+  "entity_name": "Midjourney: Generative AI for Creatives Specialization",
+  "entity_slug": "midjourney-generative-ai-for-creatives-specialization",
+  "platform": "website",
+  "query_terms": [
+    "Midjourney: Generative AI for Creatives Specialization",
+    "image generation",
+    "prompt engineering",
+    "creative AI"
+  ],
+  "results": [
+    {
+      "title": "Midjourney: Generative AI for Creatives Specialization",
+      "url": "https://www.coursera.org/specializations/midjourney-generative-ai-for-creatives",
+      "content_type": "course",
+      "summary": "A Coursera specialization focused on Midjourney and generative AI for creatives.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.coursera.org/specializations/midjourney-generative-ai-for-creatives"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

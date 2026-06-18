@@ -1,0 +1,26 @@
+{
+  "entity_type": "course",
+  "entity_name": "Fine-Tuning for LLMs: from Beginner to Advanced",
+  "entity_slug": "fine-tuning-for-llms-from-beginner-to-advanced",
+  "platform": "linkedin",
+  "query_terms": [
+    "Fine-Tuning for LLMs: from Beginner to Advanced",
+    "fine-tuning",
+    "LLMs"
+  ],
+  "results": [
+    {
+      "title": "Fine-Tuning for LLMs: from Beginner to Advanced",
+      "url": "https://www.linkedin.com/learning/fine-tuning-for-llms-from-beginner-to-advanced",
+      "content_type": "course",
+      "summary": "A LinkedIn Learning course on fine-tuning LLMs from beginner to advanced level.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.linkedin.com/learning/fine-tuning-for-llms-from-beginner-to-advanced"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

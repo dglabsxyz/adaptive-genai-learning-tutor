@@ -1,0 +1,27 @@
+{
+  "entity_type": "instructor",
+  "entity_name": "Edureka",
+  "entity_slug": "edureka",
+  "platform": "youtube",
+  "query_terms": [
+    "Edureka",
+    "AI agents",
+    "agentic AI",
+    "LLMs"
+  ],
+  "results": [
+    {
+      "title": "AI Agents Tutorial For Beginners",
+      "url": "https://www.youtube.com/watch?v=-rUKr8JDits",
+      "content_type": "video",
+      "summary": "An Edureka YouTube tutorial/course for beginner AI agents and agentic AI.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://www.youtube.com/watch?v=-rUKr8JDits"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

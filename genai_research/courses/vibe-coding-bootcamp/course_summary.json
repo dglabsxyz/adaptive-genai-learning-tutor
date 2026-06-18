@@ -1,0 +1,61 @@
+{
+  "course_name": "Vibe Coding Bootcamp",
+  "course_slug": "vibe-coding-bootcamp",
+  "instructor_names": [
+    "No-Code AI"
+  ],
+  "instructor_slugs": [
+    "no-code-ai"
+  ],
+  "platform": "Maven",
+  "course_url": "https://maven.com/no-code-ai/vibe-coding-bootcamp",
+  "topic_tags": [
+    "AI coding",
+    "no-code AI",
+    "AI product development"
+  ],
+  "description": "A Maven AI/vibe-coding course discovered from the Maven prototyping and vibe-coding category crawls.",
+  "syllabus": [],
+  "target_audience": [
+    "Non-technical builders",
+    "Product teams",
+    "Founders"
+  ],
+  "prerequisites": [],
+  "duration": null,
+  "format": "Bootcamp",
+  "price": {
+    "amount": null,
+    "currency": null,
+    "raw": null
+  },
+  "rating": {
+    "value": null,
+    "count": null,
+    "raw": null
+  },
+  "certificate": null,
+  "enrollment_status": null,
+  "last_updated": null,
+  "citations": [
+    "https://maven.com/no-code-ai/vibe-coding-bootcamp",
+    "https://maven.com/courses/ai/vibe-coding",
+    "https://maven.com/courses/ai/prototyping"
+  ],
+  "source_records": [
+    {
+      "platform": "Maven",
+      "url": "https://maven.com/no-code-ai/vibe-coding-bootcamp",
+      "title": "Vibe Coding Bootcamp",
+      "summary": "A Maven AI/vibe-coding course discovered from the Maven prototyping and vibe-coding category crawls.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "bootcamp"
+      },
+      "citations": [
+        "https://maven.com/no-code-ai/vibe-coding-bootcamp"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

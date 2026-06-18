@@ -1,0 +1,156 @@
+{
+  "topic": "voice AI",
+  "slug": "voice-ai",
+  "description": "Speech-to-text, text-to-speech, voice cloning, real-time voice agents, and audio generation workflows.",
+  "related_topics": [
+    "AI agents",
+    "multimodal AI",
+    "conversation design",
+    "audio AI"
+  ],
+  "instructors": [
+    {
+      "name": "Bilawal Sidhu",
+      "slug": "bilawal-sidhu",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Maven"
+      ],
+      "citations": [
+        "https://maven.com/bilawal/generative-ai-masterclass"
+      ]
+    },
+    {
+      "name": "Kwindla Hultman Kramer",
+      "slug": "kwindla-hultman-kramer",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Maven"
+      ],
+      "citations": [
+        "https://maven.com/p/5de0a6/become-a-voice-ai-agent-expert"
+      ]
+    },
+    {
+      "name": "LinkedIn Learning Team",
+      "slug": "linkedin-learning-team",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "LinkedIn Learning"
+      ],
+      "citations": [
+        "https://www.linkedin.com/learning/hands-on-ai-rag-using-llamaindex",
+        "https://www.linkedin.com/learning/context-engineering-for-developers",
+        "https://www.linkedin.com/learning/creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code",
+        "https://www.linkedin.com/learning/fine-tuning-for-llms-from-beginner-to-advanced",
+        "https://www.linkedin.com/learning/multimodal-ai-essentials-merging-text-image-and-audio-for-next-generation-ai-applications",
+        "https://www.linkedin.com/learning/elevenlabs-ai-voice-cloning-text-to-speech-and-sound-effects"
+      ]
+    },
+    {
+      "name": "Voice AI community instructors",
+      "slug": "voice-ai-community-instructors",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "YouTube"
+      ],
+      "citations": [
+        "https://www.youtube.com/watch?v=m4QF78X7t9k"
+      ]
+    },
+    {
+      "name": "YouTube creator",
+      "slug": "youtube-creator",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "YouTube"
+      ],
+      "citations": [
+        "https://www.youtube.com/watch?v=UAxKs9Yuljo"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "course_name": "Generative AI Creation Masterclass",
+      "course_slug": "generative-ai-creation-masterclass",
+      "instructor_names": [
+        "Bilawal Sidhu"
+      ],
+      "platform": "Maven",
+      "course_url": "https://maven.com/bilawal/generative-ai-masterclass",
+      "citations": [
+        "https://maven.com/bilawal/generative-ai-masterclass"
+      ]
+    },
+    {
+      "course_name": "Become a Voice AI Agent Expert",
+      "course_slug": "become-a-voice-ai-agent-expert",
+      "instructor_names": [
+        "Kwindla Hultman Kramer"
+      ],
+      "platform": "Maven",
+      "course_url": "https://maven.com/p/5de0a6/become-a-voice-ai-agent-expert",
+      "citations": [
+        "https://maven.com/p/5de0a6/become-a-voice-ai-agent-expert"
+      ]
+    },
+    {
+      "course_name": "Multimodal AI Essentials: Merging Text, Image, and Audio",
+      "course_slug": "multimodal-ai-essentials-merging-text-image-and-audio",
+      "instructor_names": [
+        "LinkedIn Learning Team"
+      ],
+      "platform": "LinkedIn Learning",
+      "course_url": "https://www.linkedin.com/learning/multimodal-ai-essentials-merging-text-image-and-audio-for-next-generation-ai-applications",
+      "citations": [
+        "https://www.linkedin.com/learning/multimodal-ai-essentials-merging-text-image-and-audio-for-next-generation-ai-applications"
+      ]
+    },
+    {
+      "course_name": "ElevenLabs: AI Voice Cloning, Text-to-Speech, and Sound Effects",
+      "course_slug": "elevenlabs-ai-voice-cloning-text-to-speech-and-sound-effects",
+      "instructor_names": [
+        "LinkedIn Learning Team"
+      ],
+      "platform": "LinkedIn Learning",
+      "course_url": "https://www.linkedin.com/learning/elevenlabs-ai-voice-cloning-text-to-speech-and-sound-effects",
+      "citations": [
+        "https://www.linkedin.com/learning/elevenlabs-ai-voice-cloning-text-to-speech-and-sound-effects"
+      ]
+    },
+    {
+      "course_name": "Voice AI and Voice Agents 2025 - Session 01",
+      "course_slug": "voice-ai-and-voice-agents-2025-session-01",
+      "instructor_names": [
+        "Voice AI community instructors"
+      ],
+      "platform": "YouTube",
+      "course_url": "https://www.youtube.com/watch?v=m4QF78X7t9k",
+      "citations": [
+        "https://www.youtube.com/watch?v=m4QF78X7t9k"
+      ]
+    },
+    {
+      "course_name": "AI Voice Agents Full Course 2026: Beginner to Advanced",
+      "course_slug": "ai-voice-agents-full-course-2026-beginner-to-advanced",
+      "instructor_names": [
+        "YouTube creator"
+      ],
+      "platform": "YouTube",
+      "course_url": "https://www.youtube.com/watch?v=UAxKs9Yuljo",
+      "citations": [
+        "https://www.youtube.com/watch?v=UAxKs9Yuljo"
+      ]
+    }
+  ],
+  "sources": [
+    "https://maven.com/p/5de0a6/become-a-voice-ai-agent-expert",
+    "https://www.linkedin.com/learning/elevenlabs-ai-voice-cloning-text-to-speech-and-sound-effects",
+    "https://www.youtube.com/watch?v=m4QF78X7t9k",
+    "https://maven.com/bilawal/generative-ai-masterclass",
+    "https://www.linkedin.com/learning/multimodal-ai-essentials-merging-text-image-and-audio-for-next-generation-ai-applications",
+    "https://www.youtube.com/watch?v=UAxKs9Yuljo"
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

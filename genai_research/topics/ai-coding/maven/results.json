@@ -1,0 +1,124 @@
+{
+  "entity_type": "topic",
+  "entity_name": "AI coding",
+  "entity_slug": "ai-coding",
+  "platform": "maven",
+  "query_terms": [
+    "AI coding",
+    "AI agents",
+    "vibe coding",
+    "AI product development",
+    "prompt engineering"
+  ],
+  "results": [
+    {
+      "title": "Agentic AI Product Management Certification using Claude Code",
+      "url": "https://maven.com/mahesh-yadav/genaipm",
+      "content_type": "course",
+      "summary": "A certification for leading agentic AI products, building systems, defining metrics, and scaling responsibly.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/mahesh-yadav/genaipm"
+      ]
+    },
+    {
+      "title": "AI Prototyping for Designers",
+      "url": "https://maven.com/anna-arteeva/prototyping-for-designers",
+      "content_type": "course",
+      "summary": "A Maven AI prototyping course found in the Maven AI prototyping catalog crawl.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/anna-arteeva/prototyping-for-designers"
+      ]
+    },
+    {
+      "title": "Vibe Coding Bootcamp",
+      "url": "https://maven.com/no-code-ai/vibe-coding-bootcamp",
+      "content_type": "course",
+      "summary": "A Maven AI/vibe-coding course discovered from the Maven prototyping and vibe-coding category crawls.",
+      "extracted_data": {
+        "entity_type": "bootcamp"
+      },
+      "citations": [
+        "https://maven.com/no-code-ai/vibe-coding-bootcamp"
+      ]
+    },
+    {
+      "title": "AI Software Development: From First Prompt to Production Code",
+      "url": "https://maven.com/courses/ai/ai-coding",
+      "content_type": "course",
+      "summary": "A Maven AI coding catalog entry described as a four-week, highly rated course from first prompt to production code.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/courses/ai/ai-coding"
+      ]
+    },
+    {
+      "title": "Source for AI coding",
+      "url": "https://maven.com/courses/ai/ai-coding",
+      "content_type": "other",
+      "summary": "Citation source for AI coding.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/courses/ai/ai-coding"
+      ]
+    },
+    {
+      "title": "Source for AI coding",
+      "url": "https://maven.com/courses/ai/vibe-coding",
+      "content_type": "other",
+      "summary": "Citation source for AI coding.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/courses/ai/vibe-coding"
+      ]
+    },
+    {
+      "title": "Source for AI coding",
+      "url": "https://maven.com/mahesh-yadav/genaipm",
+      "content_type": "other",
+      "summary": "Citation source for AI coding.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/mahesh-yadav/genaipm"
+      ]
+    },
+    {
+      "title": "Source for AI coding",
+      "url": "https://maven.com/anna-arteeva/prototyping-for-designers",
+      "content_type": "other",
+      "summary": "Citation source for AI coding.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/anna-arteeva/prototyping-for-designers"
+      ]
+    },
+    {
+      "title": "Source for AI coding",
+      "url": "https://maven.com/courses/ai/prototyping",
+      "content_type": "other",
+      "summary": "Citation source for AI coding.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/courses/ai/prototyping"
+      ]
+    },
+    {
+      "title": "Source for AI coding",
+      "url": "https://maven.com/no-code-ai/vibe-coding-bootcamp",
+      "content_type": "other",
+      "summary": "Citation source for AI coding.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/no-code-ai/vibe-coding-bootcamp"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

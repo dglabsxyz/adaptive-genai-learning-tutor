@@ -1,0 +1,71 @@
+{
+  "name": "Jason Liu",
+  "slug": "jason-liu",
+  "headline": "AI consultant and creator of the Instructor Python library",
+  "organization": null,
+  "bio": "Machine learning engineer and consultant focused on search, recommendation, and RAG systems.",
+  "expertise_areas": [
+    "RAG",
+    "AI evaluation",
+    "retrieval",
+    "multimodal AI"
+  ],
+  "topics_taught": [
+    "RAG",
+    "AI evaluation",
+    "retrieval",
+    "multimodal AI"
+  ],
+  "platforms": [
+    "Maven"
+  ],
+  "website": null,
+  "social_profiles": {
+    "linkedin": null,
+    "youtube": null,
+    "x": null,
+    "github": null,
+    "other": []
+  },
+  "audience_levels": [
+    "intermediate",
+    "enterprise"
+  ],
+  "teaching_formats": [
+    "Cohort-based course"
+  ],
+  "courses": [
+    {
+      "course_name": "Systematically Improving RAG Applications",
+      "course_slug": "systematically-improving-rag-applications",
+      "platform": "Maven",
+      "url": "https://maven.com/applied-llms/rag-playbook",
+      "citations": [
+        "https://maven.com/applied-llms/rag-playbook"
+      ]
+    }
+  ],
+  "credibility_signals": [
+    "Creator of Instructor Python library",
+    "RAG consultant"
+  ],
+  "citations": [
+    "https://maven.com/applied-llms/rag-playbook"
+  ],
+  "source_records": [
+    {
+      "platform": "Maven",
+      "url": "https://maven.com/applied-llms/rag-playbook",
+      "title": "Systematically Improving RAG Applications",
+      "summary": "A repeatable process for evaluating and improving RAG applications.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/applied-llms/rag-playbook"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

@@ -1,0 +1,27 @@
+{
+  "entity_type": "instructor",
+  "entity_name": "Runway Academy",
+  "entity_slug": "runway-academy",
+  "platform": "website",
+  "query_terms": [
+    "Runway Academy",
+    "video generation",
+    "multimodal AI",
+    "generative media"
+  ],
+  "results": [
+    {
+      "title": "Runway AI Video Creation",
+      "url": "https://academy.runwayml.com/",
+      "content_type": "website",
+      "summary": "Runway Academy tutorials for AI-powered video creation and generative media tools.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://academy.runwayml.com/"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

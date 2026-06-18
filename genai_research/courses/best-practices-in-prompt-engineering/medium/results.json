@@ -1,0 +1,26 @@
+{
+  "entity_type": "course",
+  "entity_name": "Best Practices in Prompt Engineering",
+  "entity_slug": "best-practices-in-prompt-engineering",
+  "platform": "medium",
+  "query_terms": [
+    "Best Practices in Prompt Engineering",
+    "prompt engineering",
+    "LLMs"
+  ],
+  "results": [
+    {
+      "title": "Best Practices in Prompt Engineering",
+      "url": "https://medium.com/data-science/best-practices-in-prompt-engineering-a18d6bab904b",
+      "content_type": "article",
+      "summary": "A Medium teaching article on prompt-engineering principles, iterative development, and prompting capabilities.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://medium.com/data-science/best-practices-in-prompt-engineering-a18d6bab904b"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

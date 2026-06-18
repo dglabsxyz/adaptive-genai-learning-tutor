@@ -1,0 +1,86 @@
+{
+  "name": "Hugging Face Team",
+  "slug": "hugging-face-team",
+  "headline": null,
+  "organization": "Hugging Face",
+  "bio": null,
+  "expertise_areas": [
+    "image generation",
+    "diffusion models",
+    "multimodal AI",
+    "context engineering",
+    "LLMs",
+    "AI coding",
+    "prompt engineering"
+  ],
+  "topics_taught": [
+    "image generation",
+    "diffusion models",
+    "multimodal AI",
+    "context engineering",
+    "LLMs",
+    "AI coding",
+    "prompt engineering"
+  ],
+  "platforms": [
+    "Hugging Face"
+  ],
+  "website": null,
+  "social_profiles": {
+    "linkedin": null,
+    "youtube": null,
+    "x": null,
+    "github": null,
+    "other": []
+  },
+  "audience_levels": [
+    "intermediate"
+  ],
+  "teaching_formats": [
+    "Online course"
+  ],
+  "courses": [
+    {
+      "course_name": "Diffusion Course",
+      "course_slug": "diffusion-course",
+      "platform": "Hugging Face",
+      "url": "https://huggingface.co/learn",
+      "citations": [
+        "https://huggingface.co/learn"
+      ]
+    }
+  ],
+  "credibility_signals": [],
+  "citations": [
+    "https://huggingface.co/learn"
+  ],
+  "source_records": [
+    {
+      "platform": "Hugging Face",
+      "url": "https://huggingface.co/learn",
+      "title": "Diffusion Course",
+      "summary": "A Hugging Face learning catalog course on diffusion models and image-generation workflows.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://huggingface.co/learn"
+      ]
+    },
+    {
+      "platform": "Hugging Face",
+      "url": "https://huggingface.co/learn",
+      "title": "Context Course",
+      "summary": "A Hugging Face learning catalog course on context engineering for code and AI workflows.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://huggingface.co/learn"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

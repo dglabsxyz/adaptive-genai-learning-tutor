@@ -1,0 +1,67 @@
+{
+  "name": "Voice AI community instructors",
+  "slug": "voice-ai-community-instructors",
+  "headline": null,
+  "organization": null,
+  "bio": null,
+  "expertise_areas": [
+    "voice AI",
+    "AI agents",
+    "speech-to-text",
+    "text-to-speech"
+  ],
+  "topics_taught": [
+    "voice AI",
+    "AI agents",
+    "speech-to-text",
+    "text-to-speech"
+  ],
+  "platforms": [
+    "YouTube"
+  ],
+  "website": null,
+  "social_profiles": {
+    "linkedin": null,
+    "youtube": null,
+    "x": null,
+    "github": null,
+    "other": []
+  },
+  "audience_levels": [
+    "intermediate"
+  ],
+  "teaching_formats": [
+    "Video session"
+  ],
+  "courses": [
+    {
+      "course_name": "Voice AI and Voice Agents 2025 - Session 01",
+      "course_slug": "voice-ai-and-voice-agents-2025-session-01",
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/watch?v=m4QF78X7t9k",
+      "citations": [
+        "https://www.youtube.com/watch?v=m4QF78X7t9k"
+      ]
+    }
+  ],
+  "credibility_signals": [],
+  "citations": [
+    "https://www.youtube.com/watch?v=m4QF78X7t9k"
+  ],
+  "source_records": [
+    {
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/watch?v=m4QF78X7t9k",
+      "title": "Voice AI and Voice Agents 2025 - Session 01",
+      "summary": "A YouTube session from a community-hosted course about building voice agents.",
+      "content_type": "video",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://www.youtube.com/watch?v=m4QF78X7t9k"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

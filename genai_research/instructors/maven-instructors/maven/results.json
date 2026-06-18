@@ -1,0 +1,27 @@
+{
+  "entity_type": "instructor",
+  "entity_name": "Maven instructors",
+  "entity_slug": "maven-instructors",
+  "platform": "maven",
+  "query_terms": [
+    "Maven instructors",
+    "AI coding",
+    "AI agents",
+    "AI product development"
+  ],
+  "results": [
+    {
+      "title": "AI Software Development: From First Prompt to Production Code",
+      "url": "https://maven.com/courses/ai/ai-coding",
+      "content_type": "course",
+      "summary": "A Maven AI coding catalog entry described as a four-week, highly rated course from first prompt to production code.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/courses/ai/ai-coding"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

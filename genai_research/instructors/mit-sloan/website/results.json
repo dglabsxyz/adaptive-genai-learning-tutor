@@ -1,0 +1,27 @@
+{
+  "entity_type": "instructor",
+  "entity_name": "MIT Sloan",
+  "entity_slug": "mit-sloan",
+  "platform": "website",
+  "query_terms": [
+    "MIT Sloan",
+    "business AI",
+    "AI strategy",
+    "machine learning"
+  ],
+  "results": [
+    {
+      "title": "Artificial Intelligence: Implications for Business Strategy",
+      "url": "https://executive.mit.edu/course/artificial-intelligence/a056g00000URaa3AAD.html",
+      "content_type": "course",
+      "summary": "A six-week MIT Sloan Executive Education online program on AI technologies and strategic business applications.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://executive.mit.edu/course/artificial-intelligence/a056g00000URaa3AAD.html"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

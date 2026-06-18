@@ -1,0 +1,69 @@
+{
+  "name": "Microsoft Cloud Advocates",
+  "slug": "microsoft-cloud-advocates",
+  "headline": null,
+  "organization": "Microsoft",
+  "bio": null,
+  "expertise_areas": [
+    "LLMs",
+    "prompt engineering",
+    "RAG",
+    "AI safety and evaluation",
+    "AI agents"
+  ],
+  "topics_taught": [
+    "LLMs",
+    "prompt engineering",
+    "RAG",
+    "AI safety and evaluation",
+    "AI agents"
+  ],
+  "platforms": [
+    "GitHub"
+  ],
+  "website": null,
+  "social_profiles": {
+    "linkedin": null,
+    "youtube": null,
+    "x": null,
+    "github": null,
+    "other": []
+  },
+  "audience_levels": [
+    "intermediate"
+  ],
+  "teaching_formats": [
+    "Open-source curriculum"
+  ],
+  "courses": [
+    {
+      "course_name": "Microsoft Generative AI for Beginners",
+      "course_slug": "microsoft-generative-ai-for-beginners",
+      "platform": "GitHub",
+      "url": "https://github.com/microsoft/generative-ai-for-beginners",
+      "citations": [
+        "https://github.com/microsoft/generative-ai-for-beginners"
+      ]
+    }
+  ],
+  "credibility_signals": [],
+  "citations": [
+    "https://github.com/microsoft/generative-ai-for-beginners"
+  ],
+  "source_records": [
+    {
+      "platform": "GitHub",
+      "url": "https://github.com/microsoft/generative-ai-for-beginners",
+      "title": "Microsoft Generative AI for Beginners",
+      "summary": "A Microsoft open-source curriculum with 21 lessons on building generative AI applications.",
+      "content_type": "repository",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://github.com/microsoft/generative-ai-for-beginners"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

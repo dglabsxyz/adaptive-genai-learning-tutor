@@ -1,0 +1,60 @@
+{
+  "entity_type": "topic",
+  "entity_name": "video generation",
+  "entity_slug": "video-generation",
+  "platform": "website",
+  "query_terms": [
+    "video generation",
+    "image generation",
+    "multimodal AI",
+    "generative media",
+    "voice AI"
+  ],
+  "results": [
+    {
+      "title": "AI Agents for Image and Video Generation",
+      "url": "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation",
+      "content_type": "course",
+      "summary": "A DeepLearning.AI course on building media agents that generate, evaluate, and iterate on image and video outputs.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation"
+      ]
+    },
+    {
+      "title": "Runway AI Video Creation",
+      "url": "https://academy.runwayml.com/",
+      "content_type": "website",
+      "summary": "Runway Academy tutorials for AI-powered video creation and generative media tools.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://academy.runwayml.com/"
+      ]
+    },
+    {
+      "title": "Source for video generation",
+      "url": "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation",
+      "content_type": "other",
+      "summary": "Citation source for video generation.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation"
+      ]
+    },
+    {
+      "title": "Source for video generation",
+      "url": "https://academy.runwayml.com/",
+      "content_type": "other",
+      "summary": "Citation source for video generation.",
+      "extracted_data": {},
+      "citations": [
+        "https://academy.runwayml.com/"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

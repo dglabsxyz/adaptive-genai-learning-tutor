@@ -1,0 +1,39 @@
+{
+  "entity_type": "topic",
+  "entity_name": "RAG",
+  "entity_slug": "rag",
+  "platform": "news",
+  "query_terms": [
+    "RAG",
+    "LLMs",
+    "vector databases",
+    "embeddings",
+    "AI agents",
+    "AI evaluation"
+  ],
+  "results": [
+    {
+      "title": "The Large Language Model Course",
+      "url": "https://huggingface.co/blog/mlabonne/llm-course",
+      "content_type": "article",
+      "summary": "A Hugging Face blog/course resource collecting topics and roadmaps for getting into LLMs.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://huggingface.co/blog/mlabonne/llm-course"
+      ]
+    },
+    {
+      "title": "Source for RAG",
+      "url": "https://huggingface.co/blog/mlabonne/llm-course",
+      "content_type": "other",
+      "summary": "Citation source for RAG.",
+      "extracted_data": {},
+      "citations": [
+        "https://huggingface.co/blog/mlabonne/llm-course"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

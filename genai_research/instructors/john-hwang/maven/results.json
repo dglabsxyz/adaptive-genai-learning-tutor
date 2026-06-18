@@ -1,0 +1,29 @@
+{
+  "entity_type": "instructor",
+  "entity_name": "John Hwang",
+  "entity_slug": "john-hwang",
+  "platform": "maven",
+  "query_terms": [
+    "John Hwang",
+    "AI agents",
+    "business AI",
+    "AI automation",
+    "sales",
+    "marketing"
+  ],
+  "results": [
+    {
+      "title": "AI Agents for Sales and GTM",
+      "url": "https://maven.com/ai-agent-campus/ai-agents-for-sales-and-go-to-market",
+      "content_type": "course",
+      "summary": "Build AI employees that scale marketing, streamline sales, and increase profits.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/ai-agent-campus/ai-agents-for-sales-and-go-to-market"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

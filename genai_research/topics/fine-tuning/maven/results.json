@@ -1,0 +1,38 @@
+{
+  "entity_type": "topic",
+  "entity_name": "fine-tuning",
+  "entity_slug": "fine-tuning",
+  "platform": "maven",
+  "query_terms": [
+    "fine-tuning",
+    "LLMs",
+    "model customization",
+    "datasets",
+    "AI safety and evaluation"
+  ],
+  "results": [
+    {
+      "title": "Mastering Agentic AI: Certification by The Gen Academy",
+      "url": "https://maven.com/aishwarya-srinivasan/mastering-ai-agents",
+      "content_type": "course",
+      "summary": "A six-week Maven program from The Gen Academy on building and deploying robust agentic AI systems.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/aishwarya-srinivasan/mastering-ai-agents"
+      ]
+    },
+    {
+      "title": "Source for fine-tuning",
+      "url": "https://maven.com/aishwarya-srinivasan/mastering-ai-agents",
+      "content_type": "other",
+      "summary": "Citation source for fine-tuning.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/aishwarya-srinivasan/mastering-ai-agents"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

@@ -151,6 +151,8 @@ def retrieval_evaluation_report(topics: list[str] | None = None) -> dict[str, An
 
 def write_corpus_version_file(output_path: Path) -> dict[str, Any]:
     payload = corpus_version_metadata()
+    if ".." in str(output_path):
+        raise Exception("Invalid file path")
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
     return payload

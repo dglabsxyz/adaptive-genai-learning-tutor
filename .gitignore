@@ -14,3 +14,26 @@ repo/
 data/
 *.log
 *.csv
+
+# Internal planning documents (keep locally, exclude from git)
+Adaptive_Learning_Tutor_Plan.md
+Week3_Course_Summary_and_Project_Planning_Guide.md
+Winning_Week3_Project_Ideas.md
+HANDOFF.md
+PRD.md
+REVIEW.md
+RAILWAY_DEPLOY.md
+Improved_OWASP_Security_Audit_Prompt.md
+
+# Individual audit reports (master report is kept)
+owasp-web-audit-report.md
+owasp-llm-audit-report.md
+owasp-agentic-audit-report.md
+
+# Skill folders (internal tooling)
+LangChain Skill/
+LangGraph Skill/
+LangSmith Skill/
+
+# Frontend build artifacts
+frontend/

@@ -1,4 +1,14 @@
-# Improved OWASP Security Audit Prompt
+# OWASP Security Audit Prompt
+
+A comprehensive prompt for running security audits against web applications, LLM applications, and agentic AI systems using the latest OWASP frameworks.
+
+## Usage
+
+Copy and paste this prompt into Claude Code, Cursor, or any AI coding assistant with file system access to your project.
+
+---
+
+## Prompt
 
 You are my authorized security testing and remediation assistant. Work only on the local project I provide and only in non-production environments. Do not test, scan, attack, crawl, or send malicious payloads to any third-party or production target unless I explicitly provide written authorization and a safe test URL.
 
@@ -6,7 +16,7 @@ I have an OWASP security testing plugin available with capabilities for web appl
 
 Your mission: audit this project against the OWASP frameworks below, in order, then wait for explicit approval before making any remediation changes.
 
-## Phase 0: Scope, Safety, and Source Verification
+### Phase 0: Scope, Safety, and Source Verification
 
 1. Confirm the project path, environment, and authorization scope.
 2. Identify whether the project includes:
@@ -16,18 +26,18 @@ Your mission: audit this project against the OWASP frameworks below, in order, t
 3. Verify the current OWASP category names from authoritative OWASP sources before testing. Use the latest applicable released frameworks unless I explicitly request a specific year.
 4. Create a working branch or restore point before any generated tests or remediation. Do not copy secrets, `.env` files, dependency folders, build artifacts, virtual environments, or database dumps into backups.
 
-## Phase 1: Discovery and Baseline
+### Phase 1: Discovery and Baseline
 
 1. Identify the tech stack, frameworks, entry points, trust boundaries, data stores, auth flows, external integrations, and existing test suite.
 2. Run the existing tests and record the baseline command, pass/fail count, and notable failures.
 3. If no tests exist, do not modify source code yet. Instead, create `security-test-plan.md` describing the minimum regression tests needed before remediation.
 4. Record assumptions, skipped areas, and required credentials or environment variables without exposing secret values.
 
-## Phase 2: Read-Only Sequential Audit
+### Phase 2: Read-Only Sequential Audit
 
 Run read-only analysis in this exact order. Do not edit source code, dependencies, configs, prompts, data, or infrastructure during this phase.
 
-### A. OWASP Top 10 Web Application Security Risks
+#### A. OWASP Top 10 Web Application Security Risks
 
 Use the latest official OWASP Top 10 Web list, currently OWASP Top 10:2025 unless superseded. Include all applicable categories:
 
@@ -44,7 +54,7 @@ Use the latest official OWASP Top 10 Web list, currently OWASP Top 10:2025 unles
 
 Output: `owasp-web-audit-report.md`
 
-### B. OWASP Top 10 for LLM and Generative AI Applications
+#### B. OWASP Top 10 for LLM and Generative AI Applications
 
 Use the latest official OWASP LLM Top 10 list, currently the 2025 list unless superseded. Include all applicable categories:
 
@@ -61,7 +71,7 @@ Use the latest official OWASP LLM Top 10 list, currently the 2025 list unless su
 
 Output: `owasp-llm-audit-report.md`
 
-### C. OWASP Top 10 for Agentic Applications
+#### C. OWASP Top 10 for Agentic Applications
 
 Use the latest official OWASP Agentic Applications list, currently the 2026 list unless superseded. Include all applicable categories:
 
@@ -92,14 +102,14 @@ For every finding, record:
 
 If a category is not applicable, mark it `NOT APPLICABLE` with justification. If safe testing is not possible, mark it `UNTESTED - REQUIRES MANUAL VALIDATION` with justification. Do not run destructive payloads, persistence tests, credential attacks, or production scans.
 
-## Phase 3: Consolidated Risk Analysis
+### Phase 3: Consolidated Risk Analysis
 
 1. Merge the three reports into `master-security-report.md`.
 2. Deduplicate overlapping findings across Web, LLM, and Agentic categories.
 3. Prioritize by severity, exploitability, confidence, and blast radius.
 4. For each finding, include exact change locations, fix approach, risk of functional regression, required tests, and rollback notes.
 
-## Phase 4: Mandatory Approval Gate
+### Phase 4: Mandatory Approval Gate
 
 Stop after presenting `master-security-report.md`. Ask me exactly:
 
@@ -107,7 +117,7 @@ Stop after presenting `master-security-report.md`. Ask me exactly:
 
 Do not proceed to remediation until I explicitly approve one of those options.
 
-## Phase 5: Remediation Protocol, If Approved
+### Phase 5: Remediation Protocol, If Approved
 
 1. Fix only approved findings.
 2. Work one finding at a time.
@@ -120,7 +130,7 @@ Do not proceed to remediation until I explicitly approve one of those options.
 9. For access-control changes, test allowed and denied flows with fresh sessions.
 10. Update `remediation-log.md` after each finding with finding ID, changed files, test results, remaining risk, and rollback status.
 
-## Phase 6: Final Validation
+### Phase 6: Final Validation
 
 After approved remediations:
 
@@ -128,7 +138,7 @@ After approved remediations:
 2. Re-run targeted security checks only on remediated areas.
 3. Generate `final-security-summary.md` listing resolved findings, deferred findings, manual validation items, tests run, and residual risks.
 
-## Safety Overrides
+### Safety Overrides
 
 Stop and ask for human review before making or continuing any change that would:
 
@@ -141,3 +151,11 @@ Stop and ask for human review before making or continuing any change that would:
 - cause cascading failures across unrelated components
 
 Begin with Phase 0 now.
+
+---
+
+## Additional Resources
+
+- [OWASP Top 10 Web](https://owasp.org/Top10/)
+- [OWASP Top 10 for LLM Applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
+- [OWASP Secure Agent Playbook](https://github.com/OWASP/secure-agent-playbook)

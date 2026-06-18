@@ -1,190 +1,365 @@
 # Adaptive GenAI Learning Tutor
 
-Local-first MVP of a source-backed GenAI tutor over `genai_research`.
+A production-ready, AI-powered adaptive learning platform demonstrating enterprise-grade GenAI security, deep agent orchestration, and pedagogically-grounded tutoring.
 
-> **Architecture:** the tutor's `/chat` brain is a **Deep Agent** built on the
-> [`deepagents`](https://github.com/langchain-ai/deepagents) framework — an orchestrator that
-> plans and delegates to specialist subagents, with on-demand skills, cross-session memory, and
-> a human-in-the-loop gate, traced to LangSmith. It requires `QWEN_API_KEY`. To rebuild it from
-> scratch, follow **[`docs/REBUILD_FROM_SCRATCH.md`](docs/REBUILD_FROM_SCRATCH.md)**.
+---
 
-## What Runs Locally
+## Project Overview
 
-- FastAPI backend with tutor endpoints.
-- Read-only ingestion of `genai_research`.
-- Local sparse embeddings plus JSON vector search under `data/vector_index.json`.
-- Typed settings, request IDs, structured logs, local auth/RBAC headers, optional JWT/OIDC auth, rate limits, and append-only audit events.
-- JSON repository interfaces by default, with an optional Supabase REST repository path.
-- **Deep-agent brain (`deepagents`):** orchestrator that plans (`write_todos`) and delegates via `task` to four subagents — diagnostic, path-planner, exercise-author, grader-critic — each with isolated context, focused tools, and on-demand skills.
-- Deterministic, source-backed tools for search, diagnostics, exercises, grading, progress, and recommendations (the LLM drafts; code grades).
-- A `Store` for cross-session `/memories/`, a human-in-the-loop `commit_progress` gate, and SQLite/Postgres checkpoints with an explicit resume API.
-- LangSmith tracing support through environment variables.
-- Vite React tutor workspace with Learner, Educator, Admin, and Sources modes.
-- FastMCP server exposing learner tools plus enterprise intent tools over the same state.
+This project showcases a complete end-to-end implementation of an adaptive learning system that:
 
-## Setup
+1. **Assesses learner knowledge** through diagnostic conversations
+2. **Generates personalized learning paths** based on knowledge gaps
+3. **Creates contextual exercises** grounded in curated source material
+4. **Grades responses** with deterministic rubrics and optional LLM coaching
+5. **Tracks progress** with persistent state and spaced repetition
 
-```bash
-uv sync
-cd frontend
-npm install
+The tutor is backed by a research corpus (`genai_research/`) covering Generative AI topics: RAG, vector databases, prompt engineering, AI agents, MCP, and more.
+
+---
+
+## Architecture Highlights
+
+### Deep Agent Orchestration
+
+The `/chat` endpoint is powered by a **Deep Agent** built on the [`deepagents`](https://github.com/langchain-ai/deepagents) framework:
+
+```
+                    ┌─────────────────────────────────────────┐
+                    │           Orchestrator Agent            │
+                    │  - Plans tasks (write_todos)            │
+                    │  - Delegates to specialists             │
+                    │  - Human-in-the-loop gates              │
+                    └──────────────┬──────────────────────────┘
+                                   │
+         ┌─────────────┬───────────┼───────────┬─────────────┐
+         ▼             ▼           ▼           ▼             ▼
+   ┌──────────┐ ┌───────────┐ ┌─────────┐ ┌─────────┐ ┌──────────┐
+   │Diagnostic│ │   Path    │ │Exercise │ │ Grader  │ │  Memory  │
+   │  Agent   │ │ Planner   │ │ Author  │ │ Critic  │ │  Store   │
+   └──────────┘ └───────────┘ └─────────┘ └─────────┘ └──────────┘
 ```
 
-Copy environment defaults if useful:
+- **Isolated contexts** per subagent for focused tool access
+- **On-demand skills** loaded dynamically
+- **Cross-session memory** via `/memories/` store
+- **Checkpointed state** with explicit resume API
+
+### Multi-Tenant Security
+
+- JWT/OIDC authentication with RS256+ algorithms only (HS256 blocked)
+- Per-tenant memory namespace isolation
+- Per-user daily token budgets
+- Fixed-window rate limiting by action type
+- HMAC-SHA256 state integrity protection
+- Comprehensive audit logging
+
+### Source-Grounded Learning
+
+All tutor responses cite their sources:
+
+```json
+{
+  "answer": "RAG retrieves relevant documents using vector similarity...",
+  "sources": [
+    {
+      "title": "RAG Fundamentals",
+      "path": "genai_research/topics/rag/topic_summary.json",
+      "citations": ["https://arxiv.org/abs/2005.11401"]
+    }
+  ],
+  "grounding_score": 0.92
+}
+```
+
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|-------|------------|
+| **Backend** | FastAPI, Python 3.11+, Pydantic |
+| **Agent Framework** | deepagents (LangChain/LangGraph) |
+| **LLM Provider** | Qwen (DashScope) / Deterministic fallback |
+| **Vector Search** | Local sparse embeddings / pgvector |
+| **State Management** | SQLite / PostgreSQL checkpoints |
+| **Frontend** | Vite + React + Tailwind CSS |
+| **MCP Server** | FastMCP for enterprise tool integration |
+| **Deployment** | Railway / Docker / Supabase |
+
+---
+
+## Key Features Demo
+
+### 1. Diagnostic Assessment
+
+The tutor evaluates learner knowledge across topic areas:
 
 ```bash
+curl -X POST http://localhost:8000/chat \
+  -H "Content-Type: application/json" \
+  -H "x-tutor-user-id: demo-learner" \
+  -d '{"learner_id": "demo-learner", "message": "I want to learn AI agents"}'
+```
+
+Response includes skill assessment:
+```json
+{
+  "skills": {
+    "rag": {"level": "developing", "confidence": 0.7},
+    "mcp": {"level": "exposure", "confidence": 0.5}
+  }
+}
+```
+
+### 2. Personalized Learning Path
+
+```bash
+curl http://localhost:8000/path/demo-learner
+```
+
+Returns a sequenced study plan grounded in the corpus.
+
+### 3. Exercise Generation & Grading
+
+```bash
+# Generate an exercise
+curl -X POST http://localhost:8000/exercise \
+  -H "Content-Type: application/json" \
+  -d '{"learner_id": "demo-learner", "topic": "rag"}'
+
+# Submit an answer
+curl -X POST http://localhost:8000/answer \
+  -H "Content-Type: application/json" \
+  -d '{"learner_id": "demo-learner", "exercise_id": "...", "answer": "..."}'
+```
+
+### 4. Progress Tracking
+
+```bash
+curl http://localhost:8000/progress/demo-learner
+```
+
+---
+
+## Quick Start
+
+### Prerequisites
+
+- Python 3.11+
+- Node.js 18+
+- [uv](https://docs.astral.sh/uv/) package manager
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/dglabsxyz/adaptive-genai-learning-tutor.git
+cd adaptive-genai-learning-tutor
+
+# Install Python dependencies
+uv sync
+
+# Install frontend dependencies
+cd tutor-ui && npm install && cd ..
+
+# Copy environment template
 cp .env.example .env
 ```
 
-The deep-agent `/chat` requires `QWEN_API_KEY` (DashScope). The rest of the local MVP — corpus
-search, diagnostics, grading, progress, and the REST endpoints — runs without secrets.
-
-## Environment Variables
-
-- `GENAI_RESEARCH_DIR`: optional override for the corpus path. Defaults to `./genai_research`.
-- `TUTOR_DATA_DIR`: optional override for local learner, exercise, and vector data. Defaults to `./data`.
-- `TUTOR_ENV`: `local` by default. Set to `production` to remove wildcard CORS defaults.
-- `TUTOR_AUTH_MODE`: `local` by default. Local mode accepts `x-tutor-user-id`, `x-tutor-tenant-id`, and `x-tutor-role` headers. Use `jwt` or `oidc` for production Bearer-token validation.
-- `TUTOR_AUTH_JWT_SECRET` / `TUTOR_AUTH_JWT_PUBLIC_KEY`: signing material for `TUTOR_AUTH_MODE=jwt`.
-- `TUTOR_AUTH_ISSUER` and `TUTOR_AUTH_AUDIENCE`: issuer/audience checks for JWT or OIDC tokens.
-- `TUTOR_OIDC_DISCOVERY_URL` or `TUTOR_OIDC_JWKS_URL`: OIDC key discovery. JWKS responses are cached for key rotation.
-- `TUTOR_AUTH_USER_CLAIM`, `TUTOR_AUTH_TENANT_CLAIM`, `TUTOR_AUTH_ROLE_CLAIM`: token claim paths used to build the tutor session.
-- `TUTOR_AUTH_REQUIRE_TENANT_CLAIM`: require a tenant claim. Defaults to true in production.
-- `TUTOR_GRAPH_CHECKPOINTER_BACKEND`: `sqlite` by default. Set `memory` only for throwaway tests.
-- `TUTOR_RATE_LIMIT_ENABLED`: enables per-tenant/user fixed-window limits. Defaults to `true`.
-- `TUTOR_RATE_LIMIT_BACKEND`: `sqlite` by default. Set `memory` only for throwaway tests.
-- `TUTOR_RATE_LIMIT_CHAT`, `TUTOR_RATE_LIMIT_EXERCISE`, `TUTOR_RATE_LIMIT_ANSWER`, `TUTOR_RATE_LIMIT_SOURCE_SEARCH`, `TUTOR_RATE_LIMIT_MCP_TOOL`: per-window limits for high-volume actions.
-- `TUTOR_REPOSITORY_BACKEND`: `json` by default. Set to `supabase` only with Supabase env vars.
-- `TUTOR_VECTOR_PROVIDER`: `local` by default. Set to `pgvector` only after applying the optional pgvector migration.
-- `TUTOR_VECTOR_TENANT_ID`: Supabase tenant UUID used for corpus embeddings when `TUTOR_VECTOR_PROVIDER=pgvector`.
-- `TUTOR_LLM_PROVIDER`: `deterministic` by default.
-- `LANGSMITH_TRACING`: set to `true` to enable LangSmith-compatible tracing.
-- `LANGSMITH_API_KEY`: LangSmith API key.
-- `LANGSMITH_PROJECT`: project name, for example `adaptive-genai-learning-tutor`.
-- `SUPABASE_URL`: optional production persistence setting.
-- `SUPABASE_SERVICE_ROLE_KEY`: optional production persistence setting.
-- `VITE_API_URL`: frontend API URL. Defaults to `http://localhost:8000`.
-
-## Run
-
-Backend:
+### Running Locally
 
 ```bash
+# Terminal 1: Backend
 uv run uvicorn backend.main:app --reload --host 127.0.0.1 --port 8000
-```
 
-Frontend:
-
-```bash
-cd frontend
-npm run dev
+# Terminal 2: Frontend
+cd tutor-ui && npm run dev
 ```
 
 Open:
+- Frontend: http://localhost:5173
+- API Docs: http://localhost:8000/docs
+- Health Check: http://localhost:8000/health
 
-- Backend health: `http://127.0.0.1:8000/health`
-- Frontend: `http://127.0.0.1:5173`
-- API docs: `http://127.0.0.1:8000/docs`
-
-## Test and Checks
+### Running Tests
 
 ```bash
+# All tests
 uv run pytest
-uv run python scripts/api_contract_smoke.py
-uv run python scripts/corpus_immutability_check.py
-uv run python scripts/demo_flow.py
-uv run python mcp_server/server.py --smoke
-cd frontend && npm test
-cd frontend && npm run test:e2e
-cd frontend && npm run build
-cd frontend && npm audit --audit-level=high
-```
 
-The demo script proves diagnostic, path recommendation, exercise generation, answer grading, progress persistence, and shared state for MCP.
-
-Run the consolidated local gate:
-
-```bash
+# Full check suite
 uv run python scripts/check_all.py
 ```
 
-Operational scripts:
+---
 
-```bash
-uv run python scripts/rebuild_index.py
-uv run python scripts/export_state.py
-uv run python scripts/backup_state.py --restore-drill
-uv run python scripts/restore_state.py --input data/state_export.json --dry-run
-uv run python scripts/migrate_json_to_postgres.py
-uv run python scripts/review_scheduler.py
+## Project Structure
+
+```
+├── backend/                 # FastAPI application
+│   ├── main.py             # App entry, middleware, routes
+│   ├── agent.py            # Deep agent orchestration
+│   ├── agent_tools.py      # Subagent tool definitions
+│   ├── corpus.py           # Source document management
+│   ├── auth.py             # JWT/OIDC authentication
+│   ├── input_filter.py     # Prompt injection detection
+│   ├── token_budget.py     # Per-user token limits
+│   ├── state_integrity.py  # HMAC state protection
+│   └── ...
+├── tutor-ui/               # React frontend
+│   └── src/
+│       ├── App.jsx         # Main application
+│       ├── TutorChat.jsx   # Chat interface
+│       └── ...
+├── mcp_server/             # MCP tool server
+│   └── server.py           # FastMCP implementation
+├── genai_research/         # Knowledge corpus
+│   └── topics/             # Topic summaries and citations
+├── tests/                  # Test suite
+├── scripts/                # Operational utilities
+└── docs/                   # Additional documentation
 ```
 
-## Demo Flow
+---
 
-1. In the frontend chat, send `I want to learn AI agents.`
-2. Confirm the diagnostic marks RAG as developing and MCP as exposure.
-3. Click `Path` to refresh the source-backed study plan.
-4. Click `Exercise` to generate a RAG exercise.
-5. Submit an answer such as:
+## Security Architecture
 
-```text
-I would retrieve relevant local corpus records with embeddings and vector search, ground the answer in source snippets and citations, preserve uncertainty for missing fields, and evaluate answer faithfulness plus retrieval quality.
-```
+This project implements enterprise-grade security following three OWASP frameworks:
 
-6. Check the grade, updated progress, and visible source references.
-7. Click the progress refresh button or call `GET /progress/demo-learner`.
-8. Run an MCP tool such as `tutor_view_progress` for `demo-learner`; it reads the same local state.
+### Frameworks Applied
 
-Interrupted chat turns return `needs_clarification: true` with a `thread_id`. Resume the same checkpoint with:
+| Framework | Version | Focus |
+|-----------|---------|-------|
+| **OWASP Top 10 Web** | 2025 | Traditional web security |
+| **OWASP Top 10 LLM** | 2025 | LLM-specific vulnerabilities |
+| **OWASP Agentic AI** | 2026 | Multi-agent security |
+
+### Key Security Controls
+
+| Control | Implementation |
+|---------|----------------|
+| **Prompt Injection Defense** | 30+ regex patterns in `input_filter.py` |
+| **JWT Security** | RS256+ only, HS256 blocked (WEB-023) |
+| **Memory Isolation** | Per-tenant namespace prefixes (AGT-006) |
+| **Token Budgets** | Daily per-user limits (LLM-029) |
+| **State Integrity** | HMAC-SHA256 signatures (AGT-008) |
+| **Audit Logging** | Security event tracking (WEB-009) |
+| **Rate Limiting** | Per-action fixed windows |
+
+### Security Testing
+
+Run your own OWASP security audit using the provided prompt:
 
 ```bash
-curl -X POST http://127.0.0.1:8000/chat/resume \
-  -H 'Content-Type: application/json' \
-  -H 'x-tutor-user-id: demo-learner' \
-  -H 'x-tutor-tenant-id: local' \
-  -H 'x-tutor-role: learner' \
-  -d '{"learner_id":"demo-learner","thread_id":"demo-learner","resume":{"answer":"Retrieve, cite, preserve unknowns, and evaluate faithfulness."}}'
+# Use OWASP_Security_Audit_Prompt.md with Claude Code or similar
 ```
 
-## MCP
+See [SECURITY.md](SECURITY.md) for vulnerability reporting.
 
-Run the MCP server:
+---
+
+## MCP Server Integration
+
+The tutor exposes tools via Model Context Protocol for enterprise AI assistants:
 
 ```bash
+# Run MCP server
 uv run python mcp_server/server.py
-```
 
-Run a reproducible smoke check without launching an MCP client:
-
-```bash
+# Smoke test
 uv run python mcp_server/server.py --smoke
 ```
 
-Tools exposed:
+### Available Tools
 
-- `tutor_search_course_material`
-- `tutor_assess_skills`
-- `tutor_get_next_exercise`
-- `tutor_submit_answer`
-- `tutor_view_progress`
-- `tutor_recommend_path`
-- `tutor_review_cohort_progress`
-- `tutor_assign_learning_path`
-- `tutor_audit_source_grounding`
-- `tutor_escalate_learning_gap`
+| Tool | Role | Description |
+|------|------|-------------|
+| `tutor_search_course_material` | All | Search the knowledge corpus |
+| `tutor_assess_skills` | All | Run diagnostic assessment |
+| `tutor_get_next_exercise` | All | Generate personalized exercise |
+| `tutor_submit_answer` | All | Submit and grade answer |
+| `tutor_view_progress` | All | View learner progress |
+| `tutor_recommend_path` | All | Get personalized path |
+| `tutor_review_cohort_progress` | Educator+ | Cohort analytics |
+| `tutor_assign_learning_path` | Educator+ | Assign paths to learners |
+| `tutor_audit_source_grounding` | Admin | Verify citation quality |
+| `tutor_escalate_learning_gap` | Admin | Flag systemic gaps |
 
-MCP tools accept optional `tenant_id`, `user_id`, and `role` arguments. Learner role calls are scoped to their own `learner_id`; educator/admin calls can use cohort and governance tools.
+---
 
-The root `.mcp.json` registers the server for MCP-capable clients that support project config files.
+## Environment Variables
 
-## Optional Railway
+### Required for Deep Agent
 
-`railway.json` and `Procfile` run the FastAPI backend. Set required environment variables in Railway, especially `GENAI_RESEARCH_DIR` if the corpus path differs and any LangSmith/Supabase values you choose to enable.
+```bash
+QWEN_API_KEY=your-dashscope-api-key
+```
 
-## Optional Supabase
+### Optional Configuration
 
-Local JSON storage is the default. `backend/supabase_store.py` only enables Supabase when env vars are present, and `supabase/schema.sql` sketches production tables plus pgvector. The app does not require Supabase for local demos.
+```bash
+# Environment
+TUTOR_ENV=local                    # local | production
 
-The production schema snapshot is in `supabase/schema.sql`; migration files live under `supabase/migrations/`. The pgvector table and `match_corpus_embeddings` RPC are intentionally optional and should only be applied when `TUTOR_VECTOR_PROVIDER=pgvector`.
+# Authentication
+TUTOR_AUTH_MODE=local              # local | jwt | oidc
+TUTOR_AUTH_JWT_PUBLIC_KEY=...      # RS256 public key
+TUTOR_AUTH_ISSUER=https://...      # JWT issuer
+TUTOR_AUTH_AUDIENCE=adaptive-tutor # JWT audience
 
-Deployment notes and the environment matrix are in `docs/deployment.md`.
+# Rate Limiting
+TUTOR_RATE_LIMIT_ENABLED=true
+TUTOR_TOKEN_BUDGET_DAILY_LIMIT=100000
+
+# Persistence
+TUTOR_REPOSITORY_BACKEND=json      # json | supabase
+TUTOR_VECTOR_PROVIDER=local        # local | pgvector
+
+# Tracing
+LANGSMITH_TRACING=true
+LANGSMITH_API_KEY=your-key
+LANGSMITH_PROJECT=adaptive-tutor
+```
+
+---
+
+## Deployment
+
+### Railway
+
+```bash
+railway up
+```
+
+See `railway.json` and `Procfile` for configuration.
+
+### Docker
+
+```bash
+docker build -t adaptive-tutor .
+docker run -p 8000:8000 adaptive-tutor
+```
+
+---
+
+## Further Reading
+
+- [Deployment Guide](docs/deployment.md) - Production deployment details
+- [Rebuild From Scratch](docs/REBUILD_FROM_SCRATCH.md) - Deep agent architecture
+- [SECURITY.md](SECURITY.md) - Security policy and reporting
+- [OWASP Secure Agent Playbook](https://github.com/OWASP/secure-agent-playbook) - Agentic AI security reference
+
+---
+
+## License
+
+MIT License - See LICENSE file for details.
+
+---
+
+## Acknowledgments
+
+- [OWASP Foundation](https://owasp.org/) for security frameworks
+- [LangChain](https://langchain.com/) for deepagents framework
+- [Anthropic](https://anthropic.com/) for Claude Code security audit assistance

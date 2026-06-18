@@ -52,7 +52,8 @@ def main() -> None:
     progress = client.get("/progress/api-smoke-learner", headers=headers)
     progress.raise_for_status()
     denied = client.get("/admin/integrations", headers=headers)
-    assert denied.status_code == 403
+    if denied.status_code != 403:
+        raise AssertionError
     admin = client.get(
         "/admin/integrations",
         headers={**headers, "x-tutor-user-id": "admin-local", "x-tutor-role": "admin"},

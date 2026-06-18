@@ -94,6 +94,8 @@ def sign_file(path: Path) -> None:
         return
 
     signed = sign_json(data)
+    if ".." in str(path):
+        raise Exception("Invalid file path")
     with open(path, "w", encoding="utf-8") as f:
         json.dump(signed, f, indent=2)
 
@@ -106,6 +108,8 @@ def verify_file(path: Path, *, strict: bool = False) -> tuple[bool, dict[str, An
     if not path.exists():
         return True, None
 
+    if ".." in str(path):
+        raise Exception("Invalid file path")
     try:
         with open(path, "r", encoding="utf-8") as f:
             data = json.load(f)

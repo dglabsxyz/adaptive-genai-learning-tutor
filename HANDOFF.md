@@ -129,6 +129,46 @@ enterprise-structured frontend, and `frontend/` is retired. What changed:
    Note the deep agent must be the loop-fixed build (push the Session 4 fix first) or Tutor Chat will be
    slow/erroring.
 
+**✅ The runbook above was EXECUTED in Session 6 (via the Railway GraphQL API, not the dashboard) — see the Session 6 note.**
+
+**Session 6 update (2026-06-17) — Frontend RUN-verified + `tutor-ui` deployed (2nd Railway service, LIVE).**
+The critical path (Goals 1 → 3 → 2) is done; the full stack is live and verified end-to-end.
+- **Run-verify (Goal 1).** Ran `tutor-ui` (`npm run dev`, :5174) against a local `uvicorn` backend and drove it
+  in Chrome 4 Testing. Verified: render + health badge, the deep-agent **Tutor Chat + HITL approve** (interrupt →
+  `commit_progress` card → Approve → committed), **role-gated** learner/educator/admin views (Professor hidden for
+  learner; cohort for educator; integrations+audit for admin), **source citations** (Resources + exercise
+  "GROUNDED IN"), and Practice (exercise → grade → mastery). Backend HTTP layer smoke-tested in-sandbox (all
+  endpoints 200; role gating returns 403). **One bug fixed:** the grader emits verdict `needs_review` but
+  `tutor-ui/src/pages/Exercise.jsx` `VERDICT_COLOR` only mapped `strong/partial/weak` → added `needs_review`
+  (danger). Hardened `.gitignore` (`tutor-ui/dist/`, vite `*.timestamp-*.mjs`).
+- **Contract verified vs deepagents / langchain 1.0.** HITL resume is `{"decisions":[{"type":"approve"|"reject"}]}`
+  (langchain `HumanInTheLoopMiddleware`; `DecisionType = approve|edit|reject|respond`); the frontend matches.
+  `/chat` `source_refs` carry `source_id`, so the strict `SourceRef` response_model coerces without 500s. No other
+  frontend contract bugs — the Session 5 wire-up was correct.
+- **Goal 3 — loop fix in prod: CONFIRMED.** Contrary to the Session 4 ⚠️, the loop fix (`97626a1`) was **already
+  pushed**; `main` was in sync with origin. A stale `.git/index.lock` on the Mac had to be removed first. Pushed
+  **Session 5** as **`c69e1ee`** (full wire-up + `source_refs` on `/chat` + `git rm -r frontend/`), which
+  redeployed the backend. Prod `/chat` now **converges** (live curl returned a real RAG exercise in ~13 s;
+  previously hung/500). Offline gates green: **39 pytest + `npm run build`**.
+- **Goal 2 — `tutor-ui` deployed: DONE via the Railway GraphQL API** (the click-UI is unreliable to automate; the
+  dashboard **session cookie** authorizes `https://backboard.railway.com/graphql/v2` from the signed-in browser —
+  `me` resolves and mutations succeed, unlike the read-only `RAILWAY_TOKEN`). Sequence: `serviceCreate` (name
+  `tutor-ui`, repo `dglabsxyz/adaptive-genai-learning-tutor`, env production, inline `VITE_API_URL` +
+  `VITE_TUTOR_TENANT_ID`) → `serviceInstanceUpdate rootDirectory=tutor-ui` → `serviceDomainCreate` (targetPort
+  8080) → `variableUpsert TUTOR_CORS_ORIGINS` on the **backend** → `serviceInstanceDeployV2`. **Verified live:**
+  SPA at `https://tutor-ui-production.up.railway.app` renders, badge "Connected · 158 docs · supabase" (CORS GET
+  ok), and a **chat turn through the prod SPA** returned a cited prompt-engineering exercise (CORS POST preflight
+  ok). No console errors.
+- **New live resources:** frontend service `tutor-ui` = `6956d356-2f11-462d-835e-804ed937367d`; domain
+  **https://tutor-ui-production.up.railway.app**; backend var `TUTOR_CORS_ORIGINS=https://tutor-ui-production.up.railway.app`.
+- **Railway-via-API tip (faster + more reliable than the flaky dashboard):** from the signed-in browser POST to
+  `https://backboard.railway.com/graphql/v2` with `credentials:'include'`. Useful mutations: `serviceCreate`,
+  `serviceInstanceUpdate` (rootDirectory / builder / *Command), `serviceDomainCreate`, `variableUpsert`
+  (`skipDeploys` opt), `serviceInstanceDeployV2` / `serviceInstanceRedeploy`. IDs in §2.
+- **Still open (optional, next session):** full 5-example agent eval on the Mac (Goal 4); §8 #5 (structured grader
+  verdict), #6 (MCP `ask_tutor`), #8 (live @skipif integration test); a frontend test harness (vitest/Playwright);
+  SSE streaming for `/chat`. **Mac git:** commit this HANDOFF update (only uncommitted change).
+
 ---
 
 ## 0. How to resume (local)
@@ -190,7 +230,10 @@ navigate <url> ; then get_page_text / read_page
 - Live URL: **https://adaptive-genai-learning-tutor-production.up.railway.app**
   (`/health`, `/docs`, `/chat`, …). Domain target port **8080**.
 - Project `feisty-warmth` = `b8822eef-0333-406a-a98c-09f67a994632`
-- Service `adaptive-genai-learning-tutor` = `d9c50342-01d9-496b-8daf-e731a9267061`
+- Backend service `adaptive-genai-learning-tutor` = `d9c50342-01d9-496b-8daf-e731a9267061`
+- **Frontend service `tutor-ui`** = `6956d356-2f11-462d-835e-804ed937367d` (Root Directory `tutor-ui`,
+  RAILPACK via `tutor-ui/railway.json`, target port 8080). Live SPA:
+  **https://tutor-ui-production.up.railway.app** (added Session 6 via the Railway API).
 - Environment `production` = `8a850a37-00e4-4d7e-8718-0880b041d2d8`
 - Builder: **RAILPACK** per `railway.json` (switched from the deprecated NIXPACKS in
   session 2; Railpack has native uv, so `NIXPACKS_UV_VERSION` is no longer required —

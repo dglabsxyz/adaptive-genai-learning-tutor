@@ -1713,8 +1713,14 @@ def course_summary(c):
 
 
 def write_json(path: Path, payload):
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(payload, indent=2, ensure_ascii=True) + "\n", encoding="utf-8")
+    base_dir = BASE.resolve()
+    resolved_path = path.resolve()
+    try:
+        resolved_path.relative_to(base_dir)
+    except ValueError:
+        raise Exception("Invalid file path")
+    resolved_path.parent.mkdir(parents=True, exist_ok=True)
+    resolved_path.write_text(json.dumps(payload, indent=2, ensure_ascii=True) + "\n", encoding="utf-8")
 
 
 def platform_results_payload(entity_type, entity_name, entity_slug, platform, query_terms, records):

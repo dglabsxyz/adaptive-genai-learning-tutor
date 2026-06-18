@@ -1,0 +1,29 @@
+{
+  "entity_type": "course",
+  "entity_name": "Search in the LLM Era for AI Engineers",
+  "entity_slug": "search-in-the-llm-era-for-ai-engineers",
+  "platform": "maven",
+  "query_terms": [
+    "Search in the LLM Era for AI Engineers",
+    "RAG",
+    "search",
+    "vector databases",
+    "AI evaluation",
+    "multimodal AI"
+  ],
+  "results": [
+    {
+      "title": "Search in the LLM Era for AI Engineers",
+      "url": "https://maven.com/nirantk/search-for-rag",
+      "content_type": "course",
+      "summary": "A six-weekend instructor-led course and live practice for senior engineers building modern search and RAG systems.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/nirantk/search-for-rag"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

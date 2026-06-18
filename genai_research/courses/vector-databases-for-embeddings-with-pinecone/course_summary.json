@@ -1,0 +1,55 @@
+{
+  "course_name": "Vector Databases for Embeddings with Pinecone",
+  "course_slug": "vector-databases-for-embeddings-with-pinecone",
+  "instructor_names": [
+    "DataCamp Team"
+  ],
+  "instructor_slugs": [
+    "datacamp-team"
+  ],
+  "platform": "DataCamp",
+  "course_url": "https://www.datacamp.com/courses/vector-databases-for-embeddings-with-pinecone",
+  "topic_tags": [
+    "RAG",
+    "vector databases",
+    "embeddings"
+  ],
+  "description": "A DataCamp course on using Pinecone to store, manipulate, and query embedding vectors.",
+  "syllabus": [],
+  "target_audience": [],
+  "prerequisites": [],
+  "duration": null,
+  "format": "Interactive course",
+  "price": {
+    "amount": null,
+    "currency": null,
+    "raw": "DataCamp subscription"
+  },
+  "rating": {
+    "value": null,
+    "count": null,
+    "raw": null
+  },
+  "certificate": null,
+  "enrollment_status": null,
+  "last_updated": null,
+  "citations": [
+    "https://www.datacamp.com/courses/vector-databases-for-embeddings-with-pinecone"
+  ],
+  "source_records": [
+    {
+      "platform": "DataCamp",
+      "url": "https://www.datacamp.com/courses/vector-databases-for-embeddings-with-pinecone",
+      "title": "Vector Databases for Embeddings with Pinecone",
+      "summary": "A DataCamp course on using Pinecone to store, manipulate, and query embedding vectors.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.datacamp.com/courses/vector-databases-for-embeddings-with-pinecone"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

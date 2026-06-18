@@ -1,0 +1,343 @@
+{
+  "entity_type": "topic",
+  "entity_name": "LLMs",
+  "entity_slug": "llms",
+  "platform": "website",
+  "query_terms": [
+    "LLMs",
+    "prompt engineering",
+    "fine-tuning",
+    "RAG",
+    "AI agents",
+    "context engineering"
+  ],
+  "results": [
+    {
+      "title": "AI Agents Course",
+      "url": "https://huggingface.co/learn/agents-course/unit0/introduction",
+      "content_type": "course",
+      "summary": "A free Hugging Face course from beginner to expert on understanding, using, and building AI agents.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://huggingface.co/learn/agents-course/unit0/introduction"
+      ]
+    },
+    {
+      "title": "LLM Course",
+      "url": "https://huggingface.co/learn/llm-course/en/chapter1/1",
+      "content_type": "course",
+      "summary": "A Hugging Face course on large language models and NLP using libraries from the Hugging Face ecosystem.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://huggingface.co/learn/llm-course/en/chapter1/1"
+      ]
+    },
+    {
+      "title": "Diffusion Course",
+      "url": "https://huggingface.co/learn",
+      "content_type": "course",
+      "summary": "A Hugging Face learning catalog course on diffusion models and image-generation workflows.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://huggingface.co/learn"
+      ]
+    },
+    {
+      "title": "Context Course",
+      "url": "https://huggingface.co/learn",
+      "content_type": "course",
+      "summary": "A Hugging Face learning catalog course on context engineering for code and AI workflows.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://huggingface.co/learn"
+      ]
+    },
+    {
+      "title": "Generative AI with Large Language Models",
+      "url": "https://www.deeplearning.ai/courses/generative-ai-with-llms",
+      "content_type": "course",
+      "summary": "A DeepLearning.AI course on the generative AI lifecycle, transformer architecture, training, tuning, inference, and LLM-powered applications.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.deeplearning.ai/courses/generative-ai-with-llms"
+      ]
+    },
+    {
+      "title": "Retrieval Augmented Generation (RAG)",
+      "url": "https://www.deeplearning.ai/courses/retrieval-augmented-generation",
+      "content_type": "course",
+      "summary": "A DeepLearning.AI course on designing, building, deploying, and evaluating production-ready RAG applications.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.deeplearning.ai/courses/retrieval-augmented-generation"
+      ]
+    },
+    {
+      "title": "Generative AI for Everyone",
+      "url": "https://www.deeplearning.ai/courses/generative-ai-for-everyone",
+      "content_type": "course",
+      "summary": "A DeepLearning.AI course by Andrew Ng about how generative AI works, what it can do, and how to use it in work and business.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.deeplearning.ai/courses/generative-ai-for-everyone"
+      ]
+    },
+    {
+      "title": "Practical Deep Learning for Coders",
+      "url": "https://course.fast.ai/",
+      "content_type": "course",
+      "summary": "A free fast.ai course for coders learning practical deep learning.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://course.fast.ai/"
+      ]
+    },
+    {
+      "title": "Beginner: Introduction to Generative AI",
+      "url": "https://www.skills.google/paths/118",
+      "content_type": "course",
+      "summary": "A Google Skills learning path covering generative AI concepts, LLM fundamentals, and responsible AI principles.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://www.skills.google/paths/118"
+      ]
+    },
+    {
+      "title": "Introduction to Generative AI",
+      "url": "https://www.coursera.org/learn/introduction-to-generative-ai",
+      "content_type": "course",
+      "summary": "A Google Cloud Coursera microlearning course explaining what generative AI is, how it is used, and how it differs from traditional ML.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.coursera.org/learn/introduction-to-generative-ai"
+      ]
+    },
+    {
+      "title": "Generative AI and Prompt Engineering",
+      "url": "https://www.coursera.org/learn/generative-ai--prompt-engineering",
+      "content_type": "course",
+      "summary": "A Coursera course providing foundational knowledge of generative AI concepts, foundation models, and prompt engineering techniques.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.coursera.org/learn/generative-ai--prompt-engineering"
+      ]
+    },
+    {
+      "title": "LLM Engineering: Prompting, Fine-Tuning, Optimization and RAG",
+      "url": "https://www.coursera.org/specializations/llm-engineering-prompting-fine-tuning-optimization-rag",
+      "content_type": "course",
+      "summary": "A Coursera specialization on end-to-end LLM engineering, prompt design, evaluation, fine-tuning, optimization, and RAG.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.coursera.org/specializations/llm-engineering-prompting-fine-tuning-optimization-rag"
+      ]
+    },
+    {
+      "title": "Introduction to Generative AI and Agents",
+      "url": "https://learn.microsoft.com/en-us/training/modules/fundamentals-generative-ai/",
+      "content_type": "course",
+      "summary": "A Microsoft Learn module on generative AI fundamentals, LLMs, prompts, and AI agents.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://learn.microsoft.com/en-us/training/modules/fundamentals-generative-ai/"
+      ]
+    },
+    {
+      "title": "Source for LLMs",
+      "url": "https://huggingface.co/learn/llm-course/en/chapter1/1",
+      "content_type": "other",
+      "summary": "Citation source for LLMs.",
+      "extracted_data": {},
+      "citations": [
+        "https://huggingface.co/learn/llm-course/en/chapter1/1"
+      ]
+    },
+    {
+      "title": "Source for LLMs",
+      "url": "https://www.deeplearning.ai/courses/generative-ai-with-llms",
+      "content_type": "other",
+      "summary": "Citation source for LLMs.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.deeplearning.ai/courses/generative-ai-with-llms"
+      ]
+    },
+    {
+      "title": "Source for LLMs",
+      "url": "https://huggingface.co/learn/agents-course/unit0/introduction",
+      "content_type": "other",
+      "summary": "Citation source for LLMs.",
+      "extracted_data": {},
+      "citations": [
+        "https://huggingface.co/learn/agents-course/unit0/introduction"
+      ]
+    },
+    {
+      "title": "Source for LLMs",
+      "url": "https://huggingface.co/learn",
+      "content_type": "other",
+      "summary": "Citation source for LLMs.",
+      "extracted_data": {},
+      "citations": [
+        "https://huggingface.co/learn"
+      ]
+    },
+    {
+      "title": "Source for LLMs",
+      "url": "https://www.coursera.org/learn/generative-ai-with-llms",
+      "content_type": "other",
+      "summary": "Citation source for LLMs.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.coursera.org/learn/generative-ai-with-llms"
+      ]
+    },
+    {
+      "title": "Source for LLMs",
+      "url": "https://www.deeplearning.ai/courses/retrieval-augmented-generation",
+      "content_type": "other",
+      "summary": "Citation source for LLMs.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.deeplearning.ai/courses/retrieval-augmented-generation"
+      ]
+    },
+    {
+      "title": "Source for LLMs",
+      "url": "https://www.coursera.org/learn/retrieval-augmented-generation-rag",
+      "content_type": "other",
+      "summary": "Citation source for LLMs.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.coursera.org/learn/retrieval-augmented-generation-rag"
+      ]
+    },
+    {
+      "title": "Source for LLMs",
+      "url": "https://www.deeplearning.ai/courses/generative-ai-for-everyone",
+      "content_type": "other",
+      "summary": "Citation source for LLMs.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.deeplearning.ai/courses/generative-ai-for-everyone"
+      ]
+    },
+    {
+      "title": "Source for LLMs",
+      "url": "https://www.anthropic.com/learn",
+      "content_type": "other",
+      "summary": "Citation source for LLMs.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.anthropic.com/learn"
+      ]
+    },
+    {
+      "title": "Source for LLMs",
+      "url": "https://developers.openai.com/cookbook",
+      "content_type": "other",
+      "summary": "Citation source for LLMs.",
+      "extracted_data": {},
+      "citations": [
+        "https://developers.openai.com/cookbook"
+      ]
+    },
+    {
+      "title": "Source for LLMs",
+      "url": "https://course.fast.ai/",
+      "content_type": "other",
+      "summary": "Citation source for LLMs.",
+      "extracted_data": {},
+      "citations": [
+        "https://course.fast.ai/"
+      ]
+    },
+    {
+      "title": "Source for LLMs",
+      "url": "https://www.skills.google/paths/118",
+      "content_type": "other",
+      "summary": "Citation source for LLMs.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.skills.google/paths/118"
+      ]
+    },
+    {
+      "title": "Source for LLMs",
+      "url": "https://www.coursera.org/learn/introduction-to-generative-ai",
+      "content_type": "other",
+      "summary": "Citation source for LLMs.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.coursera.org/learn/introduction-to-generative-ai"
+      ]
+    },
+    {
+      "title": "Source for LLMs",
+      "url": "https://www.skills.google/paths/118/course_templates/536",
+      "content_type": "other",
+      "summary": "Citation source for LLMs.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.skills.google/paths/118/course_templates/536"
+      ]
+    },
+    {
+      "title": "Source for LLMs",
+      "url": "https://www.coursera.org/learn/generative-ai--prompt-engineering",
+      "content_type": "other",
+      "summary": "Citation source for LLMs.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.coursera.org/learn/generative-ai--prompt-engineering"
+      ]
+    },
+    {
+      "title": "Source for LLMs",
+      "url": "https://www.coursera.org/specializations/llm-engineering-prompting-fine-tuning-optimization-rag",
+      "content_type": "other",
+      "summary": "Citation source for LLMs.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.coursera.org/specializations/llm-engineering-prompting-fine-tuning-optimization-rag"
+      ]
+    },
+    {
+      "title": "Source for LLMs",
+      "url": "https://learn.microsoft.com/en-us/training/modules/fundamentals-generative-ai/",
+      "content_type": "other",
+      "summary": "Citation source for LLMs.",
+      "extracted_data": {},
+      "citations": [
+        "https://learn.microsoft.com/en-us/training/modules/fundamentals-generative-ai/"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

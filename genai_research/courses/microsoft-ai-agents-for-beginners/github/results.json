@@ -1,0 +1,28 @@
+{
+  "entity_type": "course",
+  "entity_name": "Microsoft AI Agents for Beginners",
+  "entity_slug": "microsoft-ai-agents-for-beginners",
+  "platform": "github",
+  "query_terms": [
+    "Microsoft AI Agents for Beginners",
+    "AI agents",
+    "tool use",
+    "multi-agent systems",
+    "AI safety and evaluation"
+  ],
+  "results": [
+    {
+      "title": "Microsoft AI Agents for Beginners",
+      "url": "https://github.com/microsoft/ai-agents-for-beginners",
+      "content_type": "repository",
+      "summary": "A Microsoft open-source course with lessons covering the fundamentals of building AI agents.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://github.com/microsoft/ai-agents-for-beginners"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

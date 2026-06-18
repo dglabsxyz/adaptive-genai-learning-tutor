@@ -1,0 +1,81 @@
+{
+  "course_name": "Search in the LLM Era for AI Engineers",
+  "course_slug": "search-in-the-llm-era-for-ai-engineers",
+  "instructor_names": [
+    "Nirant Kasliwal",
+    "Jithin James",
+    "Dhruv Anand"
+  ],
+  "instructor_slugs": [
+    "nirant-kasliwal",
+    "jithin-james",
+    "dhruv-anand"
+  ],
+  "platform": "Maven",
+  "course_url": "https://maven.com/nirantk/search-for-rag",
+  "topic_tags": [
+    "RAG",
+    "search",
+    "vector databases",
+    "AI evaluation",
+    "multimodal AI"
+  ],
+  "description": "A six-weekend instructor-led course and live practice for senior engineers building modern search and RAG systems.",
+  "syllabus": [
+    "Finding and measuring hallucinations with Ragas",
+    "Query understanding and profiling",
+    "Testset generation and LLM-as-judge with Ragas",
+    "Parsing, chunking and metadata enrichment",
+    "Embedding models",
+    "Reducing LLM latency and improving throughput",
+    "Scaling dense retrieval",
+    "Vector databases and search engines",
+    "Semi-structured multimodal RAG",
+    "Structured information extraction"
+  ],
+  "target_audience": [
+    "Senior data scientists",
+    "ML engineers",
+    "CTOs",
+    "Technical leaders"
+  ],
+  "prerequisites": [
+    "RAG architecture",
+    "RAG evaluation metrics",
+    "Embedding models and vector databases"
+  ],
+  "duration": "6 weeks",
+  "format": "Instructor-led course",
+  "price": {
+    "amount": null,
+    "currency": null,
+    "raw": null
+  },
+  "rating": {
+    "value": null,
+    "count": null,
+    "raw": null
+  },
+  "certificate": "Certificate of completion",
+  "enrollment_status": null,
+  "last_updated": null,
+  "citations": [
+    "https://maven.com/nirantk/search-for-rag"
+  ],
+  "source_records": [
+    {
+      "platform": "Maven",
+      "url": "https://maven.com/nirantk/search-for-rag",
+      "title": "Search in the LLM Era for AI Engineers",
+      "summary": "A six-weekend instructor-led course and live practice for senior engineers building modern search and RAG systems.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/nirantk/search-for-rag"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

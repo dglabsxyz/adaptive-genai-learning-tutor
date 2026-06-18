@@ -1,0 +1,28 @@
+{
+  "entity_type": "course",
+  "entity_name": "AI Agent Engineering: From ReAct, Agentic RAG to Multi-Agent Orchestration",
+  "entity_slug": "ai-agent-engineering-from-react-agentic-rag-to-multi-agent-orchestration",
+  "platform": "maven",
+  "query_terms": [
+    "AI Agent Engineering: From ReAct, Agentic RAG to Multi-Agent Orchestration",
+    "AI agents",
+    "RAG",
+    "multi-agent systems",
+    "enterprise AI"
+  ],
+  "results": [
+    {
+      "title": "AI Agent Engineering: From ReAct, Agentic RAG to Multi-Agent Orchestration",
+      "url": "https://maven.com/rakeshgohel/ai-agent-engineering-react-rag-multi-agent",
+      "content_type": "course",
+      "summary": "Design, deploy, and scale enterprise-grade AI agents with a hands-on, problem-driven approach.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/rakeshgohel/ai-agent-engineering-react-rag-multi-agent"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

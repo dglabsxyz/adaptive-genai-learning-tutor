@@ -1,0 +1,162 @@
+{
+  "generated_at": "2026-06-14T20:03:06Z",
+  "summary": "Local research corpus built from Firecrawl search, scrape, extract, map, crawl, and agent outputs. Unknown or unsupported fields are null rather than invented.",
+  "counts": {
+    "topics": 17,
+    "instructors": 72,
+    "courses_and_teaching_resources": 67,
+    "source_urls": 81,
+    "platforms": 8
+  },
+  "required_topic_coverage": [
+    {
+      "topic": "LLMs",
+      "covered": true,
+      "course_count": 30,
+      "instructor_count": 41,
+      "source_count": 37
+    },
+    {
+      "topic": "prompt engineering",
+      "covered": true,
+      "course_count": 20,
+      "instructor_count": 19,
+      "source_count": 22
+    },
+    {
+      "topic": "RAG",
+      "covered": true,
+      "course_count": 20,
+      "instructor_count": 24,
+      "source_count": 22
+    },
+    {
+      "topic": "AI agents",
+      "covered": true,
+      "course_count": 31,
+      "instructor_count": 33,
+      "source_count": 32
+    },
+    {
+      "topic": "fine-tuning",
+      "covered": true,
+      "course_count": 8,
+      "instructor_count": 21,
+      "source_count": 10
+    },
+    {
+      "topic": "multimodal AI",
+      "covered": true,
+      "course_count": 12,
+      "instructor_count": 14,
+      "source_count": 14
+    },
+    {
+      "topic": "image generation",
+      "covered": true,
+      "course_count": 6,
+      "instructor_count": 7,
+      "source_count": 6
+    },
+    {
+      "topic": "video generation",
+      "covered": true,
+      "course_count": 4,
+      "instructor_count": 5,
+      "source_count": 4
+    },
+    {
+      "topic": "voice AI",
+      "covered": true,
+      "course_count": 6,
+      "instructor_count": 5,
+      "source_count": 6
+    },
+    {
+      "topic": "AI coding",
+      "covered": true,
+      "course_count": 13,
+      "instructor_count": 13,
+      "source_count": 17
+    },
+    {
+      "topic": "AI product development",
+      "covered": true,
+      "course_count": 29,
+      "instructor_count": 34,
+      "source_count": 35
+    },
+    {
+      "topic": "AI automation",
+      "covered": true,
+      "course_count": 9,
+      "instructor_count": 9,
+      "source_count": 10
+    },
+    {
+      "topic": "business AI",
+      "covered": true,
+      "course_count": 10,
+      "instructor_count": 11,
+      "source_count": 12
+    },
+    {
+      "topic": "no-code AI",
+      "covered": true,
+      "course_count": 4,
+      "instructor_count": 4,
+      "source_count": 7
+    },
+    {
+      "topic": "AI safety and evaluation",
+      "covered": true,
+      "course_count": 21,
+      "instructor_count": 27,
+      "source_count": 25
+    }
+  ],
+  "additional_topics_discovered": [
+    "context engineering",
+    "MCP"
+  ],
+  "platforms_covered": {
+    "github": 5,
+    "linkedin": 7,
+    "maven": 17,
+    "medium": 1,
+    "news": 1,
+    "substack": 3,
+    "website": 24,
+    "youtube": 9
+  },
+  "firecrawl_workflow": {
+    "capability_discovery": "Used tool discovery for Firecrawl tools before research.",
+    "search": "14 Firecrawl searches with feedback submitted for each search.",
+    "scrape": "Structured JSON scrapes were used for selected Maven and Hugging Face pages.",
+    "extract": "Batch extraction was used for Maven, DeepLearning.AI, Google Skills, media-generation, and voice-agent pages.",
+    "map": "Mapped Maven AI catalog to discover category and course URLs.",
+    "crawl": "Crawled Maven AI catalog with summary and links extraction; status checked after crawl.",
+    "agent": "Firecrawl autonomous agent completed broad cross-source discovery and enrichment.",
+    "interaction": "Used firecrawl_interact on the scraped Hugging Face Agents Course page to verify the live title and heading, then used firecrawl_interact_stop to close the session.",
+    "monitors": "Monitor tools were discovered but not used because the task requested a point-in-time corpus, not recurring change tracking."
+  },
+  "known_limitations": [
+    "LinkedIn direct scraping was blocked by Firecrawl for linkedin.com; LinkedIn records are retained from Firecrawl search snippets and cited URLs, with unavailable fields null.",
+    "The corpus is broad and citation-backed, but public web search is not a mathematically exhaustive crawl of every possible course marketplace, video, post, or private platform.",
+    "Some YouTube, LinkedIn, Coursera, and marketplace records rely on search result metadata when full page extraction was unavailable or unnecessary for sparse teaching-resource records.",
+    "Instructor profiles are strongest for pages that exposed bios during extraction; otherwise the profile keeps unknown fields null and relies on course associations.",
+    "Prices, enrollment status, and cohort dates can change after this timestamp."
+  ],
+  "unsupported_or_blocked_sources": [
+    {
+      "url": "https://www.linkedin.com/learning/introduction-to-prompt-engineering-for-generative-ai-24636124",
+      "tool": "firecrawl_scrape",
+      "result": "Firecrawl reported that the site is unsupported."
+    }
+  ],
+  "source_quality_notes": [
+    "Primary sources were preferred for course summaries: Maven, Hugging Face, DeepLearning.AI, Google Skills, LinkedIn Learning, Microsoft Learn, GitHub repositories, and official course pages.",
+    "Secondary sources such as Class Central, Medium, Substack, and YouTube sessions are preserved as corroborating or teaching-resource records.",
+    "Every generated entity summary includes URL citations."
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "entity_type": "topic",
+  "entity_name": "RAG",
+  "entity_slug": "rag",
+  "platform": "website",
+  "query_terms": [
+    "RAG",
+    "LLMs",
+    "vector databases",
+    "embeddings",
+    "AI agents",
+    "AI evaluation"
+  ],
+  "results": [
+    {
+      "title": "Retrieval Augmented Generation (RAG)",
+      "url": "https://www.deeplearning.ai/courses/retrieval-augmented-generation",
+      "content_type": "course",
+      "summary": "A DeepLearning.AI course on designing, building, deploying, and evaluating production-ready RAG applications.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.deeplearning.ai/courses/retrieval-augmented-generation"
+      ]
+    },
+    {
+      "title": "Applied Generative AI Engineering",
+      "url": "https://www.udacity.com/course/generative-ai--nd608",
+      "content_type": "course",
+      "summary": "A Udacity course on adapting foundation models using prompt engineering, RAG, fine-tuning, model compression, and agentic AI tools.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.udacity.com/course/generative-ai--nd608"
+      ]
+    },
+    {
+      "title": "LLM Engineering: Prompting, Fine-Tuning, Optimization and RAG",
+      "url": "https://www.coursera.org/specializations/llm-engineering-prompting-fine-tuning-optimization-rag",
+      "content_type": "course",
+      "summary": "A Coursera specialization on end-to-end LLM engineering, prompt design, evaluation, fine-tuning, optimization, and RAG.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.coursera.org/specializations/llm-engineering-prompting-fine-tuning-optimization-rag"
+      ]
+    },
+    {
+      "title": "Vector Databases for Embeddings with Pinecone",
+      "url": "https://www.datacamp.com/courses/vector-databases-for-embeddings-with-pinecone",
+      "content_type": "course",
+      "summary": "A DataCamp course on using Pinecone to store, manipulate, and query embedding vectors.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.datacamp.com/courses/vector-databases-for-embeddings-with-pinecone"
+      ]
+    },
+    {
+      "title": "Source for RAG",
+      "url": "https://www.deeplearning.ai/courses/retrieval-augmented-generation",
+      "content_type": "other",
+      "summary": "Citation source for RAG.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.deeplearning.ai/courses/retrieval-augmented-generation"
+      ]
+    },
+    {
+      "title": "Source for RAG",
+      "url": "https://www.coursera.org/learn/retrieval-augmented-generation-rag",
+      "content_type": "other",
+      "summary": "Citation source for RAG.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.coursera.org/learn/retrieval-augmented-generation-rag"
+      ]
+    },
+    {
+      "title": "Source for RAG",
+      "url": "https://developers.openai.com/cookbook",
+      "content_type": "other",
+      "summary": "Citation source for RAG.",
+      "extracted_data": {},
+      "citations": [
+        "https://developers.openai.com/cookbook"
+      ]
+    },
+    {
+      "title": "Source for RAG",
+      "url": "https://www.udacity.com/course/generative-ai--nd608",
+      "content_type": "other",
+      "summary": "Citation source for RAG.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.udacity.com/course/generative-ai--nd608"
+      ]
+    },
+    {
+      "title": "Source for RAG",
+      "url": "https://www.coursera.org/specializations/llm-engineering-prompting-fine-tuning-optimization-rag",
+      "content_type": "other",
+      "summary": "Citation source for RAG.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.coursera.org/specializations/llm-engineering-prompting-fine-tuning-optimization-rag"
+      ]
+    },
+    {
+      "title": "Source for RAG",
+      "url": "https://www.datacamp.com/courses/vector-databases-for-embeddings-with-pinecone",
+      "content_type": "other",
+      "summary": "Citation source for RAG.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.datacamp.com/courses/vector-databases-for-embeddings-with-pinecone"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

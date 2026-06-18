@@ -1,0 +1,99 @@
+{
+  "name": "Andrew Ng",
+  "slug": "andrew-ng",
+  "headline": "Founder of DeepLearning.AI and Coursera co-founder",
+  "organization": "DeepLearning.AI",
+  "bio": "AI educator associated with DeepLearning.AI and Coursera courses in the research corpus.",
+  "expertise_areas": [
+    "LLMs",
+    "business AI",
+    "generative AI",
+    "AI product development",
+    "prompt engineering"
+  ],
+  "topics_taught": [
+    "LLMs",
+    "business AI",
+    "generative AI",
+    "AI product development",
+    "prompt engineering"
+  ],
+  "platforms": [
+    "DeepLearning.AI",
+    "YouTube"
+  ],
+  "website": null,
+  "social_profiles": {
+    "linkedin": null,
+    "youtube": "https://www.youtube.com/@Deeplearningai",
+    "x": null,
+    "github": null,
+    "other": [
+      "https://www.deeplearning.ai"
+    ]
+  },
+  "audience_levels": [
+    "enterprise"
+  ],
+  "teaching_formats": [
+    "Online course",
+    "Video course"
+  ],
+  "courses": [
+    {
+      "course_name": "Generative AI for Everyone",
+      "course_slug": "generative-ai-for-everyone",
+      "platform": "DeepLearning.AI",
+      "url": "https://www.deeplearning.ai/courses/generative-ai-for-everyone",
+      "citations": [
+        "https://www.deeplearning.ai/courses/generative-ai-for-everyone"
+      ]
+    },
+    {
+      "course_name": "Full AI Prompting Course with Andrew Ng",
+      "course_slug": "full-ai-prompting-course-with-andrew-ng",
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/watch?v=8ib4Qnh2HFE",
+      "citations": [
+        "https://www.youtube.com/watch?v=8ib4Qnh2HFE"
+      ]
+    }
+  ],
+  "credibility_signals": [
+    "Founder of DeepLearning.AI",
+    "Coursera co-founder"
+  ],
+  "citations": [
+    "https://www.deeplearning.ai/courses/generative-ai-for-everyone",
+    "https://www.youtube.com/watch?v=8ib4Qnh2HFE"
+  ],
+  "source_records": [
+    {
+      "platform": "DeepLearning.AI",
+      "url": "https://www.deeplearning.ai/courses/generative-ai-for-everyone",
+      "title": "Generative AI for Everyone",
+      "summary": "A DeepLearning.AI course by Andrew Ng about how generative AI works, what it can do, and how to use it in work and business.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.deeplearning.ai/courses/generative-ai-for-everyone"
+      ]
+    },
+    {
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/watch?v=8ib4Qnh2HFE",
+      "title": "Full AI Prompting Course with Andrew Ng",
+      "summary": "A YouTube course-style resource from Andrew Ng on becoming an AI power user through prompting.",
+      "content_type": "video",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://www.youtube.com/watch?v=8ib4Qnh2HFE"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

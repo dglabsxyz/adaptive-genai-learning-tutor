@@ -1,0 +1,68 @@
+{
+  "course_name": "Systematically Improving RAG Applications",
+  "course_slug": "systematically-improving-rag-applications",
+  "instructor_names": [
+    "Jason Liu"
+  ],
+  "instructor_slugs": [
+    "jason-liu"
+  ],
+  "platform": "Maven",
+  "course_url": "https://maven.com/applied-llms/rag-playbook",
+  "topic_tags": [
+    "RAG",
+    "AI evaluation",
+    "retrieval",
+    "multimodal AI"
+  ],
+  "description": "A repeatable process for evaluating and improving RAG applications.",
+  "syllabus": [
+    "Evaluate retrieval quality using precision, recall, and MRR",
+    "Create evaluation datasets using LLMs",
+    "Develop multimodal retrieval systems",
+    "Extract structured information from diverse data sources"
+  ],
+  "target_audience": [
+    "Product leaders",
+    "Engineers",
+    "Data scientists"
+  ],
+  "prerequisites": [
+    "Deployed a RAG system",
+    "Optional Python"
+  ],
+  "duration": null,
+  "format": "Cohort-based course",
+  "price": {
+    "amount": null,
+    "currency": null,
+    "raw": null
+  },
+  "rating": {
+    "value": 4.8,
+    "count": 87,
+    "raw": "4.8 (87)"
+  },
+  "certificate": "Certificate of completion",
+  "enrollment_status": null,
+  "last_updated": null,
+  "citations": [
+    "https://maven.com/applied-llms/rag-playbook"
+  ],
+  "source_records": [
+    {
+      "platform": "Maven",
+      "url": "https://maven.com/applied-llms/rag-playbook",
+      "title": "Systematically Improving RAG Applications",
+      "summary": "A repeatable process for evaluating and improving RAG applications.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/applied-llms/rag-playbook"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

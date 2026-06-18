@@ -1,0 +1,38 @@
+{
+  "entity_type": "topic",
+  "entity_name": "AI automation",
+  "entity_slug": "ai-automation",
+  "platform": "youtube",
+  "query_terms": [
+    "AI automation",
+    "AI agents",
+    "no-code AI",
+    "business AI",
+    "voice AI"
+  ],
+  "results": [
+    {
+      "title": "AI Voice Agents Full Course 2026: Beginner to Advanced",
+      "url": "https://www.youtube.com/watch?v=UAxKs9Yuljo",
+      "content_type": "video",
+      "summary": "A YouTube full-course style resource on AI voice agents from beginner to advanced.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://www.youtube.com/watch?v=UAxKs9Yuljo"
+      ]
+    },
+    {
+      "title": "Source for AI automation",
+      "url": "https://www.youtube.com/watch?v=UAxKs9Yuljo",
+      "content_type": "other",
+      "summary": "Citation source for AI automation.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.youtube.com/watch?v=UAxKs9Yuljo"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

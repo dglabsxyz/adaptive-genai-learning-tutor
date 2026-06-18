@@ -1,0 +1,139 @@
+{
+  "entity_type": "topic",
+  "entity_name": "multimodal AI",
+  "entity_slug": "multimodal-ai",
+  "platform": "website",
+  "query_terms": [
+    "multimodal AI",
+    "image generation",
+    "video generation",
+    "voice AI",
+    "RAG",
+    "prompt engineering"
+  ],
+  "results": [
+    {
+      "title": "Diffusion Course",
+      "url": "https://huggingface.co/learn",
+      "content_type": "course",
+      "summary": "A Hugging Face learning catalog course on diffusion models and image-generation workflows.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://huggingface.co/learn"
+      ]
+    },
+    {
+      "title": "Context Course",
+      "url": "https://huggingface.co/learn",
+      "content_type": "course",
+      "summary": "A Hugging Face learning catalog course on context engineering for code and AI workflows.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://huggingface.co/learn"
+      ]
+    },
+    {
+      "title": "AI Agents for Image and Video Generation",
+      "url": "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation",
+      "content_type": "course",
+      "summary": "A DeepLearning.AI course on building media agents that generate, evaluate, and iterate on image and video outputs.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation"
+      ]
+    },
+    {
+      "title": "Prompt Design in Agent Platform",
+      "url": "https://www.skills.google/course_templates/976",
+      "content_type": "course",
+      "summary": "A Google Skills badge on prompt engineering, image analysis, and multimodal generative techniques in Agent Platform.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.skills.google/course_templates/976"
+      ]
+    },
+    {
+      "title": "AI Strategy for Business Leaders",
+      "url": "https://professional.dce.harvard.edu/programs/ai-strategy-for-business-leaders/",
+      "content_type": "course",
+      "summary": "A Harvard Division of Continuing Education program on aligning AI with business strategy and leading AI transformation.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://professional.dce.harvard.edu/programs/ai-strategy-for-business-leaders/"
+      ]
+    },
+    {
+      "title": "Runway AI Video Creation",
+      "url": "https://academy.runwayml.com/",
+      "content_type": "website",
+      "summary": "Runway Academy tutorials for AI-powered video creation and generative media tools.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://academy.runwayml.com/"
+      ]
+    },
+    {
+      "title": "Source for multimodal AI",
+      "url": "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation",
+      "content_type": "other",
+      "summary": "Citation source for multimodal AI.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation"
+      ]
+    },
+    {
+      "title": "Source for multimodal AI",
+      "url": "https://www.skills.google/course_templates/976",
+      "content_type": "other",
+      "summary": "Citation source for multimodal AI.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.skills.google/course_templates/976"
+      ]
+    },
+    {
+      "title": "Source for multimodal AI",
+      "url": "https://huggingface.co/learn",
+      "content_type": "other",
+      "summary": "Citation source for multimodal AI.",
+      "extracted_data": {},
+      "citations": [
+        "https://huggingface.co/learn"
+      ]
+    },
+    {
+      "title": "Source for multimodal AI",
+      "url": "https://professional.dce.harvard.edu/programs/ai-strategy-for-business-leaders/",
+      "content_type": "other",
+      "summary": "Citation source for multimodal AI.",
+      "extracted_data": {},
+      "citations": [
+        "https://professional.dce.harvard.edu/programs/ai-strategy-for-business-leaders/"
+      ]
+    },
+    {
+      "title": "Source for multimodal AI",
+      "url": "https://academy.runwayml.com/",
+      "content_type": "other",
+      "summary": "Citation source for multimodal AI.",
+      "extracted_data": {},
+      "citations": [
+        "https://academy.runwayml.com/"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

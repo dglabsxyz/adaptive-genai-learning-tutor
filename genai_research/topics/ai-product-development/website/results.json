@@ -1,0 +1,190 @@
+{
+  "entity_type": "topic",
+  "entity_name": "AI product development",
+  "entity_slug": "ai-product-development",
+  "platform": "website",
+  "query_terms": [
+    "AI product development",
+    "AI product management",
+    "AI coding",
+    "AI agents",
+    "business AI"
+  ],
+  "results": [
+    {
+      "title": "AI Agents Course",
+      "url": "https://huggingface.co/learn/agents-course/unit0/introduction",
+      "content_type": "course",
+      "summary": "A free Hugging Face course from beginner to expert on understanding, using, and building AI agents.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://huggingface.co/learn/agents-course/unit0/introduction"
+      ]
+    },
+    {
+      "title": "Retrieval Augmented Generation (RAG)",
+      "url": "https://www.deeplearning.ai/courses/retrieval-augmented-generation",
+      "content_type": "course",
+      "summary": "A DeepLearning.AI course on designing, building, deploying, and evaluating production-ready RAG applications.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.deeplearning.ai/courses/retrieval-augmented-generation"
+      ]
+    },
+    {
+      "title": "AI Agents for Image and Video Generation",
+      "url": "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation",
+      "content_type": "course",
+      "summary": "A DeepLearning.AI course on building media agents that generate, evaluate, and iterate on image and video outputs.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation"
+      ]
+    },
+    {
+      "title": "Generative AI for Everyone",
+      "url": "https://www.deeplearning.ai/courses/generative-ai-for-everyone",
+      "content_type": "course",
+      "summary": "A DeepLearning.AI course by Andrew Ng about how generative AI works, what it can do, and how to use it in work and business.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.deeplearning.ai/courses/generative-ai-for-everyone"
+      ]
+    },
+    {
+      "title": "Get Started with AI Applications and Agents on Azure",
+      "url": "https://learn.microsoft.com/en-us/training/paths/get-started-ai-apps-agents/",
+      "content_type": "course",
+      "summary": "A Microsoft Learn path on building generative AI applications and agents on Azure.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://learn.microsoft.com/en-us/training/paths/get-started-ai-apps-agents/"
+      ]
+    },
+    {
+      "title": "AI Strategy for Business Leaders",
+      "url": "https://professional.dce.harvard.edu/programs/ai-strategy-for-business-leaders/",
+      "content_type": "course",
+      "summary": "A Harvard Division of Continuing Education program on aligning AI with business strategy and leading AI transformation.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://professional.dce.harvard.edu/programs/ai-strategy-for-business-leaders/"
+      ]
+    },
+    {
+      "title": "Operationalizing No-Code AI with Zapier",
+      "url": "https://www.coursera.org/learn/operationalizing-no-code-ai-with-zapier-automation-and-plans",
+      "content_type": "course",
+      "summary": "A Coursera course on designing, building, optimizing, and scaling no-code AI workflows with Zapier.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.coursera.org/learn/operationalizing-no-code-ai-with-zapier-automation-and-plans"
+      ]
+    },
+    {
+      "title": "Source for AI product development",
+      "url": "https://huggingface.co/learn/agents-course/unit0/introduction",
+      "content_type": "other",
+      "summary": "Citation source for AI product development.",
+      "extracted_data": {},
+      "citations": [
+        "https://huggingface.co/learn/agents-course/unit0/introduction"
+      ]
+    },
+    {
+      "title": "Source for AI product development",
+      "url": "https://www.deeplearning.ai/courses/retrieval-augmented-generation",
+      "content_type": "other",
+      "summary": "Citation source for AI product development.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.deeplearning.ai/courses/retrieval-augmented-generation"
+      ]
+    },
+    {
+      "title": "Source for AI product development",
+      "url": "https://www.coursera.org/learn/retrieval-augmented-generation-rag",
+      "content_type": "other",
+      "summary": "Citation source for AI product development.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.coursera.org/learn/retrieval-augmented-generation-rag"
+      ]
+    },
+    {
+      "title": "Source for AI product development",
+      "url": "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation",
+      "content_type": "other",
+      "summary": "Citation source for AI product development.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation"
+      ]
+    },
+    {
+      "title": "Source for AI product development",
+      "url": "https://www.deeplearning.ai/courses/generative-ai-for-everyone",
+      "content_type": "other",
+      "summary": "Citation source for AI product development.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.deeplearning.ai/courses/generative-ai-for-everyone"
+      ]
+    },
+    {
+      "title": "Source for AI product development",
+      "url": "https://developers.openai.com/cookbook",
+      "content_type": "other",
+      "summary": "Citation source for AI product development.",
+      "extracted_data": {},
+      "citations": [
+        "https://developers.openai.com/cookbook"
+      ]
+    },
+    {
+      "title": "Source for AI product development",
+      "url": "https://learn.microsoft.com/en-us/training/paths/get-started-ai-apps-agents/",
+      "content_type": "other",
+      "summary": "Citation source for AI product development.",
+      "extracted_data": {},
+      "citations": [
+        "https://learn.microsoft.com/en-us/training/paths/get-started-ai-apps-agents/"
+      ]
+    },
+    {
+      "title": "Source for AI product development",
+      "url": "https://professional.dce.harvard.edu/programs/ai-strategy-for-business-leaders/",
+      "content_type": "other",
+      "summary": "Citation source for AI product development.",
+      "extracted_data": {},
+      "citations": [
+        "https://professional.dce.harvard.edu/programs/ai-strategy-for-business-leaders/"
+      ]
+    },
+    {
+      "title": "Source for AI product development",
+      "url": "https://www.coursera.org/learn/operationalizing-no-code-ai-with-zapier-automation-and-plans",
+      "content_type": "other",
+      "summary": "Citation source for AI product development.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.coursera.org/learn/operationalizing-no-code-ai-with-zapier-automation-and-plans"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

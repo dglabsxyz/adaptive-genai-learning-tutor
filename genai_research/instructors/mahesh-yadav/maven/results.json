@@ -1,0 +1,29 @@
+{
+  "entity_type": "instructor",
+  "entity_name": "Mahesh Yadav",
+  "entity_slug": "mahesh-yadav",
+  "platform": "maven",
+  "query_terms": [
+    "Mahesh Yadav",
+    "AI product development",
+    "AI agents",
+    "RAG",
+    "AI coding",
+    "Claude Code"
+  ],
+  "results": [
+    {
+      "title": "Agentic AI Product Management Certification using Claude Code",
+      "url": "https://maven.com/mahesh-yadav/genaipm",
+      "content_type": "course",
+      "summary": "A certification for leading agentic AI products, building systems, defining metrics, and scaling responsibly.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/mahesh-yadav/genaipm"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

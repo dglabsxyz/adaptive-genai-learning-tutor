@@ -1,0 +1,73 @@
+{
+  "course_name": "AI Mini-Bootcamp",
+  "course_slug": "ai-mini-bootcamp",
+  "instructor_names": [
+    "Sheamus McGovern"
+  ],
+  "instructor_slugs": [
+    "sheamus-mcgovern"
+  ],
+  "platform": "Maven",
+  "course_url": "https://maven.com/aitraining/minibootcamp",
+  "topic_tags": [
+    "LLMs",
+    "RAG",
+    "AI agents",
+    "AI automation",
+    "AI product development"
+  ],
+  "description": "A six-week pre-conference live and on-demand training program for AI fundamentals.",
+  "syllabus": [
+    "AI and Machine Learning Foundations",
+    "AI and Machine Learning Modeling",
+    "Data prep for Machine Learning and LLMs with Python",
+    "Introduction to LLMs",
+    "Building knowledge-grounded LLMs with RAG",
+    "Introduction to AI Agents",
+    "Automating workflows with Agentic AI",
+    "Capstone: build and deploy your agentic AI application"
+  ],
+  "target_audience": [
+    "AI novices",
+    "Software engineers",
+    "Product managers",
+    "Builders"
+  ],
+  "prerequisites": [
+    "None"
+  ],
+  "duration": "6 weeks",
+  "format": "Bootcamp",
+  "price": {
+    "amount": null,
+    "currency": null,
+    "raw": null
+  },
+  "rating": {
+    "value": 4.6,
+    "count": null,
+    "raw": "4.6"
+  },
+  "certificate": "Certificate of completion",
+  "enrollment_status": "Open",
+  "last_updated": null,
+  "citations": [
+    "https://maven.com/aitraining/minibootcamp"
+  ],
+  "source_records": [
+    {
+      "platform": "Maven",
+      "url": "https://maven.com/aitraining/minibootcamp",
+      "title": "AI Mini-Bootcamp",
+      "summary": "A six-week pre-conference live and on-demand training program for AI fundamentals.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "bootcamp"
+      },
+      "citations": [
+        "https://maven.com/aitraining/minibootcamp"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

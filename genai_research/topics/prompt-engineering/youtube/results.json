@@ -1,0 +1,127 @@
+{
+  "entity_type": "topic",
+  "entity_name": "prompt engineering",
+  "entity_slug": "prompt-engineering",
+  "platform": "youtube",
+  "query_terms": [
+    "prompt engineering",
+    "LLMs",
+    "context engineering",
+    "AI agents",
+    "RAG",
+    "AI coding"
+  ],
+  "results": [
+    {
+      "title": "Full AI Prompting Course with Andrew Ng",
+      "url": "https://www.youtube.com/watch?v=8ib4Qnh2HFE",
+      "content_type": "video",
+      "summary": "A YouTube course-style resource from Andrew Ng on becoming an AI power user through prompting.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://www.youtube.com/watch?v=8ib4Qnh2HFE"
+      ]
+    },
+    {
+      "title": "Generative AI for Beginners Full Series",
+      "url": "https://www.youtube.com/watch?v=k7HaeJs-N-o",
+      "content_type": "video",
+      "summary": "A YouTube full-series resource for Microsoft's Generative AI for Beginners, with sections on responsible AI and prompt engineering.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://www.youtube.com/watch?v=k7HaeJs-N-o"
+      ]
+    },
+    {
+      "title": "GenAI Essentials - Full Course for Beginners",
+      "url": "https://www.youtube.com/watch?v=nJ25yl34Uqw",
+      "content_type": "video",
+      "summary": "A beginner full course on essentials of working with generative AI in the cloud.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://www.youtube.com/watch?v=nJ25yl34Uqw"
+      ]
+    },
+    {
+      "title": "Generative AI and LLMs Full Course 2026",
+      "url": "https://www.youtube.com/watch?v=Ru2jEY4pd7k",
+      "content_type": "video",
+      "summary": "A Simplilearn YouTube course covering GenAI concepts, models, agents, and tools.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://www.youtube.com/watch?v=Ru2jEY4pd7k"
+      ]
+    },
+    {
+      "title": "Prompt Engineering for Generative AI - GOTO 2025 Session",
+      "url": "https://www.youtube.com/watch?v=3a0WHZVb1Gg",
+      "content_type": "interview",
+      "summary": "A GOTO 2025 YouTube conference/session source involving authors and practitioners of prompt engineering for generative AI.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://www.youtube.com/watch?v=3a0WHZVb1Gg"
+      ]
+    },
+    {
+      "title": "Source for prompt engineering",
+      "url": "https://www.youtube.com/watch?v=8ib4Qnh2HFE",
+      "content_type": "other",
+      "summary": "Citation source for prompt engineering.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.youtube.com/watch?v=8ib4Qnh2HFE"
+      ]
+    },
+    {
+      "title": "Source for prompt engineering",
+      "url": "https://www.youtube.com/watch?v=k7HaeJs-N-o",
+      "content_type": "other",
+      "summary": "Citation source for prompt engineering.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.youtube.com/watch?v=k7HaeJs-N-o"
+      ]
+    },
+    {
+      "title": "Source for prompt engineering",
+      "url": "https://www.youtube.com/watch?v=nJ25yl34Uqw",
+      "content_type": "other",
+      "summary": "Citation source for prompt engineering.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.youtube.com/watch?v=nJ25yl34Uqw"
+      ]
+    },
+    {
+      "title": "Source for prompt engineering",
+      "url": "https://www.youtube.com/watch?v=Ru2jEY4pd7k",
+      "content_type": "other",
+      "summary": "Citation source for prompt engineering.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.youtube.com/watch?v=Ru2jEY4pd7k"
+      ]
+    },
+    {
+      "title": "Source for prompt engineering",
+      "url": "https://www.youtube.com/watch?v=3a0WHZVb1Gg",
+      "content_type": "other",
+      "summary": "Citation source for prompt engineering.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.youtube.com/watch?v=3a0WHZVb1Gg"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

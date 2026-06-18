@@ -1,0 +1,29 @@
+{
+  "entity_type": "course",
+  "entity_name": "Agentic AI Product Management Certification using Claude Code",
+  "entity_slug": "agentic-ai-product-management-certification-using-claude-code",
+  "platform": "maven",
+  "query_terms": [
+    "Agentic AI Product Management Certification using Claude Code",
+    "AI product development",
+    "AI agents",
+    "RAG",
+    "AI coding",
+    "Claude Code"
+  ],
+  "results": [
+    {
+      "title": "Agentic AI Product Management Certification using Claude Code",
+      "url": "https://maven.com/mahesh-yadav/genaipm",
+      "content_type": "course",
+      "summary": "A certification for leading agentic AI products, building systems, defining metrics, and scaling responsibly.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/mahesh-yadav/genaipm"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

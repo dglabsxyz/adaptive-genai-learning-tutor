@@ -1,0 +1,69 @@
+{
+  "name": "Dr Aveek Brahmachari",
+  "slug": "dr-aveek-brahmachari",
+  "headline": null,
+  "organization": "DeepCoreX Academy",
+  "bio": null,
+  "expertise_areas": [
+    "AI agents",
+    "RAG",
+    "business AI",
+    "production AI"
+  ],
+  "topics_taught": [
+    "AI agents",
+    "RAG",
+    "business AI",
+    "production AI"
+  ],
+  "platforms": [
+    "Maven"
+  ],
+  "website": null,
+  "social_profiles": {
+    "linkedin": null,
+    "youtube": null,
+    "x": null,
+    "github": null,
+    "other": []
+  },
+  "audience_levels": [
+    "intermediate",
+    "advanced",
+    "enterprise"
+  ],
+  "teaching_formats": [
+    "Cohort-based course"
+  ],
+  "courses": [
+    {
+      "course_name": "Build Production AI Agents for 10x-100x ROI",
+      "course_slug": "build-production-ai-agents-for-10x-100x-roi",
+      "platform": "Maven",
+      "url": "https://maven.com/deep-core-x-academy/production-ai-agents",
+      "citations": [
+        "https://maven.com/deep-core-x-academy/production-ai-agents"
+      ]
+    }
+  ],
+  "credibility_signals": [],
+  "citations": [
+    "https://maven.com/deep-core-x-academy/production-ai-agents"
+  ],
+  "source_records": [
+    {
+      "platform": "Maven",
+      "url": "https://maven.com/deep-core-x-academy/production-ai-agents",
+      "title": "Build Production AI Agents for 10x-100x ROI",
+      "summary": "A Maven course on leaving with deployable production agent systems and documented architecture.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/deep-core-x-academy/production-ai-agents"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

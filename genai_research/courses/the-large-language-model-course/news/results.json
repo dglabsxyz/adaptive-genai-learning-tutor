@@ -1,0 +1,28 @@
+{
+  "entity_type": "course",
+  "entity_name": "The Large Language Model Course",
+  "entity_slug": "the-large-language-model-course",
+  "platform": "news",
+  "query_terms": [
+    "The Large Language Model Course",
+    "LLMs",
+    "fine-tuning",
+    "RAG",
+    "AI agents"
+  ],
+  "results": [
+    {
+      "title": "The Large Language Model Course",
+      "url": "https://huggingface.co/blog/mlabonne/llm-course",
+      "content_type": "article",
+      "summary": "A Hugging Face blog/course resource collecting topics and roadmaps for getting into LLMs.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://huggingface.co/blog/mlabonne/llm-course"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

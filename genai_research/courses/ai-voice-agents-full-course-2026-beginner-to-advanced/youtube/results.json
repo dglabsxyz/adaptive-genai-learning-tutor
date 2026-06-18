@@ -1,0 +1,27 @@
+{
+  "entity_type": "course",
+  "entity_name": "AI Voice Agents Full Course 2026: Beginner to Advanced",
+  "entity_slug": "ai-voice-agents-full-course-2026-beginner-to-advanced",
+  "platform": "youtube",
+  "query_terms": [
+    "AI Voice Agents Full Course 2026: Beginner to Advanced",
+    "voice AI",
+    "AI agents",
+    "AI automation"
+  ],
+  "results": [
+    {
+      "title": "AI Voice Agents Full Course 2026: Beginner to Advanced",
+      "url": "https://www.youtube.com/watch?v=UAxKs9Yuljo",
+      "content_type": "video",
+      "summary": "A YouTube full-course style resource on AI voice agents from beginner to advanced.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://www.youtube.com/watch?v=UAxKs9Yuljo"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

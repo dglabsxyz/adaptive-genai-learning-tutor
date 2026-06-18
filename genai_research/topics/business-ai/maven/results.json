@@ -1,0 +1,114 @@
+{
+  "entity_type": "topic",
+  "entity_name": "business AI",
+  "entity_slug": "business-ai",
+  "platform": "maven",
+  "query_terms": [
+    "business AI",
+    "AI automation",
+    "AI product development",
+    "enterprise AI",
+    "AI agents"
+  ],
+  "results": [
+    {
+      "title": "Build Production AI Agents for 10x-100x ROI",
+      "url": "https://maven.com/deep-core-x-academy/production-ai-agents",
+      "content_type": "course",
+      "summary": "A Maven course on leaving with deployable production agent systems and documented architecture.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/deep-core-x-academy/production-ai-agents"
+      ]
+    },
+    {
+      "title": "AI Agents for Sales and GTM",
+      "url": "https://maven.com/ai-agent-campus/ai-agents-for-sales-and-go-to-market",
+      "content_type": "course",
+      "summary": "Build AI employees that scale marketing, streamline sales, and increase profits.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/ai-agent-campus/ai-agents-for-sales-and-go-to-market"
+      ]
+    },
+    {
+      "title": "AI Agents for Content Creators",
+      "url": "https://maven.com/lennon/ai-agents-for-content",
+      "content_type": "course",
+      "summary": "A blueprint for using AI agents to source ideas, draft emails, and write posts in a creator's style and point of view.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/lennon/ai-agents-for-content"
+      ]
+    },
+    {
+      "title": "AI Product Management Certification",
+      "url": "https://maven.com/product-faculty/ai-product-management-certification",
+      "content_type": "course",
+      "summary": "A Maven AI product management certification discovered in the Maven AI catalog crawl.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/product-faculty/ai-product-management-certification"
+      ]
+    },
+    {
+      "title": "Source for business AI",
+      "url": "https://maven.com/ai-agent-campus/ai-agents-for-sales-and-go-to-market",
+      "content_type": "other",
+      "summary": "Citation source for business AI.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/ai-agent-campus/ai-agents-for-sales-and-go-to-market"
+      ]
+    },
+    {
+      "title": "Source for business AI",
+      "url": "https://maven.com/deep-core-x-academy/production-ai-agents",
+      "content_type": "other",
+      "summary": "Citation source for business AI.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/deep-core-x-academy/production-ai-agents"
+      ]
+    },
+    {
+      "title": "Source for business AI",
+      "url": "https://maven.com/lennon/ai-agents-for-content",
+      "content_type": "other",
+      "summary": "Citation source for business AI.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/lennon/ai-agents-for-content"
+      ]
+    },
+    {
+      "title": "Source for business AI",
+      "url": "https://maven.com/product-faculty/ai-product-management-certification",
+      "content_type": "other",
+      "summary": "Citation source for business AI.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/product-faculty/ai-product-management-certification"
+      ]
+    },
+    {
+      "title": "Source for business AI",
+      "url": "https://maven.com/courses/ai",
+      "content_type": "other",
+      "summary": "Citation source for business AI.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/courses/ai"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

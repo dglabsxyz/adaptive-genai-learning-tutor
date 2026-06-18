@@ -1,0 +1,136 @@
+{
+  "entity_type": "topic",
+  "entity_name": "business AI",
+  "entity_slug": "business-ai",
+  "platform": "website",
+  "query_terms": [
+    "business AI",
+    "AI automation",
+    "AI product development",
+    "enterprise AI",
+    "AI agents"
+  ],
+  "results": [
+    {
+      "title": "Generative AI for Everyone",
+      "url": "https://www.deeplearning.ai/courses/generative-ai-for-everyone",
+      "content_type": "course",
+      "summary": "A DeepLearning.AI course by Andrew Ng about how generative AI works, what it can do, and how to use it in work and business.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.deeplearning.ai/courses/generative-ai-for-everyone"
+      ]
+    },
+    {
+      "title": "Beginner: Introduction to Generative AI",
+      "url": "https://www.skills.google/paths/118",
+      "content_type": "course",
+      "summary": "A Google Skills learning path covering generative AI concepts, LLM fundamentals, and responsible AI principles.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://www.skills.google/paths/118"
+      ]
+    },
+    {
+      "title": "Introduction to Generative AI",
+      "url": "https://www.coursera.org/learn/introduction-to-generative-ai",
+      "content_type": "course",
+      "summary": "A Google Cloud Coursera microlearning course explaining what generative AI is, how it is used, and how it differs from traditional ML.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.coursera.org/learn/introduction-to-generative-ai"
+      ]
+    },
+    {
+      "title": "AI Strategy for Business Leaders",
+      "url": "https://professional.dce.harvard.edu/programs/ai-strategy-for-business-leaders/",
+      "content_type": "course",
+      "summary": "A Harvard Division of Continuing Education program on aligning AI with business strategy and leading AI transformation.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://professional.dce.harvard.edu/programs/ai-strategy-for-business-leaders/"
+      ]
+    },
+    {
+      "title": "Artificial Intelligence: Implications for Business Strategy",
+      "url": "https://executive.mit.edu/course/artificial-intelligence/a056g00000URaa3AAD.html",
+      "content_type": "course",
+      "summary": "A six-week MIT Sloan Executive Education online program on AI technologies and strategic business applications.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://executive.mit.edu/course/artificial-intelligence/a056g00000URaa3AAD.html"
+      ]
+    },
+    {
+      "title": "Source for business AI",
+      "url": "https://professional.dce.harvard.edu/programs/ai-strategy-for-business-leaders/",
+      "content_type": "other",
+      "summary": "Citation source for business AI.",
+      "extracted_data": {},
+      "citations": [
+        "https://professional.dce.harvard.edu/programs/ai-strategy-for-business-leaders/"
+      ]
+    },
+    {
+      "title": "Source for business AI",
+      "url": "https://executive.mit.edu/course/artificial-intelligence/a056g00000URaa3AAD.html",
+      "content_type": "other",
+      "summary": "Citation source for business AI.",
+      "extracted_data": {},
+      "citations": [
+        "https://executive.mit.edu/course/artificial-intelligence/a056g00000URaa3AAD.html"
+      ]
+    },
+    {
+      "title": "Source for business AI",
+      "url": "https://www.deeplearning.ai/courses/generative-ai-for-everyone",
+      "content_type": "other",
+      "summary": "Citation source for business AI.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.deeplearning.ai/courses/generative-ai-for-everyone"
+      ]
+    },
+    {
+      "title": "Source for business AI",
+      "url": "https://www.skills.google/paths/118",
+      "content_type": "other",
+      "summary": "Citation source for business AI.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.skills.google/paths/118"
+      ]
+    },
+    {
+      "title": "Source for business AI",
+      "url": "https://www.coursera.org/learn/introduction-to-generative-ai",
+      "content_type": "other",
+      "summary": "Citation source for business AI.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.coursera.org/learn/introduction-to-generative-ai"
+      ]
+    },
+    {
+      "title": "Source for business AI",
+      "url": "https://www.skills.google/paths/118/course_templates/536",
+      "content_type": "other",
+      "summary": "Citation source for business AI.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.skills.google/paths/118/course_templates/536"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

@@ -1,0 +1,72 @@
+{
+  "course_name": "Become a Voice AI Agent Expert",
+  "course_slug": "become-a-voice-ai-agent-expert",
+  "instructor_names": [
+    "Kwindla Hultman Kramer"
+  ],
+  "instructor_slugs": [
+    "kwindla-hultman-kramer"
+  ],
+  "platform": "Maven",
+  "course_url": "https://maven.com/p/5de0a6/become-a-voice-ai-agent-expert",
+  "topic_tags": [
+    "voice AI",
+    "AI agents",
+    "AI automation",
+    "speech-to-text",
+    "text-to-speech"
+  ],
+  "description": "A Maven lesson on voice agent building blocks, models, latency, hosting, telephony, and evaluation.",
+  "syllabus": [
+    "Introduction to Pipecat and resources",
+    "Voice AI growth and use cases",
+    "Defining a voice agent and core challenges",
+    "Three-model architecture of voice AI",
+    "Latency in voice AI",
+    "Models for STT, LLM and TTS",
+    "WebRTC vs WebSockets and telephony basics",
+    "Evals, scaling and advanced workflows",
+    "Human-like turn detection",
+    "Speech-to-speech, video and on-device models"
+  ],
+  "target_audience": [
+    "Students",
+    "Professionals",
+    "Tech enthusiasts"
+  ],
+  "prerequisites": [],
+  "duration": null,
+  "format": "Lesson",
+  "price": {
+    "amount": 0,
+    "currency": "USD",
+    "raw": "Free"
+  },
+  "rating": {
+    "value": null,
+    "count": null,
+    "raw": null
+  },
+  "certificate": null,
+  "enrollment_status": "Open",
+  "last_updated": null,
+  "citations": [
+    "https://maven.com/p/5de0a6/become-a-voice-ai-agent-expert"
+  ],
+  "source_records": [
+    {
+      "platform": "Maven",
+      "url": "https://maven.com/p/5de0a6/become-a-voice-ai-agent-expert",
+      "title": "Become a Voice AI Agent Expert",
+      "summary": "A Maven lesson on voice agent building blocks, models, latency, hosting, telephony, and evaluation.",
+      "content_type": "other",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://maven.com/p/5de0a6/become-a-voice-ai-agent-expert"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

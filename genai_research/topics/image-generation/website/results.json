@@ -1,0 +1,116 @@
+{
+  "entity_type": "topic",
+  "entity_name": "image generation",
+  "entity_slug": "image-generation",
+  "platform": "website",
+  "query_terms": [
+    "image generation",
+    "diffusion models",
+    "multimodal AI",
+    "video generation",
+    "prompt engineering"
+  ],
+  "results": [
+    {
+      "title": "Diffusion Course",
+      "url": "https://huggingface.co/learn",
+      "content_type": "course",
+      "summary": "A Hugging Face learning catalog course on diffusion models and image-generation workflows.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://huggingface.co/learn"
+      ]
+    },
+    {
+      "title": "Context Course",
+      "url": "https://huggingface.co/learn",
+      "content_type": "course",
+      "summary": "A Hugging Face learning catalog course on context engineering for code and AI workflows.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://huggingface.co/learn"
+      ]
+    },
+    {
+      "title": "AI Agents for Image and Video Generation",
+      "url": "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation",
+      "content_type": "course",
+      "summary": "A DeepLearning.AI course on building media agents that generate, evaluate, and iterate on image and video outputs.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation"
+      ]
+    },
+    {
+      "title": "Practical Deep Learning for Coders",
+      "url": "https://course.fast.ai/",
+      "content_type": "course",
+      "summary": "A free fast.ai course for coders learning practical deep learning.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://course.fast.ai/"
+      ]
+    },
+    {
+      "title": "Midjourney: Generative AI for Creatives Specialization",
+      "url": "https://www.coursera.org/specializations/midjourney-generative-ai-for-creatives",
+      "content_type": "course",
+      "summary": "A Coursera specialization focused on Midjourney and generative AI for creatives.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.coursera.org/specializations/midjourney-generative-ai-for-creatives"
+      ]
+    },
+    {
+      "title": "Source for image generation",
+      "url": "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation",
+      "content_type": "other",
+      "summary": "Citation source for image generation.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation"
+      ]
+    },
+    {
+      "title": "Source for image generation",
+      "url": "https://huggingface.co/learn",
+      "content_type": "other",
+      "summary": "Citation source for image generation.",
+      "extracted_data": {},
+      "citations": [
+        "https://huggingface.co/learn"
+      ]
+    },
+    {
+      "title": "Source for image generation",
+      "url": "https://course.fast.ai/",
+      "content_type": "other",
+      "summary": "Citation source for image generation.",
+      "extracted_data": {},
+      "citations": [
+        "https://course.fast.ai/"
+      ]
+    },
+    {
+      "title": "Source for image generation",
+      "url": "https://www.coursera.org/specializations/midjourney-generative-ai-for-creatives",
+      "content_type": "other",
+      "summary": "Citation source for image generation.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.coursera.org/specializations/midjourney-generative-ai-for-creatives"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

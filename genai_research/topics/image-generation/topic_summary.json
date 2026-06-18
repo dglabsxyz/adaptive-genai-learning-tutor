@@ -1,0 +1,179 @@
+{
+  "topic": "image generation",
+  "slug": "image-generation",
+  "description": "Creating and editing images with diffusion models, text-to-image systems, and creative AI workflows.",
+  "related_topics": [
+    "diffusion models",
+    "multimodal AI",
+    "video generation",
+    "prompt engineering"
+  ],
+  "instructors": [
+    {
+      "name": "Bilawal Sidhu",
+      "slug": "bilawal-sidhu",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Maven"
+      ],
+      "citations": [
+        "https://maven.com/bilawal/generative-ai-masterclass"
+      ]
+    },
+    {
+      "name": "Hugging Face Team",
+      "slug": "hugging-face-team",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Hugging Face"
+      ],
+      "citations": [
+        "https://huggingface.co/learn"
+      ]
+    },
+    {
+      "name": "Katie Nguyen",
+      "slug": "katie-nguyen",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "DeepLearning.AI"
+      ],
+      "citations": [
+        "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation"
+      ]
+    },
+    {
+      "name": "Wafae Bakkali",
+      "slug": "wafae-bakkali",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "DeepLearning.AI"
+      ],
+      "citations": [
+        "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation"
+      ]
+    },
+    {
+      "name": "LinkedIn Learning Team",
+      "slug": "linkedin-learning-team",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "LinkedIn Learning"
+      ],
+      "citations": [
+        "https://www.linkedin.com/learning/hands-on-ai-rag-using-llamaindex",
+        "https://www.linkedin.com/learning/context-engineering-for-developers",
+        "https://www.linkedin.com/learning/creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code",
+        "https://www.linkedin.com/learning/fine-tuning-for-llms-from-beginner-to-advanced",
+        "https://www.linkedin.com/learning/multimodal-ai-essentials-merging-text-image-and-audio-for-next-generation-ai-applications",
+        "https://www.linkedin.com/learning/elevenlabs-ai-voice-cloning-text-to-speech-and-sound-effects"
+      ]
+    },
+    {
+      "name": "Jeremy Howard",
+      "slug": "jeremy-howard",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "fast.ai"
+      ],
+      "citations": [
+        "https://course.fast.ai/"
+      ]
+    },
+    {
+      "name": "Arnold Trinh",
+      "slug": "arnold-trinh",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Coursera"
+      ],
+      "citations": [
+        "https://www.coursera.org/specializations/midjourney-generative-ai-for-creatives"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "course_name": "Generative AI Creation Masterclass",
+      "course_slug": "generative-ai-creation-masterclass",
+      "instructor_names": [
+        "Bilawal Sidhu"
+      ],
+      "platform": "Maven",
+      "course_url": "https://maven.com/bilawal/generative-ai-masterclass",
+      "citations": [
+        "https://maven.com/bilawal/generative-ai-masterclass"
+      ]
+    },
+    {
+      "course_name": "Diffusion Course",
+      "course_slug": "diffusion-course",
+      "instructor_names": [
+        "Hugging Face Team"
+      ],
+      "platform": "Hugging Face",
+      "course_url": "https://huggingface.co/learn",
+      "citations": [
+        "https://huggingface.co/learn"
+      ]
+    },
+    {
+      "course_name": "AI Agents for Image and Video Generation",
+      "course_slug": "ai-agents-for-image-and-video-generation",
+      "instructor_names": [
+        "Katie Nguyen",
+        "Wafae Bakkali"
+      ],
+      "platform": "DeepLearning.AI",
+      "course_url": "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation",
+      "citations": [
+        "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation"
+      ]
+    },
+    {
+      "course_name": "Multimodal AI Essentials: Merging Text, Image, and Audio",
+      "course_slug": "multimodal-ai-essentials-merging-text-image-and-audio",
+      "instructor_names": [
+        "LinkedIn Learning Team"
+      ],
+      "platform": "LinkedIn Learning",
+      "course_url": "https://www.linkedin.com/learning/multimodal-ai-essentials-merging-text-image-and-audio-for-next-generation-ai-applications",
+      "citations": [
+        "https://www.linkedin.com/learning/multimodal-ai-essentials-merging-text-image-and-audio-for-next-generation-ai-applications"
+      ]
+    },
+    {
+      "course_name": "Practical Deep Learning for Coders",
+      "course_slug": "practical-deep-learning-for-coders",
+      "instructor_names": [
+        "Jeremy Howard"
+      ],
+      "platform": "fast.ai",
+      "course_url": "https://course.fast.ai/",
+      "citations": [
+        "https://course.fast.ai/"
+      ]
+    },
+    {
+      "course_name": "Midjourney: Generative AI for Creatives Specialization",
+      "course_slug": "midjourney-generative-ai-for-creatives-specialization",
+      "instructor_names": [
+        "Arnold Trinh"
+      ],
+      "platform": "Coursera",
+      "course_url": "https://www.coursera.org/specializations/midjourney-generative-ai-for-creatives",
+      "citations": [
+        "https://www.coursera.org/specializations/midjourney-generative-ai-for-creatives"
+      ]
+    }
+  ],
+  "sources": [
+    "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation",
+    "https://maven.com/bilawal/generative-ai-masterclass",
+    "https://huggingface.co/learn",
+    "https://www.linkedin.com/learning/multimodal-ai-essentials-merging-text-image-and-audio-for-next-generation-ai-applications",
+    "https://course.fast.ai/",
+    "https://www.coursera.org/specializations/midjourney-generative-ai-for-creatives"
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

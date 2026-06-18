@@ -1,0 +1,69 @@
+{
+  "name": "Mahesh Yadav",
+  "slug": "mahesh-yadav",
+  "headline": null,
+  "organization": "Agentic AI Institute",
+  "bio": null,
+  "expertise_areas": [
+    "AI product development",
+    "AI agents",
+    "RAG",
+    "AI coding",
+    "Claude Code"
+  ],
+  "topics_taught": [
+    "AI product development",
+    "AI agents",
+    "RAG",
+    "AI coding",
+    "Claude Code"
+  ],
+  "platforms": [
+    "Maven"
+  ],
+  "website": null,
+  "social_profiles": {
+    "linkedin": null,
+    "youtube": null,
+    "x": null,
+    "github": null,
+    "other": []
+  },
+  "audience_levels": [
+    "intermediate"
+  ],
+  "teaching_formats": [
+    "Certification course"
+  ],
+  "courses": [
+    {
+      "course_name": "Agentic AI Product Management Certification using Claude Code",
+      "course_slug": "agentic-ai-product-management-certification-using-claude-code",
+      "platform": "Maven",
+      "url": "https://maven.com/mahesh-yadav/genaipm",
+      "citations": [
+        "https://maven.com/mahesh-yadav/genaipm"
+      ]
+    }
+  ],
+  "credibility_signals": [],
+  "citations": [
+    "https://maven.com/mahesh-yadav/genaipm"
+  ],
+  "source_records": [
+    {
+      "platform": "Maven",
+      "url": "https://maven.com/mahesh-yadav/genaipm",
+      "title": "Agentic AI Product Management Certification using Claude Code",
+      "summary": "A certification for leading agentic AI products, building systems, defining metrics, and scaling responsibly.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/mahesh-yadav/genaipm"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

@@ -1,0 +1,27 @@
+{
+  "entity_type": "course",
+  "entity_name": "Generative AI and Prompt Engineering",
+  "entity_slug": "generative-ai-and-prompt-engineering",
+  "platform": "website",
+  "query_terms": [
+    "Generative AI and Prompt Engineering",
+    "prompt engineering",
+    "LLMs",
+    "generative AI"
+  ],
+  "results": [
+    {
+      "title": "Generative AI and Prompt Engineering",
+      "url": "https://www.coursera.org/learn/generative-ai--prompt-engineering",
+      "content_type": "course",
+      "summary": "A Coursera course providing foundational knowledge of generative AI concepts, foundation models, and prompt engineering techniques.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.coursera.org/learn/generative-ai--prompt-engineering"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

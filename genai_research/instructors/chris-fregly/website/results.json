@@ -1,0 +1,28 @@
+{
+  "entity_type": "instructor",
+  "entity_name": "Chris Fregly",
+  "entity_slug": "chris-fregly",
+  "platform": "website",
+  "query_terms": [
+    "Chris Fregly",
+    "LLMs",
+    "fine-tuning",
+    "AI safety and evaluation",
+    "generative AI"
+  ],
+  "results": [
+    {
+      "title": "Generative AI with Large Language Models",
+      "url": "https://www.deeplearning.ai/courses/generative-ai-with-llms",
+      "content_type": "course",
+      "summary": "A DeepLearning.AI course on the generative AI lifecycle, transformer architecture, training, tuning, inference, and LLM-powered applications.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.deeplearning.ai/courses/generative-ai-with-llms"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

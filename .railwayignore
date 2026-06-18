@@ -1,0 +1,21 @@
+# Railway upload excludes — ship the FastAPI backend + corpus only.
+# (railway.json runs backend.main:app; the frontends deploy separately.)
+.git/
+.venv/
+**/node_modules/
+**/__pycache__/
+.pytest_cache/
+*.log
+.DS_Store
+data/
+dist/
+frontend/
+tutor-ui/
+repo/
+docs/
+LangChain Skill/
+LangGraph Skill/
+LangSmith Skill/
+*.md
+.env
+.env.*

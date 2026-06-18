@@ -1,0 +1,28 @@
+{
+  "entity_type": "course",
+  "entity_name": "Multimodal AI Essentials: Merging Text, Image, and Audio",
+  "entity_slug": "multimodal-ai-essentials-merging-text-image-and-audio",
+  "platform": "linkedin",
+  "query_terms": [
+    "Multimodal AI Essentials: Merging Text, Image, and Audio",
+    "multimodal AI",
+    "image generation",
+    "voice AI",
+    "video generation"
+  ],
+  "results": [
+    {
+      "title": "Multimodal AI Essentials: Merging Text, Image, and Audio",
+      "url": "https://www.linkedin.com/learning/multimodal-ai-essentials-merging-text-image-and-audio-for-next-generation-ai-applications",
+      "content_type": "course",
+      "summary": "A LinkedIn Learning course on combining text, audio, video, and images for next-generation AI applications.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.linkedin.com/learning/multimodal-ai-essentials-merging-text-image-and-audio-for-next-generation-ai-applications"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

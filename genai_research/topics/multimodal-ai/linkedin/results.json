@@ -1,0 +1,61 @@
+{
+  "entity_type": "topic",
+  "entity_name": "multimodal AI",
+  "entity_slug": "multimodal-ai",
+  "platform": "linkedin",
+  "query_terms": [
+    "multimodal AI",
+    "image generation",
+    "video generation",
+    "voice AI",
+    "RAG",
+    "prompt engineering"
+  ],
+  "results": [
+    {
+      "title": "Multimodal AI Essentials: Merging Text, Image, and Audio",
+      "url": "https://www.linkedin.com/learning/multimodal-ai-essentials-merging-text-image-and-audio-for-next-generation-ai-applications",
+      "content_type": "course",
+      "summary": "A LinkedIn Learning course on combining text, audio, video, and images for next-generation AI applications.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.linkedin.com/learning/multimodal-ai-essentials-merging-text-image-and-audio-for-next-generation-ai-applications"
+      ]
+    },
+    {
+      "title": "ElevenLabs: AI Voice Cloning, Text-to-Speech, and Sound Effects",
+      "url": "https://www.linkedin.com/learning/elevenlabs-ai-voice-cloning-text-to-speech-and-sound-effects",
+      "content_type": "course",
+      "summary": "A LinkedIn Learning course exploring voice cloning, synthetic speech, and sound effects with ElevenLabs.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.linkedin.com/learning/elevenlabs-ai-voice-cloning-text-to-speech-and-sound-effects"
+      ]
+    },
+    {
+      "title": "Source for multimodal AI",
+      "url": "https://www.linkedin.com/learning/multimodal-ai-essentials-merging-text-image-and-audio-for-next-generation-ai-applications",
+      "content_type": "other",
+      "summary": "Citation source for multimodal AI.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.linkedin.com/learning/multimodal-ai-essentials-merging-text-image-and-audio-for-next-generation-ai-applications"
+      ]
+    },
+    {
+      "title": "Source for multimodal AI",
+      "url": "https://www.linkedin.com/learning/elevenlabs-ai-voice-cloning-text-to-speech-and-sound-effects",
+      "content_type": "other",
+      "summary": "Citation source for multimodal AI.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.linkedin.com/learning/elevenlabs-ai-voice-cloning-text-to-speech-and-sound-effects"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

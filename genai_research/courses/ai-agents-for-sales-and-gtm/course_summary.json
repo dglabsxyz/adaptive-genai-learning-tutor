@@ -1,0 +1,68 @@
+{
+  "course_name": "AI Agents for Sales and GTM",
+  "course_slug": "ai-agents-for-sales-and-gtm",
+  "instructor_names": [
+    "John Hwang"
+  ],
+  "instructor_slugs": [
+    "john-hwang"
+  ],
+  "platform": "Maven",
+  "course_url": "https://maven.com/ai-agent-campus/ai-agents-for-sales-and-go-to-market",
+  "topic_tags": [
+    "AI agents",
+    "business AI",
+    "AI automation",
+    "sales",
+    "marketing"
+  ],
+  "description": "Build AI employees that scale marketing, streamline sales, and increase profits.",
+  "syllabus": [
+    "AI-native sales and marketing overview",
+    "AI agents crash course",
+    "AI agents for knowledge management"
+  ],
+  "target_audience": [
+    "Sales and marketing professionals",
+    "High-ticket consultancies",
+    "Lead generation and marketing agencies"
+  ],
+  "prerequisites": [
+    "Basic technical fluency with APIs and webhooks",
+    "Some familiarity with AI and prompting"
+  ],
+  "duration": "3 weeks",
+  "format": "Cohort-based course",
+  "price": {
+    "amount": null,
+    "currency": null,
+    "raw": null
+  },
+  "rating": {
+    "value": null,
+    "count": null,
+    "raw": null
+  },
+  "certificate": "Certificate of completion",
+  "enrollment_status": null,
+  "last_updated": null,
+  "citations": [
+    "https://maven.com/ai-agent-campus/ai-agents-for-sales-and-go-to-market"
+  ],
+  "source_records": [
+    {
+      "platform": "Maven",
+      "url": "https://maven.com/ai-agent-campus/ai-agents-for-sales-and-go-to-market",
+      "title": "AI Agents for Sales and GTM",
+      "summary": "Build AI employees that scale marketing, streamline sales, and increase profits.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/ai-agent-campus/ai-agents-for-sales-and-go-to-market"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

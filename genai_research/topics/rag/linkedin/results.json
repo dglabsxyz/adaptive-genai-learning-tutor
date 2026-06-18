@@ -1,0 +1,61 @@
+{
+  "entity_type": "topic",
+  "entity_name": "RAG",
+  "entity_slug": "rag",
+  "platform": "linkedin",
+  "query_terms": [
+    "RAG",
+    "LLMs",
+    "vector databases",
+    "embeddings",
+    "AI agents",
+    "AI evaluation"
+  ],
+  "results": [
+    {
+      "title": "Hands-On AI: RAG using LlamaIndex",
+      "url": "https://www.linkedin.com/learning/hands-on-ai-rag-using-llamaindex",
+      "content_type": "course",
+      "summary": "A LinkedIn Learning course focused on retrieval-augmented generation using LlamaIndex.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.linkedin.com/learning/hands-on-ai-rag-using-llamaindex"
+      ]
+    },
+    {
+      "title": "Context Engineering for Developers",
+      "url": "https://www.linkedin.com/learning/context-engineering-for-developers",
+      "content_type": "course",
+      "summary": "A LinkedIn Learning course for AI practitioners and prompt engineers building better AI agents and RAG pipelines.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.linkedin.com/learning/context-engineering-for-developers"
+      ]
+    },
+    {
+      "title": "Source for RAG",
+      "url": "https://www.linkedin.com/learning/hands-on-ai-rag-using-llamaindex",
+      "content_type": "other",
+      "summary": "Citation source for RAG.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.linkedin.com/learning/hands-on-ai-rag-using-llamaindex"
+      ]
+    },
+    {
+      "title": "Source for RAG",
+      "url": "https://www.linkedin.com/learning/context-engineering-for-developers",
+      "content_type": "other",
+      "summary": "Citation source for RAG.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.linkedin.com/learning/context-engineering-for-developers"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

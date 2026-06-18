@@ -1,0 +1,384 @@
+{
+  "topic": "fine-tuning",
+  "slug": "fine-tuning",
+  "description": "Adapting foundation models with supervised fine-tuning, PEFT, LoRA/QLoRA, RLHF-style techniques, and evaluation.",
+  "related_topics": [
+    "LLMs",
+    "model customization",
+    "datasets",
+    "AI safety and evaluation"
+  ],
+  "instructors": [
+    {
+      "name": "Aishwarya Srinivasan",
+      "slug": "aishwarya-srinivasan",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Maven"
+      ],
+      "citations": [
+        "https://maven.com/aishwarya-srinivasan/mastering-ai-agents"
+      ]
+    },
+    {
+      "name": "Arvind Narayanamurthy",
+      "slug": "arvind-narayanamurthy",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Maven"
+      ],
+      "citations": [
+        "https://maven.com/aishwarya-srinivasan/mastering-ai-agents"
+      ]
+    },
+    {
+      "name": "Abubakar Abid",
+      "slug": "abubakar-abid",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Hugging Face"
+      ],
+      "citations": [
+        "https://huggingface.co/learn/llm-course/en/chapter1/1"
+      ]
+    },
+    {
+      "name": "Ben Burtenshaw",
+      "slug": "ben-burtenshaw",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Hugging Face"
+      ],
+      "citations": [
+        "https://huggingface.co/learn/agents-course/unit0/introduction",
+        "https://huggingface.co/learn/llm-course/en/chapter1/1"
+      ]
+    },
+    {
+      "name": "Matthew Carrigan",
+      "slug": "matthew-carrigan",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Hugging Face"
+      ],
+      "citations": [
+        "https://huggingface.co/learn/llm-course/en/chapter1/1"
+      ]
+    },
+    {
+      "name": "Lysandre Debut",
+      "slug": "lysandre-debut",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Hugging Face"
+      ],
+      "citations": [
+        "https://huggingface.co/learn/llm-course/en/chapter1/1"
+      ]
+    },
+    {
+      "name": "Sylvain Gugger",
+      "slug": "sylvain-gugger",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Hugging Face"
+      ],
+      "citations": [
+        "https://huggingface.co/learn/llm-course/en/chapter1/1"
+      ]
+    },
+    {
+      "name": "Dawood Khan",
+      "slug": "dawood-khan",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Hugging Face"
+      ],
+      "citations": [
+        "https://huggingface.co/learn/llm-course/en/chapter1/1"
+      ]
+    },
+    {
+      "name": "Merve Noyan",
+      "slug": "merve-noyan",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Hugging Face"
+      ],
+      "citations": [
+        "https://huggingface.co/learn/llm-course/en/chapter1/1"
+      ]
+    },
+    {
+      "name": "Lucile Saulnier",
+      "slug": "lucile-saulnier",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Hugging Face"
+      ],
+      "citations": [
+        "https://huggingface.co/learn/llm-course/en/chapter1/1"
+      ]
+    },
+    {
+      "name": "Lewis Tunstall",
+      "slug": "lewis-tunstall",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Hugging Face"
+      ],
+      "citations": [
+        "https://huggingface.co/learn/llm-course/en/chapter1/1"
+      ]
+    },
+    {
+      "name": "Leandro von Werra",
+      "slug": "leandro-von-werra",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Hugging Face"
+      ],
+      "citations": [
+        "https://huggingface.co/learn/llm-course/en/chapter1/1"
+      ]
+    },
+    {
+      "name": "Antje Barth",
+      "slug": "antje-barth",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "DeepLearning.AI"
+      ],
+      "citations": [
+        "https://www.deeplearning.ai/courses/generative-ai-with-llms",
+        "https://www.coursera.org/learn/generative-ai-with-llms"
+      ]
+    },
+    {
+      "name": "Chris Fregly",
+      "slug": "chris-fregly",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "DeepLearning.AI"
+      ],
+      "citations": [
+        "https://www.deeplearning.ai/courses/generative-ai-with-llms",
+        "https://www.coursera.org/learn/generative-ai-with-llms"
+      ]
+    },
+    {
+      "name": "Shelbee Eigenbrode",
+      "slug": "shelbee-eigenbrode",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "DeepLearning.AI"
+      ],
+      "citations": [
+        "https://www.deeplearning.ai/courses/generative-ai-with-llms",
+        "https://www.coursera.org/learn/generative-ai-with-llms"
+      ]
+    },
+    {
+      "name": "Mike Chambers",
+      "slug": "mike-chambers",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "DeepLearning.AI"
+      ],
+      "citations": [
+        "https://www.deeplearning.ai/courses/generative-ai-with-llms",
+        "https://www.coursera.org/learn/generative-ai-with-llms"
+      ]
+    },
+    {
+      "name": "Maxime Labonne",
+      "slug": "maxime-labonne",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Hugging Face"
+      ],
+      "citations": [
+        "https://huggingface.co/blog/mlabonne/llm-course"
+      ]
+    },
+    {
+      "name": "OpenAI",
+      "slug": "openai",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "GitHub"
+      ],
+      "citations": [
+        "https://github.com/openai/openai-cookbook",
+        "https://developers.openai.com/cookbook"
+      ]
+    },
+    {
+      "name": "LinkedIn Learning Team",
+      "slug": "linkedin-learning-team",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "LinkedIn Learning"
+      ],
+      "citations": [
+        "https://www.linkedin.com/learning/hands-on-ai-rag-using-llamaindex",
+        "https://www.linkedin.com/learning/context-engineering-for-developers",
+        "https://www.linkedin.com/learning/creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code",
+        "https://www.linkedin.com/learning/fine-tuning-for-llms-from-beginner-to-advanced",
+        "https://www.linkedin.com/learning/multimodal-ai-essentials-merging-text-image-and-audio-for-next-generation-ai-applications",
+        "https://www.linkedin.com/learning/elevenlabs-ai-voice-cloning-text-to-speech-and-sound-effects"
+      ]
+    },
+    {
+      "name": "Udacity",
+      "slug": "udacity",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Udacity"
+      ],
+      "citations": [
+        "https://www.udacity.com/course/generative-ai--nd608"
+      ]
+    },
+    {
+      "name": "Coursera instructors",
+      "slug": "coursera-instructors",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Coursera"
+      ],
+      "citations": [
+        "https://www.coursera.org/learn/generative-ai--prompt-engineering",
+        "https://www.coursera.org/specializations/llm-engineering-prompting-fine-tuning-optimization-rag",
+        "https://www.coursera.org/learn/operationalizing-no-code-ai-with-zapier-automation-and-plans",
+        "https://www.coursera.org/learn/responsible-ai-and-ethics"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "course_name": "Mastering Agentic AI: Certification by The Gen Academy",
+      "course_slug": "mastering-agentic-ai-certification-by-the-gen-academy",
+      "instructor_names": [
+        "Aishwarya Srinivasan",
+        "Arvind Narayanamurthy"
+      ],
+      "platform": "Maven",
+      "course_url": "https://maven.com/aishwarya-srinivasan/mastering-ai-agents",
+      "citations": [
+        "https://maven.com/aishwarya-srinivasan/mastering-ai-agents"
+      ]
+    },
+    {
+      "course_name": "LLM Course",
+      "course_slug": "llm-course",
+      "instructor_names": [
+        "Abubakar Abid",
+        "Ben Burtenshaw",
+        "Matthew Carrigan",
+        "Lysandre Debut",
+        "Sylvain Gugger",
+        "Dawood Khan",
+        "Merve Noyan",
+        "Lucile Saulnier",
+        "Lewis Tunstall",
+        "Leandro von Werra"
+      ],
+      "platform": "Hugging Face",
+      "course_url": "https://huggingface.co/learn/llm-course/en/chapter1/1",
+      "citations": [
+        "https://huggingface.co/learn/llm-course/en/chapter1/1"
+      ]
+    },
+    {
+      "course_name": "Generative AI with Large Language Models",
+      "course_slug": "generative-ai-with-large-language-models",
+      "instructor_names": [
+        "Antje Barth",
+        "Chris Fregly",
+        "Shelbee Eigenbrode",
+        "Mike Chambers"
+      ],
+      "platform": "DeepLearning.AI",
+      "course_url": "https://www.deeplearning.ai/courses/generative-ai-with-llms",
+      "citations": [
+        "https://www.deeplearning.ai/courses/generative-ai-with-llms",
+        "https://www.coursera.org/learn/generative-ai-with-llms"
+      ]
+    },
+    {
+      "course_name": "The Large Language Model Course",
+      "course_slug": "the-large-language-model-course",
+      "instructor_names": [
+        "Maxime Labonne"
+      ],
+      "platform": "Hugging Face",
+      "course_url": "https://huggingface.co/blog/mlabonne/llm-course",
+      "citations": [
+        "https://huggingface.co/blog/mlabonne/llm-course"
+      ]
+    },
+    {
+      "course_name": "OpenAI Cookbook",
+      "course_slug": "openai-cookbook",
+      "instructor_names": [
+        "OpenAI"
+      ],
+      "platform": "GitHub",
+      "course_url": "https://github.com/openai/openai-cookbook",
+      "citations": [
+        "https://github.com/openai/openai-cookbook",
+        "https://developers.openai.com/cookbook"
+      ]
+    },
+    {
+      "course_name": "Fine-Tuning for LLMs: from Beginner to Advanced",
+      "course_slug": "fine-tuning-for-llms-from-beginner-to-advanced",
+      "instructor_names": [
+        "LinkedIn Learning Team"
+      ],
+      "platform": "LinkedIn Learning",
+      "course_url": "https://www.linkedin.com/learning/fine-tuning-for-llms-from-beginner-to-advanced",
+      "citations": [
+        "https://www.linkedin.com/learning/fine-tuning-for-llms-from-beginner-to-advanced"
+      ]
+    },
+    {
+      "course_name": "Applied Generative AI Engineering",
+      "course_slug": "applied-generative-ai-engineering",
+      "instructor_names": [
+        "Udacity"
+      ],
+      "platform": "Udacity",
+      "course_url": "https://www.udacity.com/course/generative-ai--nd608",
+      "citations": [
+        "https://www.udacity.com/course/generative-ai--nd608"
+      ]
+    },
+    {
+      "course_name": "LLM Engineering: Prompting, Fine-Tuning, Optimization and RAG",
+      "course_slug": "llm-engineering-prompting-fine-tuning-optimization-and-rag",
+      "instructor_names": [
+        "Coursera instructors"
+      ],
+      "platform": "Coursera",
+      "course_url": "https://www.coursera.org/specializations/llm-engineering-prompting-fine-tuning-optimization-rag",
+      "citations": [
+        "https://www.coursera.org/specializations/llm-engineering-prompting-fine-tuning-optimization-rag"
+      ]
+    }
+  ],
+  "sources": [
+    "https://www.deeplearning.ai/courses/generative-ai-with-llms",
+    "https://www.linkedin.com/learning/fine-tuning-for-llms-from-beginner-to-advanced",
+    "https://huggingface.co/learn/llm-course/en/chapter1/1",
+    "https://maven.com/aishwarya-srinivasan/mastering-ai-agents",
+    "https://www.coursera.org/learn/generative-ai-with-llms",
+    "https://huggingface.co/blog/mlabonne/llm-course",
+    "https://github.com/openai/openai-cookbook",
+    "https://developers.openai.com/cookbook",
+    "https://www.udacity.com/course/generative-ai--nd608",
+    "https://www.coursera.org/specializations/llm-engineering-prompting-fine-tuning-optimization-rag"
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

@@ -1,0 +1,83 @@
+{
+  "entity_type": "topic",
+  "entity_name": "prompt engineering",
+  "entity_slug": "prompt-engineering",
+  "platform": "github",
+  "query_terms": [
+    "prompt engineering",
+    "LLMs",
+    "context engineering",
+    "AI agents",
+    "RAG",
+    "AI coding"
+  ],
+  "results": [
+    {
+      "title": "Microsoft Generative AI for Beginners",
+      "url": "https://github.com/microsoft/generative-ai-for-beginners",
+      "content_type": "repository",
+      "summary": "A Microsoft open-source curriculum with 21 lessons on building generative AI applications.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://github.com/microsoft/generative-ai-for-beginners"
+      ]
+    },
+    {
+      "title": "Prompt Engineering Guide",
+      "url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
+      "content_type": "repository",
+      "summary": "A public prompt engineering guide and course-style resource for prompting, context engineering, and AI agents.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://github.com/dair-ai/Prompt-Engineering-Guide"
+      ]
+    },
+    {
+      "title": "Prompt Engineering Interactive Tutorial",
+      "url": "https://github.com/anthropics/prompt-eng-interactive-tutorial",
+      "content_type": "repository",
+      "summary": "An Anthropic interactive tutorial for practicing prompt engineering with Claude.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://github.com/anthropics/prompt-eng-interactive-tutorial"
+      ]
+    },
+    {
+      "title": "Source for prompt engineering",
+      "url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
+      "content_type": "other",
+      "summary": "Citation source for prompt engineering.",
+      "extracted_data": {},
+      "citations": [
+        "https://github.com/dair-ai/Prompt-Engineering-Guide"
+      ]
+    },
+    {
+      "title": "Source for prompt engineering",
+      "url": "https://github.com/anthropics/prompt-eng-interactive-tutorial",
+      "content_type": "other",
+      "summary": "Citation source for prompt engineering.",
+      "extracted_data": {},
+      "citations": [
+        "https://github.com/anthropics/prompt-eng-interactive-tutorial"
+      ]
+    },
+    {
+      "title": "Source for prompt engineering",
+      "url": "https://github.com/microsoft/generative-ai-for-beginners",
+      "content_type": "other",
+      "summary": "Citation source for prompt engineering.",
+      "extracted_data": {},
+      "citations": [
+        "https://github.com/microsoft/generative-ai-for-beginners"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

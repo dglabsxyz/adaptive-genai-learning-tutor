@@ -1,0 +1,26 @@
+{
+  "entity_type": "topic",
+  "entity_name": "AI product development",
+  "entity_slug": "ai-product-development",
+  "platform": "other",
+  "query_terms": [
+    "AI product development",
+    "AI product management",
+    "AI coding",
+    "AI agents",
+    "business AI"
+  ],
+  "results": [
+    {
+      "title": "Source for AI product development",
+      "url": "https://karpathy.ai/zero-to-hero.html",
+      "content_type": "other",
+      "summary": "Citation source for AI product development.",
+      "extracted_data": {},
+      "citations": [
+        "https://karpathy.ai/zero-to-hero.html"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

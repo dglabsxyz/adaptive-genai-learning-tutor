@@ -1,0 +1,103 @@
+{
+  "name": "Ben Burtenshaw",
+  "slug": "ben-burtenshaw",
+  "headline": null,
+  "organization": "Hugging Face",
+  "bio": null,
+  "expertise_areas": [
+    "AI agents",
+    "LLMs",
+    "tool use",
+    "LangGraph",
+    "LlamaIndex",
+    "smolagents",
+    "AI safety and evaluation",
+    "NLP",
+    "Transformers",
+    "fine-tuning"
+  ],
+  "topics_taught": [
+    "AI agents",
+    "LLMs",
+    "tool use",
+    "LangGraph",
+    "LlamaIndex",
+    "smolagents",
+    "AI safety and evaluation",
+    "NLP",
+    "Transformers",
+    "fine-tuning"
+  ],
+  "platforms": [
+    "Hugging Face"
+  ],
+  "website": null,
+  "social_profiles": {
+    "linkedin": null,
+    "youtube": null,
+    "x": null,
+    "github": null,
+    "other": []
+  },
+  "audience_levels": [
+    "beginner",
+    "intermediate"
+  ],
+  "teaching_formats": [
+    "Online course"
+  ],
+  "courses": [
+    {
+      "course_name": "AI Agents Course",
+      "course_slug": "ai-agents-course",
+      "platform": "Hugging Face",
+      "url": "https://huggingface.co/learn/agents-course/unit0/introduction",
+      "citations": [
+        "https://huggingface.co/learn/agents-course/unit0/introduction"
+      ]
+    },
+    {
+      "course_name": "LLM Course",
+      "course_slug": "llm-course",
+      "platform": "Hugging Face",
+      "url": "https://huggingface.co/learn/llm-course/en/chapter1/1",
+      "citations": [
+        "https://huggingface.co/learn/llm-course/en/chapter1/1"
+      ]
+    }
+  ],
+  "credibility_signals": [],
+  "citations": [
+    "https://huggingface.co/learn/agents-course/unit0/introduction",
+    "https://huggingface.co/learn/llm-course/en/chapter1/1"
+  ],
+  "source_records": [
+    {
+      "platform": "Hugging Face",
+      "url": "https://huggingface.co/learn/agents-course/unit0/introduction",
+      "title": "AI Agents Course",
+      "summary": "A free Hugging Face course from beginner to expert on understanding, using, and building AI agents.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://huggingface.co/learn/agents-course/unit0/introduction"
+      ]
+    },
+    {
+      "platform": "Hugging Face",
+      "url": "https://huggingface.co/learn/llm-course/en/chapter1/1",
+      "title": "LLM Course",
+      "summary": "A Hugging Face course on large language models and NLP using libraries from the Hugging Face ecosystem.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://huggingface.co/learn/llm-course/en/chapter1/1"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

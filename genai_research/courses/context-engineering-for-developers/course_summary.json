@@ -1,0 +1,56 @@
+{
+  "course_name": "Context Engineering for Developers",
+  "course_slug": "context-engineering-for-developers",
+  "instructor_names": [
+    "LinkedIn Learning Team"
+  ],
+  "instructor_slugs": [
+    "linkedin-learning-team"
+  ],
+  "platform": "LinkedIn Learning",
+  "course_url": "https://www.linkedin.com/learning/context-engineering-for-developers",
+  "topic_tags": [
+    "context engineering",
+    "RAG",
+    "AI agents",
+    "prompt engineering"
+  ],
+  "description": "A LinkedIn Learning course for AI practitioners and prompt engineers building better AI agents and RAG pipelines.",
+  "syllabus": [],
+  "target_audience": [],
+  "prerequisites": [],
+  "duration": null,
+  "format": "Video course",
+  "price": {
+    "amount": null,
+    "currency": null,
+    "raw": "LinkedIn Premium"
+  },
+  "rating": {
+    "value": null,
+    "count": null,
+    "raw": null
+  },
+  "certificate": null,
+  "enrollment_status": null,
+  "last_updated": null,
+  "citations": [
+    "https://www.linkedin.com/learning/context-engineering-for-developers"
+  ],
+  "source_records": [
+    {
+      "platform": "LinkedIn Learning",
+      "url": "https://www.linkedin.com/learning/context-engineering-for-developers",
+      "title": "Context Engineering for Developers",
+      "summary": "A LinkedIn Learning course for AI practitioners and prompt engineers building better AI agents and RAG pipelines.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.linkedin.com/learning/context-engineering-for-developers"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

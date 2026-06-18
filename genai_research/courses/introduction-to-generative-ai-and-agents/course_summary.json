@@ -1,0 +1,56 @@
+{
+  "course_name": "Introduction to Generative AI and Agents",
+  "course_slug": "introduction-to-generative-ai-and-agents",
+  "instructor_names": [
+    "Microsoft"
+  ],
+  "instructor_slugs": [
+    "microsoft"
+  ],
+  "platform": "Microsoft Learn",
+  "course_url": "https://learn.microsoft.com/en-us/training/modules/fundamentals-generative-ai/",
+  "topic_tags": [
+    "LLMs",
+    "AI agents",
+    "prompt engineering",
+    "Azure"
+  ],
+  "description": "A Microsoft Learn module on generative AI fundamentals, LLMs, prompts, and AI agents.",
+  "syllabus": [],
+  "target_audience": [],
+  "prerequisites": [],
+  "duration": null,
+  "format": "Learning module",
+  "price": {
+    "amount": 0,
+    "currency": "USD",
+    "raw": "Free"
+  },
+  "rating": {
+    "value": null,
+    "count": null,
+    "raw": null
+  },
+  "certificate": null,
+  "enrollment_status": null,
+  "last_updated": null,
+  "citations": [
+    "https://learn.microsoft.com/en-us/training/modules/fundamentals-generative-ai/"
+  ],
+  "source_records": [
+    {
+      "platform": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/training/modules/fundamentals-generative-ai/",
+      "title": "Introduction to Generative AI and Agents",
+      "summary": "A Microsoft Learn module on generative AI fundamentals, LLMs, prompts, and AI agents.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://learn.microsoft.com/en-us/training/modules/fundamentals-generative-ai/"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

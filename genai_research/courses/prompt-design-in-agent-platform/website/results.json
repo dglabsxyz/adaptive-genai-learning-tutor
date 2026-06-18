@@ -1,0 +1,28 @@
+{
+  "entity_type": "course",
+  "entity_name": "Prompt Design in Agent Platform",
+  "entity_slug": "prompt-design-in-agent-platform",
+  "platform": "website",
+  "query_terms": [
+    "Prompt Design in Agent Platform",
+    "prompt engineering",
+    "multimodal AI",
+    "image analysis",
+    "AI agents"
+  ],
+  "results": [
+    {
+      "title": "Prompt Design in Agent Platform",
+      "url": "https://www.skills.google/course_templates/976",
+      "content_type": "course",
+      "summary": "A Google Skills badge on prompt engineering, image analysis, and multimodal generative techniques in Agent Platform.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.skills.google/course_templates/976"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

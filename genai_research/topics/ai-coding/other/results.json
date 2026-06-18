@@ -1,0 +1,26 @@
+{
+  "entity_type": "topic",
+  "entity_name": "AI coding",
+  "entity_slug": "ai-coding",
+  "platform": "other",
+  "query_terms": [
+    "AI coding",
+    "AI agents",
+    "vibe coding",
+    "AI product development",
+    "prompt engineering"
+  ],
+  "results": [
+    {
+      "title": "Source for AI coding",
+      "url": "https://karpathy.ai/zero-to-hero.html",
+      "content_type": "other",
+      "summary": "Citation source for AI coding.",
+      "extracted_data": {},
+      "citations": [
+        "https://karpathy.ai/zero-to-hero.html"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

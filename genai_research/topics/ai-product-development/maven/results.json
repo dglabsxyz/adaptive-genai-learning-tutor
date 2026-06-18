@@ -1,0 +1,332 @@
+{
+  "entity_type": "topic",
+  "entity_name": "AI product development",
+  "entity_slug": "ai-product-development",
+  "platform": "maven",
+  "query_terms": [
+    "AI product development",
+    "AI product management",
+    "AI coding",
+    "AI agents",
+    "business AI"
+  ],
+  "results": [
+    {
+      "title": "Mastering Agentic AI: Certification by The Gen Academy",
+      "url": "https://maven.com/aishwarya-srinivasan/mastering-ai-agents",
+      "content_type": "course",
+      "summary": "A six-week Maven program from The Gen Academy on building and deploying robust agentic AI systems.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/aishwarya-srinivasan/mastering-ai-agents"
+      ]
+    },
+    {
+      "title": "AI Engineering Buildcamp: From RAG to Agents",
+      "url": "https://maven.com/alexey-grigorev/from-rag-to-agents",
+      "content_type": "course",
+      "summary": "Create your own production-ready AI application in six weeks.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/alexey-grigorev/from-rag-to-agents"
+      ]
+    },
+    {
+      "title": "Search in the LLM Era for AI Engineers",
+      "url": "https://maven.com/nirantk/search-for-rag",
+      "content_type": "course",
+      "summary": "A six-weekend instructor-led course and live practice for senior engineers building modern search and RAG systems.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/nirantk/search-for-rag"
+      ]
+    },
+    {
+      "title": "AI Evals For Engineers and PMs",
+      "url": "https://maven.com/parlance-labs/evals",
+      "content_type": "course",
+      "summary": "Build a real AI agent, find where it breaks, and improve it with evals you can trust.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/parlance-labs/evals"
+      ]
+    },
+    {
+      "title": "Build Production AI Agents for 10x-100x ROI",
+      "url": "https://maven.com/deep-core-x-academy/production-ai-agents",
+      "content_type": "course",
+      "summary": "A Maven course on leaving with deployable production agent systems and documented architecture.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/deep-core-x-academy/production-ai-agents"
+      ]
+    },
+    {
+      "title": "AI Agents for Sales and GTM",
+      "url": "https://maven.com/ai-agent-campus/ai-agents-for-sales-and-go-to-market",
+      "content_type": "course",
+      "summary": "Build AI employees that scale marketing, streamline sales, and increase profits.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/ai-agent-campus/ai-agents-for-sales-and-go-to-market"
+      ]
+    },
+    {
+      "title": "AI Mini-Bootcamp",
+      "url": "https://maven.com/aitraining/minibootcamp",
+      "content_type": "course",
+      "summary": "A six-week pre-conference live and on-demand training program for AI fundamentals.",
+      "extracted_data": {
+        "entity_type": "bootcamp"
+      },
+      "citations": [
+        "https://maven.com/aitraining/minibootcamp"
+      ]
+    },
+    {
+      "title": "Agentic AI Product Management Certification using Claude Code",
+      "url": "https://maven.com/mahesh-yadav/genaipm",
+      "content_type": "course",
+      "summary": "A certification for leading agentic AI products, building systems, defining metrics, and scaling responsibly.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/mahesh-yadav/genaipm"
+      ]
+    },
+    {
+      "title": "Become a Voice AI Agent Expert",
+      "url": "https://maven.com/p/5de0a6/become-a-voice-ai-agent-expert",
+      "content_type": "other",
+      "summary": "A Maven lesson on voice agent building blocks, models, latency, hosting, telephony, and evaluation.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://maven.com/p/5de0a6/become-a-voice-ai-agent-expert"
+      ]
+    },
+    {
+      "title": "AI Prototyping for Designers",
+      "url": "https://maven.com/anna-arteeva/prototyping-for-designers",
+      "content_type": "course",
+      "summary": "A Maven AI prototyping course found in the Maven AI prototyping catalog crawl.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/anna-arteeva/prototyping-for-designers"
+      ]
+    },
+    {
+      "title": "Vibe Coding Bootcamp",
+      "url": "https://maven.com/no-code-ai/vibe-coding-bootcamp",
+      "content_type": "course",
+      "summary": "A Maven AI/vibe-coding course discovered from the Maven prototyping and vibe-coding category crawls.",
+      "extracted_data": {
+        "entity_type": "bootcamp"
+      },
+      "citations": [
+        "https://maven.com/no-code-ai/vibe-coding-bootcamp"
+      ]
+    },
+    {
+      "title": "AI Product Management Certification",
+      "url": "https://maven.com/product-faculty/ai-product-management-certification",
+      "content_type": "course",
+      "summary": "A Maven AI product management certification discovered in the Maven AI catalog crawl.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/product-faculty/ai-product-management-certification"
+      ]
+    },
+    {
+      "title": "AI Software Development: From First Prompt to Production Code",
+      "url": "https://maven.com/courses/ai/ai-coding",
+      "content_type": "course",
+      "summary": "A Maven AI coding catalog entry described as a four-week, highly rated course from first prompt to production code.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/courses/ai/ai-coding"
+      ]
+    },
+    {
+      "title": "Source for AI product development",
+      "url": "https://maven.com/mahesh-yadav/genaipm",
+      "content_type": "other",
+      "summary": "Citation source for AI product development.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/mahesh-yadav/genaipm"
+      ]
+    },
+    {
+      "title": "Source for AI product development",
+      "url": "https://maven.com/product-faculty/ai-product-management-certification",
+      "content_type": "other",
+      "summary": "Citation source for AI product development.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/product-faculty/ai-product-management-certification"
+      ]
+    },
+    {
+      "title": "Source for AI product development",
+      "url": "https://maven.com/courses/ai/prototyping",
+      "content_type": "other",
+      "summary": "Citation source for AI product development.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/courses/ai/prototyping"
+      ]
+    },
+    {
+      "title": "Source for AI product development",
+      "url": "https://maven.com/aishwarya-srinivasan/mastering-ai-agents",
+      "content_type": "other",
+      "summary": "Citation source for AI product development.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/aishwarya-srinivasan/mastering-ai-agents"
+      ]
+    },
+    {
+      "title": "Source for AI product development",
+      "url": "https://maven.com/alexey-grigorev/from-rag-to-agents",
+      "content_type": "other",
+      "summary": "Citation source for AI product development.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/alexey-grigorev/from-rag-to-agents"
+      ]
+    },
+    {
+      "title": "Source for AI product development",
+      "url": "https://maven.com/nirantk/search-for-rag",
+      "content_type": "other",
+      "summary": "Citation source for AI product development.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/nirantk/search-for-rag"
+      ]
+    },
+    {
+      "title": "Source for AI product development",
+      "url": "https://maven.com/parlance-labs/evals",
+      "content_type": "other",
+      "summary": "Citation source for AI product development.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/parlance-labs/evals"
+      ]
+    },
+    {
+      "title": "Source for AI product development",
+      "url": "https://maven.com/deep-core-x-academy/production-ai-agents",
+      "content_type": "other",
+      "summary": "Citation source for AI product development.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/deep-core-x-academy/production-ai-agents"
+      ]
+    },
+    {
+      "title": "Source for AI product development",
+      "url": "https://maven.com/ai-agent-campus/ai-agents-for-sales-and-go-to-market",
+      "content_type": "other",
+      "summary": "Citation source for AI product development.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/ai-agent-campus/ai-agents-for-sales-and-go-to-market"
+      ]
+    },
+    {
+      "title": "Source for AI product development",
+      "url": "https://maven.com/aitraining/minibootcamp",
+      "content_type": "other",
+      "summary": "Citation source for AI product development.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/aitraining/minibootcamp"
+      ]
+    },
+    {
+      "title": "Source for AI product development",
+      "url": "https://maven.com/p/5de0a6/become-a-voice-ai-agent-expert",
+      "content_type": "other",
+      "summary": "Citation source for AI product development.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/p/5de0a6/become-a-voice-ai-agent-expert"
+      ]
+    },
+    {
+      "title": "Source for AI product development",
+      "url": "https://maven.com/anna-arteeva/prototyping-for-designers",
+      "content_type": "other",
+      "summary": "Citation source for AI product development.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/anna-arteeva/prototyping-for-designers"
+      ]
+    },
+    {
+      "title": "Source for AI product development",
+      "url": "https://maven.com/no-code-ai/vibe-coding-bootcamp",
+      "content_type": "other",
+      "summary": "Citation source for AI product development.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/no-code-ai/vibe-coding-bootcamp"
+      ]
+    },
+    {
+      "title": "Source for AI product development",
+      "url": "https://maven.com/courses/ai/vibe-coding",
+      "content_type": "other",
+      "summary": "Citation source for AI product development.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/courses/ai/vibe-coding"
+      ]
+    },
+    {
+      "title": "Source for AI product development",
+      "url": "https://maven.com/courses/ai",
+      "content_type": "other",
+      "summary": "Citation source for AI product development.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/courses/ai"
+      ]
+    },
+    {
+      "title": "Source for AI product development",
+      "url": "https://maven.com/courses/ai/ai-coding",
+      "content_type": "other",
+      "summary": "Citation source for AI product development.",
+      "extracted_data": {},
+      "citations": [
+        "https://maven.com/courses/ai/ai-coding"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

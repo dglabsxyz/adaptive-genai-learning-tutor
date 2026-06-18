@@ -1,0 +1,28 @@
+{
+  "entity_type": "instructor",
+  "entity_name": "Dawood Khan",
+  "entity_slug": "dawood-khan",
+  "platform": "website",
+  "query_terms": [
+    "Dawood Khan",
+    "LLMs",
+    "NLP",
+    "Transformers",
+    "fine-tuning"
+  ],
+  "results": [
+    {
+      "title": "LLM Course",
+      "url": "https://huggingface.co/learn/llm-course/en/chapter1/1",
+      "content_type": "course",
+      "summary": "A Hugging Face course on large language models and NLP using libraries from the Hugging Face ecosystem.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://huggingface.co/learn/llm-course/en/chapter1/1"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

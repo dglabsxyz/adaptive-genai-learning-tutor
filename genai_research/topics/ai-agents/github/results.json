@@ -1,0 +1,105 @@
+{
+  "entity_type": "topic",
+  "entity_name": "AI agents",
+  "entity_slug": "ai-agents",
+  "platform": "github",
+  "query_terms": [
+    "AI agents",
+    "LLMs",
+    "tool use",
+    "RAG",
+    "multi-agent systems",
+    "AI automation"
+  ],
+  "results": [
+    {
+      "title": "Microsoft Generative AI for Beginners",
+      "url": "https://github.com/microsoft/generative-ai-for-beginners",
+      "content_type": "repository",
+      "summary": "A Microsoft open-source curriculum with 21 lessons on building generative AI applications.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://github.com/microsoft/generative-ai-for-beginners"
+      ]
+    },
+    {
+      "title": "Microsoft AI Agents for Beginners",
+      "url": "https://github.com/microsoft/ai-agents-for-beginners",
+      "content_type": "repository",
+      "summary": "A Microsoft open-source course with lessons covering the fundamentals of building AI agents.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://github.com/microsoft/ai-agents-for-beginners"
+      ]
+    },
+    {
+      "title": "Prompt Engineering Guide",
+      "url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
+      "content_type": "repository",
+      "summary": "A public prompt engineering guide and course-style resource for prompting, context engineering, and AI agents.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://github.com/dair-ai/Prompt-Engineering-Guide"
+      ]
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "url": "https://github.com/openai/openai-cookbook",
+      "content_type": "repository",
+      "summary": "OpenAI's public collection of examples and guides for building with OpenAI models and APIs.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://github.com/openai/openai-cookbook"
+      ]
+    },
+    {
+      "title": "Source for AI agents",
+      "url": "https://github.com/microsoft/ai-agents-for-beginners",
+      "content_type": "other",
+      "summary": "Citation source for AI agents.",
+      "extracted_data": {},
+      "citations": [
+        "https://github.com/microsoft/ai-agents-for-beginners"
+      ]
+    },
+    {
+      "title": "Source for AI agents",
+      "url": "https://github.com/microsoft/generative-ai-for-beginners",
+      "content_type": "other",
+      "summary": "Citation source for AI agents.",
+      "extracted_data": {},
+      "citations": [
+        "https://github.com/microsoft/generative-ai-for-beginners"
+      ]
+    },
+    {
+      "title": "Source for AI agents",
+      "url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
+      "content_type": "other",
+      "summary": "Citation source for AI agents.",
+      "extracted_data": {},
+      "citations": [
+        "https://github.com/dair-ai/Prompt-Engineering-Guide"
+      ]
+    },
+    {
+      "title": "Source for AI agents",
+      "url": "https://github.com/openai/openai-cookbook",
+      "content_type": "other",
+      "summary": "Citation source for AI agents.",
+      "extracted_data": {},
+      "citations": [
+        "https://github.com/openai/openai-cookbook"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

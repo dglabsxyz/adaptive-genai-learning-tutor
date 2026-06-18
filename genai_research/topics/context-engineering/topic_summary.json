@@ -1,0 +1,160 @@
+{
+  "topic": "context engineering",
+  "slug": "context-engineering",
+  "description": "Designing context, retrieval, memory, tool outputs, and constraints around model calls for reliable AI systems.",
+  "related_topics": [
+    "prompt engineering",
+    "RAG",
+    "AI agents",
+    "LLMs"
+  ],
+  "instructors": [
+    {
+      "name": "Jason Liu",
+      "slug": "jason-liu",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Maven"
+      ],
+      "citations": [
+        "https://maven.com/applied-llms/rag-playbook"
+      ]
+    },
+    {
+      "name": "Hugging Face Team",
+      "slug": "hugging-face-team",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Hugging Face"
+      ],
+      "citations": [
+        "https://huggingface.co/learn"
+      ]
+    },
+    {
+      "name": "Zain Hasan",
+      "slug": "zain-hasan",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "DeepLearning.AI"
+      ],
+      "citations": [
+        "https://www.deeplearning.ai/courses/retrieval-augmented-generation",
+        "https://www.coursera.org/learn/retrieval-augmented-generation-rag"
+      ]
+    },
+    {
+      "name": "DAIR.AI",
+      "slug": "dair-ai",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "GitHub"
+      ],
+      "citations": [
+        "https://github.com/dair-ai/Prompt-Engineering-Guide"
+      ]
+    },
+    {
+      "name": "LinkedIn Learning Team",
+      "slug": "linkedin-learning-team",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "LinkedIn Learning"
+      ],
+      "citations": [
+        "https://www.linkedin.com/learning/hands-on-ai-rag-using-llamaindex",
+        "https://www.linkedin.com/learning/context-engineering-for-developers",
+        "https://www.linkedin.com/learning/creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code",
+        "https://www.linkedin.com/learning/fine-tuning-for-llms-from-beginner-to-advanced",
+        "https://www.linkedin.com/learning/multimodal-ai-essentials-merging-text-image-and-audio-for-next-generation-ai-applications",
+        "https://www.linkedin.com/learning/elevenlabs-ai-voice-cloning-text-to-speech-and-sound-effects"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "course_name": "Systematically Improving RAG Applications",
+      "course_slug": "systematically-improving-rag-applications",
+      "instructor_names": [
+        "Jason Liu"
+      ],
+      "platform": "Maven",
+      "course_url": "https://maven.com/applied-llms/rag-playbook",
+      "citations": [
+        "https://maven.com/applied-llms/rag-playbook"
+      ]
+    },
+    {
+      "course_name": "Diffusion Course",
+      "course_slug": "diffusion-course",
+      "instructor_names": [
+        "Hugging Face Team"
+      ],
+      "platform": "Hugging Face",
+      "course_url": "https://huggingface.co/learn",
+      "citations": [
+        "https://huggingface.co/learn"
+      ]
+    },
+    {
+      "course_name": "Retrieval Augmented Generation (RAG)",
+      "course_slug": "retrieval-augmented-generation-rag",
+      "instructor_names": [
+        "Zain Hasan"
+      ],
+      "platform": "DeepLearning.AI",
+      "course_url": "https://www.deeplearning.ai/courses/retrieval-augmented-generation",
+      "citations": [
+        "https://www.deeplearning.ai/courses/retrieval-augmented-generation",
+        "https://www.coursera.org/learn/retrieval-augmented-generation-rag"
+      ]
+    },
+    {
+      "course_name": "Prompt Engineering Guide",
+      "course_slug": "prompt-engineering-guide",
+      "instructor_names": [
+        "DAIR.AI"
+      ],
+      "platform": "GitHub",
+      "course_url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
+      "citations": [
+        "https://github.com/dair-ai/Prompt-Engineering-Guide"
+      ]
+    },
+    {
+      "course_name": "Hands-On AI: RAG using LlamaIndex",
+      "course_slug": "hands-on-ai-rag-using-llamaindex",
+      "instructor_names": [
+        "LinkedIn Learning Team"
+      ],
+      "platform": "LinkedIn Learning",
+      "course_url": "https://www.linkedin.com/learning/hands-on-ai-rag-using-llamaindex",
+      "citations": [
+        "https://www.linkedin.com/learning/hands-on-ai-rag-using-llamaindex"
+      ]
+    },
+    {
+      "course_name": "Context Engineering for Developers",
+      "course_slug": "context-engineering-for-developers",
+      "instructor_names": [
+        "LinkedIn Learning Team"
+      ],
+      "platform": "LinkedIn Learning",
+      "course_url": "https://www.linkedin.com/learning/context-engineering-for-developers",
+      "citations": [
+        "https://www.linkedin.com/learning/context-engineering-for-developers"
+      ]
+    }
+  ],
+  "sources": [
+    "https://www.linkedin.com/learning/context-engineering-for-developers",
+    "https://huggingface.co/learn",
+    "https://maven.com/aishwarya-srinivasan/mastering-ai-agents",
+    "https://maven.com/applied-llms/rag-playbook",
+    "https://www.deeplearning.ai/courses/retrieval-augmented-generation",
+    "https://www.coursera.org/learn/retrieval-augmented-generation-rag",
+    "https://github.com/dair-ai/Prompt-Engineering-Guide",
+    "https://www.linkedin.com/learning/hands-on-ai-rag-using-llamaindex"
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

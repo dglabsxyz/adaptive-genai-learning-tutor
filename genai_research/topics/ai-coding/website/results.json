@@ -1,0 +1,138 @@
+{
+  "entity_type": "topic",
+  "entity_name": "AI coding",
+  "entity_slug": "ai-coding",
+  "platform": "website",
+  "query_terms": [
+    "AI coding",
+    "AI agents",
+    "vibe coding",
+    "AI product development",
+    "prompt engineering"
+  ],
+  "results": [
+    {
+      "title": "Diffusion Course",
+      "url": "https://huggingface.co/learn",
+      "content_type": "course",
+      "summary": "A Hugging Face learning catalog course on diffusion models and image-generation workflows.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://huggingface.co/learn"
+      ]
+    },
+    {
+      "title": "Context Course",
+      "url": "https://huggingface.co/learn",
+      "content_type": "course",
+      "summary": "A Hugging Face learning catalog course on context engineering for code and AI workflows.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://huggingface.co/learn"
+      ]
+    },
+    {
+      "title": "Practical Deep Learning for Coders",
+      "url": "https://course.fast.ai/",
+      "content_type": "course",
+      "summary": "A free fast.ai course for coders learning practical deep learning.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://course.fast.ai/"
+      ]
+    },
+    {
+      "title": "Applied Generative AI Engineering",
+      "url": "https://www.udacity.com/course/generative-ai--nd608",
+      "content_type": "course",
+      "summary": "A Udacity course on adapting foundation models using prompt engineering, RAG, fine-tuning, model compression, and agentic AI tools.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.udacity.com/course/generative-ai--nd608"
+      ]
+    },
+    {
+      "title": "Get Started with AI Applications and Agents on Azure",
+      "url": "https://learn.microsoft.com/en-us/training/paths/get-started-ai-apps-agents/",
+      "content_type": "course",
+      "summary": "A Microsoft Learn path on building generative AI applications and agents on Azure.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://learn.microsoft.com/en-us/training/paths/get-started-ai-apps-agents/"
+      ]
+    },
+    {
+      "title": "Operationalizing No-Code AI with Zapier",
+      "url": "https://www.coursera.org/learn/operationalizing-no-code-ai-with-zapier-automation-and-plans",
+      "content_type": "course",
+      "summary": "A Coursera course on designing, building, optimizing, and scaling no-code AI workflows with Zapier.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.coursera.org/learn/operationalizing-no-code-ai-with-zapier-automation-and-plans"
+      ]
+    },
+    {
+      "title": "Source for AI coding",
+      "url": "https://learn.microsoft.com/en-us/training/paths/get-started-ai-apps-agents/",
+      "content_type": "other",
+      "summary": "Citation source for AI coding.",
+      "extracted_data": {},
+      "citations": [
+        "https://learn.microsoft.com/en-us/training/paths/get-started-ai-apps-agents/"
+      ]
+    },
+    {
+      "title": "Source for AI coding",
+      "url": "https://huggingface.co/learn",
+      "content_type": "other",
+      "summary": "Citation source for AI coding.",
+      "extracted_data": {},
+      "citations": [
+        "https://huggingface.co/learn"
+      ]
+    },
+    {
+      "title": "Source for AI coding",
+      "url": "https://course.fast.ai/",
+      "content_type": "other",
+      "summary": "Citation source for AI coding.",
+      "extracted_data": {},
+      "citations": [
+        "https://course.fast.ai/"
+      ]
+    },
+    {
+      "title": "Source for AI coding",
+      "url": "https://www.udacity.com/course/generative-ai--nd608",
+      "content_type": "other",
+      "summary": "Citation source for AI coding.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.udacity.com/course/generative-ai--nd608"
+      ]
+    },
+    {
+      "title": "Source for AI coding",
+      "url": "https://www.coursera.org/learn/operationalizing-no-code-ai-with-zapier-automation-and-plans",
+      "content_type": "other",
+      "summary": "Citation source for AI coding.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.coursera.org/learn/operationalizing-no-code-ai-with-zapier-automation-and-plans"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

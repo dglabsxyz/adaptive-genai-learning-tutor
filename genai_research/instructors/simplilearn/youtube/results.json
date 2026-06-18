@@ -1,0 +1,28 @@
+{
+  "entity_type": "instructor",
+  "entity_name": "Simplilearn",
+  "entity_slug": "simplilearn",
+  "platform": "youtube",
+  "query_terms": [
+    "Simplilearn",
+    "LLMs",
+    "AI agents",
+    "prompt engineering",
+    "generative AI"
+  ],
+  "results": [
+    {
+      "title": "Generative AI and LLMs Full Course 2026",
+      "url": "https://www.youtube.com/watch?v=Ru2jEY4pd7k",
+      "content_type": "video",
+      "summary": "A Simplilearn YouTube course covering GenAI concepts, models, agents, and tools.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://www.youtube.com/watch?v=Ru2jEY4pd7k"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

@@ -1,0 +1,70 @@
+{
+  "course_name": "Build Production AI Agents for 10x-100x ROI",
+  "course_slug": "build-production-ai-agents-for-10x-100x-roi",
+  "instructor_names": [
+    "Dr Ankur Narang",
+    "Kush Khurana",
+    "Dr Aveek Brahmachari"
+  ],
+  "instructor_slugs": [
+    "dr-ankur-narang",
+    "kush-khurana",
+    "dr-aveek-brahmachari"
+  ],
+  "platform": "Maven",
+  "course_url": "https://maven.com/deep-core-x-academy/production-ai-agents",
+  "topic_tags": [
+    "AI agents",
+    "RAG",
+    "business AI",
+    "production AI"
+  ],
+  "description": "A Maven course on leaving with deployable production agent systems and documented architecture.",
+  "syllabus": [
+    "Foundations and structured action",
+    "Retrieval and grounding"
+  ],
+  "target_audience": [
+    "Engineering and product leaders",
+    "Technical founders and CTOs",
+    "Lead developers"
+  ],
+  "prerequisites": [
+    "Python proficiency",
+    "Familiarity with APIs and basic software engineering"
+  ],
+  "duration": "4 weeks",
+  "format": "Cohort-based course",
+  "price": {
+    "amount": 1200.0,
+    "currency": "USD",
+    "raw": "$1,200"
+  },
+  "rating": {
+    "value": null,
+    "count": null,
+    "raw": null
+  },
+  "certificate": "Certificate of completion",
+  "enrollment_status": "Next cohort: July 7-Aug 1, 2026",
+  "last_updated": null,
+  "citations": [
+    "https://maven.com/deep-core-x-academy/production-ai-agents"
+  ],
+  "source_records": [
+    {
+      "platform": "Maven",
+      "url": "https://maven.com/deep-core-x-academy/production-ai-agents",
+      "title": "Build Production AI Agents for 10x-100x ROI",
+      "summary": "A Maven course on leaving with deployable production agent systems and documented architecture.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/deep-core-x-academy/production-ai-agents"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

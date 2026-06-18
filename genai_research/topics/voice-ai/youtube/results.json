@@ -1,0 +1,60 @@
+{
+  "entity_type": "topic",
+  "entity_name": "voice AI",
+  "entity_slug": "voice-ai",
+  "platform": "youtube",
+  "query_terms": [
+    "voice AI",
+    "AI agents",
+    "multimodal AI",
+    "conversation design",
+    "audio AI"
+  ],
+  "results": [
+    {
+      "title": "Voice AI and Voice Agents 2025 - Session 01",
+      "url": "https://www.youtube.com/watch?v=m4QF78X7t9k",
+      "content_type": "video",
+      "summary": "A YouTube session from a community-hosted course about building voice agents.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://www.youtube.com/watch?v=m4QF78X7t9k"
+      ]
+    },
+    {
+      "title": "AI Voice Agents Full Course 2026: Beginner to Advanced",
+      "url": "https://www.youtube.com/watch?v=UAxKs9Yuljo",
+      "content_type": "video",
+      "summary": "A YouTube full-course style resource on AI voice agents from beginner to advanced.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://www.youtube.com/watch?v=UAxKs9Yuljo"
+      ]
+    },
+    {
+      "title": "Source for voice AI",
+      "url": "https://www.youtube.com/watch?v=m4QF78X7t9k",
+      "content_type": "other",
+      "summary": "Citation source for voice AI.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.youtube.com/watch?v=m4QF78X7t9k"
+      ]
+    },
+    {
+      "title": "Source for voice AI",
+      "url": "https://www.youtube.com/watch?v=UAxKs9Yuljo",
+      "content_type": "other",
+      "summary": "Citation source for voice AI.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.youtube.com/watch?v=UAxKs9Yuljo"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

@@ -1,0 +1,28 @@
+{
+  "entity_type": "course",
+  "entity_name": "Generative AI for Beginners Full Series",
+  "entity_slug": "generative-ai-for-beginners-full-series",
+  "platform": "youtube",
+  "query_terms": [
+    "Generative AI for Beginners Full Series",
+    "LLMs",
+    "prompt engineering",
+    "RAG",
+    "AI safety and evaluation"
+  ],
+  "results": [
+    {
+      "title": "Generative AI for Beginners Full Series",
+      "url": "https://www.youtube.com/watch?v=k7HaeJs-N-o",
+      "content_type": "video",
+      "summary": "A YouTube full-series resource for Microsoft's Generative AI for Beginners, with sections on responsible AI and prompt engineering.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://www.youtube.com/watch?v=k7HaeJs-N-o"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

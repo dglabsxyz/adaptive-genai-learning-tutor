@@ -1,0 +1,28 @@
+{
+  "entity_type": "instructor",
+  "entity_name": "Jeremy Howard",
+  "entity_slug": "jeremy-howard",
+  "platform": "website",
+  "query_terms": [
+    "Jeremy Howard",
+    "LLMs",
+    "image generation",
+    "deep learning",
+    "AI coding"
+  ],
+  "results": [
+    {
+      "title": "Practical Deep Learning for Coders",
+      "url": "https://course.fast.ai/",
+      "content_type": "course",
+      "summary": "A free fast.ai course for coders learning practical deep learning.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://course.fast.ai/"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

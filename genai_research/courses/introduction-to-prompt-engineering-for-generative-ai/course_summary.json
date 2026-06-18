@@ -1,0 +1,56 @@
+{
+  "course_name": "Introduction to Prompt Engineering for Generative AI",
+  "course_slug": "introduction-to-prompt-engineering-for-generative-ai",
+  "instructor_names": [
+    "Ronnie Sheer"
+  ],
+  "instructor_slugs": [
+    "ronnie-sheer"
+  ],
+  "platform": "LinkedIn Learning",
+  "course_url": "https://www.linkedin.com/learning/introduction-to-prompt-engineering-for-generative-ai-24636124",
+  "topic_tags": [
+    "prompt engineering",
+    "LLMs",
+    "generative AI"
+  ],
+  "description": "A LinkedIn Learning course on crafting prompts for Copilot, ChatGPT, Gemini, and Claude.",
+  "syllabus": [],
+  "target_audience": [],
+  "prerequisites": [],
+  "duration": "1h 3m",
+  "format": "Video course",
+  "price": {
+    "amount": null,
+    "currency": null,
+    "raw": "LinkedIn Premium"
+  },
+  "rating": {
+    "value": null,
+    "count": null,
+    "raw": null
+  },
+  "certificate": null,
+  "enrollment_status": null,
+  "last_updated": null,
+  "citations": [
+    "https://www.linkedin.com/learning/introduction-to-prompt-engineering-for-generative-ai-24636124",
+    "https://www.linkedin.com/learning/topics/artificial-intelligence"
+  ],
+  "source_records": [
+    {
+      "platform": "LinkedIn Learning",
+      "url": "https://www.linkedin.com/learning/introduction-to-prompt-engineering-for-generative-ai-24636124",
+      "title": "Introduction to Prompt Engineering for Generative AI",
+      "summary": "A LinkedIn Learning course on crafting prompts for Copilot, ChatGPT, Gemini, and Claude.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.linkedin.com/learning/introduction-to-prompt-engineering-for-generative-ai-24636124"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

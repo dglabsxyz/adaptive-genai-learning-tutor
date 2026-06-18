@@ -1,0 +1,59 @@
+{
+  "course_name": "Prompt Engineering for Generative AI - GOTO 2025 Session",
+  "course_slug": "prompt-engineering-for-generative-ai-goto-2025-session",
+  "instructor_names": [
+    "James Phoenix",
+    "Mike Taylor",
+    "Phil Winder"
+  ],
+  "instructor_slugs": [
+    "james-phoenix",
+    "mike-taylor",
+    "phil-winder"
+  ],
+  "platform": "YouTube",
+  "course_url": "https://www.youtube.com/watch?v=3a0WHZVb1Gg",
+  "topic_tags": [
+    "prompt engineering",
+    "LLMs",
+    "conference"
+  ],
+  "description": "A GOTO 2025 YouTube conference/session source involving authors and practitioners of prompt engineering for generative AI.",
+  "syllabus": [],
+  "target_audience": [],
+  "prerequisites": [],
+  "duration": null,
+  "format": "Conference session",
+  "price": {
+    "amount": null,
+    "currency": null,
+    "raw": null
+  },
+  "rating": {
+    "value": null,
+    "count": null,
+    "raw": null
+  },
+  "certificate": null,
+  "enrollment_status": null,
+  "last_updated": null,
+  "citations": [
+    "https://www.youtube.com/watch?v=3a0WHZVb1Gg"
+  ],
+  "source_records": [
+    {
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/watch?v=3a0WHZVb1Gg",
+      "title": "Prompt Engineering for Generative AI - GOTO 2025 Session",
+      "summary": "A GOTO 2025 YouTube conference/session source involving authors and practitioners of prompt engineering for generative AI.",
+      "content_type": "interview",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://www.youtube.com/watch?v=3a0WHZVb1Gg"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

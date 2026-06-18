@@ -1,0 +1,61 @@
+{
+  "entity_type": "topic",
+  "entity_name": "AI agents",
+  "entity_slug": "ai-agents",
+  "platform": "linkedin",
+  "query_terms": [
+    "AI agents",
+    "LLMs",
+    "tool use",
+    "RAG",
+    "multi-agent systems",
+    "AI automation"
+  ],
+  "results": [
+    {
+      "title": "Context Engineering for Developers",
+      "url": "https://www.linkedin.com/learning/context-engineering-for-developers",
+      "content_type": "course",
+      "summary": "A LinkedIn Learning course for AI practitioners and prompt engineers building better AI agents and RAG pipelines.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.linkedin.com/learning/context-engineering-for-developers"
+      ]
+    },
+    {
+      "title": "Creating Agents with Python and the AI Toolkit for Visual Studio Code",
+      "url": "https://www.linkedin.com/learning/creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code",
+      "content_type": "course",
+      "summary": "A LinkedIn Learning course on building and evaluating Python-based AI agents with the AI Toolkit for Visual Studio Code.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.linkedin.com/learning/creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code"
+      ]
+    },
+    {
+      "title": "Source for AI agents",
+      "url": "https://www.linkedin.com/learning/context-engineering-for-developers",
+      "content_type": "other",
+      "summary": "Citation source for AI agents.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.linkedin.com/learning/context-engineering-for-developers"
+      ]
+    },
+    {
+      "title": "Source for AI agents",
+      "url": "https://www.linkedin.com/learning/creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code",
+      "content_type": "other",
+      "summary": "Citation source for AI agents.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.linkedin.com/learning/creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

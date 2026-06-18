@@ -1,0 +1,67 @@
+{
+  "name": "Anthropic Team",
+  "slug": "anthropic-team",
+  "headline": null,
+  "organization": "Anthropic",
+  "bio": null,
+  "expertise_areas": [
+    "prompt engineering",
+    "Claude",
+    "LLMs"
+  ],
+  "topics_taught": [
+    "prompt engineering",
+    "Claude",
+    "LLMs"
+  ],
+  "platforms": [
+    "GitHub"
+  ],
+  "website": null,
+  "social_profiles": {
+    "linkedin": null,
+    "youtube": null,
+    "x": null,
+    "github": null,
+    "other": []
+  },
+  "audience_levels": [
+    "intermediate"
+  ],
+  "teaching_formats": [
+    "Interactive tutorial"
+  ],
+  "courses": [
+    {
+      "course_name": "Prompt Engineering Interactive Tutorial",
+      "course_slug": "prompt-engineering-interactive-tutorial",
+      "platform": "GitHub",
+      "url": "https://github.com/anthropics/prompt-eng-interactive-tutorial",
+      "citations": [
+        "https://github.com/anthropics/prompt-eng-interactive-tutorial",
+        "https://www.anthropic.com/learn"
+      ]
+    }
+  ],
+  "credibility_signals": [],
+  "citations": [
+    "https://github.com/anthropics/prompt-eng-interactive-tutorial",
+    "https://www.anthropic.com/learn"
+  ],
+  "source_records": [
+    {
+      "platform": "GitHub",
+      "url": "https://github.com/anthropics/prompt-eng-interactive-tutorial",
+      "title": "Prompt Engineering Interactive Tutorial",
+      "summary": "An Anthropic interactive tutorial for practicing prompt engineering with Claude.",
+      "content_type": "repository",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://github.com/anthropics/prompt-eng-interactive-tutorial"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

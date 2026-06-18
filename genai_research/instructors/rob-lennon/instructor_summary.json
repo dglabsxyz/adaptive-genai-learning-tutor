@@ -1,0 +1,67 @@
+{
+  "name": "Rob Lennon",
+  "slug": "rob-lennon",
+  "headline": null,
+  "organization": null,
+  "bio": null,
+  "expertise_areas": [
+    "AI agents",
+    "AI automation",
+    "business AI",
+    "content creation"
+  ],
+  "topics_taught": [
+    "AI agents",
+    "AI automation",
+    "business AI",
+    "content creation"
+  ],
+  "platforms": [
+    "Maven"
+  ],
+  "website": null,
+  "social_profiles": {
+    "linkedin": null,
+    "youtube": null,
+    "x": null,
+    "github": null,
+    "other": []
+  },
+  "audience_levels": [
+    "intermediate"
+  ],
+  "teaching_formats": [
+    "Cohort-based course"
+  ],
+  "courses": [
+    {
+      "course_name": "AI Agents for Content Creators",
+      "course_slug": "ai-agents-for-content-creators",
+      "platform": "Maven",
+      "url": "https://maven.com/lennon/ai-agents-for-content",
+      "citations": [
+        "https://maven.com/lennon/ai-agents-for-content"
+      ]
+    }
+  ],
+  "credibility_signals": [],
+  "citations": [
+    "https://maven.com/lennon/ai-agents-for-content"
+  ],
+  "source_records": [
+    {
+      "platform": "Maven",
+      "url": "https://maven.com/lennon/ai-agents-for-content",
+      "title": "AI Agents for Content Creators",
+      "summary": "A blueprint for using AI agents to source ideas, draft emails, and write posts in a creator's style and point of view.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://maven.com/lennon/ai-agents-for-content"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

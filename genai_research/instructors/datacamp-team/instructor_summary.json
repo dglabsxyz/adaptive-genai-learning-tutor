@@ -1,0 +1,94 @@
+{
+  "name": "DataCamp Team",
+  "slug": "datacamp-team",
+  "headline": null,
+  "organization": "DataCamp",
+  "bio": null,
+  "expertise_areas": [
+    "RAG",
+    "vector databases",
+    "embeddings",
+    "AI safety and evaluation",
+    "AI ethics",
+    "responsible AI"
+  ],
+  "topics_taught": [
+    "RAG",
+    "vector databases",
+    "embeddings",
+    "AI safety and evaluation",
+    "AI ethics",
+    "responsible AI"
+  ],
+  "platforms": [
+    "DataCamp"
+  ],
+  "website": null,
+  "social_profiles": {
+    "linkedin": null,
+    "youtube": null,
+    "x": null,
+    "github": null,
+    "other": []
+  },
+  "audience_levels": [
+    "enterprise"
+  ],
+  "teaching_formats": [
+    "Interactive course"
+  ],
+  "courses": [
+    {
+      "course_name": "Vector Databases for Embeddings with Pinecone",
+      "course_slug": "vector-databases-for-embeddings-with-pinecone",
+      "platform": "DataCamp",
+      "url": "https://www.datacamp.com/courses/vector-databases-for-embeddings-with-pinecone",
+      "citations": [
+        "https://www.datacamp.com/courses/vector-databases-for-embeddings-with-pinecone"
+      ]
+    },
+    {
+      "course_name": "AI Ethics",
+      "course_slug": "ai-ethics",
+      "platform": "DataCamp",
+      "url": "https://www.datacamp.com/courses/ai-ethics",
+      "citations": [
+        "https://www.datacamp.com/courses/ai-ethics"
+      ]
+    }
+  ],
+  "credibility_signals": [],
+  "citations": [
+    "https://www.datacamp.com/courses/vector-databases-for-embeddings-with-pinecone",
+    "https://www.datacamp.com/courses/ai-ethics"
+  ],
+  "source_records": [
+    {
+      "platform": "DataCamp",
+      "url": "https://www.datacamp.com/courses/vector-databases-for-embeddings-with-pinecone",
+      "title": "Vector Databases for Embeddings with Pinecone",
+      "summary": "A DataCamp course on using Pinecone to store, manipulate, and query embedding vectors.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.datacamp.com/courses/vector-databases-for-embeddings-with-pinecone"
+      ]
+    },
+    {
+      "platform": "DataCamp",
+      "url": "https://www.datacamp.com/courses/ai-ethics",
+      "title": "AI Ethics",
+      "summary": "A DataCamp course covering ethical considerations in artificial intelligence.",
+      "content_type": "course",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.datacamp.com/courses/ai-ethics"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

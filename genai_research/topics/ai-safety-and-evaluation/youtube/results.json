@@ -1,0 +1,39 @@
+{
+  "entity_type": "topic",
+  "entity_name": "AI safety and evaluation",
+  "entity_slug": "ai-safety-and-evaluation",
+  "platform": "youtube",
+  "query_terms": [
+    "AI safety and evaluation",
+    "AI evals",
+    "responsible AI",
+    "AI agents",
+    "RAG",
+    "fine-tuning"
+  ],
+  "results": [
+    {
+      "title": "Generative AI for Beginners Full Series",
+      "url": "https://www.youtube.com/watch?v=k7HaeJs-N-o",
+      "content_type": "video",
+      "summary": "A YouTube full-series resource for Microsoft's Generative AI for Beginners, with sections on responsible AI and prompt engineering.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://www.youtube.com/watch?v=k7HaeJs-N-o"
+      ]
+    },
+    {
+      "title": "Source for AI safety and evaluation",
+      "url": "https://www.youtube.com/watch?v=k7HaeJs-N-o",
+      "content_type": "other",
+      "summary": "Citation source for AI safety and evaluation.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.youtube.com/watch?v=k7HaeJs-N-o"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

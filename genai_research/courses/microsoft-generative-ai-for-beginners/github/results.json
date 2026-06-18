@@ -1,0 +1,29 @@
+{
+  "entity_type": "course",
+  "entity_name": "Microsoft Generative AI for Beginners",
+  "entity_slug": "microsoft-generative-ai-for-beginners",
+  "platform": "github",
+  "query_terms": [
+    "Microsoft Generative AI for Beginners",
+    "LLMs",
+    "prompt engineering",
+    "RAG",
+    "AI safety and evaluation",
+    "AI agents"
+  ],
+  "results": [
+    {
+      "title": "Microsoft Generative AI for Beginners",
+      "url": "https://github.com/microsoft/generative-ai-for-beginners",
+      "content_type": "repository",
+      "summary": "A Microsoft open-source curriculum with 21 lessons on building generative AI applications.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://github.com/microsoft/generative-ai-for-beginners"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

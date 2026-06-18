@@ -1,0 +1,67 @@
+{
+  "name": "Maxime Labonne",
+  "slug": "maxime-labonne",
+  "headline": null,
+  "organization": null,
+  "bio": null,
+  "expertise_areas": [
+    "LLMs",
+    "fine-tuning",
+    "RAG",
+    "AI agents"
+  ],
+  "topics_taught": [
+    "LLMs",
+    "fine-tuning",
+    "RAG",
+    "AI agents"
+  ],
+  "platforms": [
+    "Hugging Face"
+  ],
+  "website": null,
+  "social_profiles": {
+    "linkedin": null,
+    "youtube": null,
+    "x": null,
+    "github": null,
+    "other": []
+  },
+  "audience_levels": [
+    "intermediate"
+  ],
+  "teaching_formats": [
+    "Course roadmap"
+  ],
+  "courses": [
+    {
+      "course_name": "The Large Language Model Course",
+      "course_slug": "the-large-language-model-course",
+      "platform": "Hugging Face",
+      "url": "https://huggingface.co/blog/mlabonne/llm-course",
+      "citations": [
+        "https://huggingface.co/blog/mlabonne/llm-course"
+      ]
+    }
+  ],
+  "credibility_signals": [],
+  "citations": [
+    "https://huggingface.co/blog/mlabonne/llm-course"
+  ],
+  "source_records": [
+    {
+      "platform": "Hugging Face",
+      "url": "https://huggingface.co/blog/mlabonne/llm-course",
+      "title": "The Large Language Model Course",
+      "summary": "A Hugging Face blog/course resource collecting topics and roadmaps for getting into LLMs.",
+      "content_type": "article",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://huggingface.co/blog/mlabonne/llm-course"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

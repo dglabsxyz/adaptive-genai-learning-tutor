@@ -1,0 +1,38 @@
+{
+  "entity_type": "topic",
+  "entity_name": "AI product development",
+  "entity_slug": "ai-product-development",
+  "platform": "medium",
+  "query_terms": [
+    "AI product development",
+    "AI product management",
+    "AI coding",
+    "AI agents",
+    "business AI"
+  ],
+  "results": [
+    {
+      "title": "Best Practices in Prompt Engineering",
+      "url": "https://medium.com/data-science/best-practices-in-prompt-engineering-a18d6bab904b",
+      "content_type": "article",
+      "summary": "A Medium teaching article on prompt-engineering principles, iterative development, and prompting capabilities.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://medium.com/data-science/best-practices-in-prompt-engineering-a18d6bab904b"
+      ]
+    },
+    {
+      "title": "Source for AI product development",
+      "url": "https://medium.com/data-science/best-practices-in-prompt-engineering-a18d6bab904b",
+      "content_type": "other",
+      "summary": "Citation source for AI product development.",
+      "extracted_data": {},
+      "citations": [
+        "https://medium.com/data-science/best-practices-in-prompt-engineering-a18d6bab904b"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

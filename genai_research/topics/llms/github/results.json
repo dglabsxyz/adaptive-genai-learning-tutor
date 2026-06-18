@@ -1,0 +1,83 @@
+{
+  "entity_type": "topic",
+  "entity_name": "LLMs",
+  "entity_slug": "llms",
+  "platform": "github",
+  "query_terms": [
+    "LLMs",
+    "prompt engineering",
+    "fine-tuning",
+    "RAG",
+    "AI agents",
+    "context engineering"
+  ],
+  "results": [
+    {
+      "title": "Microsoft Generative AI for Beginners",
+      "url": "https://github.com/microsoft/generative-ai-for-beginners",
+      "content_type": "repository",
+      "summary": "A Microsoft open-source curriculum with 21 lessons on building generative AI applications.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://github.com/microsoft/generative-ai-for-beginners"
+      ]
+    },
+    {
+      "title": "Prompt Engineering Interactive Tutorial",
+      "url": "https://github.com/anthropics/prompt-eng-interactive-tutorial",
+      "content_type": "repository",
+      "summary": "An Anthropic interactive tutorial for practicing prompt engineering with Claude.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://github.com/anthropics/prompt-eng-interactive-tutorial"
+      ]
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "url": "https://github.com/openai/openai-cookbook",
+      "content_type": "repository",
+      "summary": "OpenAI's public collection of examples and guides for building with OpenAI models and APIs.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://github.com/openai/openai-cookbook"
+      ]
+    },
+    {
+      "title": "Source for LLMs",
+      "url": "https://github.com/microsoft/generative-ai-for-beginners",
+      "content_type": "other",
+      "summary": "Citation source for LLMs.",
+      "extracted_data": {},
+      "citations": [
+        "https://github.com/microsoft/generative-ai-for-beginners"
+      ]
+    },
+    {
+      "title": "Source for LLMs",
+      "url": "https://github.com/anthropics/prompt-eng-interactive-tutorial",
+      "content_type": "other",
+      "summary": "Citation source for LLMs.",
+      "extracted_data": {},
+      "citations": [
+        "https://github.com/anthropics/prompt-eng-interactive-tutorial"
+      ]
+    },
+    {
+      "title": "Source for LLMs",
+      "url": "https://github.com/openai/openai-cookbook",
+      "content_type": "other",
+      "summary": "Citation source for LLMs.",
+      "extracted_data": {},
+      "citations": [
+        "https://github.com/openai/openai-cookbook"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

@@ -1,0 +1,38 @@
+{
+  "entity_type": "topic",
+  "entity_name": "AI coding",
+  "entity_slug": "ai-coding",
+  "platform": "substack",
+  "query_terms": [
+    "AI coding",
+    "AI agents",
+    "vibe coding",
+    "AI product development",
+    "prompt engineering"
+  ],
+  "results": [
+    {
+      "title": "11 Workshops to Build Production AI Agents",
+      "url": "https://alexeyondata.substack.com/p/11-workshops-to-build-production",
+      "content_type": "article",
+      "summary": "A Substack teaching-resource post collecting GenAI workshops on agents, RAG, MCP, guardrails, and production systems.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://alexeyondata.substack.com/p/11-workshops-to-build-production"
+      ]
+    },
+    {
+      "title": "Source for AI coding",
+      "url": "https://alexeyondata.substack.com/p/11-workshops-to-build-production",
+      "content_type": "other",
+      "summary": "Citation source for AI coding.",
+      "extracted_data": {},
+      "citations": [
+        "https://alexeyondata.substack.com/p/11-workshops-to-build-production"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

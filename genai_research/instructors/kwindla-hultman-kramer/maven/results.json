@@ -1,0 +1,29 @@
+{
+  "entity_type": "instructor",
+  "entity_name": "Kwindla Hultman Kramer",
+  "entity_slug": "kwindla-hultman-kramer",
+  "platform": "maven",
+  "query_terms": [
+    "Kwindla Hultman Kramer",
+    "voice AI",
+    "AI agents",
+    "AI automation",
+    "speech-to-text",
+    "text-to-speech"
+  ],
+  "results": [
+    {
+      "title": "Become a Voice AI Agent Expert",
+      "url": "https://maven.com/p/5de0a6/become-a-voice-ai-agent-expert",
+      "content_type": "other",
+      "summary": "A Maven lesson on voice agent building blocks, models, latency, hosting, telephony, and evaluation.",
+      "extracted_data": {
+        "entity_type": "teaching resource"
+      },
+      "citations": [
+        "https://maven.com/p/5de0a6/become-a-voice-ai-agent-expert"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

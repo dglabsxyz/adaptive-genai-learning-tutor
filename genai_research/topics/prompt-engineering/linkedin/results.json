@@ -1,0 +1,71 @@
+{
+  "entity_type": "topic",
+  "entity_name": "prompt engineering",
+  "entity_slug": "prompt-engineering",
+  "platform": "linkedin",
+  "query_terms": [
+    "prompt engineering",
+    "LLMs",
+    "context engineering",
+    "AI agents",
+    "RAG",
+    "AI coding"
+  ],
+  "results": [
+    {
+      "title": "Introduction to Prompt Engineering for Generative AI",
+      "url": "https://www.linkedin.com/learning/introduction-to-prompt-engineering-for-generative-ai-24636124",
+      "content_type": "course",
+      "summary": "A LinkedIn Learning course on crafting prompts for Copilot, ChatGPT, Gemini, and Claude.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.linkedin.com/learning/introduction-to-prompt-engineering-for-generative-ai-24636124"
+      ]
+    },
+    {
+      "title": "Context Engineering for Developers",
+      "url": "https://www.linkedin.com/learning/context-engineering-for-developers",
+      "content_type": "course",
+      "summary": "A LinkedIn Learning course for AI practitioners and prompt engineers building better AI agents and RAG pipelines.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.linkedin.com/learning/context-engineering-for-developers"
+      ]
+    },
+    {
+      "title": "Source for prompt engineering",
+      "url": "https://www.linkedin.com/learning/introduction-to-prompt-engineering-for-generative-ai-24636124",
+      "content_type": "other",
+      "summary": "Citation source for prompt engineering.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.linkedin.com/learning/introduction-to-prompt-engineering-for-generative-ai-24636124"
+      ]
+    },
+    {
+      "title": "Source for prompt engineering",
+      "url": "https://www.linkedin.com/learning/topics/artificial-intelligence",
+      "content_type": "other",
+      "summary": "Citation source for prompt engineering.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.linkedin.com/learning/topics/artificial-intelligence"
+      ]
+    },
+    {
+      "title": "Source for prompt engineering",
+      "url": "https://www.linkedin.com/learning/context-engineering-for-developers",
+      "content_type": "other",
+      "summary": "Citation source for prompt engineering.",
+      "extracted_data": {},
+      "citations": [
+        "https://www.linkedin.com/learning/context-engineering-for-developers"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

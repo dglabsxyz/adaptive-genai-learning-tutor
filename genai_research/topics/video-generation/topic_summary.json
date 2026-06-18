@@ -1,0 +1,131 @@
+{
+  "topic": "video generation",
+  "slug": "video-generation",
+  "description": "Generating, editing, evaluating, and orchestrating AI-created video.",
+  "related_topics": [
+    "image generation",
+    "multimodal AI",
+    "generative media",
+    "voice AI"
+  ],
+  "instructors": [
+    {
+      "name": "Bilawal Sidhu",
+      "slug": "bilawal-sidhu",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Maven"
+      ],
+      "citations": [
+        "https://maven.com/bilawal/generative-ai-masterclass"
+      ]
+    },
+    {
+      "name": "Katie Nguyen",
+      "slug": "katie-nguyen",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "DeepLearning.AI"
+      ],
+      "citations": [
+        "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation"
+      ]
+    },
+    {
+      "name": "Wafae Bakkali",
+      "slug": "wafae-bakkali",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "DeepLearning.AI"
+      ],
+      "citations": [
+        "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation"
+      ]
+    },
+    {
+      "name": "LinkedIn Learning Team",
+      "slug": "linkedin-learning-team",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "LinkedIn Learning"
+      ],
+      "citations": [
+        "https://www.linkedin.com/learning/hands-on-ai-rag-using-llamaindex",
+        "https://www.linkedin.com/learning/context-engineering-for-developers",
+        "https://www.linkedin.com/learning/creating-agents-with-python-and-the-ai-toolkit-for-visual-studio-code",
+        "https://www.linkedin.com/learning/fine-tuning-for-llms-from-beginner-to-advanced",
+        "https://www.linkedin.com/learning/multimodal-ai-essentials-merging-text-image-and-audio-for-next-generation-ai-applications",
+        "https://www.linkedin.com/learning/elevenlabs-ai-voice-cloning-text-to-speech-and-sound-effects"
+      ]
+    },
+    {
+      "name": "Runway Academy",
+      "slug": "runway-academy",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Runway Academy"
+      ],
+      "citations": [
+        "https://academy.runwayml.com/"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "course_name": "Generative AI Creation Masterclass",
+      "course_slug": "generative-ai-creation-masterclass",
+      "instructor_names": [
+        "Bilawal Sidhu"
+      ],
+      "platform": "Maven",
+      "course_url": "https://maven.com/bilawal/generative-ai-masterclass",
+      "citations": [
+        "https://maven.com/bilawal/generative-ai-masterclass"
+      ]
+    },
+    {
+      "course_name": "AI Agents for Image and Video Generation",
+      "course_slug": "ai-agents-for-image-and-video-generation",
+      "instructor_names": [
+        "Katie Nguyen",
+        "Wafae Bakkali"
+      ],
+      "platform": "DeepLearning.AI",
+      "course_url": "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation",
+      "citations": [
+        "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation"
+      ]
+    },
+    {
+      "course_name": "Multimodal AI Essentials: Merging Text, Image, and Audio",
+      "course_slug": "multimodal-ai-essentials-merging-text-image-and-audio",
+      "instructor_names": [
+        "LinkedIn Learning Team"
+      ],
+      "platform": "LinkedIn Learning",
+      "course_url": "https://www.linkedin.com/learning/multimodal-ai-essentials-merging-text-image-and-audio-for-next-generation-ai-applications",
+      "citations": [
+        "https://www.linkedin.com/learning/multimodal-ai-essentials-merging-text-image-and-audio-for-next-generation-ai-applications"
+      ]
+    },
+    {
+      "course_name": "Runway AI Video Creation",
+      "course_slug": "runway-ai-video-creation",
+      "instructor_names": [
+        "Runway Academy"
+      ],
+      "platform": "Runway Academy",
+      "course_url": "https://academy.runwayml.com/",
+      "citations": [
+        "https://academy.runwayml.com/"
+      ]
+    }
+  ],
+  "sources": [
+    "https://www.deeplearning.ai/courses/ai-agents-for-image-and-video-generation",
+    "https://academy.runwayml.com/",
+    "https://maven.com/bilawal/generative-ai-masterclass",
+    "https://www.linkedin.com/learning/multimodal-ai-essentials-merging-text-image-and-audio-for-next-generation-ai-applications"
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

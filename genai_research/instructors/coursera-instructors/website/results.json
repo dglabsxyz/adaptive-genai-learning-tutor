@@ -1,0 +1,72 @@
+{
+  "entity_type": "instructor",
+  "entity_name": "Coursera instructors",
+  "entity_slug": "coursera-instructors",
+  "platform": "website",
+  "query_terms": [
+    "Coursera instructors",
+    "prompt engineering",
+    "LLMs",
+    "generative AI",
+    "fine-tuning",
+    "RAG",
+    "AI safety and evaluation",
+    "no-code AI",
+    "AI automation",
+    "Zapier",
+    "workflow automation",
+    "responsible AI",
+    "AI ethics"
+  ],
+  "results": [
+    {
+      "title": "Generative AI and Prompt Engineering",
+      "url": "https://www.coursera.org/learn/generative-ai--prompt-engineering",
+      "content_type": "course",
+      "summary": "A Coursera course providing foundational knowledge of generative AI concepts, foundation models, and prompt engineering techniques.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.coursera.org/learn/generative-ai--prompt-engineering"
+      ]
+    },
+    {
+      "title": "LLM Engineering: Prompting, Fine-Tuning, Optimization and RAG",
+      "url": "https://www.coursera.org/specializations/llm-engineering-prompting-fine-tuning-optimization-rag",
+      "content_type": "course",
+      "summary": "A Coursera specialization on end-to-end LLM engineering, prompt design, evaluation, fine-tuning, optimization, and RAG.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.coursera.org/specializations/llm-engineering-prompting-fine-tuning-optimization-rag"
+      ]
+    },
+    {
+      "title": "Operationalizing No-Code AI with Zapier",
+      "url": "https://www.coursera.org/learn/operationalizing-no-code-ai-with-zapier-automation-and-plans",
+      "content_type": "course",
+      "summary": "A Coursera course on designing, building, optimizing, and scaling no-code AI workflows with Zapier.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.coursera.org/learn/operationalizing-no-code-ai-with-zapier-automation-and-plans"
+      ]
+    },
+    {
+      "title": "Trustworthy AI: Managing Bias, Ethics, and Accountability",
+      "url": "https://www.coursera.org/learn/responsible-ai-and-ethics",
+      "content_type": "course",
+      "summary": "A Coursera course on ethical, social, and technical aspects of AI and machine learning.",
+      "extracted_data": {
+        "entity_type": "course"
+      },
+      "citations": [
+        "https://www.coursera.org/learn/responsible-ai-and-ethics"
+      ]
+    }
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

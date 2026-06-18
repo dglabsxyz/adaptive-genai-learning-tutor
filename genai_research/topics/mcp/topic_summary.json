@@ -1,0 +1,69 @@
+{
+  "topic": "MCP",
+  "slug": "mcp",
+  "description": "Model Context Protocol patterns for connecting AI agents and applications to tools, data sources, and local/remote capabilities.",
+  "related_topics": [
+    "AI agents",
+    "AI coding",
+    "context engineering",
+    "tool use"
+  ],
+  "instructors": [
+    {
+      "name": "Alexey Grigorev",
+      "slug": "alexey-grigorev",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Maven",
+        "Substack"
+      ],
+      "citations": [
+        "https://maven.com/alexey-grigorev/from-rag-to-agents",
+        "https://alexeyondata.substack.com/p/11-workshops-to-build-production"
+      ]
+    },
+    {
+      "name": "Miguel Otero Pedrido",
+      "slug": "miguel-otero-pedrido",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Substack"
+      ],
+      "citations": [
+        "https://theneuralmaze.substack.com/p/the-ai-engineering-course-i-wish"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "course_name": "11 Workshops to Build Production AI Agents",
+      "course_slug": "11-workshops-to-build-production-ai-agents",
+      "instructor_names": [
+        "Alexey Grigorev"
+      ],
+      "platform": "Substack",
+      "course_url": "https://alexeyondata.substack.com/p/11-workshops-to-build-production",
+      "citations": [
+        "https://alexeyondata.substack.com/p/11-workshops-to-build-production"
+      ]
+    },
+    {
+      "course_name": "The AI Engineering Course I Wish I Had",
+      "course_slug": "the-ai-engineering-course-i-wish-i-had",
+      "instructor_names": [
+        "Miguel Otero Pedrido"
+      ],
+      "platform": "Substack",
+      "course_url": "https://theneuralmaze.substack.com/p/the-ai-engineering-course-i-wish",
+      "citations": [
+        "https://theneuralmaze.substack.com/p/the-ai-engineering-course-i-wish"
+      ]
+    }
+  ],
+  "sources": [
+    "https://maven.com/courses/ai/mcp",
+    "https://alexeyondata.substack.com/p/11-workshops-to-build-production",
+    "https://theneuralmaze.substack.com/p/the-ai-engineering-course-i-wish"
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

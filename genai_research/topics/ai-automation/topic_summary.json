@@ -1,0 +1,238 @@
+{
+  "topic": "AI automation",
+  "slug": "ai-automation",
+  "description": "Workflow automation using LLMs, agents, APIs, no-code platforms, and orchestration tools such as Zapier, n8n, and Make.",
+  "related_topics": [
+    "AI agents",
+    "no-code AI",
+    "business AI",
+    "voice AI"
+  ],
+  "instructors": [
+    {
+      "name": "John Hwang",
+      "slug": "john-hwang",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Maven"
+      ],
+      "citations": [
+        "https://maven.com/ai-agent-campus/ai-agents-for-sales-and-go-to-market"
+      ]
+    },
+    {
+      "name": "Sheamus McGovern",
+      "slug": "sheamus-mcgovern",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Maven"
+      ],
+      "citations": [
+        "https://maven.com/aitraining/minibootcamp"
+      ]
+    },
+    {
+      "name": "Rob Lennon",
+      "slug": "rob-lennon",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Maven"
+      ],
+      "citations": [
+        "https://maven.com/lennon/ai-agents-for-content"
+      ]
+    },
+    {
+      "name": "Bilawal Sidhu",
+      "slug": "bilawal-sidhu",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Maven"
+      ],
+      "citations": [
+        "https://maven.com/bilawal/generative-ai-masterclass"
+      ]
+    },
+    {
+      "name": "Kwindla Hultman Kramer",
+      "slug": "kwindla-hultman-kramer",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Maven"
+      ],
+      "citations": [
+        "https://maven.com/p/5de0a6/become-a-voice-ai-agent-expert"
+      ]
+    },
+    {
+      "name": "Hugging Face Team",
+      "slug": "hugging-face-team",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Hugging Face"
+      ],
+      "citations": [
+        "https://huggingface.co/learn"
+      ]
+    },
+    {
+      "name": "YouTube creator",
+      "slug": "youtube-creator",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "YouTube"
+      ],
+      "citations": [
+        "https://www.youtube.com/watch?v=UAxKs9Yuljo"
+      ]
+    },
+    {
+      "name": "Coursera instructors",
+      "slug": "coursera-instructors",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Coursera"
+      ],
+      "citations": [
+        "https://www.coursera.org/learn/generative-ai--prompt-engineering",
+        "https://www.coursera.org/specializations/llm-engineering-prompting-fine-tuning-optimization-rag",
+        "https://www.coursera.org/learn/operationalizing-no-code-ai-with-zapier-automation-and-plans",
+        "https://www.coursera.org/learn/responsible-ai-and-ethics"
+      ]
+    },
+    {
+      "name": "Christopher S. Penn",
+      "slug": "christopher-s-penn",
+      "relevance": "Associated with cited courses or teaching resources for this topic.",
+      "platforms": [
+        "Substack"
+      ],
+      "citations": [
+        "https://almosttimely.substack.com/p/almost-timely-news-ai-agents-101"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "course_name": "AI Agents for Sales and GTM",
+      "course_slug": "ai-agents-for-sales-and-gtm",
+      "instructor_names": [
+        "John Hwang"
+      ],
+      "platform": "Maven",
+      "course_url": "https://maven.com/ai-agent-campus/ai-agents-for-sales-and-go-to-market",
+      "citations": [
+        "https://maven.com/ai-agent-campus/ai-agents-for-sales-and-go-to-market"
+      ]
+    },
+    {
+      "course_name": "AI Mini-Bootcamp",
+      "course_slug": "ai-mini-bootcamp",
+      "instructor_names": [
+        "Sheamus McGovern"
+      ],
+      "platform": "Maven",
+      "course_url": "https://maven.com/aitraining/minibootcamp",
+      "citations": [
+        "https://maven.com/aitraining/minibootcamp"
+      ]
+    },
+    {
+      "course_name": "AI Agents for Content Creators",
+      "course_slug": "ai-agents-for-content-creators",
+      "instructor_names": [
+        "Rob Lennon"
+      ],
+      "platform": "Maven",
+      "course_url": "https://maven.com/lennon/ai-agents-for-content",
+      "citations": [
+        "https://maven.com/lennon/ai-agents-for-content"
+      ]
+    },
+    {
+      "course_name": "Generative AI Creation Masterclass",
+      "course_slug": "generative-ai-creation-masterclass",
+      "instructor_names": [
+        "Bilawal Sidhu"
+      ],
+      "platform": "Maven",
+      "course_url": "https://maven.com/bilawal/generative-ai-masterclass",
+      "citations": [
+        "https://maven.com/bilawal/generative-ai-masterclass"
+      ]
+    },
+    {
+      "course_name": "Become a Voice AI Agent Expert",
+      "course_slug": "become-a-voice-ai-agent-expert",
+      "instructor_names": [
+        "Kwindla Hultman Kramer"
+      ],
+      "platform": "Maven",
+      "course_url": "https://maven.com/p/5de0a6/become-a-voice-ai-agent-expert",
+      "citations": [
+        "https://maven.com/p/5de0a6/become-a-voice-ai-agent-expert"
+      ]
+    },
+    {
+      "course_name": "Diffusion Course",
+      "course_slug": "diffusion-course",
+      "instructor_names": [
+        "Hugging Face Team"
+      ],
+      "platform": "Hugging Face",
+      "course_url": "https://huggingface.co/learn",
+      "citations": [
+        "https://huggingface.co/learn"
+      ]
+    },
+    {
+      "course_name": "AI Voice Agents Full Course 2026: Beginner to Advanced",
+      "course_slug": "ai-voice-agents-full-course-2026-beginner-to-advanced",
+      "instructor_names": [
+        "YouTube creator"
+      ],
+      "platform": "YouTube",
+      "course_url": "https://www.youtube.com/watch?v=UAxKs9Yuljo",
+      "citations": [
+        "https://www.youtube.com/watch?v=UAxKs9Yuljo"
+      ]
+    },
+    {
+      "course_name": "Operationalizing No-Code AI with Zapier",
+      "course_slug": "operationalizing-no-code-ai-with-zapier",
+      "instructor_names": [
+        "Coursera instructors"
+      ],
+      "platform": "Coursera",
+      "course_url": "https://www.coursera.org/learn/operationalizing-no-code-ai-with-zapier-automation-and-plans",
+      "citations": [
+        "https://www.coursera.org/learn/operationalizing-no-code-ai-with-zapier-automation-and-plans"
+      ]
+    },
+    {
+      "course_name": "Almost Timely News: AI Agents 101",
+      "course_slug": "almost-timely-news-ai-agents-101",
+      "instructor_names": [
+        "Christopher S. Penn"
+      ],
+      "platform": "Substack",
+      "course_url": "https://almosttimely.substack.com/p/almost-timely-news-ai-agents-101",
+      "citations": [
+        "https://almosttimely.substack.com/p/almost-timely-news-ai-agents-101"
+      ]
+    }
+  ],
+  "sources": [
+    "https://maven.com/lennon/ai-agents-for-content",
+    "https://www.coursera.org/learn/operationalizing-no-code-ai-with-zapier-automation-and-plans",
+    "https://startup-sync.com/ai-automation-integration-course/",
+    "https://maven.com/ai-agent-campus/ai-agents-for-sales-and-go-to-market",
+    "https://maven.com/aitraining/minibootcamp",
+    "https://maven.com/bilawal/generative-ai-masterclass",
+    "https://maven.com/p/5de0a6/become-a-voice-ai-agent-expert",
+    "https://huggingface.co/learn",
+    "https://www.youtube.com/watch?v=UAxKs9Yuljo",
+    "https://almosttimely.substack.com/p/almost-timely-news-ai-agents-101"
+  ],
+  "last_researched_at": "2026-06-14T20:03:06Z"
+}

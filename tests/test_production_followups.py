@@ -32,10 +32,28 @@ def _headers(user_id: str, role: str = "learner", tenant_id: str = "tenant-prod"
 
 
 def test_jwt_auth_validates_signature_issuer_and_audience(monkeypatch):
+    """Test JWT auth with RS256 (WEB-023: HS256 is no longer allowed)."""
+    from cryptography.hazmat.primitives import serialization
+    from cryptography.hazmat.primitives.asymmetric import rsa
+
+    # Generate RSA key pair for testing
+    private_key = rsa.generate_private_key(public_exponent=65537, key_size=2048)
+    public_key = private_key.public_key()
+
+    private_pem = private_key.private_bytes(
+        encoding=serialization.Encoding.PEM,
+        format=serialization.PrivateFormat.PKCS8,
+        encryption_algorithm=serialization.NoEncryption(),
+    ).decode("utf-8")
+
+    public_pem = public_key.public_bytes(
+        encoding=serialization.Encoding.PEM,
+        format=serialization.PublicFormat.SubjectPublicKeyInfo,
+    ).decode("utf-8")
+
     monkeypatch.setenv("TUTOR_AUTH_MODE", "jwt")
-    secret = "test-secret-with-at-least-32-bytes"
-    monkeypatch.setenv("TUTOR_AUTH_JWT_SECRET", secret)
-    monkeypatch.setenv("TUTOR_AUTH_JWT_ALGORITHMS", "HS256")
+    monkeypatch.setenv("TUTOR_AUTH_JWT_PUBLIC_KEY", public_pem)
+    monkeypatch.setenv("TUTOR_AUTH_JWT_ALGORITHMS", "RS256")
     monkeypatch.setenv("TUTOR_AUTH_ISSUER", "https://issuer.example")
     monkeypatch.setenv("TUTOR_AUTH_AUDIENCE", "adaptive-tutor")
     get_settings.cache_clear()
@@ -50,8 +68,8 @@ def test_jwt_auth_validates_signature_issuer_and_audience(monkeypatch):
             "iat": datetime.now(timezone.utc),
             "exp": datetime.now(timezone.utc) + timedelta(minutes=5),
         },
-        secret,
-        algorithm="HS256",
+        private_pem,
+        algorithm="RS256",
     )
 
     ok = client.get("/progress/jwt-learner", headers={"authorization": f"Bearer {token}"})

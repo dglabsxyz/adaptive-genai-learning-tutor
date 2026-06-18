@@ -80,6 +80,20 @@ def _ctx() -> tuple[str, str | None]:
     return learner_id, ctx.get("tenant_id")
 
 
+def get_memory_namespace(ctx: Any = None) -> tuple[str, ...]:
+    """Return a tenant+learner scoped namespace tuple for the StoreBackend.
+
+    AGT-020, AGT-021: Memory must be isolated per tenant and per learner to prevent
+    cross-session poisoning and cross-tenant data leakage.
+    """
+    agent_context = _agent_ctx.get()
+    tenant = agent_context.get("tenant_id") or "default"
+    learner = agent_context.get("learner_id") or "anonymous"
+    # Namespace format: ("tutor", "<tenant>", "<learner>")
+    # This ensures each learner's /memories/ are fully isolated.
+    return ("tutor", str(tenant), str(learner))
+
+
 # --- Corpus retrieval (shared by every subagent) --------------------------
 @tool
 def search_course_material(query: str, k: int = 5) -> dict[str, Any]:

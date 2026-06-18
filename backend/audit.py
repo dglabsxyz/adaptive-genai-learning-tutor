@@ -17,12 +17,42 @@ _request_id: contextvars.ContextVar[str | None] = contextvars.ContextVar("reques
 _tenant_id: contextvars.ContextVar[str | None] = contextvars.ContextVar("tenant_id", default=None)
 _user_id: contextvars.ContextVar[str | None] = contextvars.ContextVar("user_id", default=None)
 _role: contextvars.ContextVar[str | None] = contextvars.ContextVar("role", default=None)
+# WEB-032, WEB-035: Track client IP for security events
+_client_ip: contextvars.ContextVar[str | None] = contextvars.ContextVar("client_ip", default=None)
+
+# Security event types for monitoring and alerting (WEB-032)
+SECURITY_EVENT_TYPES = {
+    "auth_success",
+    "auth_failure",
+    "rate_limit_exceeded",
+    "token_budget_exceeded",
+    "prompt_injection_blocked",
+    "mcp_input_blocked",
+    "invalid_role",
+    "unauthorized_access",
+    "state_integrity_failure",
+}
 
 
-def set_request_context(request_id: str | None = None) -> contextvars.Token[str | None] | None:
-    if request_id is None:
-        return None
-    return _request_id.set(request_id)
+def set_request_context(
+    request_id: str | None = None,
+    client_ip: str | None = None,
+) -> tuple[contextvars.Token[str | None] | None, contextvars.Token[str | None] | None]:
+    """Set request context including client IP for security logging (WEB-032)."""
+    req_token = _request_id.set(request_id) if request_id else None
+    ip_token = _client_ip.set(client_ip) if client_ip else None
+    return req_token, ip_token
+
+
+def reset_full_request_context(
+    tokens: tuple[contextvars.Token[str | None] | None, contextvars.Token[str | None] | None],
+) -> None:
+    """Reset both request_id and client_ip context."""
+    req_token, ip_token = tokens
+    if req_token is not None:
+        _request_id.reset(req_token)
+    if ip_token is not None:
+        _client_ip.reset(ip_token)
 
 
 def set_actor_context(
@@ -74,14 +104,21 @@ def write_audit_event(
     role: str | None = None,
     outcome: str = "success",
     metadata: dict[str, Any] | None = None,
+    client_ip: str | None = None,  # WEB-032: Explicit IP override
 ) -> dict[str, Any]:
-    """Append a compact JSONL audit event and return the event payload."""
+    """Append a compact JSONL audit event and return the event payload.
+
+    Security events (WEB-032) include client_ip for forensics. Event types in
+    SECURITY_EVENT_TYPES are flagged with is_security_event=True.
+    """
     settings = get_settings()
     settings.data_dir.mkdir(parents=True, exist_ok=True)
+    is_security = event_type in SECURITY_EVENT_TYPES
     event = {
         "event_id": f"audit_{uuid.uuid4().hex}",
         "at": utc_now(),
         "event_type": event_type,
+        "is_security_event": is_security,  # WEB-032: Flag for SIEM filtering
         "request_id": _request_id.get(),
         "tenant_id": tenant_id or _tenant_id.get() or settings.local_tenant_id,
         "user_id": user_id or _user_id.get(),
@@ -90,6 +127,10 @@ def write_audit_event(
         "outcome": outcome,
         "metadata": metadata or {},
     }
+    # WEB-032: Include client IP for security events
+    ip = client_ip or _client_ip.get()
+    if ip and is_security:
+        event["client_ip"] = ip
     with _lock:
         with settings.audit_log_path.open("a", encoding="utf-8") as handle:
             handle.write(json.dumps(event, sort_keys=True) + "\n")

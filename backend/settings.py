@@ -74,6 +74,25 @@ def _llm_provider_default() -> str:
     return "deterministic"
 
 
+# WEB-023: Only allow asymmetric JWT algorithms (no HS256/HS384/HS512/none)
+SECURE_JWT_ALGORITHMS = {"RS256", "RS384", "RS512", "ES256", "ES384", "ES512", "PS256", "PS384", "PS512"}
+INSECURE_ALGORITHMS = {"HS256", "HS384", "HS512", "none"}
+
+
+def _filter_secure_algorithms(algorithms: list[str]) -> list[str]:
+    """Filter out insecure JWT algorithms (WEB-023)."""
+    import logging
+    logger = logging.getLogger("backend.settings")
+    filtered = [alg for alg in algorithms if alg.upper() in SECURE_JWT_ALGORITHMS]
+    removed = [alg for alg in algorithms if alg.upper() in INSECURE_ALGORITHMS]
+    if removed:
+        logger.warning(
+            "Insecure JWT algorithms removed from configuration: %s (WEB-023)",
+            removed,
+        )
+    return filtered if filtered else ["RS256"]  # Default to RS256 if all removed
+
+
 class AppSettings(BaseModel):
     """Application settings used by API, tools, MCP, and scripts."""
 
@@ -93,7 +112,8 @@ class AppSettings(BaseModel):
     local_tenant_id: str = "local"
     local_user_id: str = "demo-learner"
     local_role: Literal["learner", "educator", "admin"] = "learner"
-    auth_jwt_algorithms: list[str] = Field(default_factory=lambda: ["RS256", "HS256"])
+    # WEB-023: Only allow secure asymmetric algorithms by default
+    auth_jwt_algorithms: list[str] = Field(default_factory=lambda: ["RS256"])
     auth_jwt_secret: str | None = None
     auth_jwt_public_key: str | None = None
     auth_issuer: str | None = None
@@ -119,6 +139,10 @@ class AppSettings(BaseModel):
     rate_limit_source_search: int = 120
     rate_limit_mcp_tool: int = 160
     rate_limit_default: int = 300
+    # LLM-029: Per-user daily token budgets to prevent cost explosion
+    token_budget_enabled: bool = True
+    token_budget_daily_limit: int = 100_000  # 100k tokens/day per user
+    token_budget_warning_threshold: float = 0.8  # Warn at 80% usage
     repository_backend: Literal["json", "supabase"] = "json"
     vector_provider: Literal["local", "pgvector", "qwen"] = "local"
     llm_provider: Literal["deterministic", "openai", "qwen"] = "deterministic"
@@ -190,7 +214,10 @@ def get_settings() -> AppSettings:
         local_tenant_id=os.getenv("TUTOR_LOCAL_TENANT_ID", "local"),
         local_user_id=os.getenv("TUTOR_LOCAL_USER_ID", "demo-learner"),
         local_role=os.getenv("TUTOR_LOCAL_ROLE", "learner"),  # type: ignore[arg-type]
-        auth_jwt_algorithms=_csv_env("TUTOR_AUTH_JWT_ALGORITHMS", ["RS256", "HS256"]),
+        # WEB-023: Filter out insecure algorithms; default to RS256 only
+        auth_jwt_algorithms=_filter_secure_algorithms(
+            _csv_env("TUTOR_AUTH_JWT_ALGORITHMS", ["RS256"])
+        ),
         auth_jwt_secret=os.getenv("TUTOR_AUTH_JWT_SECRET"),
         auth_jwt_public_key=os.getenv("TUTOR_AUTH_JWT_PUBLIC_KEY"),
         auth_issuer=os.getenv("TUTOR_AUTH_ISSUER") or os.getenv("TUTOR_OIDC_ISSUER"),
@@ -220,6 +247,10 @@ def get_settings() -> AppSettings:
         rate_limit_source_search=_int_env("TUTOR_RATE_LIMIT_SOURCE_SEARCH", 120),
         rate_limit_mcp_tool=_int_env("TUTOR_RATE_LIMIT_MCP_TOOL", 160),
         rate_limit_default=_int_env("TUTOR_RATE_LIMIT_DEFAULT", 300),
+        # LLM-029: Token budget settings
+        token_budget_enabled=_bool_env("TUTOR_TOKEN_BUDGET_ENABLED", True),
+        token_budget_daily_limit=_int_env("TUTOR_TOKEN_BUDGET_DAILY_LIMIT", 100_000),
+        token_budget_warning_threshold=_float_env("TUTOR_TOKEN_BUDGET_WARNING_THRESHOLD", 0.8),
         repository_backend=os.getenv("TUTOR_REPOSITORY_BACKEND", "json"),  # type: ignore[arg-type]
         vector_provider=os.getenv("TUTOR_VECTOR_PROVIDER", "local"),  # type: ignore[arg-type]
         llm_provider=_llm_provider_default(),  # type: ignore[arg-type]

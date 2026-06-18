@@ -11,7 +11,7 @@ from typing import Awaitable, Callable
 from fastapi import Request
 from fastapi.responses import JSONResponse, Response
 
-from .audit import clear_actor_context, current_actor, reset_context, reset_request_context, set_request_context
+from .audit import clear_actor_context, current_actor, reset_context, reset_full_request_context, set_request_context
 from .settings import get_settings
 
 logger = logging.getLogger("adaptive_tutor")
@@ -21,13 +21,32 @@ def configure_logging() -> None:
     logging.basicConfig(level=logging.INFO, format="%(message)s")
 
 
+def _get_client_ip(request: Request) -> str | None:
+    """Extract client IP from request, handling proxies (WEB-032)."""
+    # Check X-Forwarded-For first (common with proxies/load balancers)
+    forwarded = request.headers.get("x-forwarded-for")
+    if forwarded:
+        # Take the first IP (original client)
+        return forwarded.split(",")[0].strip()
+    # Check X-Real-IP (nginx)
+    real_ip = request.headers.get("x-real-ip")
+    if real_ip:
+        return real_ip
+    # Fall back to direct client
+    if request.client:
+        return request.client.host
+    return None
+
+
 async def request_context_middleware(
     request: Request,
     call_next: Callable[[Request], Awaitable[Response]],
 ) -> Response:
     settings = get_settings()
     request_id = request.headers.get("x-request-id") or f"req_{uuid.uuid4().hex}"
-    token = set_request_context(request_id)
+    # WEB-032: Capture client IP for security logging
+    client_ip = _get_client_ip(request)
+    tokens = set_request_context(request_id, client_ip)
     actor_tokens = clear_actor_context()
     start = time.perf_counter()
     content_length = request.headers.get("content-length")
@@ -44,7 +63,7 @@ async def request_context_middleware(
         )
         response.headers["x-request-id"] = request_id
         reset_context(actor_tokens)
-        reset_request_context(token)
+        reset_full_request_context(tokens)
         return response
     try:
         response = await call_next(request)
@@ -72,6 +91,6 @@ async def request_context_middleware(
             )
         )
         reset_context(actor_tokens)
-        reset_request_context(token)
+        reset_full_request_context(tokens)
     response.headers["x-request-id"] = request_id
     return response

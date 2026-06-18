@@ -10,11 +10,12 @@ from contextlib import asynccontextmanager
 from fastapi import Depends, FastAPI, HTTPException, Query, Request
 from fastapi.exceptions import RequestValidationError
 from fastapi.middleware.cors import CORSMiddleware
+from starlette.middleware.base import BaseHTTPMiddleware
 from fastapi.responses import JSONResponse, StreamingResponse
 
 from .analytics import cohort_progress, evidence_timeline, intervention_recommendations, learner_export
 from .audit import current_request_id, read_audit_events, write_audit_event
-from .auth import Identity, get_identity, require_learner_access, require_role
+from .auth import Identity, get_identity, require_learner_access, require_role, validate_auth_config
 from .config import configure_langsmith, ensure_data_dir
 from .corpus import corpus_stats
 from .dependencies import get_vector_index
@@ -61,6 +62,8 @@ configure_langsmith()
 ensure_data_dir()
 configure_logging()
 settings = get_settings()
+# WEB-005, AGT-010: Validate auth configuration at startup
+validate_auth_config(settings)
 logger = logging.getLogger("backend.main")
 
 
@@ -76,12 +79,44 @@ app = FastAPI(
     lifespan=lifespan,
 )
 
+# WEB-001: Validate CORS configuration - block wildcard in production
+if settings.is_production and "*" in settings.cors_origins:
+    raise RuntimeError(
+        "SECURITY ERROR: Wildcard CORS origin ('*') is not allowed in production. "
+        "Set TUTOR_CORS_ORIGINS to specific allowed origins. (WEB-001)"
+    )
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=settings.cors_origins,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_credentials=True,  # Allow credentials only with specific origins
+    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],  # Be specific
+    allow_headers=["Authorization", "Content-Type", "X-Request-ID", "X-Tutor-User-ID", "X-Tutor-Tenant-ID", "X-Tutor-Role"],
 )
+
+
+# WEB-006: Security headers middleware
+class SecurityHeadersMiddleware(BaseHTTPMiddleware):
+    """Add security headers to all responses."""
+
+    async def dispatch(self, request: Request, call_next):
+        response = await call_next(request)
+        # Prevent clickjacking
+        response.headers["X-Frame-Options"] = "DENY"
+        # Prevent MIME type sniffing
+        response.headers["X-Content-Type-Options"] = "nosniff"
+        # Enable XSS filter
+        response.headers["X-XSS-Protection"] = "1; mode=block"
+        # Referrer policy
+        response.headers["Referrer-Policy"] = "strict-origin-when-cross-origin"
+        # Content Security Policy (API-appropriate)
+        response.headers["Content-Security-Policy"] = "default-src 'none'; frame-ancestors 'none'"
+        # Permissions Policy
+        response.headers["Permissions-Policy"] = "geolocation=(), microphone=(), camera=()"
+        return response
+
+
+app.add_middleware(SecurityHeadersMiddleware)
 app.middleware("http")(request_context_middleware)
 
 

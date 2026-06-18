@@ -22,6 +22,7 @@ from deepagents.backends import CompositeBackend, FilesystemBackend, StoreBacken
 from langchain_openai import ChatOpenAI
 
 from . import agent_tools
+from .agent_tools import get_memory_namespace
 from .agent_store import build_store
 from .checkpoints import build_checkpointer
 from .settings import get_settings
@@ -65,9 +66,13 @@ def _agent_home() -> Path:
 
 
 def _backend() -> CompositeBackend:
+    # AGT-020, AGT-021: Memory namespace must be isolated per tenant+learner.
+    # The namespace callback is invoked during each request with context set by
+    # set_agent_context() before the agent runs. This prevents cross-session
+    # memory poisoning and cross-tenant data leakage.
     return CompositeBackend(
         default=FilesystemBackend(root_dir=str(_agent_home()), virtual_mode=True),
-        routes={"/memories/": StoreBackend(namespace=lambda ctx: ("tutor",))},
+        routes={"/memories/": StoreBackend(namespace=get_memory_namespace)},
     )
 
 

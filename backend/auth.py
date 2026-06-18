@@ -2,10 +2,16 @@
 
 Local mode keeps the workshop-friendly identity headers. JWT/OIDC modes validate
 Bearer tokens, including signature, issuer/audience, and JWKS key rotation.
+
+Security hardening (WEB-005, WEB-023, AGT-010):
+- Production mode requires JWT/OIDC auth
+- HS256 algorithm removed (only RS256, ES256 allowed)
+- Local auth mode logs warnings and is blocked in production
 """
 
 from __future__ import annotations
 
+import logging
 import time
 from dataclasses import dataclass
 from typing import Any
@@ -19,8 +25,15 @@ from pydantic import BaseModel
 from .audit import set_actor_context
 from .settings import AppSettings, get_settings
 
+logger = logging.getLogger("backend.auth")
+
 Role = Literal["learner", "educator", "admin"]
 ALLOWED_ROLES = {"learner", "educator", "admin"}
+
+# WEB-023: Only allow asymmetric algorithms (no HS256)
+SECURE_JWT_ALGORITHMS = {"RS256", "RS384", "RS512", "ES256", "ES384", "ES512", "PS256", "PS384", "PS512"}
+# Algorithms that should be rejected
+INSECURE_ALGORITHMS = {"HS256", "HS384", "HS512", "none"}
 
 
 class Identity(BaseModel):
@@ -38,6 +51,36 @@ class _JWKSCache:
 
 _jwks_cache: _JWKSCache | None = None
 _discovery_cache: tuple[str, float] | None = None
+
+
+def validate_auth_config(settings: AppSettings) -> None:
+    """Validate auth configuration at startup (WEB-005, AGT-010).
+
+    Raises RuntimeError if configuration is insecure for production.
+    """
+    if settings.is_production:
+        if settings.auth_mode in {"local", "disabled"}:
+            raise RuntimeError(
+                f"SECURITY ERROR: auth_mode='{settings.auth_mode}' is not allowed in production. "
+                "Set TUTOR_AUTH_MODE to 'jwt' or 'oidc' with proper configuration. (WEB-005)"
+            )
+        # Ensure JWT algorithms are secure
+        for alg in settings.auth_jwt_algorithms:
+            if alg.upper() in INSECURE_ALGORITHMS:
+                raise RuntimeError(
+                    f"SECURITY ERROR: Insecure JWT algorithm '{alg}' configured in production. "
+                    f"Use only: {', '.join(sorted(SECURE_JWT_ALGORITHMS))}. (WEB-023)"
+                )
+    elif settings.auth_mode == "local":
+        logger.warning(
+            "Running with auth_mode='local' - authentication relies on client-provided headers. "
+            "This is acceptable for development but MUST NOT be used in production. (WEB-005)"
+        )
+    elif settings.auth_mode == "disabled":
+        logger.warning(
+            "Running with auth_mode='disabled' - all requests use default identity. "
+            "This is acceptable for development but MUST NOT be used in production. (WEB-005)"
+        )
 
 
 def _auth_error(message: str = "Invalid authentication token") -> HTTPException:

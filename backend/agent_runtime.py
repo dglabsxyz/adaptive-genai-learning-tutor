@@ -24,12 +24,15 @@ from .agent_tools import (
     set_agent_context,
     set_source_sink,
 )
+from .input_filter import sanitize_message, FilterResult
+from .token_budget import check_token_budget, record_token_usage
 
 logger = logging.getLogger("backend.agent_runtime")
 
-# Headroom for plan -> delegate -> subagent loops. The deepagents recursion
-# limit is the hard backstop against runaway loops (course concept).
-RECURSION_LIMIT = 80
+# Reduced from 80 to 25 to limit resource consumption (LLM-030, AGT-025).
+# 25 is sufficient for plan -> delegate -> subagent -> tool cycles while
+# preventing runaway loops from exhausting API budgets.
+RECURSION_LIMIT = 25
 
 # Shown when a turn exhausts the recursion budget without converging. Kept honest
 # and actionable rather than surfacing a raw 500/stack trace to the learner.
@@ -211,8 +214,36 @@ def run_tutor_turn(
     thread_id: str | None = None,
     tenant_id: str | None = None,
 ) -> dict[str, Any]:
+    tenant = tenant_id or "local"
+    # LLM-029: Check token budget before invoking LLM.
+    # Estimated tokens based on message length (rough heuristic: 1 token ≈ 4 chars).
+    estimated_tokens = len(message) // 4 + 500  # Add base overhead
+    check_token_budget(tenant_id=tenant, user_id=learner_id, estimated_tokens=estimated_tokens)
+
+    # Input sanitization (LLM-001, AGT-001): Filter user message before LLM.
+    filter_result = sanitize_message(message)
+    if not filter_result.allowed:
+        logger.warning(
+            "Prompt injection blocked for learner=%s tenant=%s violations=%s",
+            learner_id,
+            tenant_id or "local",
+            filter_result.violations,
+        )
+        return {
+            "learner_id": learner_id,
+            "tenant_id": tenant_id or "local",
+            "thread_id": thread_id or learner_id,
+            "message": (
+                "I can't process that request. Please rephrase your question about "
+                "learning generative AI topics like RAG, agents, prompt engineering, or evals."
+            ),
+            "source_refs": [],
+            "blocked": True,
+            "block_reason": "input_filter",
+        }
+
     return _invoke(
-        {"messages": [{"role": "user", "content": message}]},
+        {"messages": [{"role": "user", "content": filter_result.message}]},
         learner_id=learner_id,
         thread_id=thread_id,
         tenant_id=tenant_id,
@@ -295,13 +326,41 @@ def stream_tutor_turn(
     events are derived from the orchestrator's tool calls as the turn proceeds. Resume is still
     handled by ``resume_tutor_turn`` (non-streamed).
     """
+    tenant = tenant_id or "local"
+    # LLM-029: Check token budget before invoking LLM.
+    estimated_tokens = len(message) // 4 + 500
+    check_token_budget(tenant_id=tenant, user_id=learner_id, estimated_tokens=estimated_tokens)
+
+    # Input sanitization (LLM-001, AGT-001): Filter user message before LLM.
+    filter_result = sanitize_message(message)
+    if not filter_result.allowed:
+        logger.warning(
+            "Prompt injection blocked (streaming) for learner=%s violations=%s",
+            learner_id,
+            filter_result.violations,
+        )
+        yield {
+            "type": "final",
+            "learner_id": learner_id,
+            "tenant_id": tenant_id or "local",
+            "thread_id": thread_id or learner_id,
+            "message": (
+                "I can't process that request. Please rephrase your question about "
+                "learning generative AI topics like RAG, agents, prompt engineering, or evals."
+            ),
+            "source_refs": [],
+            "blocked": True,
+            "block_reason": "input_filter",
+        }
+        return
+
     tenant, base_thread_id, config = _thread_config(learner_id, thread_id, tenant_id)
     token = set_agent_context(learner_id, tenant)
     sink_token = set_source_sink()
     seen: set[str] = set()
     try:
         agent = build_tutor_agent()
-        payload = {"messages": [{"role": "user", "content": message}]}
+        payload = {"messages": [{"role": "user", "content": filter_result.message}]}
         try:
             for update in agent.stream(payload, config=config, stream_mode="updates"):
                 label = _step_label(update)

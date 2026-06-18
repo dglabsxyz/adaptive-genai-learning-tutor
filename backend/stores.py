@@ -13,6 +13,7 @@ from typing import Any
 
 from .audit import write_audit_event
 from .config import EXERCISE_STORE_PATH, LEARNER_STORE_PATH, ensure_data_dir
+from .state_integrity import sign_json, verify_json
 from .mastery import band_label, review_days
 from .models import (
     Exercise,
@@ -29,11 +30,14 @@ from .settings import get_settings
 
 
 def _atomic_write(path: Path, payload: dict[str, Any]) -> None:
+    """Atomic write with HMAC signature for integrity protection (AGT-022, WEB-030)."""
     ensure_data_dir()
+    # Sign the payload before writing
+    signed_payload = sign_json(payload)
     fd, tmp_path = tempfile.mkstemp(dir=path.parent, suffix=".tmp")
     try:
         with os.fdopen(fd, "w", encoding="utf-8") as handle:
-            json.dump(payload, handle, indent=2)
+            json.dump(signed_payload, handle, indent=2)
         os.replace(tmp_path, path)
     finally:
         if os.path.exists(tmp_path):

@@ -28,6 +28,8 @@ from backend.analytics import cohort_progress, intervention_recommendations  # n
 from backend.audit import write_audit_event  # noqa: E402
 from backend.rate_limit import enforce_rate_limit  # noqa: E402
 from backend.source_governance import citation_audit, source_quality_report  # noqa: E402
+# AGT-009, AGT-011: MCP input validation
+from backend.input_filter import sanitize_message, filter_clarification_question  # noqa: E402
 
 mcp = FastMCP("adaptive-genai-learning-tutor")
 
@@ -40,12 +42,31 @@ def _require_mcp_access(
     user_id: str | None = None,
     role: str = "learner",
     metadata: dict[str, Any] | None = None,
+    message_content: str | None = None,  # AGT-009: Content to filter
 ) -> tuple[str, str, str]:
     user = user_id or learner_id or "mcp-local-user"
     if role not in {"learner", "educator", "admin"}:
         raise ValueError("role must be learner, educator, or admin")
     if role == "learner" and learner_id and user != learner_id:
         raise ValueError("learner role can only access its own learner_id")
+
+    # AGT-009, AGT-011: Validate message content for injection before processing
+    if message_content:
+        filter_result = sanitize_message(message_content)
+        if not filter_result.allowed:
+            write_audit_event(
+                "mcp_input_blocked",
+                learner_id=learner_id,
+                tenant_id=tenant_id,
+                user_id=user,
+                outcome="blocked",
+                metadata={"tool_name": tool_name, "violations": filter_result.violations},
+            )
+            raise ValueError(
+                "The message contains content that cannot be processed. "
+                "Please rephrase your question about learning generative AI topics."
+            )
+
     try:
         enforce_rate_limit("mcp_tool", tenant_id=tenant_id, user_id=user)
     except Exception as exc:
@@ -441,9 +462,11 @@ def ask_tutor(
     and plan a path" or "give me one exercise on prompt engineering". Conversation continues
     per learner_id across calls. Requires QWEN_API_KEY on the server.
     """
+    # AGT-009: Filter message content before passing to agent
     _require_mcp_access(
         "ask_tutor", learner_id=learner_id, tenant_id=tenant_id, user_id=user_id, role=role,
         metadata={"message_length": len(message)},
+        message_content=message,
     )
     try:
         from backend.agent_runtime import run_tutor_turn

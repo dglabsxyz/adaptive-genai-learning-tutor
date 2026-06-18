@@ -2,7 +2,7 @@
 // ({ learnerId, tenantId, role }) so requests carry the right auth headers + scope.
 // Prefer the bound versions from useApi() in components.
 
-import { apiFetch } from './client';
+import { apiFetch, streamChat } from './client';
 
 // --- health / identity ---------------------------------------------------
 export const getHealth = (identity) => apiFetch('/health', { identity });
@@ -17,12 +17,23 @@ export const postChat = (identity, { learnerId, message, threadId }) =>
   });
 
 // resume an interrupted (HITL) turn. `resume` is the decisions payload, e.g.
-// { decisions: [{ type: 'approve' }] } or { decisions: [{ type: 'reject' }] }.
+// { decisions: [{ type: 'approve' }] } or { decisions: [{ type: 'reject' }] };
+// for a clarification interrupt it is the answer string.
 export const postChatResume = (identity, { learnerId, threadId, resume }) =>
   apiFetch('/chat/resume', {
     method: 'POST',
     identity,
     body: { learner_id: learnerId, thread_id: threadId, resume },
+  });
+
+// streaming variant of postChat: onStep(label) fires per progress event; resolves
+// with the same final payload as postChat. Falls back to postChat on transport error.
+export const postChatStream = (identity, { learnerId, message, threadId }, { onStep, signal } = {}) =>
+  streamChat('/chat/stream', {
+    identity,
+    body: { learner_id: learnerId, message, thread_id: threadId },
+    onStep,
+    signal,
   });
 
 // --- deterministic tutor REST (fast; power the structured pages) ----------

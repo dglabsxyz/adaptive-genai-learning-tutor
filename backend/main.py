@@ -2,12 +2,15 @@
 
 from __future__ import annotations
 
+import asyncio
+import json
+import logging
 from contextlib import asynccontextmanager
 
 from fastapi import Depends, FastAPI, HTTPException, Query, Request
 from fastapi.exceptions import RequestValidationError
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, StreamingResponse
 
 from .analytics import cohort_progress, evidence_timeline, intervention_recommendations, learner_export
 from .audit import current_request_id, read_audit_events, write_audit_event
@@ -15,7 +18,7 @@ from .auth import Identity, get_identity, require_learner_access, require_role
 from .config import configure_langsmith, ensure_data_dir
 from .corpus import corpus_stats
 from .dependencies import get_vector_index
-from .agent_runtime import resume_tutor_turn, run_tutor_turn
+from .agent_runtime import resume_tutor_turn, run_tutor_turn, stream_tutor_turn
 from .infographics import generate_infographic
 from .models import (
     AnswerRequest,
@@ -58,6 +61,7 @@ configure_langsmith()
 ensure_data_dir()
 configure_logging()
 settings = get_settings()
+logger = logging.getLogger("backend.main")
 
 
 @asynccontextmanager
@@ -155,6 +159,67 @@ def chat_resume(body: ChatResumeRequest, identity: Identity = Depends(get_identi
         resume=body.resume,
         thread_id=body.thread_id,
         tenant_id=identity.tenant_id,
+    )
+
+
+@app.post("/chat/stream")
+async def chat_stream(body: ChatRequest, identity: Identity = Depends(get_identity)) -> StreamingResponse:
+    """Server-Sent Events variant of /chat: streams step-progress events while the deep
+    agent works, then a terminal `{"type":"final", ...}` event with the same payload as
+    /chat. The frontend falls back to /chat if this stream errors.
+
+    The whole turn runs in ONE worker thread (producer) feeding an asyncio.Queue, so the
+    per-request contextvars (learner/tenant + source sink) stay set for the entire graph
+    run. (A plain sync generator handed to StreamingResponse is iterated across different
+    threadpool threads per yield, which loses those contextvars mid-turn.)"""
+    if not body.message.strip():
+        raise HTTPException(status_code=400, detail="message is required")
+    require_learner_access(identity, body.learner_id)
+    enforce_rate_limit("chat", tenant_id=identity.tenant_id, user_id=identity.user_id)
+
+    loop = asyncio.get_running_loop()
+    queue: asyncio.Queue = asyncio.Queue()
+    sentinel = object()
+
+    def produce() -> None:
+        try:
+            for event in stream_tutor_turn(
+                learner_id=body.learner_id,
+                message=body.message,
+                thread_id=body.thread_id,
+                tenant_id=identity.tenant_id,
+            ):
+                loop.call_soon_threadsafe(queue.put_nowait, event)
+        except Exception:  # pragma: no cover - surface a clean terminal event, never a broken stream
+            logger.exception("chat stream failed")
+            loop.call_soon_threadsafe(
+                queue.put_nowait,
+                {
+                    "type": "final",
+                    "learner_id": body.learner_id,
+                    "thread_id": body.thread_id,
+                    "message": "Sorry — I hit an error mid-turn. Please try again.",
+                    "source_refs": [],
+                },
+            )
+        finally:
+            loop.call_soon_threadsafe(queue.put_nowait, sentinel)
+
+    async def event_source():
+        worker = loop.run_in_executor(None, produce)
+        try:
+            while True:
+                event = await queue.get()
+                if event is sentinel:
+                    break
+                yield f"data: {json.dumps(event)}\n\n"
+        finally:
+            await worker
+
+    return StreamingResponse(
+        event_source(),
+        media_type="text/event-stream",
+        headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no", "Connection": "keep-alive"},
     )
 
 

@@ -424,6 +424,104 @@ def tutor_generate_infographic(
     return "\n".join(lines)
 
 
+# --- Intent-oriented tools (speak in user sentences) --------------------------
+@mcp.tool()
+def ask_tutor(
+    message: str,
+    learner_id: str = "demo-learner",
+    tenant_id: str = "local",
+    user_id: str | None = None,
+    role: str = "learner",
+) -> str:
+    """Ask the tutor anything in plain language and get an end-to-end answer.
+
+    This drives the FULL deep-agent tutor — the same brain the web app's chat uses — so
+    it will diagnose, plan a study path, write an exercise, or grade your answer as needed.
+    Best for natural multi-step requests like "I want to learn RAG and agents, diagnose me
+    and plan a path" or "give me one exercise on prompt engineering". Conversation continues
+    per learner_id across calls. Requires QWEN_API_KEY on the server.
+    """
+    _require_mcp_access(
+        "ask_tutor", learner_id=learner_id, tenant_id=tenant_id, user_id=user_id, role=role,
+        metadata={"message_length": len(message)},
+    )
+    try:
+        from backend.agent_runtime import run_tutor_turn
+
+        result = run_tutor_turn(learner_id=learner_id, message=message, tenant_id=tenant_id)
+    except Exception as exc:  # missing QWEN key or model error — stay conversational
+        return f"The tutor agent is unavailable right now ({exc}). ask_tutor needs QWEN_API_KEY set on the server."
+    if result.get("needs_clarification"):
+        interrupt = result.get("interrupt") or {}
+        if interrupt.get("type") == "clarification" or interrupt.get("question"):
+            return (
+                f"The tutor needs one detail first: {interrupt.get('question')}\n"
+                "Reply by calling ask_tutor again with that detail."
+            )
+        reqs = interrupt.get("action_requests") or []
+        names = ", ".join(r.get("name", "action") for r in reqs if isinstance(r, dict)) or "a guarded action"
+        return (
+            f"The tutor wants to run {names}, which needs human approval. "
+            "Open the web app's Tutor Chat to approve or decline it."
+        )
+    return "\n\n".join([result.get("message") or "(no response)", _sources(result.get("source_refs"))])
+
+
+@mcp.tool()
+def whats_next(
+    learner_id: str = "demo-learner",
+    tenant_id: str = "local",
+    user_id: str | None = None,
+    role: str = "learner",
+) -> str:
+    """Tell the learner what to focus on next, from their saved progress (instant, no LLM).
+
+    Returns the weakest skill, anything due for review, any exercise in progress, and a
+    concrete next action."""
+    _require_mcp_access("whats_next", learner_id=learner_id, tenant_id=tenant_id, user_id=user_id, role=role)
+    payload = tutor_view_progress_impl(learner_id=learner_id, tenant_id=tenant_id)
+    progress = payload.get("progress") or {}
+    if not progress:
+        return "No progress yet — start with a diagnostic: ask_tutor(\"I want to learn RAG and agents, diagnose me\")."
+    skills = sorted(progress.values(), key=lambda s: s.get("proficiency", 0))
+    weakest = skills[0]
+    due = [s for s in progress.values() if s.get("status") == "review" or s.get("next_review")]
+    lines = [f"# What's next for {learner_id}",
+             f"- Weakest skill: {weakest['skill']} ({weakest.get('proficiency', 0):.0%}, {weakest.get('status')})"]
+    if due:
+        lines.append(f"- Due for review: {', '.join(s['skill'] for s in due[:3])}")
+    if payload.get("active_exercise_id"):
+        lines.append(f"- Exercise in progress: {payload['active_exercise_id']} — finish it with tutor_submit_answer.")
+    lines.append(f"- Next step: ask_tutor(\"give me an exercise on {weakest['skill']}\").")
+    return "\n".join(lines)
+
+
+@mcp.tool()
+def how_am_i_doing(
+    learner_id: str = "demo-learner",
+    tenant_id: str = "local",
+    user_id: str | None = None,
+    role: str = "learner",
+) -> str:
+    """Summarize overall mastery: overall %, strongest/weakest skills, count proficient+ (instant, no LLM)."""
+    _require_mcp_access("how_am_i_doing", learner_id=learner_id, tenant_id=tenant_id, user_id=user_id, role=role)
+    payload = tutor_view_progress_impl(learner_id=learner_id, tenant_id=tenant_id)
+    progress = list((payload.get("progress") or {}).values())
+    if not progress:
+        return "No progress yet. Run a diagnostic to get started."
+    overall = sum(s.get("proficiency", 0) for s in progress) / len(progress)
+    strongest = max(progress, key=lambda s: s.get("proficiency", 0))
+    weakest = min(progress, key=lambda s: s.get("proficiency", 0))
+    proficient = [s for s in progress if s.get("status") in ("proficient", "mastered")]
+    return "\n".join([
+        f"# How {learner_id} is doing",
+        f"- Overall proficiency: {overall:.0%} across {len(progress)} skills",
+        f"- Proficient or better: {len(proficient)} / {len(progress)}",
+        f"- Strongest: {strongest['skill']} ({strongest.get('proficiency', 0):.0%})",
+        f"- Weakest: {weakest['skill']} ({weakest.get('proficiency', 0):.0%})",
+    ])
+
+
 def smoke_check() -> None:
     learner_id = "mcp-smoke-learner"
     goal = "I want to learn AI agents."

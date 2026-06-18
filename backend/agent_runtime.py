@@ -17,7 +17,13 @@ from langgraph.errors import GraphRecursionError
 from langgraph.types import Command
 
 from .agent import build_tutor_agent
-from .agent_tools import reset_agent_context, set_agent_context
+from .agent_tools import (
+    collected_source_refs,
+    reset_agent_context,
+    reset_source_sink,
+    set_agent_context,
+    set_source_sink,
+)
 
 logger = logging.getLogger("backend.agent_runtime")
 
@@ -98,6 +104,10 @@ def _collect_source_refs(result: dict[str, Any], *, limit: int = 8) -> list[dict
             seen.add(str(key))
             refs.append(ref)
 
+    # Seed from the request-scoped sink first — captures source_refs from subagent
+    # tool calls that never appear in the orchestrator's own message list.
+    _ingest({"source_refs": collected_source_refs()})
+
     for message in result.get("messages", []) or []:
         if getattr(message, "type", None) != "tool":
             continue
@@ -121,44 +131,56 @@ def _collect_source_refs(result: dict[str, Any], *, limit: int = 8) -> list[dict
     return refs[:limit]
 
 
-def _pending_requests(result: dict[str, Any]) -> list[Any]:
-    """Unwrap deepagents HITL interrupts into a flat list of action requests."""
+def _unwrap_interrupts(result: dict[str, Any]) -> tuple[str | None, list[Any]]:
+    """Split deepagents interrupts into (clarification_question, action_requests).
+
+    Two interrupt shapes exist: the HITL approval gate (``commit_progress``) carries
+    ``action_requests``; the missing-info ``request_clarification`` tool carries
+    ``{"type": "clarification", "question": ...}``.
+    """
+    clarification: str | None = None
     requests: list[Any] = []
-    for interrupt in result.get("__interrupt__", []) or []:
-        value = getattr(interrupt, "value", interrupt)
-        if isinstance(value, dict) and "action_requests" in value:
+    for itp in result.get("__interrupt__", []) or []:
+        value = getattr(itp, "value", itp)
+        if isinstance(value, dict) and value.get("type") == "clarification":
+            clarification = value.get("question") or value.get("message")
+        elif isinstance(value, dict) and "action_requests" in value:
             requests.extend(value["action_requests"])
+        elif isinstance(value, dict) and "question" in value:
+            clarification = value.get("question")
         elif isinstance(value, list):
             requests.extend(value)
         else:
             requests.append(value)
-    return requests
+    return clarification, requests
 
 
 def _format(result: dict[str, Any], *, learner_id: str, tenant_id: str, thread_id: str) -> dict[str, Any]:
-    requests = _pending_requests(result)
+    clarification, requests = _unwrap_interrupts(result)
+    base = {"learner_id": learner_id, "tenant_id": tenant_id, "thread_id": thread_id}
+    if clarification:
+        return {
+            **base,
+            "needs_clarification": True,
+            "interrupt": {"type": "clarification", "question": clarification, "action_requests": []},
+        }
     if requests:
         return {
-            "learner_id": learner_id,
-            "tenant_id": tenant_id,
-            "thread_id": thread_id,
+            **base,
             "needs_clarification": True,
-            "interrupt": {"action_requests": requests},
+            "interrupt": {"type": "approval", "action_requests": requests},
         }
-    return {
-        "learner_id": learner_id,
-        "tenant_id": tenant_id,
-        "thread_id": thread_id,
-        "message": _final_message(result),
-        "source_refs": _collect_source_refs(result),
-    }
+    return {**base, "message": _final_message(result), "source_refs": _collect_source_refs(result)}
 
 
 def _invoke(payload: Any, *, learner_id: str, thread_id: str | None, tenant_id: str | None) -> dict[str, Any]:
     tenant, base_thread_id, config = _thread_config(learner_id, thread_id, tenant_id)
     token = set_agent_context(learner_id, tenant)
+    sink_token = set_source_sink()
     try:
         result = build_tutor_agent().invoke(payload, config=config)
+        # _format must run while the source sink is still set (it reads collected_source_refs()).
+        formatted = _format(result, learner_id=learner_id, tenant_id=tenant, thread_id=base_thread_id)
     except GraphRecursionError:
         # The agent exhausted its step budget without converging. Degrade gracefully:
         # log it (the LangSmith trace captures the full trajectory) and return a clean,
@@ -170,16 +192,17 @@ def _invoke(payload: Any, *, learner_id: str, thread_id: str | None, tenant_id: 
             tenant,
             exc_info=True,
         )
-        return {
+        formatted = {
             "learner_id": learner_id,
             "tenant_id": tenant,
             "thread_id": base_thread_id,
             "message": RECURSION_FALLBACK_MESSAGE,
-            "source_refs": [],
+            "source_refs": collected_source_refs()[:8],
         }
     finally:
+        reset_source_sink(sink_token)
         reset_agent_context(token)
-    return _format(result, learner_id=learner_id, tenant_id=tenant, thread_id=base_thread_id)
+    return formatted
 
 
 def run_tutor_turn(
@@ -208,3 +231,101 @@ def resume_tutor_turn(
         thread_id=thread_id,
         tenant_id=tenant_id,
     )
+
+
+# --- Streaming (step-progress) -------------------------------------------------
+# Human-readable labels for the orchestrator's tool calls, surfaced as live progress.
+_TOOL_LABELS = {
+    "write_todos": "Planning the approach…",
+    "search_course_material": "Searching the course corpus…",
+    "assess_skills": "Assessing your current level…",
+    "view_progress": "Reviewing your progress…",
+    "recommend_path": "Building your study path…",
+    "next_exercise": "Writing a source-backed exercise…",
+    "grade_answer": "Grading your answer…",
+    "commit_progress": "Preparing to save your progress…",
+    "request_clarification": "Asking a clarifying question…",
+}
+
+
+def _tool_calls(message: Any) -> list[Any]:
+    return getattr(message, "tool_calls", None) or []
+
+
+def _step_label(update: dict[str, Any]) -> str | None:
+    """Map a ``stream_mode='updates'`` delta to one short progress label, or None."""
+    if not isinstance(update, dict):
+        return None
+    for _node, delta in update.items():
+        messages = delta.get("messages") if isinstance(delta, dict) else None
+        for message in messages or []:
+            for call in _tool_calls(message):
+                name = call.get("name") if isinstance(call, dict) else getattr(call, "name", None)
+                args = (call.get("args") if isinstance(call, dict) else getattr(call, "args", {})) or {}
+                if name == "task":
+                    sub = args.get("subagent_type") or args.get("description") or "a specialist"
+                    return f"Consulting {sub}…"
+                if name in _TOOL_LABELS:
+                    return _TOOL_LABELS[name]
+    return None
+
+
+def _snapshot_result(agent: Any, config: dict[str, Any]) -> dict[str, Any]:
+    """Read the final graph state after streaming into the ``_format`` input shape."""
+    snapshot = agent.get_state(config)
+    values = getattr(snapshot, "values", {}) or {}
+    result: dict[str, Any] = {"messages": values.get("messages", [])}
+    interrupts: list[Any] = list(getattr(snapshot, "interrupts", []) or [])
+    if not interrupts:
+        for task in getattr(snapshot, "tasks", []) or []:
+            interrupts.extend(getattr(task, "interrupts", None) or [])
+    result["__interrupt__"] = interrupts
+    return result
+
+
+def stream_tutor_turn(
+    learner_id: str,
+    message: str,
+    thread_id: str | None = None,
+    tenant_id: str | None = None,
+):
+    """Yield ``{'type':'step',...}`` progress events, then one terminal ``{'type':'final',...}``.
+
+    The final event mirrors ``run_tutor_turn`` (message + source_refs, or an interrupt). Step
+    events are derived from the orchestrator's tool calls as the turn proceeds. Resume is still
+    handled by ``resume_tutor_turn`` (non-streamed).
+    """
+    tenant, base_thread_id, config = _thread_config(learner_id, thread_id, tenant_id)
+    token = set_agent_context(learner_id, tenant)
+    sink_token = set_source_sink()
+    seen: set[str] = set()
+    try:
+        agent = build_tutor_agent()
+        payload = {"messages": [{"role": "user", "content": message}]}
+        try:
+            for update in agent.stream(payload, config=config, stream_mode="updates"):
+                label = _step_label(update)
+                if label and label not in seen:
+                    seen.add(label)
+                    yield {"type": "step", "label": label}
+            result = _snapshot_result(agent, config)
+            final = _format(result, learner_id=learner_id, tenant_id=tenant, thread_id=base_thread_id)
+        except GraphRecursionError:
+            logger.warning(
+                "streamed tutor turn hit the recursion limit (learner=%s thread=%s tenant=%s)",
+                learner_id,
+                base_thread_id,
+                tenant,
+                exc_info=True,
+            )
+            final = {
+                "learner_id": learner_id,
+                "tenant_id": tenant,
+                "thread_id": base_thread_id,
+                "message": RECURSION_FALLBACK_MESSAGE,
+                "source_refs": collected_source_refs()[:8],
+            }
+        yield {"type": "final", **final}
+    finally:
+        reset_source_sink(sink_token)
+        reset_agent_context(token)

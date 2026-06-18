@@ -181,6 +181,36 @@ The critical path (Goals 1 → 3 → 2) is done; the full stack is live and veri
   cost/latency — the eval showed ~144 k input tokens/turn, so consider a cheaper subagent model or a trimmed
   orchestrator prompt. **Mac git:** commit this HANDOFF update.
 
+**Session 7 update (2026-06-17) — UI/UX + course-gap overhaul (12 fixes) from the Week 3 guide review.**
+Reviewed the app against `Week3_Course_Summary_and_Project_Planning_Guide.md` and implemented all 12 findings;
+ran a full student E2E in the browser (all green).
+- **Backend:** (a) **source_refs accumulator** — a request-scoped contextvar sink in `agent_tools` that corpus
+  tools append to, so `/chat` citations now include **subagent** retrievals (a chat exercise turn surfaced 8
+  chips); (b) **missing-info clarification** as a real graph interrupt — new `request_clarification` tool calling
+  `interrupt()`, surfaced as `interrupt.type=="clarification"`, resume takes the answer string; (c) **out-of-domain
+  refusal** in `ORCHESTRATOR_PROMPT`; (d) **MCP intent layer** — `ask_tutor` (drives the whole agent) + `whats_next`
+  + `how_am_i_doing` added to `mcp_server/server.py` alongside the existing op tools; (e) **`POST /chat/stream`** SSE
+  step-progress endpoint (`agent_runtime.stream_tutor_turn`).
+- **Frontend (`tutor-ui`):** merged Course Catalog + Resources into **`Library.jsx`** (search + topic chips;
+  `/corpus` + `/resources` now redirect to `/library`); **interactive Diagnostic** (answer probe questions →
+  refine); **streaming chat** with a live step list + a **clarification card** (question → answer → resume) + auto
+  source chips; chat↔tools cross-links; a **`NextStep`** journey component on Diagnostic/StudyPlan/Practice;
+  **relabeled demo identity controls** ("DEMO · VIEW AS" dashed group) + a responsive off-canvas sidebar
+  (hamburger < lg); a mastery "why" line on the grade card.
+- **Key bug fixed during E2E:** the SSE endpoint must run the whole turn in ONE worker thread — Starlette iterates
+  a sync generator across different threadpool threads per yield, which **dropped the learner/tenant contextvars
+  mid-turn** (the agent stopped delegating and finished in ~3 s with no citations). Fixed: `/chat/stream` runs
+  `stream_tutor_turn` in a single `run_in_executor` producer feeding an `asyncio.Queue`. Also strengthened the
+  clarification prompt bullet so vague requests reliably call the tool (the model otherwise clarified in prose).
+- **Student E2E (local, browser) — all green:** interactive diagnostic + refine; study plan; practice (grade +
+  mastery "why" + Next step); Library search + redirects; streaming chat (live steps + 8 citations); clarification
+  interrupt → answer → resume; out-of-domain refusal; guarded commit → approve. Offline: **39 pytest** pass,
+  latest backend imports clean. (Frontend build to confirm on the Mac before deploy.)
+- **New files:** `tutor-ui/src/pages/Library.jsx`, `tutor-ui/src/components/NextStep.jsx`. **Orphaned — `git rm`
+  on the Mac:** `tutor-ui/src/pages/CorpusBrowser.jsx`, `tutor-ui/src/pages/Resources.jsx` (no longer imported).
+- **Deploy:** commit + push → Railway auto-redeploys the backend (new `/chat/stream` + tools) and `tutor-ui`; CORS
+  already covers the SPA origin. After deploy, smoke the prod SPA chat for live steps + citations.
+
 ---
 
 ## 0. How to resume (local)

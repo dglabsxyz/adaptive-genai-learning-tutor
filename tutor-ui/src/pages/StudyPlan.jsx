@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useMutation } from '@tanstack/react-query';
 import SkillStateBadge from '../components/SkillStateBadge';
 import SourceRef from '../components/SourceRef';
+import NextStep from '../components/NextStep';
 import { ErrorState, Spinner } from '../components/PageStates';
 import { useApi } from '../api/useApi';
 import { useToast } from '../context/ToastContext';
@@ -101,6 +102,14 @@ export default function StudyPlan() {
               ))}
             </div>
           </div>
+          <NextStep
+            title="Where to next"
+            items={[
+              { to: '/exercise', label: 'Start practicing →', primary: true },
+              { to: '/diagnostic', label: 'Re-run diagnostic' },
+              { to: '/tutor', label: 'Ask the tutor' },
+            ]}
+          />
         </div>
       )}
     </div>

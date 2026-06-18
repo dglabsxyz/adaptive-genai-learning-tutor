@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
-import { useMutation } from '@tanstack/react-query';
+import { Link } from 'react-router-dom';
 import { useApi } from '../api/useApi';
 import { useSession } from '../context/SessionContext';
 import { useToast } from '../context/ToastContext';
@@ -16,11 +16,18 @@ const SUGGESTIONS = [
   'This was helpful — save my progress for this session.',
 ];
 
+// Cross-links so the chat-vs-structured-tools model is clear.
+const TOOL_LINKS = [
+  { to: '/diagnostic', label: 'Diagnostic' },
+  { to: '/study-plan', label: 'Study Plan' },
+  { to: '/exercise', label: 'Practice' },
+  { to: '/progress', label: 'Progress' },
+];
+
 const newThread = (learnerId) => `tutor-${learnerId}-${Date.now().toString(36)}`;
 
 function actionLabel(req) {
-  const name = req?.name || req?.action || req?.tool || 'action';
-  return name;
+  return req?.name || req?.action || req?.tool || 'action';
 }
 function actionSummary(req) {
   const args = req?.args || req?.arguments || req?.action_request?.args || {};
@@ -36,6 +43,8 @@ export default function TutorChat() {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState('');
   const [elapsed, setElapsed] = useState(0);
+  const [steps, setSteps] = useState([]);
+  const [busy, setBusy] = useState(false);
   const scrollRef = useRef(null);
   const timerRef = useRef(null);
 
@@ -46,7 +55,7 @@ export default function TutorChat() {
 
   useEffect(() => {
     scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: 'smooth' });
-  }, [messages]);
+  }, [messages, steps]);
 
   const startTimer = () => {
     setElapsed(0);
@@ -60,71 +69,108 @@ export default function TutorChat() {
   useEffect(() => () => stopTimer(), []);
 
   const applyResult = useCallback((result) => {
-    const reqs = result?.needs_clarification ? result.interrupt?.action_requests || [] : null;
-    setMessages((prev) => [
-      ...prev,
-      reqs && reqs.length
-        ? { id: nextId(), role: 'assistant', interrupt: reqs }
-        : {
-            id: nextId(),
-            role: 'assistant',
-            text: result?.message || '(no response)',
-            sources: toSourceCards(result?.source_refs),
-          },
-    ]);
+    const itp = result?.needs_clarification ? result.interrupt || {} : null;
+    setMessages((prev) => {
+      let node;
+      if (itp && itp.type === 'clarification') {
+        node = { id: nextId(), role: 'assistant', clarify: itp.question || 'Could you add a bit more detail?' };
+      } else if (itp && (itp.action_requests || []).length) {
+        node = { id: nextId(), role: 'assistant', interrupt: itp.action_requests };
+      } else {
+        node = {
+          id: nextId(),
+          role: 'assistant',
+          text: result?.message || '(no response)',
+          sources: toSourceCards(result?.source_refs),
+        };
+      }
+      return [...prev, node];
+    });
   }, []);
 
-  const chat = useMutation({
-    mutationFn: (message) => api.postChat({ message, threadId }),
-    onMutate: startTimer,
-    onSettled: stopTimer,
-    onSuccess: applyResult,
-    onError: (err) => {
-      addToast(err.message || 'Chat failed', 'error');
-      setMessages((prev) => [...prev, { id: nextId(), role: 'assistant', error: err.message || 'Request failed' }]);
-    },
-  });
-
-  const resume = useMutation({
-    mutationFn: (decisionType) =>
-      api.postChatResume({ threadId, resume: { decisions: [{ type: decisionType }] } }),
-    onMutate: startTimer,
-    onSettled: stopTimer,
-    onSuccess: applyResult,
-    onError: (err) => addToast(err.message || 'Resume failed', 'error'),
-  });
-
-  const busy = chat.isPending || resume.isPending;
-
-  const send = (text) => {
+  const send = async (text) => {
     const msg = (text ?? input).trim();
     if (!msg || busy) return;
     setMessages((prev) => [...prev, { id: nextId(), role: 'user', text: msg }]);
     setInput('');
-    chat.mutate(msg);
+    setBusy(true);
+    setSteps([]);
+    startTimer();
+    try {
+      let final;
+      try {
+        // Preferred: streamed step-progress.
+        final = await api.postChatStream(
+          { message: msg, threadId },
+          { onStep: (label) => setSteps((prev) => (prev.includes(label) ? prev : [...prev, label])) },
+        );
+      } catch {
+        // Graceful fallback to the non-streaming endpoint.
+        final = await api.postChat({ message: msg, threadId });
+      }
+      applyResult(final);
+    } catch (err) {
+      addToast(err.message || 'Chat failed', 'error');
+      setMessages((prev) => [...prev, { id: nextId(), role: 'assistant', error: err.message || 'Request failed' }]);
+    } finally {
+      stopTimer();
+      setBusy(false);
+      setSteps([]);
+    }
   };
 
-  const decide = (decisionType, msgId) => {
+  const resume = async (resumePayload, msgId, resolvedLabel) => {
     if (busy) return;
-    setMessages((prev) => prev.map((m) => (m.id === msgId ? { ...m, resolved: decisionType } : m)));
-    resume.mutate(decisionType);
+    setMessages((prev) => prev.map((m) => (m.id === msgId ? { ...m, resolved: resolvedLabel } : m)));
+    setBusy(true);
+    setSteps([]);
+    startTimer();
+    try {
+      const final = await api.postChatResume({ threadId, resume: resumePayload });
+      applyResult(final);
+    } catch (err) {
+      addToast(err.message || 'Resume failed', 'error');
+      setMessages((prev) => [...prev, { id: nextId(), role: 'assistant', error: err.message || 'Resume failed' }]);
+    } finally {
+      stopTimer();
+      setBusy(false);
+    }
+  };
+
+  const decide = (decisionType, msgId) => resume({ decisions: [{ type: decisionType }] }, msgId, decisionType);
+
+  const answerClarification = (answer, msgId) => {
+    const text = (answer || '').trim();
+    if (!text || busy) return;
+    setMessages((prev) => [...prev, { id: nextId(), role: 'user', text }]);
+    resume(text, msgId, 'answered');
   };
 
   const resetConversation = () => {
     stopTimer();
     setMessages([]);
+    setSteps([]);
     setThreadId(newThread(learnerId));
   };
 
   return (
     <div className="h-full flex flex-col">
       {/* Header */}
-      <div className="px-8 pt-6 pb-4 flex items-end justify-between">
+      <div className="px-8 pt-6 pb-4 flex items-end justify-between gap-4 flex-wrap">
         <div>
           <p className="text-overline text-[var(--text-muted)] mb-1">Your AI Tutor</p>
           <h2 className="text-display text-[var(--text-primary)]">Tutor Chat</h2>
-          <p className="text-caption text-[var(--text-muted)] mt-1">
-            The deep agent plans, delegates to specialists, and grounds answers in the course corpus.
+          <p className="text-caption text-[var(--text-muted)] mt-1 max-w-2xl">
+            The conversational way to learn — the deep agent plans, delegates to specialists, and grounds answers in
+            the course corpus. Prefer to click instead?{' '}
+            {TOOL_LINKS.map((l, i) => (
+              <React.Fragment key={l.to}>
+                <Link to={l.to} className="text-[var(--c-primary)] hover:underline">
+                  {l.label}
+                </Link>
+                {i < TOOL_LINKS.length - 1 ? ' · ' : ''}
+              </React.Fragment>
+            ))}
           </p>
         </div>
         <button onClick={resetConversation} className="btn-secondary text-sm" disabled={busy}>
@@ -134,14 +180,14 @@ export default function TutorChat() {
 
       {/* Messages */}
       <div ref={scrollRef} className="flex-1 overflow-y-auto px-8 pb-4 space-y-4">
-        {messages.length === 0 && (
+        {messages.length === 0 && !busy && (
           <div className="max-w-2xl mx-auto mt-8 animate-fade-in">
             <div className="card p-6 text-center">
               <div className="text-3xl mb-2">💬</div>
               <h3 className="text-title text-[var(--text-primary)] mb-1">Ask your tutor anything</h3>
               <p className="text-sm text-[var(--text-secondary)] mb-5">
-                Diagnose your level, plan a path, practice, or save your progress — all grounded in real
-                course sources.
+                Diagnose your level, plan a path, practice, or save your progress — all grounded in real course
+                sources.
               </p>
               <div className="grid sm:grid-cols-2 gap-2 text-left">
                 {SUGGESTIONS.map((s) => (
@@ -159,14 +205,14 @@ export default function TutorChat() {
         )}
 
         {messages.map((m) => (
-          <MessageBubble key={m.id} message={m} onDecide={decide} busy={busy} />
+          <MessageBubble key={m.id} message={m} onDecide={decide} onAnswer={answerClarification} busy={busy} />
         ))}
 
         {busy && (
           <div className="flex items-start gap-3 max-w-3xl animate-fade-in">
             <Avatar role="assistant" />
-            <div className="card px-4 py-3">
-              <div className="flex items-center gap-3 text-sm text-[var(--text-secondary)]">
+            <div className="card px-4 py-3 flex-1">
+              <div className="flex items-center gap-3 text-sm text-[var(--text-secondary)] mb-1">
                 <span className="flex gap-1">
                   <span className="w-2 h-2 rounded-full bg-[var(--c-primary)] animate-bounce" style={{ animationDelay: '0ms' }} />
                   <span className="w-2 h-2 rounded-full bg-[var(--c-primary)] animate-bounce" style={{ animationDelay: '150ms' }} />
@@ -175,6 +221,19 @@ export default function TutorChat() {
                 Tutor is working… {elapsed}s
                 <span className="text-[var(--text-muted)]">· a full turn can take ~30–60s</span>
               </div>
+              {steps.length > 0 && (
+                <ul className="mt-2 space-y-1">
+                  {steps.map((s, i) => {
+                    const last = i === steps.length - 1;
+                    return (
+                      <li key={`${s}-${i}`} className="flex items-center gap-2 text-xs">
+                        <span style={{ color: last ? 'var(--c-primary)' : 'var(--c-success)' }}>{last ? '◐' : '✓'}</span>
+                        <span className={last ? 'text-[var(--text-primary)]' : 'text-[var(--text-muted)]'}>{s}</span>
+                      </li>
+                    );
+                  })}
+                </ul>
+              )}
             </div>
           </div>
         )}
@@ -225,7 +284,7 @@ function Avatar({ role }) {
   );
 }
 
-function MessageBubble({ message, onDecide, busy }) {
+function MessageBubble({ message, onDecide, onAnswer, busy }) {
   const { role } = message;
 
   if (role === 'user') {
@@ -239,7 +298,6 @@ function MessageBubble({ message, onDecide, busy }) {
     );
   }
 
-  // assistant
   return (
     <div className="flex items-start gap-3 max-w-3xl animate-fade-in">
       <Avatar role="assistant" />
@@ -249,7 +307,14 @@ function MessageBubble({ message, onDecide, busy }) {
             ⚠️ {message.error}
           </div>
         ) : message.interrupt ? (
-          <ApprovalCard requests={message.interrupt} resolved={message.resolved} onDecide={(t) => onDecide(t, message.id)} busy={busy} />
+          <ApprovalCard
+            requests={message.interrupt}
+            resolved={message.resolved}
+            onDecide={(t) => onDecide(t, message.id)}
+            busy={busy}
+          />
+        ) : message.clarify ? (
+          <ClarifyCard question={message.clarify} resolved={message.resolved} onAnswer={(t) => onAnswer(t, message.id)} busy={busy} />
         ) : (
           <div className="card px-4 py-3">
             <p className="text-sm text-[var(--text-primary)] whitespace-pre-wrap leading-relaxed">{message.text}</p>
@@ -294,6 +359,45 @@ function ApprovalCard({ requests, resolved, onDecide, busy }) {
           </button>
         </div>
       )}
+    </div>
+  );
+}
+
+function ClarifyCard({ question, resolved, onAnswer, busy }) {
+  const [text, setText] = useState('');
+  if (resolved) {
+    return (
+      <div className="card px-5 py-4 border" style={{ borderColor: 'var(--c-accent)' }}>
+        <div className="flex items-center gap-2 mb-1">
+          <span className="text-lg">❓</span>
+          <p className="text-sm font-semibold text-[var(--text-primary)]">Quick question</p>
+        </div>
+        <p className="text-sm text-[var(--text-secondary)]">{question}</p>
+        <p className="text-sm mt-2 font-medium" style={{ color: 'var(--c-success)' }}>✓ Answered</p>
+      </div>
+    );
+  }
+  return (
+    <div className="card px-5 py-4 border" style={{ borderColor: 'var(--c-accent)' }}>
+      <div className="flex items-center gap-2 mb-1">
+        <span className="text-lg">❓</span>
+        <p className="text-sm font-semibold text-[var(--text-primary)]">The tutor needs one detail</p>
+      </div>
+      <p className="text-sm text-[var(--text-secondary)] mb-3">{question}</p>
+      <div className="flex items-end gap-2">
+        <input
+          value={text}
+          onChange={(e) => setText(e.target.value)}
+          onKeyDown={(e) => e.key === 'Enter' && onAnswer(text)}
+          placeholder="Type your answer…"
+          disabled={busy}
+          className="input flex-1"
+          autoFocus
+        />
+        <button onClick={() => onAnswer(text)} disabled={busy || !text.trim()} className="btn-primary text-sm">
+          Answer
+        </button>
+      </div>
     </div>
   );
 }

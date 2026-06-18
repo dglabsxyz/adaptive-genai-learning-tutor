@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import SourceRef from '../components/SourceRef';
 import SkillStateBadge from '../components/SkillStateBadge';
+import NextStep from '../components/NextStep';
 import { ErrorState, Spinner } from '../components/PageStates';
 import { useApi } from '../api/useApi';
 import { useSession } from '../context/SessionContext';
@@ -183,6 +184,17 @@ export default function Exercise() {
           </div>
         </div>
       )}
+
+      {grade && !grade.needs_clarification && (
+        <NextStep
+          title="Keep going"
+          items={[
+            { to: '/progress', label: 'See my progress →', primary: true },
+            { to: '/study-plan', label: 'Study plan' },
+            { to: '/tutor', label: 'Ask the tutor' },
+          ]}
+        />
+      )}
     </div>
   );
 }
@@ -241,6 +253,12 @@ function GradeCard({ grade }) {
           ) : (
             <p>Mastery updated.</p>
           )}
+          <p className="mt-1">
+            {grade.mastery_update.status_reason ||
+              `Proficiency only moves on graded evidence — a “${grade.verdict}” answer ${
+                (grade.score ?? 0) >= 0.45 ? 'nudged it up' : 'nudged it down'
+              }.`}
+          </p>
         </div>
       )}
 

@@ -150,6 +150,13 @@ How you work each turn — begin by calling write_todos to plan, then delegate t
 - Learner submits an answer → delegate to 'grader-critic' to grade and give feedback.
 - At a natural stopping point, or when the learner asks to save/finish → call commit_progress with a
   one-line summary. This is gated by human approval; wait for it.
+- Missing or too-vague request (no clear goal or skill to act on — e.g. "help me get better", "I want to
+  improve") → you MUST call the `request_clarification` tool with ONE specific question and then stop. Do
+  NOT ask the clarifying question in plain prose — always use the `request_clarification` tool so the turn
+  pauses for the learner's answer. Never guess missing details.
+- Off-topic request (anything not about learning generative-AI engineering) → politely decline in one
+  sentence, say what you CAN help with (diagnose level, plan a path, practice, track progress), and do
+  not delegate or call other tools.
 
 Tools and filesystem — read carefully:
 - Course content lives behind the `search_course_material` tool, which your SUBAGENTS hold — it is NOT
@@ -175,7 +182,7 @@ def build_tutor_agent():
     return create_deep_agent(
         model=_build_model(),
         system_prompt=ORCHESTRATOR_PROMPT,
-        tools=[agent_tools.view_progress, agent_tools.commit_progress],
+        tools=[agent_tools.view_progress, agent_tools.commit_progress, agent_tools.request_clarification],
         subagents=[DIAGNOSTIC, PATH_PLANNER, EXERCISE_AUTHOR, GRADER_CRITIC],
         backend=_backend(),
         store=build_store(),

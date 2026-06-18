@@ -10,12 +10,12 @@ import Diagnostic from './pages/Diagnostic';
 import StudyPlan from './pages/StudyPlan';
 import Exercise from './pages/Exercise';
 import Progress from './pages/Progress';
-import CorpusBrowser from './pages/CorpusBrowser';
-import Resources from './pages/Resources';
+import Library from './pages/Library';
 import ProfessorView from './pages/ProfessorView';
 
 export default function App() {
   const [helpOpen, setHelpOpen] = useState(false);
+  const [navOpen, setNavOpen] = useState(false);
   const [showWelcome, setShowWelcome] = useState(false);
 
   useEffect(() => {
@@ -29,10 +29,10 @@ export default function App() {
 
   return (
     <div className="flex h-screen w-screen overflow-hidden bg-[var(--bg)] text-[var(--text-primary)]">
-      <Sidebar onToggleHelp={() => setHelpOpen((o) => !o)} />
+      <Sidebar open={navOpen} onClose={() => setNavOpen(false)} onToggleHelp={() => setHelpOpen((o) => !o)} />
 
       <div className="flex-1 flex flex-col overflow-hidden min-w-0">
-        <TopBar onToggleHelp={() => setHelpOpen((o) => !o)} />
+        <TopBar onOpenNav={() => setNavOpen(true)} />
         <main
           className={`flex-1 overflow-hidden relative ambient-glow transition-[margin] duration-300 ${
             helpOpen ? 'mr-[320px]' : ''
@@ -47,8 +47,9 @@ export default function App() {
               <Route path="/study-plan" element={<StudyPlan />} />
               <Route path="/exercise" element={<Exercise />} />
               <Route path="/progress" element={<Progress />} />
-              <Route path="/corpus" element={<CorpusBrowser />} />
-              <Route path="/resources" element={<Resources />} />
+              <Route path="/library" element={<Library />} />
+              <Route path="/corpus" element={<Navigate to="/library" replace />} />
+              <Route path="/resources" element={<Navigate to="/library" replace />} />
               <Route path="/professor" element={<ProfessorView />} />
               <Route path="*" element={<Navigate to="/dashboard" replace />} />
             </Routes>

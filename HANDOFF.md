@@ -165,6 +165,11 @@ The critical path (Goals 1 → 3 → 2) is done; the full stack is live and veri
   `https://backboard.railway.com/graphql/v2` with `credentials:'include'`. Useful mutations: `serviceCreate`,
   `serviceInstanceUpdate` (rootDirectory / builder / *Command), `serviceDomainCreate`, `variableUpsert`
   (`skipDeploys` opt), `serviceInstanceDeployV2` / `serviceInstanceRedeploy`. IDs in §2.
+- **Build niceties (Session 6, code done).** Fixed the CSS minify warning (removed an orphaned `==== */` banner
+  close at line 641 of `tutor-ui/src/styles/index.css` — comments now balanced 29/29); added Vite `manualChunks`
+  to code-split `react-vendor` / `react-query` / `charts` (recharts bundles d3) so the main app chunk drops well
+  under the 500 kB warning; and dropping 10 unused mockup PNGs from `tutor-ui/public/` (~2.2 MB, `git rm` on the
+  Mac — none referenced in `src`/`index.html`). Verify with `npm run build`, then push (auto-redeploys the SPA).
 - **Still open (optional, next session):** full 5-example agent eval on the Mac (Goal 4); §8 #5 (structured grader
   verdict), #6 (MCP `ask_tutor`), #8 (live @skipif integration test); a frontend test harness (vitest/Playwright);
   SSE streaming for `/chat`. **Mac git:** commit this HANDOFF update (only uncommitted change).

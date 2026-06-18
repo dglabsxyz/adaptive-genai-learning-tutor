@@ -15,11 +15,14 @@ from backend.source_governance import corpus_file_inventory
 
 def main() -> None:
     inventory = corpus_file_inventory()
-    assert inventory, "corpus inventory is empty"
-    assert all(item["path"].startswith("genai_research/") for item in inventory)
-    assert DATA_DIR != CORPUS_DIR and CORPUS_DIR not in DATA_DIR.parents, (
-        "TUTOR_DATA_DIR must not point inside the corpus"
-    )
+    if not inventory:
+        raise AssertionError("corpus inventory is empty")
+    if not all(item["path"].startswith("genai_research/") for item in inventory):
+        raise AssertionError()
+    if DATA_DIR == CORPUS_DIR or CORPUS_DIR in DATA_DIR.parents:
+        raise AssertionError(
+            "TUTOR_DATA_DIR must not point inside the corpus"
+        )
     print(f"corpus immutable check ok ({len(inventory)} files)")
 
 

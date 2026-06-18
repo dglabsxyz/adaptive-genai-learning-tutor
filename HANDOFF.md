@@ -165,14 +165,21 @@ The critical path (Goals 1 → 3 → 2) is done; the full stack is live and veri
   `https://backboard.railway.com/graphql/v2` with `credentials:'include'`. Useful mutations: `serviceCreate`,
   `serviceInstanceUpdate` (rootDirectory / builder / *Command), `serviceDomainCreate`, `variableUpsert`
   (`skipDeploys` opt), `serviceInstanceDeployV2` / `serviceInstanceRedeploy`. IDs in §2.
-- **Build niceties (Session 6, code done).** Fixed the CSS minify warning (removed an orphaned `==== */` banner
-  close at line 641 of `tutor-ui/src/styles/index.css` — comments now balanced 29/29); added Vite `manualChunks`
-  to code-split `react-vendor` / `react-query` / `charts` (recharts bundles d3) so the main app chunk drops well
-  under the 500 kB warning; and dropping 10 unused mockup PNGs from `tutor-ui/public/` (~2.2 MB, `git rm` on the
-  Mac — none referenced in `src`/`index.html`). Verify with `npm run build`, then push (auto-redeploys the SPA).
-- **Still open (optional, next session):** full 5-example agent eval on the Mac (Goal 4); §8 #5 (structured grader
-  verdict), #6 (MCP `ask_tutor`), #8 (live @skipif integration test); a frontend test harness (vitest/Playwright);
-  SSE streaming for `/chat`. **Mac git:** commit this HANDOFF update (only uncommitted change).
+- **Goal 4 — agent eval: DONE.** Ran the full 5-example eval on the Mac (`LANGSMITH_TRACING=true
+  TUTOR_REPOSITORY_BACKEND=json uv run python scripts/run_agent_eval.py`). Experiment
+  **`adaptive-tutor-agent-bd10f246`** (dataset `adaptive-tutor-agent`): **5/5 runs, both evaluators 1.00**
+  (`matches_expected_behavior` + `produced_output`), P50 latency ~51 s, ~721 k total tokens for the set. Sits next
+  to the nested agent traces in project `adaptive-tutor-deep-agent`.
+- **Build niceties (Session 6): DONE — live.** Fixed the CSS minify warning (removed an orphaned `==== */` banner
+  close at line 641 of `tutor-ui/src/styles/index.css`); added Vite `manualChunks` so the bundle is split into
+  `react-vendor` (164 kB) / `react-query` (42 kB) / `charts` (recharts, 364 kB) / main `index` **76 kB** (was
+  647 kB) — all under the 500 kB warning, and the warning is gone; removed 10 unused mockup PNGs from
+  `tutor-ui/public/` (~2.2 MB). Pushed `21e6c9e`; SPA auto-redeployed (`725da668`) and verified live (split chunks
+  served; old PNG URLs 404 to the SPA fallback).
+- **Still open (optional, next session):** §8 #5 (structured grader verdict), #6 (MCP `ask_tutor`), #8 (live
+  @skipif integration test); a frontend test harness (vitest/Playwright); SSE streaming for `/chat`; §8 #7
+  cost/latency — the eval showed ~144 k input tokens/turn, so consider a cheaper subagent model or a trimmed
+  orchestrator prompt. **Mac git:** commit this HANDOFF update.
 
 ---
 

@@ -1,6 +1,7 @@
 // Minimal static server for the built SPA (Railway "frontend" service).
 // Serves dist/ and falls back to index.html for client-side (react-router) routes.
 import express from 'express';
+import helmet from 'helmet';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
@@ -9,6 +10,7 @@ const distDir = path.join(__dirname, 'dist');
 const port = process.env.PORT || 8080;
 
 const app = express();
+app.use(helmet());
 
 // Hashed asset files can be cached aggressively; index.html is revalidated.
 app.use(
